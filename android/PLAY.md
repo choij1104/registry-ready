@@ -21,11 +21,15 @@ Local check of the web bundle:
     python3 -m http.server -d www 8000
 
 ## Sign
-HAKOYA LLC upload key (the same key as TOXCARD; held by the account holder, backed up in Google
-Drive 00_CLAUDE_HQ/TOXCARD_Android_UploadKey):
+Done in CI when the repository secrets are set (Settings → Secrets and variables → Actions),
+entered by the account holder:
+- `UPLOAD_KEYSTORE_BASE64` — the HAKOYA LLC upload keystore (same key as TOXCARD; Drive
+  00_CLAUDE_HQ/TOXCARD_Android_UploadKey) as one base64 line
+- `UPLOAD_KEYSTORE_PASSWORD` — its password (same for store and key)
+- `UPLOAD_KEY_ALIAS` — `toxcard-upload`
 
-    jarsigner -keystore toxcard-upload.jks -signedjar registry-ready-1.0-N-signed.aab registry-ready-1.0-N-unsigned.aab toxcard-upload
-    jarsigner -verify registry-ready-1.0-N-signed.aab
+The signed bundle lands next to the unsigned one on `android-artifacts`
+(`dist/LATEST-SIGNED` names it) and in the workflow artifact.
 
 ## Play Console (first release)
 1. Create app: name "Registry Ready: EMT Exam Prep", English (US), App, Free.

@@ -1,7 +1,7 @@
 # Registry Ready — Play Console "App content" answers
 
 ## Privacy policy
-https://choij1104.github.io/registry-ready/privacy.html (GitHub Pages on this repo, main branch, root)
+https://choij1104.github.io/registry-ready-/privacy.html (GitHub Pages on this repo, main branch, root)
 
 ## Ads
 No ads.

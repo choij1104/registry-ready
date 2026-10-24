@@ -5,9 +5,11 @@
 # Fonts, so the app makes no network request. Capacitor 8.5.3, targetSdk 36, Java 21, Node 22.
 # No Capacitor plugins.
 #
-# The bundle is built UNSIGNED. No signing key lives in this repository or its secrets. It is
-# signed with the HAKOYA LLC upload key outside CI, then uploaded to Play Console; Google re-signs
-# it with the app signing key (Play App Signing).
+# Signing: when the repository secrets UPLOAD_KEYSTORE_BASE64, UPLOAD_KEYSTORE_PASSWORD and
+# UPLOAD_KEY_ALIAS are set (entered by the account holder; never stored in the repository), the
+# bundle is also signed with the HAKOYA LLC upload key and verified, producing
+# registry-ready-<version>-<code>-signed.aab ready for Play Console. Google re-signs it with the
+# app signing key (Play App Signing). Without the secrets only the unsigned bundle is produced.
 #
 # Runs on a push to main that touches the app or the Android build, or by manual dispatch. The
 # unsigned bundle is kept as a workflow artifact and committed to the android-artifacts branch
@@ -79,10 +81,32 @@ jobs:
           echo "name=$NAME" >> "$GITHUB_OUTPUT"
           echo "Built $NAME (versionCode $BUILD_NUMBER, versionName $VERSION_NAME). Sign with the upload key before uploading." >> "$GITHUB_STEP_SUMMARY"
 
+      - name: Sign with the upload key (if secrets are set)
+        id: sign
+        env:
+          KS_B64: ${{ secrets.UPLOAD_KEYSTORE_BASE64 }}
+          KS_PASS: ${{ secrets.UPLOAD_KEYSTORE_PASSWORD }}
+          KS_ALIAS: ${{ secrets.UPLOAD_KEY_ALIAS }}
+        run: |
+          if [ -z "$KS_B64" ] || [ -z "$KS_PASS" ] || [ -z "$KS_ALIAS" ]; then
+            echo "Signing secrets not set; unsigned bundle only." >> "$GITHUB_STEP_SUMMARY"
+            echo "signed=" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          KS="$RUNNER_TEMP/upload.jks"
+          echo "$KS_B64" | tr -d ' \r\n' | base64 -d > "$KS"
+          SIGNED="registry-ready-${VERSION_NAME}-${BUILD_NUMBER}-signed.aab"
+          jarsigner -keystore "$KS" -storepass "$KS_PASS" -keypass "$KS_PASS" \
+            -signedjar "$RUNNER_TEMP/dist/$SIGNED" "$RUNNER_TEMP/dist/${{ steps.out.outputs.name }}" "$KS_ALIAS"
+          jarsigner -verify "$RUNNER_TEMP/dist/$SIGNED" | tail -1
+          keytool -list -keystore "$KS" -storepass "$KS_PASS" -alias "$KS_ALIAS" | grep -i "fingerprint" >> "$GITHUB_STEP_SUMMARY" || true
+          rm -f "$KS"
+          echo "Signed: $SIGNED" >> "$GITHUB_STEP_SUMMARY"
+          echo "signed=$SIGNED" >> "$GITHUB_OUTPUT"
+
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ steps.out.outputs.name }}
-          path: ${{ runner.temp }}/dist/${{ steps.out.outputs.name }}
+          path: ${{ runner.temp }}/dist/
 
       - name: Commit bundle to the android-artifacts branch
         run: |
@@ -95,6 +119,10 @@ jobs:
           mkdir -p dist
           cp "$RUNNER_TEMP/dist/${{ steps.out.outputs.name }}" dist/
           echo "${{ steps.out.outputs.name }}" > dist/LATEST
+          if [ -n "${{ steps.sign.outputs.signed }}" ]; then
+            cp "$RUNNER_TEMP/dist/${{ steps.sign.outputs.signed }}" dist/
+            echo "${{ steps.sign.outputs.signed }}" > dist/LATEST-SIGNED
+          fi
           git add dist
           git commit -q -m "Android bundle ${{ steps.out.outputs.name }} from ${{ github.sha }}"
           git push -q origin android-artifacts
