@@ -1,0 +1,1335 @@
+[
+ {
+  "id": "PA1-001",
+  "d": "PRIMARY",
+  "topic": "General impression",
+  "concept": "sick-not-sick",
+  "b": -1,
+  "type": "mc",
+  "stem": "You are called to an apartment for a 58-year-old woman with difficulty breathing. From the doorway you see her sitting upright, leaning forward with her hands on her knees, pale and sweaty, speaking only two words at a time. What is the most appropriate conclusion from your general impression?",
+  "opts": [
+   "She appears unstable; move straight into the primary assessment and anticipate immediate interventions and priority transport.",
+   "She appears stable enough to start with a focused history before assessing her airway and breathing.",
+   "Her condition cannot be judged until a complete set of baseline vital signs has been obtained.",
+   "She is most likely anxious; coach her breathing first and reassess her appearance in five minutes."
+  ],
+  "ans": 0,
+  "key": "The general impression sorts sick from not sick in seconds; obvious distress means act on the primary assessment at once.",
+  "why": "Tripod positioning, pale diaphoretic skin and two-word dyspnea are signs of serious respiratory compromise visible from the doorway. The general impression should set a high-priority mindset so airway, breathing and circulation problems are found and treated without delay.",
+  "wrong": [
+   "",
+   "Tripod positioning, diaphoresis and two-word dyspnea signal a possible life threat; history never comes before the primary assessment.",
+   "The general impression is formed in seconds from what you see and hear; waiting for vital signs delays recognizing the threat.",
+   "Assuming anxiety in a pale, sweaty patient with severe dyspnea risks missing respiratory failure or a cardiac cause."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-002",
+  "d": "PRIMARY",
+  "topic": "General impression",
+  "concept": "primary-assessment-sequence",
+  "b": -1.5,
+  "type": "order",
+  "stem": "You form a general impression of a responsive 64-year-old man who complains of shortness of breath. There is no trauma and no external bleeding. Place the remaining steps of the primary assessment in the correct order.",
+  "opts": [
+   "Assess level of responsiveness using AVPU",
+   "Assess airway patency",
+   "Assess breathing rate, depth and effort",
+   "Assess circulation: pulse and skin color, temperature and condition",
+   "Make a transport priority decision"
+  ],
+  "key": "For a responsive medical patient the primary assessment runs mental status, airway, breathing, circulation, then a priority decision.",
+  "why": "Mental status tells you how well the patient can protect the airway, and each later step depends on the one before it: air must get in before breathing matters, and breathing before circulation. The priority decision comes last because it rests on everything found in the primary assessment.",
+  "src": "STD"
+ },
+ {
+  "id": "PA1-003",
+  "d": "PRIMARY",
+  "topic": "General impression",
+  "concept": "sick-not-sick",
+  "b": -0.5,
+  "type": "table",
+  "stem": "During your general impression, classify each patient by what you can see and hear as you approach.",
+  "cols": [
+   "Immediate life threat apparent",
+   "No immediate life threat apparent"
+  ],
+  "rows": [
+   [
+    "Adult slumped in a chair with gurgling respirations",
+    0
+   ],
+   [
+    "Toddler limp in a parent's arms, not looking at anyone",
+    0
+   ],
+   [
+    "Adult sitting calmly, speaking full sentences, pink skin, holding a sprained wrist",
+    1
+   ],
+   [
+    "Older adult with gray skin who moans but does not open her eyes",
+    0
+   ],
+   [
+    "Teenager walking around the scene, talking, with a small cut on one finger",
+    1
+   ]
+  ],
+  "key": "Gurgling, limpness, gray skin and decreased responsiveness are visible from a distance and mark a sick patient.",
+  "why": "The general impression relies on appearance, airway sounds, work of breathing and skin color. Patients who are alert, talking normally and well colored have no obvious immediate threat, though they still receive a full primary assessment.",
+  "src": "STD"
+ },
+ {
+  "id": "PA1-004",
+  "d": "PRIMARY",
+  "topic": "General impression",
+  "concept": "primary-still-required",
+  "b": -0.5,
+  "type": "mc",
+  "stem": "A 24-year-old man walks over to you after a car crash, talking clearly and saying he feels fine. He was the unrestrained driver, and the steering wheel is bent. What is the best next action?",
+  "opts": [
+   "Let him sit on the curb, since being able to walk and talk shows he has no serious injury.",
+   "Complete a primary assessment, because a reassuring general impression does not rule out a hidden life threat.",
+   "Skip the primary assessment and move directly to a detailed head-to-toe examination.",
+   "Obtain his medical history and medication list before assessing his breathing."
+  ],
+  "ans": 1,
+  "key": "Looking well is not the same as being well; every patient receives a primary assessment regardless of the general impression.",
+  "why": "The general impression guides urgency but is only a first look. Significant mechanism with a calm, ambulatory patient is a classic setup for a missed chest or abdominal injury, so the primary assessment is still completed.",
+  "wrong": [
+   "Walking and talking do not exclude serious injury; a bent steering wheel suggests significant force to the chest.",
+   "",
+   "A detailed exam never replaces the primary assessment, which must come first to find threats to airway, breathing and circulation.",
+   "History is gathered after life threats have been looked for and managed in the primary assessment."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-005",
+  "d": "PRIMARY",
+  "topic": "General impression",
+  "concept": "sick-not-sick",
+  "b": 0,
+  "type": "mc",
+  "stem": "You enter a bedroom where a 78-year-old woman lies in bed. Her skin is mottled, her eyes are closed, and she moans when you speak loudly but says no words. Her daughter says she was 'just tired' yesterday. Based on your general impression, how should you proceed?",
+  "opts": [
+   "Obtain a detailed history from the daughter before you begin examining the patient.",
+   "Assume she is sleeping deeply and let her rest while you obtain baseline vital signs.",
+   "Treat her as a high-priority patient and immediately assess her airway, breathing and circulation.",
+   "Classify her as stable because she still responds when you speak to her."
+  ],
+  "ans": 2,
+  "key": "Altered mental status with abnormal skin signs on first look makes a patient high priority until proven otherwise.",
+  "why": "Mottled skin and a patient who only moans to loud voice are red flags visible before any equipment is used. The correct response is to move immediately into the primary assessment and look for problems with airway, breathing and circulation.",
+  "wrong": [
+   "History can wait; mottled skin and decreased responsiveness suggest hypoxia or poor perfusion that must be addressed first.",
+   "A patient who only moans to a loud voice is not simply asleep; this is an altered mental status needing immediate assessment.",
+   "",
+   "Moaning to a loud voice is a decreased level of responsiveness, and mottling suggests poor perfusion; she is not stable."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-006",
+  "d": "PRIMARY",
+  "topic": "Level of consciousness",
+  "concept": "avpu-classification",
+  "b": -1,
+  "type": "mc",
+  "stem": "A 45-year-old man lies on a sidewalk with his eyes closed. He does not respond when you call his name loudly. When you pinch his trapezius muscle, he grimaces and moans. How should you classify his responsiveness on the AVPU scale?",
+  "opts": [
+   "V: responds to verbal stimulus",
+   "U: unresponsive to any stimulus",
+   "A: alert and awake",
+   "P: responds to painful stimulus"
+  ],
+  "ans": 3,
+  "key": "AVPU is scored by the least stimulus that produces a response; response only to pain is P.",
+  "why": "He showed no response to voice but reacted to a painful stimulus, which is the definition of P on the AVPU scale. Tracking AVPU over time helps you recognize improvement or deterioration.",
+  "wrong": [
+   "He did not respond to your voice; the moaning occurred only after a painful stimulus.",
+   "Grimacing and moaning to pain is a response, so he is not unresponsive.",
+   "An alert patient has eyes open and interacts without any stimulus.",
+   ""
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-007",
+  "d": "PRIMARY",
+  "topic": "Level of consciousness",
+  "concept": "avpu-classification",
+  "b": 0,
+  "type": "mc",
+  "stem": "A 70-year-old woman is sitting up with her eyes open, watching you as you enter. She answers your questions, but she believes it is 1998 and cannot say where she is. What is the most accurate description of her mental status?",
+  "opts": [
+   "Verbal on AVPU, because her answers are confused",
+   "Alert and oriented, because she answers questions",
+   "Alert on AVPU, and disoriented to time and place",
+   "Painful on AVPU, because she cannot follow the conversation"
+  ],
+  "ans": 2,
+  "key": "AVPU 'A' means awake and spontaneously interacting; orientation is assessed and documented separately.",
+  "why": "AVPU describes the stimulus needed to get a response, and she needs none. Her confusion about time and place is documented as disorientation, which is an important finding even in an alert patient.",
+  "wrong": [
+   "V describes a patient who responds only when spoken to; she is awake and interacting on her own.",
+   "Answering questions is not the same as being oriented; she is wrong about the year and her location.",
+   "",
+   "She responds without any stimulus; P is reserved for patients who respond only to pain."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-008",
+  "d": "PRIMARY",
+  "topic": "Level of consciousness",
+  "concept": "gcs-calculation",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "A 32-year-old man struck his head in a fall. His eyes open only when you press on his fingernail, he makes moaning sounds with no recognizable words, and he pulls his hand away from the pressure. What is his Glasgow Coma Scale score?",
+  "opts": [
+   "8",
+   "7",
+   "9",
+   "10"
+  ],
+  "ans": 0,
+  "key": "GCS adds eye (1-4), verbal (1-5) and motor (1-6); opening to pain, moaning and withdrawal total 8.",
+  "why": "Eyes open to pressure score 2, incomprehensible sounds score 2, and withdrawal from pressure scores 4, for a total of 8. A GCS of 8 or less means the patient may not be able to protect the airway.",
+  "wrong": [
+   "",
+   "This undercounts motor: pulling away from pressure is withdrawal (4), not abnormal flexion (3).",
+   "Moaning without words is incomprehensible sounds (2), not inappropriate words (3).",
+   "Eyes opening only to pressure score 2, and moaning scores 2; 10 overscores the eye and verbal responses."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-009",
+  "d": "PRIMARY",
+  "topic": "Level of consciousness",
+  "concept": "gcs-calculation",
+  "b": 1,
+  "type": "mc",
+  "stem": "A 19-year-old woman is found after a bicycle crash. Her eyes open when you speak to her. She answers in full sentences but is confused about what happened and what day it is. She squeezes and releases your hand when asked. What is her Glasgow Coma Scale score?",
+  "opts": [
+   "14",
+   "12",
+   "15",
+   "13"
+  ],
+  "ans": 3,
+  "key": "Eyes to voice (3), confused speech (4) and obeying commands (6) give a GCS of 13.",
+  "why": "Each component is scored on the best response: eye opening to voice is 3, confused conversation is 4, and obeying commands is 6. Recording the components, not just the total, makes later changes easier to interpret.",
+  "wrong": [
+   "Eyes that open only when spoken to score 3; spontaneous eye opening would be needed for 4.",
+   "Following a command is the best motor response (6); localizing pain would score 5.",
+   "A score of 15 requires spontaneous eye opening and oriented speech; she is confused and opens her eyes to voice.",
+   ""
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-010",
+  "d": "PRIMARY",
+  "topic": "Level of consciousness",
+  "concept": "loc-change-significance",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "A 50-year-old man with a head injury responded to your voice when you arrived. Ten minutes later in the ambulance, he responds only to a painful stimulus and his breathing has become irregular. What does this change most likely mean, and what should you do?",
+  "opts": [
+   "He is tired from the event; let him rest and recheck his mental status at the hospital.",
+   "He is deteriorating; reassess and support his airway and breathing and notify the receiving hospital early.",
+   "The change is expected after a head injury and does not alter your plan of care.",
+   "Complete the secondary assessment of his extremities before addressing his breathing."
+  ],
+  "ans": 1,
+  "key": "A falling level of responsiveness is a red flag for deterioration; return to airway and breathing and escalate care.",
+  "why": "A decline on AVPU, especially with a change in breathing pattern, suggests the brain injury is worsening and the patient may soon lose the ability to protect the airway. Repeat the primary assessment, manage airway and ventilation, and give the hospital early warning.",
+  "wrong": [
+   "A drop from V to P is a decline in mental status, not fatigue, and needs immediate reassessment.",
+   "",
+   "Declining responsiveness with irregular breathing suggests worsening brain injury and threatens the airway; care must change.",
+   "Life threats found on reassessment take priority over the secondary examination."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-011",
+  "d": "PRIMARY",
+  "topic": "Airway",
+  "concept": "manual-airway-maneuver",
+  "b": -0.5,
+  "type": "mc",
+  "stem": "A 40-year-old man fell from a ladder and is unresponsive on the ground with snoring respirations. Bystanders say he struck his head on the way down. What is the most appropriate way to open his airway?",
+  "opts": [
+   "Jaw-thrust maneuver while keeping his head and neck in line",
+   "Head tilt-chin lift with the neck fully extended",
+   "Insert an oral airway before any manual maneuver",
+   "Roll him onto his side into the recovery position"
+  ],
+  "ans": 0,
+  "key": "For an unresponsive patient with possible spinal injury, open the airway with a jaw thrust first.",
+  "why": "Snoring in an unresponsive patient means the tongue or soft tissue is partly blocking the airway. The jaw thrust lifts the tongue forward while limiting neck movement, which matters when the mechanism suggests spinal injury.",
+  "wrong": [
+   "",
+   "With suspected spinal injury the jaw thrust is tried first because it opens the airway with less neck movement.",
+   "An adjunct supports an airway that has already been opened manually; it does not replace positioning.",
+   "The recovery position moves the spine and does not reliably open the airway of a trauma patient."
+  ],
+  "src": "AHA"
+ },
+ {
+  "id": "PA1-012",
+  "d": "PRIMARY",
+  "topic": "Airway",
+  "concept": "manual-airway-maneuver",
+  "b": 1.5,
+  "type": "mc",
+  "stem": "An unresponsive 30-year-old woman was thrown from a horse. You have repositioned her twice with a jaw thrust and inserted an oral airway, but you still get no chest rise with the BVM. What should you do next?",
+  "opts": [
+   "Keep the jaw thrust and squeeze the bag harder to overcome the resistance.",
+   "Use a head tilt-chin lift, because an open airway takes priority over possible spinal injury.",
+   "Stop ventilating and apply a cervical collar before trying again.",
+   "Switch to mouth-to-mask ventilation while keeping the same jaw thrust."
+  ],
+  "ans": 1,
+  "key": "If a jaw thrust cannot open the airway of a trauma patient, use a head tilt-chin lift; the airway comes first.",
+  "why": "AHA guidance is to use the jaw thrust when spinal injury is suspected but to switch to a head tilt-chin lift if the jaw thrust does not open the airway. A patient who cannot be ventilated will die of hypoxia regardless of a spinal injury.",
+  "wrong": [
+   "More force does not open a blocked airway and increases gastric inflation.",
+   "",
+   "A collar does not open the airway, and pausing ventilation worsens hypoxia.",
+   "Changing the ventilation device does not correct the failure to open the airway."
+  ],
+  "src": "AHA"
+ },
+ {
+  "id": "PA1-013",
+  "d": "PRIMARY",
+  "topic": "Airway",
+  "concept": "suction-and-drainage",
+  "b": 0,
+  "type": "order",
+  "stem": "A 55-year-old man found on the floor is unresponsive, is not breathing adequately, and has vomit in his mouth. He has a pulse, and there is no suspected trauma. Place your airway and ventilation steps in the correct order.",
+  "opts": [
+   "Open the airway with a head tilt-chin lift",
+   "Suction the vomit from the mouth",
+   "Insert an oropharyngeal airway",
+   "Begin BVM ventilation with supplemental oxygen"
+  ],
+  "key": "Open the airway, clear it, hold it open with an adjunct, then ventilate.",
+  "why": "Positioning opens the airway and lets you see and reach the vomit. Suctioning before ventilation keeps you from forcing vomit into the lungs, and an oral airway helps maintain patency during BVM ventilation.",
+  "src": "STD"
+ },
+ {
+  "id": "PA1-014",
+  "d": "PRIMARY",
+  "topic": "Airway",
+  "concept": "opa-npa-selection",
+  "b": -0.5,
+  "type": "mc",
+  "stem": "You are inserting a correctly sized oropharyngeal airway in a 62-year-old woman who responds only to pain after a seizure. As the airway passes her tongue, she gags and begins to retch. What should you do?",
+  "opts": [
+   "Push the OPA the rest of the way in to finish the insertion.",
+   "Tape the OPA in place so that she cannot expel it.",
+   "Remove the OPA, be ready to suction, and consider a nasopharyngeal airway instead.",
+   "Switch to a smaller OPA and reinsert it right away."
+  ],
+  "ans": 2,
+  "key": "An OPA is only for patients without a gag reflex; if they gag, remove it and use an NPA if one is needed.",
+  "why": "A gag response shows she still has protective airway reflexes, so an OPA will provoke vomiting. An NPA is usually better tolerated in a patient with a gag reflex, and suction should be ready in case she vomits.",
+  "wrong": [
+   "Forcing an OPA in a patient with a gag reflex can cause vomiting and aspiration.",
+   "Securing an OPA against a gag reflex does not make it tolerable and still risks vomiting.",
+   "",
+   "The problem is the intact gag reflex, not the size; any OPA can trigger gagging."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-015",
+  "d": "PRIMARY",
+  "topic": "Airway",
+  "concept": "opa-npa-selection",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "An unresponsive 28-year-old man was struck in the face with a bat. He has bruising around both eyes, clear fluid draining from his nose, and snoring respirations that improve with a jaw thrust. He has no gag reflex. Which airway adjunct is most appropriate?",
+  "opts": [
+   "A nasopharyngeal airway sized from the tip of the nose to the earlobe",
+   "No adjunct, because airway adjuncts are not used in head injury",
+   "A nasopharyngeal airway, because he may regain a gag reflex later",
+   "An oropharyngeal airway sized from the corner of the mouth to the earlobe"
+  ],
+  "ans": 3,
+  "key": "Avoid an NPA with signs of a skull base fracture; an OPA suits an unresponsive patient without a gag reflex.",
+  "why": "Raccoon eyes and clear fluid from the nose suggest a basilar skull fracture, a reason to avoid inserting a nasal airway. Because he has no gag reflex, a correctly sized OPA will hold the tongue forward while you maintain the jaw thrust.",
+  "wrong": [
+   "Clear nasal fluid and bruising around the eyes suggest a skull base fracture, where an NPA should be avoided.",
+   "Adjuncts are appropriate in head injury; the choice depends on the gag reflex and the facial injuries.",
+   "He has no gag reflex now, and the possible skull base fracture makes the nasal route the riskier choice.",
+   ""
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-016",
+  "d": "PRIMARY",
+  "topic": "Airway",
+  "concept": "opa-npa-selection",
+  "b": 0,
+  "type": "mr",
+  "stem": "You decide to insert a nasopharyngeal airway in a 47-year-old man who responds only to pain and still has a gag reflex. He has no facial trauma. Select TWO correct elements of this procedure.",
+  "opts": [
+   "Measure the airway from the tip of the nose to the earlobe",
+   "Lubricate the airway with a water-soluble lubricant",
+   "Lubricate the airway with petroleum-based jelly",
+   "Rotate the airway 180 degrees after it passes the tongue",
+   "Push through any resistance until the flange is seated"
+  ],
+  "ans": [
+   0,
+   1
+  ],
+  "key": "Size an NPA from nose tip to earlobe, lubricate with water-soluble gel, and never force it.",
+  "why": "A correctly measured, well-lubricated NPA slides along the floor of the nasal passage with little trauma. Water-soluble lubricant is used because petroleum products can injure tissue, and resistance means trying the other nostril rather than forcing the device.",
+  "wrong": [
+   "",
+   "",
+   "Petroleum-based lubricants can damage tissue and are not used on airway devices.",
+   "Rotation is an OPA insertion technique, not part of NPA insertion.",
+   "If you meet resistance, withdraw and try the other nostril; forcing it causes bleeding."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-017",
+  "d": "PRIMARY",
+  "topic": "Airway",
+  "concept": "suction-and-drainage",
+  "b": -1,
+  "type": "mc",
+  "stem": "You open the airway of an unresponsive 35-year-old woman and hear gurgling with each breath. What is your immediate next action?",
+  "opts": [
+   "Begin BVM ventilations at 1 breath every 6 seconds",
+   "Apply a nonrebreather mask at 15 liters per minute",
+   "Suction the mouth and oropharynx until the gurgling clears",
+   "Count her respiratory rate for a full 30 seconds"
+  ],
+  "ans": 2,
+  "key": "Gurgling means fluid in the upper airway; suction it before anything else.",
+  "why": "Gurgling signals blood, vomit or secretions in the upper airway that can be aspirated. Suctioning restores a clear airway so breathing can then be assessed and supported.",
+  "wrong": [
+   "Ventilating through fluid pushes it into the lungs; the airway must be cleared first.",
+   "Oxygen cannot reach the lungs through a fluid-filled airway.",
+   "",
+   "Gurgling is an airway problem to treat now, not something to measure first."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-018",
+  "d": "PRIMARY",
+  "topic": "Airway",
+  "concept": "suction-and-drainage",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "A 60-year-old man with a known seizure disorder is postictal, responds only to pain, and is breathing adequately. He begins vomiting large amounts, and your suction cannot keep up. There is no suspected trauma. What should you do?",
+  "opts": [
+   "Roll him onto his side so the vomit drains while you continue to suction.",
+   "Insert an oral airway to hold the mouth open for drainage.",
+   "Begin BVM ventilations to push air past the vomit.",
+   "Keep him supine with a chin lift until the vomiting stops."
+  ],
+  "ans": 0,
+  "key": "When suction cannot keep up, turn the patient on the side so gravity drains the airway.",
+  "why": "Large-volume vomiting can overwhelm a suction unit. Turning a non-trauma patient onto the side lets gravity clear the mouth while suction continues, reducing the risk of aspiration.",
+  "wrong": [
+   "",
+   "An OPA does not drain vomit and will stimulate more vomiting in a patient with a gag reflex.",
+   "He is breathing adequately, and ventilating through vomit forces it into the lungs.",
+   "Leaving him supine during ongoing vomiting allows the vomit to be aspirated."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-019",
+  "d": "PRIMARY",
+  "topic": "Airway",
+  "concept": "fbao-2025",
+  "b": 0,
+  "type": "mc",
+  "stem": "In a restaurant, a 52-year-old man stands clutching his throat. He cannot speak or cough, and his face is turning dusky. He nods when you ask if he is choking. What should you do?",
+  "opts": [
+   "Give abdominal thrusts only, repeating them until the object comes out.",
+   "Perform a blind finger sweep of his mouth to try to remove the object.",
+   "Encourage him to keep trying to cough while you stand by and watch.",
+   "Give repeated cycles of 5 back blows followed by 5 abdominal thrusts until the object comes out or he becomes unresponsive."
+  ],
+  "ans": 3,
+  "key": "2025 AHA: for a responsive choking adult with severe obstruction, alternate 5 back blows and 5 abdominal thrusts.",
+  "why": "Inability to speak or cough with a dusky color indicates severe airway obstruction. The 2025 AHA guidelines recommend cycles of 5 back blows and 5 abdominal thrusts for adults and children until the object is expelled.",
+  "wrong": [
+   "2025 AHA guidance for a responsive choking adult alternates 5 back blows with 5 abdominal thrusts.",
+   "Blind finger sweeps can push the object deeper; remove only an object you can see.",
+   "He cannot cough or speak, so this is a severe obstruction that needs immediate action.",
+   ""
+  ],
+  "src": "AHA"
+ },
+ {
+  "id": "PA1-020",
+  "d": "PRIMARY",
+  "topic": "Airway",
+  "concept": "fbao-2025",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "A woman who is 34 weeks pregnant is choking on food at a family party. She cannot speak or cough. She is standing, and her pregnant abdomen prevents you from performing abdominal thrusts. What technique should you use?",
+  "opts": [
+   "Alternate 5 back blows with 5 abdominal thrusts",
+   "Alternate 5 back blows with 5 chest thrusts",
+   "Give abdominal thrusts placed lower than usual",
+   "Lay her supine and give abdominal thrusts"
+  ],
+  "ans": 1,
+  "key": "2025 AHA: in late pregnancy, or when you cannot encircle the abdomen, use back blows with chest thrusts.",
+  "why": "Chest thrusts are the alternative when abdominal thrusts are not possible or safe, such as late pregnancy. They are combined with back blows in repeated cycles until the object is expelled or she becomes unresponsive.",
+  "wrong": [
+   "Abdominal thrusts are not used in late pregnancy; chest thrusts replace them.",
+   "",
+   "A lower hand position increases the risk to the uterus and fetus and is not recommended.",
+   "Abdominal thrusts are avoided in late pregnancy whether she is standing or lying down."
+  ],
+  "src": "AHA"
+ },
+ {
+  "id": "PA1-021",
+  "d": "PRIMARY",
+  "topic": "Airway",
+  "concept": "fbao-2025",
+  "b": 0,
+  "type": "mc",
+  "stem": "A father hands you his 7-month-old daughter, who was eating small pieces of fruit. She is awake, has a weak silent cry, cannot cough, and is turning blue. What should you do?",
+  "opts": [
+   "Give 5 back blows then 5 chest thrusts with the heel of one hand, and repeat.",
+   "Give 5 back blows then 5 abdominal thrusts, and repeat.",
+   "Perform a blind finger sweep of her mouth to find the food.",
+   "Hold her upright and let her try to cough it out on her own."
+  ],
+  "ans": 0,
+  "key": "2025 AHA: for a choking infant, alternate 5 back blows and 5 chest thrusts; no abdominal thrusts.",
+  "why": "A silent cry, no effective cough and cyanosis mean severe obstruction. Infant foreign-body removal uses back blows with the infant head-down along your forearm, then chest thrusts, repeated until the object comes out or the infant becomes unresponsive.",
+  "wrong": [
+   "",
+   "Abdominal thrusts are not used in infants because of the risk of injuring abdominal organs.",
+   "Blind sweeps can push the object deeper; remove only an object you can see.",
+   "An infant who cannot cry or cough has a severe obstruction and needs back blows and chest thrusts now."
+  ],
+  "src": "AHA"
+ },
+ {
+  "id": "PA1-022",
+  "d": "PRIMARY",
+  "topic": "Airway",
+  "concept": "fbao-2025",
+  "b": -1,
+  "type": "mc",
+  "stem": "A 40-year-old woman began choking on a piece of chicken. She is coughing forcefully, is red in the face, and says, 'I think it's stuck.' Her lips are pink. What is the most appropriate action?",
+  "opts": [
+   "Give her 5 back blows right away to dislodge the food.",
+   "Encourage her to keep coughing and watch closely for signs of severe obstruction.",
+   "Give abdominal thrusts until she stops coughing.",
+   "Reach into her mouth and sweep out any food you can feel."
+  ],
+  "ans": 1,
+  "key": "A patient who can speak and cough forcefully has a mild obstruction; support the cough and watch for worsening.",
+  "why": "Speaking and forceful coughing show that air is moving past the obstruction. The best help is to let her cough while you monitor for a weakening cough, inability to speak or cyanosis, which would call for back blows and abdominal thrusts.",
+  "wrong": [
+   "Back blows and thrusts are for severe obstruction; her forceful cough is clearing the airway effectively.",
+   "",
+   "Abdominal thrusts are not indicated while she can speak and cough forcefully.",
+   "Reaching into the mouth interferes with an effective cough and can push the food deeper."
+  ],
+  "src": "AHA"
+ },
+ {
+  "id": "PA1-023",
+  "d": "PRIMARY",
+  "topic": "Airway",
+  "concept": "upper-airway-swelling",
+  "b": 1,
+  "type": "mc",
+  "stem": "A 4-year-old boy has a sudden high fever and is sitting upright leaning forward, drooling, with soft inspiratory stridor. He is alert and frightened on his mother's lap. What is the most appropriate approach?",
+  "opts": [
+   "Lay him supine so you can look in his mouth with a tongue blade.",
+   "Insert an oral airway to keep his airway open during transport.",
+   "Keep him calm on his mother's lap, offer oxygen as tolerated, and avoid examining his throat.",
+   "Separate him from his mother so you can hold a mask firmly on his face."
+  ],
+  "ans": 2,
+  "key": "Suspected upper-airway swelling in a child: keep calm, position of comfort, oxygen as tolerated, nothing in the mouth.",
+  "why": "Sudden fever, drooling, tripod positioning and stridor suggest severe swelling above the vocal cords. Crying and agitation can turn a partial obstruction into a complete one, so care focuses on calm, comfort, gentle oxygen and prompt transport.",
+  "wrong": [
+   "Agitating him or inspecting the throat can trigger complete obstruction of a swollen upper airway.",
+   "An OPA is for unresponsive patients without a gag reflex and could provoke complete obstruction here.",
+   "",
+   "Separation and forcing a mask increase distress, which can worsen the obstruction."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-024",
+  "d": "PRIMARY",
+  "topic": "Airway",
+  "concept": "airway-sound-to-action",
+  "b": -0.5,
+  "type": "table",
+  "stem": "During the primary assessment of several patients, match each airway finding to the most appropriate immediate response.",
+  "cols": [
+   "Reposition the airway manually",
+   "Suction the airway",
+   "Treat as upper-airway narrowing and prepare for rapid deterioration"
+  ],
+  "rows": [
+   [
+    "Snoring respirations in an unresponsive adult",
+    0
+   ],
+   [
+    "Gurgling with each breath in an unresponsive adult",
+    1
+   ],
+   [
+    "High-pitched inspiratory stridor and a hoarse voice after a bee sting",
+    2
+   ],
+   [
+    "Throat tightness and swollen lips minutes after eating shrimp",
+    2
+   ],
+   [
+    "Bubbling sounds from blood in the mouth after a facial injury",
+    1
+   ]
+  ],
+  "key": "Snoring means reposition, gurgling means suction, and stridor or throat tightness means upper-airway narrowing.",
+  "why": "Each airway sound points to a cause: snoring to soft tissue blocking the airway, gurgling to fluid, and stridor or hoarseness to swelling or narrowing of the upper airway. Swelling from an allergic reaction can progress quickly to complete obstruction.",
+  "src": "STD"
+ },
+ {
+  "id": "PA1-025",
+  "d": "PRIMARY",
+  "topic": "Breathing",
+  "concept": "adequate-vs-inadequate-ventilation",
+  "b": 0,
+  "type": "mc",
+  "stem": "A 67-year-old man is lethargic and responds only to a loud voice. His respirations are 8 per minute and shallow, with minimal chest rise. SpO2 is 86% and pulse is 108. What is the most appropriate intervention?",
+  "opts": [
+   "Apply a nonrebreather mask at 15 liters per minute",
+   "Apply a nasal cannula at 4 liters per minute and monitor",
+   "Place him in the recovery position and recheck in 5 minutes",
+   "Assist his ventilations with a BVM attached to high-flow oxygen"
+  ],
+  "ans": 3,
+  "key": "Inadequate rate or depth of breathing calls for ventilation with a BVM, not just an oxygen mask.",
+  "why": "A slow, shallow rate with minimal chest rise and altered mental status means he is not moving enough air. Assisted ventilation with a BVM and oxygen improves both ventilation and oxygenation, which a mask alone cannot do.",
+  "wrong": [
+   "A nonrebreather only enriches the air he moves himself; at 8 shallow breaths per minute he needs ventilation.",
+   "Low-flow oxygen does nothing to correct inadequate rate and depth of breathing.",
+   "Inadequate breathing is a life threat to correct now, not to observe.",
+   ""
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-026",
+  "d": "PRIMARY",
+  "topic": "Breathing",
+  "concept": "adequate-vs-inadequate-ventilation",
+  "b": -1,
+  "type": "mc",
+  "stem": "A 30-year-old woman is anxious after a minor fender-bender. She is alert and speaking in full sentences, with respirations of 24, deep and equal chest rise, clear lung sounds, and SpO2 of 98%. How should you classify her breathing?",
+  "opts": [
+   "Inadequate, because the rate is above 20; begin BVM ventilation.",
+   "Inadequate; apply CPAP because of the elevated respiratory rate.",
+   "Adequate; she needs no ventilatory assistance, and you should keep monitoring her.",
+   "Respiratory failure; prepare to assist her with an airway adjunct."
+  ],
+  "ans": 2,
+  "key": "Judge breathing by rate, depth, effort and mental status together, not by rate alone.",
+  "why": "Good chest rise, normal speech, clear lungs and a normal SpO2 show adequate ventilation despite a slightly fast rate. Ongoing monitoring is appropriate because her condition can change.",
+  "wrong": [
+   "A mildly fast rate with good depth, clear speech and normal SpO2 is adequate; BVM is not needed.",
+   "CPAP is for moderate to severe respiratory distress such as pulmonary edema, not anxiety with normal oxygenation.",
+   "",
+   "She shows no signs of failure: she is alert, speaking easily and well oxygenated."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-027",
+  "d": "PRIMARY",
+  "topic": "Breathing",
+  "concept": "adequate-vs-inadequate-ventilation",
+  "b": 0.5,
+  "type": "mr",
+  "stem": "You are assessing a 58-year-old man with shortness of breath. Select THREE findings that indicate inadequate breathing requiring ventilatory support.",
+  "opts": [
+   "Shallow breaths with minimal chest rise",
+   "Increasing drowsiness as you assess him",
+   "Respiratory rate of 6 per minute",
+   "Speaking in complete sentences",
+   "Respiratory rate of 22 with full chest expansion",
+   "Warm, pink, dry skin"
+  ],
+  "ans": [
+   0,
+   1,
+   2
+  ],
+  "key": "Shallow breathing, a very slow rate and worsening mental status signal inadequate ventilation.",
+  "why": "Ventilation depends on both rate and depth; either too slow or too shallow fails to move enough air. Increasing drowsiness suggests rising carbon dioxide or falling oxygen, which confirms the need for assisted ventilation.",
+  "wrong": [
+   "",
+   "",
+   "",
+   "Speaking in full sentences shows he is moving enough air to talk.",
+   "A slightly elevated rate with full expansion indicates adequate tidal volume.",
+   "Normal skin signs suggest adequate oxygenation and perfusion."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-028",
+  "d": "PRIMARY",
+  "topic": "Breathing",
+  "concept": "bvm-technique",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "You are ventilating an apneic 50-year-old man who has a pulse, using a BVM. Each squeeze produces no visible chest rise, and you hear air escaping around the mask. What should you do first?",
+  "opts": [
+   "Reposition his head and reseal the mask, using a two-rescuer technique if available.",
+   "Squeeze the bag faster to make up for the volume that is lost.",
+   "Switch to a nonrebreather mask at 15 liters per minute.",
+   "Continue as you are, since some air is still reaching his lungs."
+  ],
+  "ans": 0,
+  "key": "No chest rise with a BVM means fix the airway position and mask seal first; two-rescuer BVM seals best.",
+  "why": "Air escaping around the mask with no chest rise points to a poor seal or a poorly opened airway. Repositioning the head, reseating the mask and having one rescuer hold the mask with both hands usually restores effective ventilation.",
+  "wrong": [
+   "",
+   "Faster squeezing does not fix a leak and causes excessive ventilation and gastric inflation.",
+   "An apneic patient cannot draw oxygen from a nonrebreather; he needs ventilation.",
+   "No chest rise means the ventilation is ineffective and must be corrected now."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-029",
+  "d": "PRIMARY",
+  "topic": "Breathing",
+  "concept": "bvm-technique",
+  "b": 1.5,
+  "type": "mc",
+  "stem": "While ventilating a 45-year-old woman with a BVM, you notice her upper abdomen becoming more and more distended. Her chest does rise with each breath. What adjustment is most appropriate?",
+  "opts": [
+   "Increase the rate to 20 breaths per minute to improve oxygenation.",
+   "Press firmly on her upper abdomen to push out the trapped air.",
+   "Stop ventilating until the distension goes away on its own.",
+   "Give each breath over about 1 second with just enough volume to make the chest rise."
+  ],
+  "ans": 3,
+  "key": "Gastric distension comes from too much volume or force; give 1-second breaths just large enough for chest rise.",
+  "why": "Air enters the stomach when breaths are too large or too forceful. Delivering each breath over about 1 second with only visible chest rise limits gastric inflation, vomiting and aspiration.",
+  "wrong": [
+   "Faster rates add gastric inflation and raise chest pressure, which reduces blood return to the heart.",
+   "Pressing on a distended stomach can cause vomiting and aspiration.",
+   "Stopping ventilation in a patient who needs it causes hypoxia.",
+   ""
+  ],
+  "src": "AHA"
+ },
+ {
+  "id": "PA1-030",
+  "d": "PRIMARY",
+  "topic": "Breathing",
+  "concept": "bvm-technique",
+  "b": -0.5,
+  "type": "mc",
+  "stem": "You and your partner are ventilating a 72-year-old man who has a pulse but is breathing only 4 times per minute. He has a full beard and no teeth. Which approach gives the most effective BVM ventilation?",
+  "opts": [
+   "One EMT ventilates alone so the other can obtain vital signs.",
+   "One EMT seals the mask with both hands while the other squeezes the bag.",
+   "Hold the mask loosely to avoid pressing on his face.",
+   "Use the smallest mask so it fits inside his beard."
+  ],
+  "ans": 1,
+  "key": "Two-rescuer BVM, with one rescuer sealing the mask with both hands, gives the most reliable ventilation.",
+  "why": "Beards and missing teeth make a mask seal difficult. A two-handed seal by one rescuer while the other squeezes the bag overcomes most leaks; an oral airway can also help keep the airway open.",
+  "wrong": [
+   "One-person BVM often leaks, especially with a beard and no teeth; two rescuers ventilate more effectively.",
+   "",
+   "A loose mask leaks air and prevents adequate chest rise.",
+   "An undersized mask will not cover both the mouth and nose and will leak."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-031",
+  "d": "PRIMARY",
+  "topic": "Breathing",
+  "concept": "ventilation-rates-by-age",
+  "b": -0.5,
+  "type": "mc",
+  "stem": "After a prolonged seizure, a 38-year-old man has a strong carotid pulse but only occasional gasps. Your partner connects oxygen to the BVM. At what rate should you ventilate him?",
+  "opts": [
+   "1 breath every 6 seconds",
+   "1 breath every 2-3 seconds",
+   "1 breath every 3-4 seconds",
+   "1 breath every 10 seconds"
+  ],
+  "ans": 0,
+  "key": "Adult with a pulse and inadequate breathing: 1 breath every 6 seconds, each over about 1 second with chest rise.",
+  "why": "Occasional gasps are not adequate breathing. AHA recommends 1 breath every 6 seconds (10 per minute) for an adult with a pulse, avoiding excessive ventilation.",
+  "wrong": [
+   "",
+   "This is the rate for an infant or child with a pulse; it is too fast for an adult.",
+   "This is faster than the adult recommendation and risks excessive ventilation.",
+   "This is too slow to provide adequate ventilation for an adult."
+  ],
+  "src": "AHA"
+ },
+ {
+  "id": "PA1-032",
+  "d": "PRIMARY",
+  "topic": "Breathing",
+  "concept": "ventilation-rates-by-age",
+  "b": 0.5,
+  "type": "table",
+  "stem": "Each patient below has a pulse but is not breathing adequately. Classify the correct rescue breathing rate for each patient.",
+  "cols": [
+   "1 breath every 6 seconds",
+   "1 breath every 2-3 seconds"
+  ],
+  "rows": [
+   [
+    "45-year-old man after a heroin overdose",
+    0
+   ],
+   [
+    "4-year-old girl pulled from a swimming pool",
+    1
+   ],
+   [
+    "8-month-old infant with severe bronchiolitis",
+    1
+   ],
+   [
+    "80-year-old woman after a large stroke",
+    0
+   ]
+  ],
+  "key": "Rescue breathing with a pulse: adults 1 breath every 6 seconds; infants and children 1 breath every 2-3 seconds.",
+  "why": "Infants and children have higher metabolic demands and normal respiratory rates, so they are ventilated faster. Adults are ventilated at 10 breaths per minute to avoid hyperventilation.",
+  "src": "AHA"
+ },
+ {
+  "id": "PA1-033",
+  "d": "PRIMARY",
+  "topic": "Breathing",
+  "concept": "opioid-ventilate-first",
+  "b": 0,
+  "type": "mc",
+  "stem": "A 26-year-old man is found in a gas station restroom. He responds only to pain, has pinpoint pupils, respirations of 4 per minute, cyanotic lips, and a radial pulse of 58. A syringe is on the floor. What is your first priority?",
+  "opts": [
+   "Give naloxone and wait for him to start breathing",
+   "Open his airway and begin BVM ventilations with oxygen",
+   "Apply a nonrebreather mask at 15 liters per minute",
+   "Check his blood glucose level before treatment"
+  ],
+  "ans": 1,
+  "key": "In suspected opioid overdose with a pulse, ventilate first; naloxone is given in addition, not instead.",
+  "why": "Opioid toxicity kills through respiratory depression and hypoxia. AHA guidance is to open the airway and support ventilation first, then give naloxone while continuing to ventilate.",
+  "wrong": [
+   "Naloxone takes time to work; ventilation must start first to correct hypoxia.",
+   "",
+   "Four breaths per minute cannot draw in enough oxygen; he needs ventilation.",
+   "Glucose can be checked later; inadequate breathing is the immediate life threat."
+  ],
+  "src": "AHA"
+ },
+ {
+  "id": "PA1-034",
+  "d": "PRIMARY",
+  "topic": "Breathing",
+  "concept": "opioid-ventilate-first",
+  "b": 0.5,
+  "type": "order",
+  "stem": "A 41-year-old woman with a suspected opioid overdose has a pulse, responds only to pain, and is breathing 3 times per minute. Place your initial actions in the correct order.",
+  "opts": [
+   "Open the airway with a head tilt-chin lift",
+   "Begin BVM ventilations with supplemental oxygen",
+   "Give naloxone per protocol while ventilation continues",
+   "Reassess breathing and mental status after naloxone"
+  ],
+  "key": "Opioid emergency with a pulse: open the airway, ventilate, give naloxone, then reassess.",
+  "why": "Ventilation corrects the hypoxia that makes opioid overdose deadly, so it comes before naloxone. Naloxone may restore breathing, but reassessment is needed because its effect can wear off before the opioid's does.",
+  "src": "AHA"
+ },
+ {
+  "id": "PA1-035",
+  "d": "PRIMARY",
+  "topic": "Breathing",
+  "concept": "asthma-copd-chf-primary",
+  "b": 1.5,
+  "type": "mc",
+  "stem": "A 16-year-old girl with asthma had loud wheezing when you arrived. Despite using her inhaler, she is now drowsy, her wheezing has become very faint, and her chest barely moves. SpO2 is 85%. What is the best interpretation and action?",
+  "opts": [
+   "Her bronchospasm is improving; continue to observe her on a nasal cannula.",
+   "She is tired but stable; let her rest in a position of comfort.",
+   "Impending respiratory failure; assist ventilations with a BVM and oxygen and transport immediately.",
+   "She is having a panic attack; coach her to slow her breathing."
+  ],
+  "ans": 2,
+  "key": "A quiet chest with drowsiness in asthma signals respiratory failure; assist ventilation.",
+  "why": "Wheezing requires air movement; when it fades while the patient becomes drowsy, very little air is moving. This is a pre-arrest pattern that requires assisted ventilation and rapid transport.",
+  "wrong": [
+   "Fainter wheezing with drowsiness and poor chest movement means less air movement, not improvement.",
+   "Drowsiness and an SpO2 of 85% indicate failing ventilation, not stability.",
+   "",
+   "Her findings show severe asthma with failing ventilation, not anxiety."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-036",
+  "d": "PRIMARY",
+  "topic": "Breathing",
+  "concept": "asthma-copd-chf-primary",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "A 74-year-old woman with heart failure woke up gasping. She sits upright, alert and anxious, with crackles in both lungs and pink frothy sputum. BP 172/98, pulse 112, respirations 30, SpO2 87%. She follows commands. What is the most appropriate breathing intervention?",
+  "opts": [
+   "Lay her flat so that she is more comfortable",
+   "Begin BVM ventilation at 1 breath every 6 seconds",
+   "Apply a nasal cannula at 2 liters per minute",
+   "Apply CPAP per protocol while monitoring her mental status and blood pressure"
+  ],
+  "ans": 3,
+  "key": "An alert patient in severe distress from pulmonary edema, with adequate BP, benefits from CPAP.",
+  "why": "Crackles, frothy sputum and severe dyspnea in a heart failure patient suggest pulmonary edema. CPAP keeps the alveoli open and improves oxygenation in a patient who is alert, can follow commands and has an adequate blood pressure.",
+  "wrong": [
+   "Lying flat worsens pulmonary edema and breathing effort; she should stay upright.",
+   "She is alert and breathing on her own; CPAP supports her breathing without taking it over.",
+   "Low-flow oxygen is not enough for severe distress and hypoxia from pulmonary edema.",
+   ""
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-037",
+  "d": "PRIMARY",
+  "topic": "Breathing",
+  "concept": "asthma-copd-chf-primary",
+  "b": 1.5,
+  "type": "mr",
+  "stem": "You are considering CPAP for a 69-year-old man in respiratory distress from suspected pulmonary edema. Select TWO findings that make CPAP inappropriate and call for a different approach.",
+  "opts": [
+   "He now responds only to painful stimuli",
+   "His blood pressure is 76/48",
+   "Crackles are heard in both lungs",
+   "SpO2 is 88% on room air",
+   "Respirations are 28 and labored while he stays alert"
+  ],
+  "ans": [
+   0,
+   1
+  ],
+  "key": "CPAP requires a patient alert enough to protect the airway and a blood pressure that can tolerate it.",
+  "why": "A patient who responds only to pain cannot protect the airway or cooperate with a sealed mask and needs BVM ventilation instead. CPAP raises chest pressure and can lower blood pressure further, so marked hypotension is a reason not to use it.",
+  "wrong": [
+   "",
+   "",
+   "Crackles from pulmonary edema are a reason to use CPAP, not to avoid it.",
+   "Hypoxia from pulmonary edema is an indication for CPAP.",
+   "An alert patient with labored breathing is the typical CPAP candidate."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-038",
+  "d": "PRIMARY",
+  "topic": "Breathing",
+  "concept": "peds-distress-vs-failure",
+  "b": 0,
+  "type": "mc",
+  "stem": "A 3-year-old boy with a cough and fever sits on his mother's lap. He is alert and fussy, with nasal flaring, intercostal retractions, respirations of 44, and pink skin. SpO2 is 93%. How should you classify his condition?",
+  "opts": [
+   "Respiratory failure; begin BVM ventilation immediately.",
+   "Normal for his age; no intervention is needed.",
+   "Respiratory distress; he is compensating, so keep him calm and give oxygen as tolerated.",
+   "Respiratory arrest; begin rescue breathing right away."
+  ],
+  "ans": 2,
+  "key": "Increased work of breathing in an alert child is distress; altered mental status or slowing breathing marks failure.",
+  "why": "An alert, interactive child with good color who is working hard to breathe is compensating. Keeping him calm with his parent and giving oxygen as tolerated supports him while you watch for signs of failure.",
+  "wrong": [
+   "He is alert and pink and still compensating; BVM is for failure signs such as lethargy or slowing breathing.",
+   "Retractions, nasal flaring and a rate of 44 show increased work of breathing.",
+   "",
+   "He is alert and breathing on his own, so he is not in arrest."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-039",
+  "d": "PRIMARY",
+  "topic": "Breathing",
+  "concept": "peds-distress-vs-failure",
+  "b": 1,
+  "type": "mr",
+  "stem": "A 2-year-old girl with asthma had retractions and nasal flaring 15 minutes ago. Select TWO findings that indicate she has progressed from respiratory distress to respiratory failure.",
+  "opts": [
+   "She has become limp and no longer reacts to your examination",
+   "Her respiratory rate has slowed from 50 to 14 while her effort stays poor",
+   "She is crying loudly and pushing the mask away",
+   "She has intercostal retractions with a rate of 46",
+   "She is clinging to her father and watching you closely"
+  ],
+  "ans": [
+   0,
+   1
+  ],
+  "key": "Decreasing responsiveness and a slowing respiratory rate in a struggling child mean respiratory failure.",
+  "why": "A child in failure is too tired or hypoxic to keep up the work of breathing, so mental status drops and the rate slows. These signs require assisted ventilation, whereas crying and fighting the mask are reassuring.",
+  "wrong": [
+   "",
+   "",
+   "Vigorous crying and resistance show good mental status and air movement.",
+   "Retractions with a fast rate are signs of distress; she is still compensating.",
+   "Alertness and interaction show she is still compensating."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-040",
+  "d": "PRIMARY",
+  "topic": "Oxygenation",
+  "concept": "oxygen-device-choice",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "A 60-year-old man has severe shortness of breath from pneumonia. He is alert, breathing 26 times per minute with good chest rise, and speaking in short sentences. SpO2 is 84%. Which oxygen delivery is most appropriate?",
+  "opts": [
+   "Nonrebreather mask at 12-15 liters per minute, then titrate to his SpO2 target per protocol",
+   "Nasal cannula at 15 liters per minute to maximize delivered oxygen",
+   "BVM ventilation at 1 breath every 6 seconds with high-flow oxygen",
+   "No oxygen until a second SpO2 reading confirms the low value"
+  ],
+  "ans": 0,
+  "key": "Adequate breathing with significant hypoxia calls for high-concentration oxygen by mask, titrated to target.",
+  "why": "His breathing rate and depth are adequate, so the problem is oxygenation, not ventilation. A nonrebreather delivers a high oxygen concentration, and the flow or device can be adjusted once his SpO2 reaches the target.",
+  "wrong": [
+   "",
+   "A nasal cannula is a low-flow device; flows above about 6 L/min add little and irritate the nose.",
+   "He is breathing adequately; he needs supplemental oxygen, not assisted ventilation.",
+   "An SpO2 of 84% with distress needs oxygen now; waiting allows hypoxia to worsen."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-041",
+  "d": "PRIMARY",
+  "topic": "Oxygenation",
+  "concept": "oxygen-device-choice",
+  "b": -1,
+  "type": "mc",
+  "stem": "A 35-year-old woman twisted her ankle stepping off a curb. She is alert, breathing 16 times per minute without distress, and her SpO2 is 98% on room air. What is appropriate regarding oxygen?",
+  "opts": [
+   "Apply a nonrebreather at 15 L/min because all injured patients need it.",
+   "Apply a nasal cannula at 4 L/min to relieve her pain and anxiety.",
+   "Apply a simple face mask at 10 L/min as a general precaution.",
+   "Oxygen is not needed; continue to monitor her breathing and SpO2."
+  ],
+  "ans": 3,
+  "key": "Give oxygen for a reason, such as hypoxia or distress, not routinely to every patient.",
+  "why": "Current practice is to give supplemental oxygen when a patient is hypoxic, short of breath or showing signs of shock. A comfortable patient with normal breathing and SpO2 does not benefit from it.",
+  "wrong": [
+   "Routine high-flow oxygen is not indicated for a well-oxygenated patient without distress.",
+   "Oxygen does not treat pain or anxiety in a patient with normal oxygenation.",
+   "Precautionary oxygen is not indicated when breathing and SpO2 are normal.",
+   ""
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-042",
+  "d": "PRIMARY",
+  "topic": "Oxygenation",
+  "concept": "spo2-limits",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "A family complains of headaches and nausea that began after they turned on an old furnace this morning. The 40-year-old father is confused, and his SpO2 reads 99%. After moving everyone out of the house, what is the most appropriate oxygen care for him?",
+  "opts": [
+   "Withhold oxygen because his SpO2 reading is normal",
+   "Give high-flow oxygen by nonrebreather despite the normal SpO2 reading",
+   "Give oxygen by nasal cannula at 2 liters per minute",
+   "Recheck his SpO2 in 10 minutes before deciding on oxygen"
+  ],
+  "ans": 1,
+  "key": "Standard pulse oximetry cannot detect carbon monoxide; treat suspected CO poisoning with high-flow oxygen.",
+  "why": "A shared headache and nausea after starting a furnace strongly suggest carbon monoxide exposure. Because standard oximeters cannot tell carbon monoxide from oxygen on hemoglobin, the patient's symptoms, not the SpO2, guide high-flow oxygen therapy.",
+  "wrong": [
+   "Pulse oximeters read carbon monoxide-bound hemoglobin as oxygenated, so the reading is falsely reassuring.",
+   "",
+   "Suspected carbon monoxide poisoning calls for the highest oxygen concentration available.",
+   "The reading will stay falsely normal, and delaying high-flow oxygen prolongs tissue hypoxia."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-043",
+  "d": "PRIMARY",
+  "topic": "Oxygenation",
+  "concept": "spo2-limits",
+  "b": 1.5,
+  "type": "mr",
+  "stem": "You use pulse oximetry on several patients during your shift. Select TWO situations in which the SpO2 reading is most likely to be misleading.",
+  "opts": [
+   "A man pulled from a smoky house fire",
+   "A hypothermic woman with cold, pale fingers",
+   "An alert teenager with a sprained ankle",
+   "A man with asthma who is wheezing but alert",
+   "A woman wearing a nasal cannula at 2 L/min"
+  ],
+  "ans": [
+   0,
+   1
+  ],
+  "key": "SpO2 can mislead with carbon monoxide exposure and with poor peripheral perfusion such as cold fingers.",
+  "why": "Smoke inhalation often includes carbon monoxide, which standard oximeters read as normal saturation. Cold, poorly perfused fingers can give low, erratic or no readings, so findings must always be matched to the patient's appearance.",
+  "wrong": [
+   "",
+   "",
+   "Normal perfusion and no toxic exposure make an accurate reading likely.",
+   "Asthma does not make the device inaccurate; the reading reflects his oxygenation.",
+   "Supplemental oxygen does not make the reading inaccurate."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-044",
+  "d": "PRIMARY",
+  "topic": "Oxygenation",
+  "concept": "copd-oxygen",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "A 71-year-old woman with COPD is in moderate respiratory distress. She is alert and using accessory muscles, and her SpO2 is 82%. Her husband says she was told never to use 'too much oxygen.' What is most appropriate?",
+  "opts": [
+   "Give supplemental oxygen titrated to her target SpO2 per protocol while watching her mental status and breathing.",
+   "Withhold oxygen because it may stop her drive to breathe.",
+   "Give oxygen only if her SpO2 falls below 75 percent.",
+   "Begin BVM ventilation because she has a history of COPD."
+  ],
+  "ans": 0,
+  "key": "Never withhold oxygen from a hypoxic COPD patient; titrate it and watch for changes in breathing.",
+  "why": "Some COPD patients retain carbon dioxide when given large amounts of oxygen, but untreated hypoxia is far more dangerous. Oxygen is titrated to a target range set by protocol, and the patient is watched for drowsiness or slowing respirations.",
+  "wrong": [
+   "",
+   "Hypoxia is the greater immediate danger; oxygen is never withheld from a hypoxic patient.",
+   "She is already significantly hypoxic; waiting for a lower value risks harm.",
+   "She is alert and moving air; she needs oxygen and monitoring, not assisted ventilation."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-045",
+  "d": "PRIMARY",
+  "topic": "Oxygenation",
+  "concept": "copd-oxygen",
+  "b": 1.5,
+  "type": "mc",
+  "stem": "A 68-year-old man with COPD has been on a nonrebreather for 20 minutes during a long transport. He was alert and anxious at first; now he is drowsy, his respirations have slowed to 8 and shallow, and his SpO2 is 95%. What is the most appropriate action?",
+  "opts": [
+   "Turn off the oxygen so that his drive to breathe returns.",
+   "Assist his ventilations with a BVM and oxygen and reassess his mental status.",
+   "Continue the nonrebreather, since his SpO2 is acceptable.",
+   "Switch him to CPAP to hold his airways open."
+  ],
+  "ans": 1,
+  "key": "Falling mental status with slow, shallow breathing means inadequate ventilation; assist with a BVM rather than removing oxygen.",
+  "why": "SpO2 measures oxygenation, not ventilation, so carbon dioxide can rise while the reading looks good. Assisting ventilation with a BVM corrects the underlying problem and keeps him oxygenated.",
+  "wrong": [
+   "Removing oxygen causes hypoxia; the problem is inadequate ventilation, which must be supported.",
+   "",
+   "A good SpO2 does not show adequate ventilation; slow, shallow breathing with drowsiness needs assistance.",
+   "CPAP requires an alert patient who can protect the airway; he is now drowsy."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-046",
+  "d": "PRIMARY",
+  "topic": "Pediatric primary assessment",
+  "concept": "pediatric-assessment-triangle",
+  "b": -0.5,
+  "type": "mc",
+  "stem": "You enter a living room where an 18-month-old girl with two days of vomiting lies on a couch. Before touching her, you use the Pediatric Assessment Triangle. Which finding is most concerning?",
+  "opts": [
+   "She cries loudly and clings to her mother when you come close.",
+   "Her breathing rate seems a little fast while she is crying.",
+   "She lies still, does not look at you or her mother, and has a weak cry.",
+   "She follows you with her eyes and reaches for your penlight."
+  ],
+  "ans": 2,
+  "key": "Appearance (tone, interaction, consolability, gaze, cry) is the most telling PAT element of how sick a child is.",
+  "why": "A child who is limp, uninterested in surroundings and has a weak cry has an abnormal appearance, which reflects poor brain oxygenation or perfusion. This makes her a high priority even before any hands-on assessment.",
+  "wrong": [
+   "Crying and clinging show good tone and interaction, which is a reassuring appearance.",
+   "Crying raises the respiratory rate; this alone is not a sign of serious illness.",
+   "",
+   "Tracking and reaching show normal interaction and mental status."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-047",
+  "d": "PRIMARY",
+  "topic": "Pediatric primary assessment",
+  "concept": "pediatric-assessment-triangle",
+  "b": 0,
+  "type": "table",
+  "stem": "From the doorway, you observe a sick 2-year-old. Classify each finding by the Pediatric Assessment Triangle component it belongs to.",
+  "cols": [
+   "Appearance",
+   "Work of breathing",
+   "Circulation to skin"
+  ],
+  "rows": [
+   [
+    "Head bobbing with each breath",
+    1
+   ],
+   [
+    "Mottled skin on the legs",
+    2
+   ],
+   [
+    "Does not track your movement or reach for toys",
+    0
+   ],
+   [
+    "Supraclavicular retractions",
+    1
+   ],
+   [
+    "Pale lips and face",
+    2
+   ]
+  ],
+  "key": "The PAT looks at appearance, work of breathing and circulation to skin, all from across the room.",
+  "why": "Head bobbing and retractions are signs of increased work of breathing. Mottling and pallor reflect circulation to the skin, and lack of interest in surroundings is an abnormal appearance.",
+  "src": "STD"
+ },
+ {
+  "id": "PA1-048",
+  "d": "PRIMARY",
+  "topic": "Pediatric primary assessment",
+  "concept": "peds-airway-anatomy",
+  "b": 0,
+  "type": "mc",
+  "stem": "A 9-month-old infant lying supine on a firm surface responds only to pain and has snoring respirations. Her head is flexed forward on her chest. What is the best way to position her airway?",
+  "opts": [
+   "Place a pillow under her head to raise it off the surface.",
+   "Hyperextend her neck as you would for an adult.",
+   "Insert an oral airway first, then adjust her head position.",
+   "Place a folded towel under her shoulders to bring her head and neck to a neutral position."
+  ],
+  "ans": 3,
+  "key": "An infant's large occiput flexes the neck; shoulder padding achieves a neutral position without hyperextension.",
+  "why": "Infants have a proportionally large back of the head that pushes the chin toward the chest when supine. A thin pad under the shoulders aligns the airway, while too much extension can also close the soft infant airway.",
+  "wrong": [
+   "Raising the head flexes the neck further and worsens obstruction caused by the large occiput.",
+   "Hyperextension can kink the soft, flexible infant trachea and obstruct the airway.",
+   "Positioning comes first; an adjunct does not overcome a flexed neck.",
+   ""
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-049",
+  "d": "PRIMARY",
+  "topic": "Pediatric primary assessment",
+  "concept": "peds-airway-anatomy",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "A 2-month-old with a cold has noisy breathing, mild retractions, and is struggling to feed. You see thick secretions in both nostrils. The infant is alert and pink. What is the most appropriate first step?",
+  "opts": [
+   "Insert a nasopharyngeal airway to open the nose",
+   "Begin BVM ventilation for the retractions",
+   "Gently suction the nostrils with a bulb syringe",
+   "Suction deep in the throat with a rigid catheter"
+  ],
+  "ans": 2,
+  "key": "Young infants breathe mainly through the nose, so clearing nasal secretions can greatly ease their breathing.",
+  "why": "Because young infants depend heavily on nasal breathing, even modest nasal congestion can cause distress and feeding trouble. Gentle bulb suction of the nostrils is often enough to relieve it.",
+  "wrong": [
+   "An alert infant does not need an NPA; clearing the secretions treats the cause.",
+   "The infant is alert and pink; mild distress from congestion does not need ventilation.",
+   "",
+   "Deep suctioning can slow the heart rate and is not needed for nasal secretions."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-050",
+  "d": "PRIMARY",
+  "topic": "Pediatric primary assessment",
+  "concept": "peds-respiratory-failure",
+  "b": 1.5,
+  "type": "mc",
+  "stem": "A 14-month-old with bronchiolitis had a respiratory rate of 60 with retractions when you arrived. Ten minutes later the child is limp and barely responds, respirations are 16 and shallow, and the heart rate has fallen from 160 to 70. What should you do?",
+  "opts": [
+   "Begin BVM ventilation with oxygen at 1 breath every 2-3 seconds and transport immediately.",
+   "Recognize that the child is improving and continue blow-by oxygen.",
+   "Apply a pediatric nonrebreather mask and reassess in 5 minutes.",
+   "Have the parent hold the child upright to make breathing easier."
+  ],
+  "ans": 0,
+  "key": "Slowing breathing, limpness and a falling heart rate in a sick child mean respiratory failure; ventilate immediately.",
+  "why": "Children usually deteriorate from respiratory failure, and a falling heart rate in a hypoxic child is an ominous late sign. Prompt BVM ventilation with oxygen at the pediatric rate can reverse the hypoxia before arrest occurs.",
+  "wrong": [
+   "",
+   "Slowing breathing with limpness and a falling heart rate signal failure, not improvement.",
+   "Shallow breathing at 16 cannot be corrected with a mask; the child needs ventilation now.",
+   "Positioning helps a compensating child; this child needs assisted ventilation."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "PA1-051",
+  "d": "PRIMARY",
+  "topic": "Pediatric primary assessment",
+  "concept": "pediatric-assessment-triangle",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "A 5-year-old boy with croup has a barking cough, mild stridor when he cries, and suprasternal retractions. He is alert, interactive and pink. Using the Pediatric Assessment Triangle, what is the best approach?",
+  "opts": [
+   "Treat it as respiratory failure and begin BVM ventilation.",
+   "Lay him flat and examine his throat with a tongue blade.",
+   "Classify him as stable and suggest the family drive him to a clinic.",
+   "Treat it as respiratory distress: keep him calm with his parent, offer oxygen as tolerated, and transport."
+  ],
+  "ans": 3,
+  "key": "Abnormal work of breathing with normal appearance and color is respiratory distress; avoid agitating the child.",
+  "why": "In the PAT, an abnormal work of breathing with a normal appearance and circulation indicates respiratory distress. Keeping the child calm with a caregiver prevents crying, which worsens stridor, while you provide oxygen and transport.",
+  "wrong": [
+   "Normal appearance and color show he is compensating; BVM is for respiratory failure.",
+   "Agitation and throat inspection can worsen upper-airway obstruction.",
+   "Stridor with retractions is abnormal work of breathing that warrants EMS assessment and transport.",
+   ""
+  ],
+  "src": "STD"
+ }
+]
