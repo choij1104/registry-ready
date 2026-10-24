@@ -1,316 +1,828 @@
 [
-{
-"id": "OP-001", "d": "OPS", "topic": "Legal and ethical", "concept": "consent-capacity", "b": -1, "type": "mc",
-"stem": "A neighbor called 911 after finding a 58-year-old man lying on his kitchen floor. He does not respond to voice or pain and has snoring respirations. No family is present, and the neighbor does not know his medical history. On what basis may you begin assessment and treatment?",
-"opts": ["Expressed consent given on his behalf by the neighbor who called 911", "Implied consent, because a reasonable person would want emergency care", "Involuntary consent, which requires law enforcement to authorize care", "No consent is possible, so care must wait for a family member"],
-"ans": 1,
-"key": "An adult who cannot consent because of unresponsiveness is treated under implied consent when an emergency exists.",
-"why": "When an adult is unable to give consent and faces a potential threat to life, the law presumes he would agree to emergency care. This is implied consent, and it allows the EMT to assess, treat, and transport without delay.",
-"wrong": ["A neighbor has no legal authority to consent for another adult; consent must come from the patient or a legal surrogate.", "", "Involuntary consent applies to patients held under a legal order, such as a court or police custody order, not to an unresponsive adult.", "Waiting for family delays care for a possibly life-threatening condition; implied consent exists for exactly this situation."],
-"src": "STD"
-},
-{
-"id": "OP-002", "d": "OPS", "topic": "Legal and ethical", "concept": "consent-capacity", "b": 0, "type": "mc",
-"stem": "A 13-year-old girl fell from playground equipment on a school field trip. Her forearm is deformed, and her hand is pale and cool with a weak radial pulse. The teacher says the school has no medical authorization form for her, and repeated calls to both parents go unanswered. What should you do?",
-"opts": ["Wait at the scene with the patient until a parent can be reached to give consent", "Accept the patient's own verbal consent as legally sufficient for treatment", "Treat and transport under implied consent while efforts to reach the parents continue", "Have the teacher sign a refusal and leave instructions to take her to a clinic"],
-"ans": 2,
-"key": "A minor with a time-sensitive emergency and no reachable guardian is treated under implied consent.",
-"why": "A minor generally cannot give legal consent, but when a guardian cannot be reached and delay threatens life or limb, implied consent applies. This arm with poor distal circulation is a limb threat, so care should not wait; the school or dispatch can keep trying to reach the parents.",
-"wrong": ["Delaying care for an arm with compromised circulation risks permanent harm; implied consent covers this emergency.", "A 13-year-old who is not emancipated generally cannot give legal consent for her own care.", "", "A teacher without written authorization cannot refuse care for a minor, and a limb threat needs EMS treatment and transport."],
-"src": "STD"
-},
-{
-"id": "OP-003", "d": "OPS", "topic": "Legal and ethical", "concept": "informed-refusal", "b": 0.5, "type": "order",
-"stem": "A 62-year-old man with chest discomfort that has now eased tells you he does not want to go to the hospital. Place the steps of handling his refusal in the correct order.",
-"opts": ["Confirm he is alert, oriented, and not impaired by alcohol, drugs, or illness", "Explain your findings and the risks of refusing, including disability or death", "Encourage transport again, offer alternatives, and contact medical direction per protocol", "Have him sign the refusal form with a witness present", "Complete the patient care report describing the refusal discussion"],
-"key": "A valid refusal starts with capacity, then informed discussion and persuasion, then signature, then documentation.",
-"why": "Only a patient with decision-making capacity can refuse, so capacity comes first. He must then understand the specific risks, and the EMT should try again to persuade him and involve medical direction before accepting a signed refusal. The PCR then records what was said and done.",
-"src": "STD"
-},
-{
-"id": "OP-004", "d": "OPS", "topic": "Legal and ethical", "concept": "duty-breach-negligence", "b": -0.5, "type": "mc",
-"stem": "You arrive at a crowded emergency department with a 70-year-old woman with abdominal pain. Every nurse is busy. Your partner moves her onto a hallway bed, and dispatch asks when you will be available. No hospital staff member has spoken with you yet. What must happen before your crew leaves?",
-"opts": ["Give a verbal report to a nurse or physician who accepts responsibility for her care", "Leave a printed copy of the patient care report on her bed and notify dispatch", "Ask a family member sitting nearby to call a nurse if her condition changes", "Recheck her vital signs, document that she is stable, and then clear the call"],
-"ans": 0,
-"key": "Care must be transferred to a provider of equal or higher training who accepts it; leaving before that is abandonment.",
-"why": "Once care has begun, the duty continues until a qualified provider formally accepts the patient. A verbal report to a nurse or physician at the receiving facility completes that transfer and protects both patient and crew.",
-"wrong": ["", "A written report left on the bed does not transfer care to anyone; no qualified person has accepted the patient.", "A family member is not a health care provider, so leaving the patient with them is abandonment.", "Stable vital signs do not end the duty to the patient; care still has to be handed to a qualified provider."],
-"src": "STD"
-},
-{
-"id": "OP-005", "d": "OPS", "topic": "Legal and ethical", "concept": "duty-breach-negligence", "b": 0.5, "type": "table",
-"stem": "A crew was dispatched to a fall at a nursing home. During loading, the patient slid off the stretcher and broke her wrist because the straps were not fastened. Her family files a negligence claim. Classify each fact by the element of negligence it establishes.",
-"cols": ["Duty to act", "Breach of duty", "Damages", "Proximate cause"],
-"rows": [["The ambulance was dispatched to the call and the crew began patient care", 0], ["The crew moved the stretcher without fastening the safety straps", 1], ["The patient sustained a fractured wrist", 2], ["The fracture resulted directly from sliding off the unsecured stretcher", 3]],
-"key": "Negligence requires all four elements: duty, breach of that duty, actual harm, and harm caused by the breach.",
-"why": "The dispatched crew had a duty to act. Failing to secure the straps fell below the standard of care, which is a breach. The fracture is the damage, and because the fall from the unsecured stretcher caused it, proximate cause is met.",
-"src": "STD"
-},
-{
-"id": "OP-006", "d": "OPS", "topic": "Legal and ethical", "concept": "advance-directives", "b": -0.5, "type": "mc",
-"stem": "An 82-year-old woman enrolled in home hospice is found pulseless and apneic in bed. Her daughter calmly hands you a physician-signed POLST form with her mother's name on it, marked 'Do Not Attempt Resuscitation.' What is the most appropriate action?",
-"opts": ["Begin CPR and transport so the hospital can decide whether to honor the form", "Apply the AED and deliver a shock if advised, since defibrillation is not CPR", "Perform two minutes of CPR, then stop if no pulse returns", "Confirm the form is valid for this patient, withhold resuscitation, and support the family"],
-"ans": 3,
-"key": "A valid DNR or POLST order that applies to the patient is honored by withholding resuscitation.",
-"why": "A properly completed, physician-signed POLST that identifies the patient is a legal medical order. The EMT verifies it, withholds CPR and defibrillation, follows local protocol for a death at home, and supports the family.",
-"wrong": ["Starting CPR against a valid order ignores the patient's documented wishes; EMS is expected to honor it in the field.", "Defibrillation is a resuscitation attempt and is withheld under a valid do-not-attempt-resuscitation order.", "Any CPR attempt goes against a valid order; there is no trial period built into the order.", ""],
-"src": "STD"
-},
-{
-"id": "OP-007", "d": "OPS", "topic": "Legal and ethical", "concept": "advance-directives", "b": 1.5, "type": "mc",
-"stem": "A 76-year-old man with lung disease has a valid DNR order that addresses only CPR. Tonight he is alert but short of breath, speaking in short phrases, with RR 28 and SpO2 86%. His wife asks whether the DNR means you cannot help him. What should you do?",
-"opts": ["Withhold all treatment and transport, because the DNR covers his condition", "Give oxygen and other indicated care, then transport; the DNR applies to cardiac arrest", "Provide comfort only, without oxygen, to respect his written wishes", "Ask him to revoke the DNR in writing before you begin treatment"],
-"ans": 1,
-"key": "A DNR order limits resuscitation in arrest; it does not mean withholding other indicated care.",
-"why": "A DNR that addresses CPR applies when the patient is pulseless and apneic. This patient has a pulse and is in respiratory distress, so oxygen, positioning, and transport are appropriate, with the DNR traveling with him.",
-"wrong": ["A DNR is not a refusal of all care; a patient with a pulse still receives indicated treatment.", "", "Oxygen is indicated for his hypoxia and also relieves distress; the DNR does not prohibit it.", "He does not need to revoke the DNR; it remains in effect for arrest while you treat his breathing."],
-"src": "STD"
-},
-{
-"id": "OP-008", "d": "OPS", "topic": "Legal and ethical", "concept": "privacy-and-reporting", "b": 0.5, "type": "mr",
-"stem": "A 79-year-old woman who lives with her adult son has bruises of different colors on both upper arms. The son answers every question for her, his story changes, and she looks at him before speaking. She asks you not to 'make trouble.' Select TWO actions that are appropriate.",
-"opts": ["Confront the son about the bruises before leaving the home", "Report your concerns as required by state law and agency protocol", "Ask the responding officer to arrest the son for elder abuse", "Document your objective findings and quote statements exactly", "Photograph the bruises with your personal phone as evidence"],
-"ans": [1, 3],
-"key": "Suspected abuse is reported as the law requires and documented objectively; the EMT does not investigate or accuse.",
-"why": "Most states require health care providers, including EMS, to report suspected elder abuse, and the duty does not depend on the patient's permission. Objective, quoted documentation supports the people who investigate.",
-"wrong": ["Confronting a suspected abuser can escalate danger to the patient and the crew; investigation belongs to the proper authorities.", "", "EMTs do not determine guilt or direct arrests; they report concerns through the proper channels.", "", "Images on a personal device create a privacy violation and are not an approved way to collect evidence."],
-"src": "STD"
-},
-{
-"id": "OP-009", "d": "OPS", "topic": "Legal and ethical", "concept": "privacy-and-reporting", "b": 0, "type": "mc",
-"stem": "Your crew transported the driver from a crash that is now on the local news. Later that shift, several people ask you about the patient. Which disclosure of patient information is permitted?",
-"opts": ["Confirming to a reporter only that the driver was alive when you arrived", "Telling the driver's employer, who calls the station, which hospital he went to", "Giving the emergency department nurse an update when she calls with a follow-up question", "Posting a scene photo online after cropping out the driver's face"],
-"ans": 2,
-"key": "Patient information may be shared with providers involved in the patient's care, not with the media, employers, or the public.",
-"why": "Privacy law permits disclosure to other health care providers for treatment, so answering the receiving nurse is appropriate. Disclosing even limited details to others who are not involved in care is a privacy violation.",
-"wrong": ["Even limited details about a patient's condition are protected and may not be given to the media by the EMT.", "An employer is not involved in treatment and has no right to know where the patient was taken.", "", "A crash scene photo can identify a patient through the vehicle, location, or plates; posting it violates privacy."],
-"src": "STD"
-},
-{
-"id": "OP-010", "d": "OPS", "topic": "Legal and ethical", "concept": "crime-scene-care", "b": 0, "type": "mc",
-"stem": "Police have secured an apartment where a 30-year-old man has a stab wound to the abdomen. He is responsive and pale with HR 118. A bloody knife lies on the floor beside him, away from his reach. How should you handle the scene while giving care?",
-"opts": ["Leave the knife in place, route your crew around it, and tell police about anything you must move", "Pick up the knife with gloved hands and place it in a bag for police", "Delay care until police finish photographing and collecting evidence", "Cut through the hole in his shirt for the fastest access to the wound"],
-"ans": 0,
-"key": "At a crime scene, patient care comes first, but EMTs disturb as little as possible and tell police what was moved.",
-"why": "Care for a patient in shock cannot wait, yet unnecessary contact with evidence can harm the investigation. Limiting your path, leaving the weapon in place, and reporting anything moved meets both duties.",
-"wrong": ["", "Handling the knife can destroy evidence; police collect it unless it poses an immediate danger to the crew.", "A patient with signs of shock needs immediate care; evidence collection does not take priority over his life.", "Cutting through a stab or bullet hole destroys evidence; cut around it when exposing the wound."],
-"src": "STD"
-},
-{
-"id": "OP-011", "d": "OPS", "topic": "Documentation", "concept": "pcr-accuracy", "b": -0.5, "type": "table",
-"stem": "You are writing the narrative for a 66-year-old woman with chest pain. Classify each piece of information as an objective finding or subjective information.",
-"cols": ["Objective finding", "Subjective information"],
-"rows": [["Patient states her chest feels 'like a heavy weight'", 1], ["Skin is pale, cool, and diaphoretic", 0], ["Blood pressure 152/94 mm Hg", 0], ["Husband reports she has been 'more confused than usual' today", 1], ["Patient rates her pain 8 out of 10", 1]],
-"key": "Objective findings are what the EMT observes or measures; subjective information is what the patient or others report.",
-"why": "Skin signs and a measured blood pressure are observations the EMT can verify. The patient's description and pain rating, and the husband's report, are statements told to the EMT and are recorded as subjective information.",
-"src": "STD"
-},
-{
-"id": "OP-012", "d": "OPS", "topic": "Documentation", "concept": "crime-scene-care", "b": 1.5, "type": "mc",
-"stem": "A 24-year-old man was shot in the left thigh. He tells you, 'My neighbor shot me over the fence.' You find one small round wound on the outer thigh and no other wound. You cut his jeans away from the wound and hand them to police. Which PCR entry is best?",
-"opts": ["Pt victim of attempted murder by neighbor. Entrance wound L thigh. Jeans removed.", "Small-caliber gunshot entrance wound L lateral thigh, fired at close range. Clothing to PD.", "Pt shot by neighbor after an argument; pt appears truthful. Wound L thigh.", "Pt states 'My neighbor shot me over the fence.' Approx 1 cm round wound L lateral thigh. Jeans cut around wound, given to PD."],
-"ans": 3,
-"key": "On a crime-related call, quote statements exactly, describe wounds by appearance and location, and record what was done with evidence.",
-"why": "The PCR may become a legal record, so it should hold the patient's exact words and objective wound descriptions without conclusions. Labeling entry versus exit, caliber, or intent is outside what an EMT can determine.",
-"wrong": ["'Attempted murder' is a legal conclusion, and 'entrance wound' is a forensic judgment the EMT cannot make.", "Caliber, range, and entry status are forensic conclusions that the EMT cannot determine in the field.", "Paraphrasing loses the patient's exact words, and judging his truthfulness is opinion, not an observation.", ""],
-"src": "STD"
-},
-{
-"id": "OP-013", "d": "OPS", "topic": "Documentation", "concept": "informed-refusal", "b": 0.5, "type": "mc",
-"stem": "A 45-year-old woman who slipped on ice has a painful but intact wrist. She is alert and oriented, with normal vital signs, and declines transport after you explain the risks. She signs the refusal form. Which documentation best protects the patient and the crew?",
-"opts": ["The signed refusal form alone, since her signature proves she refused", "Her assessment findings and capacity, the risks explained, advice to seek care or call back, and her response", "A note that the patient refused transport and was left in the care of herself", "Your opinion that she refused because she wanted to avoid an ambulance bill"],
-"ans": 1,
-"key": "A refusal PCR records capacity, the findings, the specific risks explained, instructions given, and the patient's understanding.",
-"why": "A signature alone does not show the refusal was informed. Documenting her mental status, the assessment, the risks you described, the instructions to seek care or call back, and her response shows she understood and chose to refuse.",
-"wrong": ["A signature does not show she had capacity or understood the risks; the narrative must show both.", "", "A one-line note gives no evidence of capacity, the risks discussed, or the advice given.", "Speculation about motive is not objective and does not show that the refusal was informed."],
-"src": "STD"
-},
-{
-"id": "OP-014", "d": "OPS", "topic": "Documentation", "concept": "pcr-accuracy", "b": 0, "type": "mc",
-"stem": "An hour after submitting an electronic PCR for a 50-year-old man with a forearm laceration, you realize you documented the injury on his right arm. It was on his left arm. What should you do?",
-"opts": ["Delete the narrative and rewrite it so the final record appears clean", "Leave the PCR alone because the error is minor and the wound was treated", "Add a dated, timed addendum that identifies and corrects the error per agency policy", "Call the emergency department and correct the error with the nurse verbally only"],
-"ans": 2,
-"key": "PCR errors are corrected openly with a dated, identified correction, never by erasing the original entry.",
-"why": "A correction that shows what changed, when, and by whom keeps the record accurate and trustworthy. Electronic systems use an addendum for this, while the original entry stays visible.",
-"wrong": ["Erasing the original entry hides the change and can look like falsification if the record is reviewed.", "Wrong-side documentation can mislead later caregivers and reviewers; it must be corrected.", "", "A verbal correction does not fix the permanent record that others will rely on."],
-"src": "STD"
-},
-{
-"id": "OP-015", "d": "OPS", "topic": "Documentation", "concept": "pcr-accuracy", "b": -1, "type": "mc",
-"stem": "During a short transport of a 35-year-old man with an ankle injury, your partner forgot to take a second set of vital signs. At the hospital he asks you to enter his first set again with a later time so the PCR 'looks complete.' What should you do?",
-"opts": ["Document only the vital signs actually obtained and note that no repeat set was taken", "Enter the copied values but mark them as approximate", "Enter values you estimate from how the patient looked during transport", "Leave vitals out and write that the patient remained stable throughout"],
-"ans": 0,
-"key": "Record only what was actually observed and done; entering data that was not obtained is falsification.",
-"why": "A PCR must reflect the care that was actually given. Documenting that a reassessment was not done is honest and correctable through training, while invented or copied values are falsification.",
-"wrong": ["", "Values that were never measured are still falsified even when labeled approximate.", "Estimated values are not measurements and misrepresent the care that was given.", "Writing 'stable' without reassessment claims an observation the crew did not make."],
-"src": "STD"
-},
-{
-"id": "OP-016", "d": "OPS", "topic": "Equipment and supplies", "concept": "shift-equipment-check", "b": -0.5, "type": "mc",
-"stem": "At the start of your shift, the ambulance's AED status indicator shows an error symbol, and the spare electrode pad package is past its expiration date. Your unit is about to be placed in service. What should you do?",
-"opts": ["Go in service, because the AED will likely work if a cardiac arrest call comes in", "Replace the spare pads and ignore the indicator if the AED powers on", "Keep the AED in service and report the problem at the end of the shift", "Remove it from service, obtain a working AED and in-date pads, and report it per policy"],
-"ans": 3,
-"key": "An AED with a fault indicator or expired pads is replaced before the unit goes in service.",
-"why": "An AED must be ready on every call, and a status warning means it may not analyze or shock. Swapping in a working unit and in-date pads, and reporting the defect, ensures the crew can defibrillate when needed.",
-"wrong": ["Assuming the device will work risks a failed shock during a cardiac arrest.", "Powering on does not clear a self-test fault; the indicator shows the unit may fail during use.", "Waiting until the end of the shift leaves the crew without a reliable AED for every call in the meantime.", ""],
-"src": "STD"
-},
-{
-"id": "OP-017", "d": "OPS", "topic": "Equipment and supplies", "concept": "shift-equipment-check", "b": 0, "type": "mc",
-"stem": "During your morning inventory, you find that the unit's intranasal naloxone device expired last month. The station has replacement stock. What is the best action?",
-"opts": ["Keep it on the unit, since it expired only recently and still has some effect", "Remove it, replace it from stock, and record the change per agency policy", "Use the expired device first on the next overdose call so it is not wasted", "Discard it and run without naloxone until the scheduled resupply day"],
-"ans": 1,
-"key": "Expired medications are removed, replaced with in-date stock, and logged before the unit responds.",
-"why": "Expired medications may not work as intended, and giving them violates standard practice. Replacing the device from stock and recording the change keeps the unit ready for an opioid emergency.",
-"wrong": ["Expired medication may be less effective and should not be carried for patient use.", "", "Giving an expired drug to a patient with an opioid overdose risks treatment failure.", "Running without naloxone leaves the crew unable to treat an opioid emergency when stock is available."],
-"src": "STD"
-},
-{
-"id": "OP-018", "d": "OPS", "topic": "Equipment and supplies", "concept": "oxygen-cylinder-safety", "b": -1, "type": "mc",
-"stem": "You are replacing an empty portable oxygen cylinder in the ambulance before your next call. Which practice is correct?",
-"opts": ["Apply petroleum jelly to the valve threads so the regulator seats easily", "Lay the new cylinder loose on the bench seat to have it within reach", "Remove the seal, point the valve away from people, and briefly crack it before attaching the regulator", "Store the spare cylinder next to the compartment heater to keep the gas warm"],
-"ans": 2,
-"key": "Oxygen cylinders are kept away from oil, heat, and impact, and the valve is cracked before the regulator is attached.",
-"why": "Briefly opening the valve clears dust that could enter the regulator, and pointing it away from people prevents injury. Oxygen supports combustion strongly, so oil and heat near the valve, or an unsecured cylinder, create fire and projectile hazards.",
-"wrong": ["Petroleum products can ignite in contact with pressurized oxygen and must never be used on regulators or valves.", "An unsecured cylinder can become a projectile in a sudden stop or crash; cylinders must be secured.", "", "Heat raises cylinder pressure and increases the fire risk; cylinders are stored away from heat sources."],
-"src": "STD"
-},
-{
-"id": "OP-019", "d": "OPS", "topic": "Equipment and supplies", "concept": "oxygen-cylinder-safety", "b": 1.5, "type": "mc",
-"stem": "You are preparing for a long rural transport of a 68-year-old woman with SpO2 88% on a nonrebreather mask at high flow. The portable cylinder's gauge reads well under half full. How should you plan your oxygen supply?",
-"opts": ["Estimate the time left from gauge pressure, cylinder size, and flow, and switch to a full cylinder if it may not last", "Plan on the same duration you get on short transports, since duration does not depend on flow rate", "Turn the flow down to a low rate on the nonrebreather to make the cylinder last longer", "Run the cylinder until the gauge reads zero before changing so no oxygen is wasted"],
-"ans": 0,
-"key": "Oxygen duration depends on remaining pressure, cylinder size, and flow rate; higher flow empties a cylinder faster.",
-"why": "A cylinder's remaining time is calculated from its pressure above a safe residual, its size factor, and the liter flow. At high flow a partly full cylinder may run out mid-transport, so the safe plan is to estimate the time and start with a full or larger supply.",
-"wrong": ["", "Higher flow uses oxygen faster, so the same cylinder lasts a shorter time on this patient.", "A nonrebreather needs enough flow to keep the reservoir bag inflated; a low flow can cause rebreathing and suffocation risk.", "Cylinders should be changed at a safe residual pressure, not run empty, so the patient's oxygen is not interrupted."],
-"src": "STD"
-},
-{
-"id": "OP-020", "d": "OPS", "topic": "Equipment and supplies", "concept": "infection-control", "b": 0.5, "type": "mc",
-"stem": "After you transport a 40-year-old man who vomited blood, the stretcher mattress and side rails have visible blood on them. You are wearing gloves. What is the correct way to prepare the stretcher for the next patient?",
-"opts": ["Spray disinfectant on the blood and wipe it off immediately so the unit can clear", "Wipe the surfaces with plain water and leave the disinfecting for the end of the shift", "Cover the soiled mattress with a fresh sheet and disinfect it later at the station", "Remove visible blood first, then apply an EPA-registered disinfectant for its labeled wet contact time"],
-"ans": 3,
-"key": "Cleaning removes gross contamination first; disinfecting then requires the product's full labeled contact time.",
-"why": "Blood and organic matter block disinfectants, so surfaces must be cleaned before they are disinfected. The disinfectant must stay wet for the time on its label to kill pathogens, and contaminated waste goes into the proper biohazard containers.",
-"wrong": ["Disinfectant applied over blood and wiped at once neither cleans the surface first nor meets the required contact time.", "Water alone does not disinfect, and delaying exposes the next patient and crew to bloodborne pathogens.", "A fresh sheet over contamination exposes the next patient and crew; the surface must be cleaned and disinfected.", ""],
-"src": "STD"
-},
-{
-"id": "OP-021", "d": "OPS", "topic": "Responder wellness and safety", "concept": "infection-control", "b": 0.5, "type": "order",
-"stem": "While you are controlling bleeding from a 28-year-old man's scalp wound, he shakes his head and his blood splashes into your unprotected eye. Your partner takes over his care. Place your next actions in the correct order.",
-"opts": ["Flush the eye immediately with large amounts of clean water or saline", "Notify your supervisor or designated infection control officer", "Get a prompt medical evaluation for post-exposure testing and treatment", "Complete the follow-up testing and counseling as scheduled"],
-"key": "After a blood exposure: wash or flush at once, notify the designated officer, get prompt evaluation, then complete follow-up.",
-"why": "Immediate flushing reduces the amount of infectious material on the eye. Rapid notification starts source-patient testing and a medical evaluation, where any post-exposure treatment works best when started early. Follow-up testing confirms whether infection occurred.",
-"src": "STD"
-},
-{
-"id": "OP-022", "d": "OPS", "topic": "Responder wellness and safety", "concept": "infection-control", "b": 1, "type": "mc",
-"stem": "A 45-year-old man staying at a shelter has had a cough for six weeks, night sweats, weight loss, and blood-streaked sputum. He is alert, with SpO2 95% and RR 20. Which precautions are most appropriate for your crew?",
-"opts": ["Surgical masks for the crew, with no mask needed for the patient", "Fit-tested N95 respirators for the crew and a surgical mask on the patient if he tolerates it", "An N95 respirator on the patient and gloves for the crew", "Gloves and gowns for the crew, since the disease spreads mainly by touch"],
-"ans": 1,
-"key": "Suspected tuberculosis calls for airborne precautions: fit-tested N95 for the crew and a surgical mask on the patient.",
-"why": "His symptoms suggest tuberculosis, which spreads through airborne droplet nuclei. A fit-tested N95 protects the crew, a surgical mask on the patient reduces what he releases, and ventilation in the patient compartment helps further.",
-"wrong": ["Surgical masks do not filter airborne particles well enough to protect the crew from tuberculosis.", "", "N95 respirators protect the wearer and are not intended for the patient; the crew remains unprotected.", "Tuberculosis spreads through the air, not mainly by touch, so contact precautions alone are inadequate."],
-"src": "STD"
-},
-{
-"id": "OP-023", "d": "OPS", "topic": "Responder wellness and safety", "concept": "body-mechanics", "b": -1.5, "type": "mc",
-"stem": "You and your partner are about to lift a 210-lb man on a stretcher from the ground. Which technique best protects your back?",
-"opts": ["Bend at the waist with your legs straight to reach the rails", "Twist your torso to turn toward the ambulance while lifting", "Keep your back straight, feet shoulder-width apart, and lift with your legs", "Hold the stretcher at arm's length to keep it away from your body"],
-"ans": 2,
-"key": "Safe lifting uses a straight back, a stable base, the leg muscles, and the load kept close to the body.",
-"why": "A locked, straight back and leg-driven lift place the work on the strongest muscles and reduce strain on the spine. A shoulder-width stance gives a stable base, and keeping the load close shortens the lever arm on the back.",
-"wrong": ["Bending at the waist puts the load on the lower back muscles and discs instead of the legs.", "Twisting under load is a common cause of back injury; turn by moving the feet.", "", "Holding a load away from the body multiplies the force on the back."],
-"src": "STD"
-},
-{
-"id": "OP-024", "d": "OPS", "topic": "Responder wellness and safety", "concept": "body-mechanics", "b": 1, "type": "mr",
-"stem": "A 72-year-old woman with shortness of breath is alert and able to sit upright. She lives in a third-floor walk-up apartment with a narrow stairway and no elevator. Select TWO actions that best reduce the risk of injury to the crew while moving her.",
-"opts": ["Move her down the stairs in a stair chair rather than carrying a stretcher", "Stand with your feet close together to fit the narrow stairway", "Have the strongest crew member carry the device alone to avoid uneven lifting", "Agree on clear commands and lift and move on the same signal", "Pull the device toward you instead of pushing whenever you can"],
-"ans": [0, 3],
-"key": "Choose the right device for the route and coordinate every lift with clear, shared commands.",
-"why": "A stair chair suits an alert patient who can sit and is easier and safer than carrying a stretcher down narrow stairs. Clear communication keeps partners lifting together, which prevents sudden load shifts that cause injury.",
-"wrong": ["", "A narrow stance makes you unstable; keep the feet about shoulder-width apart for balance.", "One person carrying a patient risks injury to both; lifting and carrying need coordinated partners.", "", "Pushing is safer than pulling when moving a load; pulling strains the back and shoulders."],
-"src": "STD"
-},
-{
-"id": "OP-025", "d": "OPS", "topic": "Responder wellness and safety", "concept": "stress-fatigue", "b": 0, "type": "mc",
-"stem": "Four days after a call in which an infant died despite resuscitation, an EMT tells you she cannot sleep, keeps seeing the scene, and snaps at her family. She is still working her shifts. What is the best advice?",
-"opts": ["Talk with peer support or the employee assistance program, and see a mental health professional if it persists", "Have a few drinks at bedtime until her sleep returns to normal", "Pick up extra shifts so she stays busy and does not dwell on it", "Ignore the symptoms, since they are normal and need no attention"],
-"ans": 0,
-"key": "Stress reactions after a critical incident are common; use peer support and professional help rather than avoidance.",
-"why": "Sleep problems, intrusive images, and irritability are common after a traumatic call. Talking with trained peers or the employee assistance program helps, and symptoms that persist or worsen should be evaluated by a mental health professional.",
-"wrong": ["", "Alcohol worsens sleep quality and can become an unhealthy coping pattern.", "Extra work adds fatigue and avoids the stress rather than addressing it.", "These reactions are common, but ignoring them can allow them to persist; support and monitoring are still needed."],
-"src": "STD"
-},
-{
-"id": "OP-026", "d": "OPS", "topic": "Responder wellness and safety", "concept": "stress-fatigue", "b": 0.5, "type": "mc",
-"stem": "At 3:30 a.m., near the end of a 24-hour shift with five overnight calls, you are driving the ambulance back to the station without a patient. You notice you drifted toward the shoulder and cannot remember the last mile. What should you do?",
-"opts": ["Open the window and turn up the radio to stay alert for the rest of the drive", "Drink an energy drink and continue, since the station is only a few miles away", "Speed up slightly to reach the station before you get more tired", "Pull over safely, let a more alert partner drive, and report fatigue per agency policy"],
-"ans": 3,
-"key": "Drowsy driving is an immediate hazard; stop driving and use agency fatigue procedures rather than relying on alertness tricks.",
-"why": "Drifting and missing time are signs of microsleep, which can cause a crash at any moment. Stopping safely and handing off the wheel removes the danger, and reporting fatigue lets the agency protect the crew and the public.",
-"wrong": ["Cold air and noise do not prevent microsleep; they give only brief, unreliable alertness.", "Caffeine takes time to work and does not reliably reverse severe sleep loss.", "Higher speed increases crash risk while the driver remains impaired by fatigue.", ""],
-"src": "STD"
-},
-{
-"id": "OP-027", "d": "OPS", "topic": "Responder wellness and safety", "concept": "violent-scene-safety", "b": 0, "type": "mc",
-"stem": "A 38-year-old man in a living room is pacing, yelling that he does not want help, and clenching his fists. No weapons are visible. Police have not yet arrived. Your partner is near the front door. How should you approach him?",
-"opts": ["Move close and put a hand on his shoulder to reassure him", "Keep a clear exit, stay at a safe distance, and speak calmly in a low voice", "Raise your voice firmly so he knows you are in charge", "Warn him that he will be restrained if he does not calm down"],
-"ans": 1,
-"key": "De-escalation keeps an exit open, respects personal space, and uses a calm voice; leave and call police if threats grow.",
-"why": "An agitated person may see closeness or a loud voice as a threat. A safe distance, an open escape route, and a calm, respectful tone lower tension while protecting the crew, who should withdraw if he becomes more threatening.",
-"wrong": ["Touching an agitated patient without warning can provoke an assault and leaves you within striking range.", "", "A loud, commanding tone tends to escalate an angry person rather than calm him.", "Threats of restraint often increase agitation; restraint decisions follow protocol with law enforcement."],
-"src": "STD"
-},
-{
-"id": "OP-028", "d": "OPS", "topic": "Vehicle operations", "concept": "due-regard-driving", "b": -1, "type": "mc",
-"stem": "You are driving with lights and siren to a reported cardiac arrest. Ahead, your traffic light turns red at a busy four-lane intersection. Some cars have stopped, and others have not. What should you do?",
-"opts": ["Proceed at your current speed, since lights and siren give you the right of way", "Pass the stopped cars on the right shoulder to save time", "Slow down, stop if needed, and proceed only after every lane of traffic has yielded", "Follow closely behind a fire engine that is already crossing the intersection"],
-"ans": 2,
-"key": "At intersections, emergency vehicles must slow or stop and cross only after confirming every lane has yielded.",
-"why": "Intersections are where most ambulance crashes occur. Lights and siren only request the right of way; the driver must make sure each lane has stopped before crossing.",
-"wrong": ["Warning devices request the right of way but do not guarantee it; drivers may not see or hear you.", "Passing on the right surprises drivers who pull to the right as expected, and it causes crashes.", "", "Drivers who have just watched one emergency vehicle pass often pull out without expecting a second one."],
-"src": "STD"
-},
-{
-"id": "OP-029", "d": "OPS", "topic": "Vehicle operations", "concept": "due-regard-driving", "b": 1.5, "type": "mc",
-"stem": "Responding with lights and siren to a pediatric seizure, you enter an intersection against a red light at a speed above the posted limit without slowing. A car that did not hear your siren pulls out and hits the ambulance. Regarding liability, which statement is most accurate?",
-"opts": ["You may be found at fault, because emergency exemptions require driving with due regard for others", "The other driver is automatically at fault for failing to yield to an emergency vehicle", "You are protected because the lights and siren were on during a true emergency", "Liability depends only on whether the patient's condition justified an emergency response"],
-"ans": 0,
-"key": "Emergency driving exemptions apply only when the driver uses due regard for the safety of others.",
-"why": "State laws allow emergency vehicles some exemptions, such as passing red lights, but only when the driver acts with due regard for the safety of all others on the road. Entering a busy intersection at speed without slowing may fail that test.",
-"wrong": ["", "Other drivers must yield, but the ambulance driver still has a duty to drive with due regard; fault is not automatic.", "Using warning devices does not relieve the driver of the duty to drive safely.", "Even a true emergency does not excuse unsafe driving; how the vehicle was driven matters to liability."],
-"src": "STD"
-},
-{
-"id": "OP-030", "d": "OPS", "topic": "Vehicle operations", "concept": "roadway-positioning", "b": 0.5, "type": "mc",
-"stem": "You arrive at a two-car crash in the right lane of a divided highway. A fire engine is already parked at an angle behind the crash, blocking the lane from oncoming traffic. Where should you park the ambulance?",
-"opts": ["Behind the fire engine, upstream of the crash, so oncoming traffic sees you first", "In the open left lane beside the crash for the shortest carry", "On the far shoulder across the median, then walk the stretcher over", "Past the crash, inside the protected zone, with the loading area away from traffic"],
-"ans": 3,
-"key": "At roadway incidents, the blocking vehicle is upstream and the ambulance parks downstream within the protected work zone.",
-"why": "The angled engine shields the scene from approaching traffic. Parking beyond the crash keeps the ambulance inside that protected area, and placing the loading doors away from traffic lets the crew load without stepping into moving lanes.",
-"wrong": ["Parking behind the engine puts the crew outside the protected zone and makes them carry the patient through it.", "An ambulance in an open lane is exposed to moving traffic and blocks less protection than it needs.", "Crossing a divided highway on foot with a stretcher exposes the crew to traffic from both directions.", ""],
-"src": "STD"
-},
-{
-"id": "OP-031", "d": "OPS", "topic": "Vehicle operations", "concept": "roadway-positioning", "b": 1.5, "type": "mr",
-"stem": "A helicopter has been requested at night for a critically injured driver on a rural road. You are assigned to set up and secure the landing zone. Select TWO actions that are correct.",
-"opts": ["Choose a firm, level area clear of wires, poles, and loose debris", "Shine a spotlight at the helicopter as it approaches to help the pilot", "Keep bystanders and vehicles close to the landing area to speed unloading", "Approach the aircraft only when the flight crew signals, within the pilot's view", "Approach from the rear of the aircraft to stay clear of the main rotor"],
-"ans": [0, 3],
-"key": "A safe landing zone is level and free of hazards, and the crew approaches only on signal, in the pilot's view.",
-"why": "Wires, poles, and loose debris can strike rotors or be blown into people. Approaching only on a flight crew signal and staying in the pilot's view keeps people away from the tail rotor and moving parts.",
-"wrong": ["", "A bright light aimed at the aircraft can blind the pilot; lights should point at the ground or the landing area.", "", "People and vehicles near the landing area are at risk from rotor wash and debris; keep them well back.", "The tail rotor at the rear is nearly invisible when spinning and is the most dangerous area of many helicopters."],
-"src": "STD"
-},
-{
-"id": "OP-032", "d": "OPS", "topic": "Vehicle operations", "concept": "violent-scene-safety", "b": -0.5, "type": "mc",
-"stem": "You are dispatched to a home for a woman with a head injury after a reported domestic fight. Dispatch says police are en route but not yet on scene, and the caller hung up. Where should you position the ambulance?",
-"opts": ["In the driveway facing the house so you can reach the patient fastest", "Out of sight at a safe distance until police report the scene secure", "At the front door with the lights on so the occupants know help has arrived", "Across the street, then walk to the door to check on the patient"],
-"ans": 1,
-"key": "On scenes with possible violence, stage out of sight at a safe distance until law enforcement secures the scene.",
-"why": "A domestic fight with a disconnected call may still be dangerous. Staging out of sight and away from the home protects the crew until police confirm the scene is safe, which allows care without new casualties.",
-"wrong": ["Parking in the driveway places the crew close to a possible threat and may block an escape route.", "", "Announcing your arrival can draw an aggressor's attention to the crew before the scene is secure.", "Walking to the door before police arrive exposes the crew to the same danger that caused the injury."],
-"src": "STD"
-}
+ {
+  "id": "OP-001",
+  "d": "OPS",
+  "topic": "Legal and ethical",
+  "concept": "consent-capacity",
+  "b": -1,
+  "type": "mc",
+  "stem": "A neighbor called 911 after finding a 58-year-old man lying on his kitchen floor. He does not respond to voice or pain and has snoring respirations. No family is present, and the neighbor does not know his medical history. On what basis may you begin assessment and treatment?",
+  "opts": [
+   "Expressed consent given on his behalf by the neighbor who called 911",
+   "Implied consent, because a reasonable person would want emergency care",
+   "Involuntary consent, which requires law enforcement to authorize care",
+   "No consent is possible, so care must wait for a family member"
+  ],
+  "ans": 1,
+  "key": "An adult who cannot consent because of unresponsiveness is treated under implied consent when an emergency exists.",
+  "why": "When an adult is unable to give consent and faces a potential threat to life, the law presumes he would agree to emergency care. This is implied consent, and it allows the EMT to assess, treat, and transport without delay.",
+  "wrong": [
+   "A neighbor has no legal authority to consent for another adult; consent must come from the patient or a legal surrogate.",
+   "",
+   "Involuntary consent applies to patients held under a legal order, such as a court or police custody order, not to an unresponsive adult.",
+   "Waiting for family delays care for a possibly life-threatening condition; implied consent exists for exactly this situation."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-002",
+  "d": "OPS",
+  "topic": "Legal and ethical",
+  "concept": "consent-capacity",
+  "b": 0,
+  "type": "mc",
+  "stem": "A 13-year-old girl fell from playground equipment on a school field trip. Her forearm is deformed, and her hand is pale and cool with a weak radial pulse. The teacher says the school has no medical authorization form for her, and repeated calls to both parents go unanswered. What should you do?",
+  "opts": [
+   "Wait at the scene with the patient until a parent can be reached to give consent",
+   "Accept the patient's own verbal consent as legally sufficient for treatment",
+   "Treat and transport under implied consent while efforts to reach the parents continue",
+   "Have the teacher sign a refusal and leave instructions to take her to a clinic"
+  ],
+  "ans": 2,
+  "key": "A minor with a time-sensitive emergency and no reachable guardian is treated under implied consent.",
+  "why": "A minor generally cannot give legal consent, but when a guardian cannot be reached and delay threatens life or limb, implied consent applies. This arm with poor distal circulation is a limb threat, so care should not wait; the school or dispatch can keep trying to reach the parents.",
+  "wrong": [
+   "Delaying care for an arm with compromised circulation risks permanent harm; implied consent covers this emergency.",
+   "A 13-year-old who is not emancipated generally cannot give legal consent for her own care.",
+   "",
+   "A teacher without written authorization cannot refuse care for a minor, and a limb threat needs EMS treatment and transport."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-003",
+  "d": "OPS",
+  "topic": "Legal and ethical",
+  "concept": "informed-refusal",
+  "b": 0.5,
+  "type": "order",
+  "stem": "A 62-year-old man with chest discomfort that has now eased tells you he does not want to go to the hospital. Place the steps of handling his refusal in the correct order.",
+  "opts": [
+   "Confirm he is alert, oriented, and not impaired by alcohol, drugs, or illness",
+   "Explain your findings and the risks of refusing, including disability or death",
+   "Encourage transport again, offer alternatives, and contact medical direction per protocol",
+   "Have him sign the refusal form with a witness present",
+   "Complete the patient care report describing the refusal discussion"
+  ],
+  "key": "A valid refusal starts with capacity, then informed discussion and persuasion, then signature, then documentation.",
+  "why": "Only a patient with decision-making capacity can refuse, so capacity comes first. He must then understand the specific risks, and the EMT should try again to persuade him and involve medical direction before accepting a signed refusal. The PCR then records what was said and done.",
+  "src": "STD"
+ },
+ {
+  "id": "OP-004",
+  "d": "OPS",
+  "topic": "Legal and ethical",
+  "concept": "duty-breach-negligence",
+  "b": -0.5,
+  "type": "mc",
+  "stem": "You arrive at a crowded emergency department with a 70-year-old woman with abdominal pain. Every nurse is busy. Your partner moves her onto a hallway bed, and dispatch asks when you will be available. No hospital staff member has spoken with you yet. What must happen before your crew leaves?",
+  "opts": [
+   "Give a verbal report to a nurse or physician who accepts responsibility for her care",
+   "Leave a printed copy of the patient care report on her bed and notify dispatch",
+   "Ask a family member sitting nearby to call a nurse if her condition changes",
+   "Recheck her vital signs, document that she is stable, and then clear the call"
+  ],
+  "ans": 0,
+  "key": "Care must be transferred to a provider of equal or higher training who accepts it; leaving before that is abandonment.",
+  "why": "Once care has begun, the duty continues until a qualified provider formally accepts the patient. A verbal report to a nurse or physician at the receiving facility completes that transfer and protects both patient and crew.",
+  "wrong": [
+   "",
+   "A written report left on the bed does not transfer care to anyone; no qualified person has accepted the patient.",
+   "A family member is not a health care provider, so leaving the patient with them is abandonment.",
+   "Stable vital signs do not end the duty to the patient; care still has to be handed to a qualified provider."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-005",
+  "d": "OPS",
+  "topic": "Legal and ethical",
+  "concept": "duty-breach-negligence",
+  "b": 0.5,
+  "type": "table",
+  "stem": "A crew was dispatched to a fall at a nursing home. During loading, the patient slid off the stretcher and broke her wrist because the straps were not fastened. Her family files a negligence claim. Classify each fact by the element of negligence it establishes.",
+  "cols": [
+   "Duty to act",
+   "Breach of duty",
+   "Damages",
+   "Proximate cause"
+  ],
+  "rows": [
+   [
+    "The ambulance was dispatched to the call and the crew began patient care",
+    0
+   ],
+   [
+    "The crew moved the stretcher without fastening the safety straps",
+    1
+   ],
+   [
+    "The patient sustained a fractured wrist",
+    2
+   ],
+   [
+    "The fracture resulted directly from sliding off the unsecured stretcher",
+    3
+   ]
+  ],
+  "key": "Negligence requires all four elements: duty, breach of that duty, actual harm, and harm caused by the breach.",
+  "why": "The dispatched crew had a duty to act. Failing to secure the straps fell below the standard of care, which is a breach. The fracture is the damage, and because the fall from the unsecured stretcher caused it, proximate cause is met.",
+  "src": "STD"
+ },
+ {
+  "id": "OP-006",
+  "d": "OPS",
+  "topic": "Legal and ethical",
+  "concept": "advance-directives",
+  "b": -0.5,
+  "type": "mc",
+  "stem": "An 82-year-old woman enrolled in home hospice is found pulseless and apneic in bed. Her daughter calmly hands you a physician-signed POLST form with her mother's name on it, marked 'Do Not Attempt Resuscitation.' What is the most appropriate action?",
+  "opts": [
+   "Begin CPR and transport so the hospital can decide whether to honor the form",
+   "Apply the AED and deliver a shock if advised, since defibrillation is not CPR",
+   "Perform two minutes of CPR, then stop if no pulse returns",
+   "Confirm the form is valid for this patient, withhold resuscitation, and support the family"
+  ],
+  "ans": 3,
+  "key": "A valid DNR or POLST order that applies to the patient is honored by withholding resuscitation.",
+  "why": "A properly completed, physician-signed POLST that identifies the patient is a legal medical order. The EMT verifies it, withholds CPR and defibrillation, follows local protocol for a death at home, and supports the family.",
+  "wrong": [
+   "Starting CPR against a valid order ignores the patient's documented wishes; EMS is expected to honor it in the field.",
+   "Defibrillation is a resuscitation attempt and is withheld under a valid do-not-attempt-resuscitation order.",
+   "Any CPR attempt goes against a valid order; there is no trial period built into the order.",
+   ""
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-007",
+  "d": "OPS",
+  "topic": "Legal and ethical",
+  "concept": "advance-directives",
+  "b": 1.5,
+  "type": "mc",
+  "stem": "A 76-year-old man with lung disease has a valid DNR order that addresses only CPR. Tonight he is alert but short of breath, speaking in short phrases, with RR 28 and SpO2 86%. His wife asks whether the DNR means you cannot help him. What should you do?",
+  "opts": [
+   "Withhold all treatment and transport, because the DNR covers his condition",
+   "Give oxygen and other indicated care, then transport; the DNR applies to cardiac arrest",
+   "Provide comfort only, without oxygen, to respect his written wishes",
+   "Ask him to revoke the DNR in writing before you begin treatment"
+  ],
+  "ans": 1,
+  "key": "A DNR order limits resuscitation in arrest; it does not mean withholding other indicated care.",
+  "why": "A DNR that addresses CPR applies when the patient is pulseless and apneic. This patient has a pulse and is in respiratory distress, so oxygen, positioning, and transport are appropriate, with the DNR traveling with him.",
+  "wrong": [
+   "A DNR is not a refusal of all care; a patient with a pulse still receives indicated treatment.",
+   "",
+   "Oxygen is indicated for his hypoxia and also relieves distress; the DNR does not prohibit it.",
+   "He does not need to revoke the DNR; it remains in effect for arrest while you treat his breathing."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-008",
+  "d": "OPS",
+  "topic": "Legal and ethical",
+  "concept": "privacy-and-reporting",
+  "b": 0.5,
+  "type": "mr",
+  "stem": "A 79-year-old woman who lives with her adult son has bruises of different colors on both upper arms. The son answers every question for her, his story changes, and she looks at him before speaking. She asks you not to 'make trouble.' Select TWO actions that are appropriate.",
+  "opts": [
+   "Confront the son about the bruises before leaving the home",
+   "Report your concerns as required by state law and agency protocol",
+   "Ask the responding officer to arrest the son for elder abuse",
+   "Document your objective findings and quote statements exactly",
+   "Photograph the bruises with your personal phone as evidence"
+  ],
+  "ans": [
+   1,
+   3
+  ],
+  "key": "Suspected abuse is reported as the law requires and documented objectively; the EMT does not investigate or accuse.",
+  "why": "Most states require health care providers, including EMS, to report suspected elder abuse, and the duty does not depend on the patient's permission. Objective, quoted documentation supports the people who investigate.",
+  "wrong": [
+   "Confronting a suspected abuser can escalate danger to the patient and the crew; investigation belongs to the proper authorities.",
+   "",
+   "EMTs do not determine guilt or direct arrests; they report concerns through the proper channels.",
+   "",
+   "Images on a personal device create a privacy violation and are not an approved way to collect evidence."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-009",
+  "d": "OPS",
+  "topic": "Legal and ethical",
+  "concept": "privacy-and-reporting",
+  "b": 0,
+  "type": "mc",
+  "stem": "Your crew transported the driver from a crash that is now on the local news. Later that shift, several people ask you about the patient. Which disclosure of patient information is permitted?",
+  "opts": [
+   "Confirming to a reporter only that the driver was alive when you arrived",
+   "Telling the driver's employer, who calls the station, which hospital he went to",
+   "Giving the emergency department nurse an update when she calls with a follow-up question",
+   "Posting a scene photo online after cropping out the driver's face"
+  ],
+  "ans": 2,
+  "key": "Patient information may be shared with providers involved in the patient's care, not with the media, employers, or the public.",
+  "why": "Privacy law permits disclosure to other health care providers for treatment, so answering the receiving nurse is appropriate. Disclosing even limited details to others who are not involved in care is a privacy violation.",
+  "wrong": [
+   "Even limited details about a patient's condition are protected and may not be given to the media by the EMT.",
+   "An employer is not involved in treatment and has no right to know where the patient was taken.",
+   "",
+   "A crash scene photo can identify a patient through the vehicle, location, or plates; posting it violates privacy."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-010",
+  "d": "OPS",
+  "topic": "Legal and ethical",
+  "concept": "crime-scene-care",
+  "b": 0,
+  "type": "mc",
+  "stem": "Police have secured an apartment where a 30-year-old man has a stab wound to the abdomen. He is responsive and pale with HR 118. A bloody knife lies on the floor beside him, away from his reach. How should you handle the scene while giving care?",
+  "opts": [
+   "Leave the knife in place, route your crew around it, and tell police about anything you must move",
+   "Pick up the knife with gloved hands and place it in a bag for police",
+   "Delay care until police finish photographing and collecting evidence",
+   "Cut through the hole in his shirt for the fastest access to the wound"
+  ],
+  "ans": 0,
+  "key": "At a crime scene, patient care comes first, but EMTs disturb as little as possible and tell police what was moved.",
+  "why": "Care for a patient in shock cannot wait, yet unnecessary contact with evidence can harm the investigation. Limiting your path, leaving the weapon in place, and reporting anything moved meets both duties.",
+  "wrong": [
+   "",
+   "Handling the knife can destroy evidence; police collect it unless it poses an immediate danger to the crew.",
+   "A patient with signs of shock needs immediate care; evidence collection does not take priority over his life.",
+   "Cutting through a stab or bullet hole destroys evidence; cut around it when exposing the wound."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-011",
+  "d": "OPS",
+  "topic": "Documentation",
+  "concept": "pcr-accuracy",
+  "b": -0.5,
+  "type": "table",
+  "stem": "You are writing the narrative for a 66-year-old woman with chest pain. Classify each piece of information as an objective finding or subjective information.",
+  "cols": [
+   "Objective finding",
+   "Subjective information"
+  ],
+  "rows": [
+   [
+    "Patient states her chest feels 'like a heavy weight'",
+    1
+   ],
+   [
+    "Skin is pale, cool, and diaphoretic",
+    0
+   ],
+   [
+    "Blood pressure 152/94 mm Hg",
+    0
+   ],
+   [
+    "Husband reports she has been 'more confused than usual' today",
+    1
+   ],
+   [
+    "Patient rates her pain 8 out of 10",
+    1
+   ]
+  ],
+  "key": "Objective findings are what the EMT observes or measures; subjective information is what the patient or others report.",
+  "why": "Skin signs and a measured blood pressure are observations the EMT can verify. The patient's description and pain rating, and the husband's report, are statements told to the EMT and are recorded as subjective information.",
+  "src": "STD"
+ },
+ {
+  "id": "OP-012",
+  "d": "OPS",
+  "topic": "Documentation",
+  "concept": "crime-scene-care",
+  "b": 1.5,
+  "type": "mc",
+  "stem": "A 24-year-old man was shot in the left thigh. He tells you, 'My neighbor shot me over the fence.' You find one small round wound on the outer thigh and no other wound. You cut his jeans away from the wound and hand them to police. Which PCR entry is best?",
+  "opts": [
+   "Pt victim of attempted murder by neighbor. Entrance wound L thigh. Jeans removed.",
+   "Small-caliber gunshot entrance wound L lateral thigh, fired at close range. Clothing to PD.",
+   "Pt shot by neighbor after an argument; pt appears truthful. Wound L thigh.",
+   "Pt states 'My neighbor shot me over the fence.' Approx 1 cm round wound L lateral thigh. Jeans cut around wound, given to PD."
+  ],
+  "ans": 3,
+  "key": "On a crime-related call, quote statements exactly, describe wounds by appearance and location, and record what was done with evidence.",
+  "why": "The PCR may become a legal record, so it should hold the patient's exact words and objective wound descriptions without conclusions. Labeling entry versus exit, caliber, or intent is outside what an EMT can determine.",
+  "wrong": [
+   "'Attempted murder' is a legal conclusion, and 'entrance wound' is a forensic judgment the EMT cannot make.",
+   "Caliber, range, and entry status are forensic conclusions that the EMT cannot determine in the field.",
+   "Paraphrasing loses the patient's exact words, and judging his truthfulness is opinion, not an observation.",
+   ""
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-013",
+  "d": "OPS",
+  "topic": "Documentation",
+  "concept": "informed-refusal",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "A 45-year-old woman who slipped on ice has a painful but intact wrist. She is alert and oriented, with normal vital signs, and declines transport after you explain the risks. She signs the refusal form. Which documentation best protects the patient and the crew?",
+  "opts": [
+   "The signed refusal form alone, since her signature proves she refused",
+   "Her assessment findings and capacity, the risks explained, advice to seek care or call back, and her response",
+   "A note that the patient refused transport and was left in the care of herself",
+   "Your opinion that she refused because she wanted to avoid an ambulance bill"
+  ],
+  "ans": 1,
+  "key": "A refusal PCR records capacity, the findings, the specific risks explained, instructions given, and the patient's understanding.",
+  "why": "A signature alone does not show the refusal was informed. Documenting her mental status, the assessment, the risks you described, the instructions to seek care or call back, and her response shows she understood and chose to refuse.",
+  "wrong": [
+   "A signature does not show she had capacity or understood the risks; the narrative must show both.",
+   "",
+   "A one-line note gives no evidence of capacity, the risks discussed, or the advice given.",
+   "Speculation about motive is not objective and does not show that the refusal was informed."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-014",
+  "d": "OPS",
+  "topic": "Documentation",
+  "concept": "pcr-accuracy",
+  "b": 0,
+  "type": "mc",
+  "stem": "An hour after submitting an electronic PCR for a 50-year-old man with a forearm laceration, you realize you documented the injury on his right arm. It was on his left arm. What should you do?",
+  "opts": [
+   "Delete the narrative and rewrite it so the final record appears clean",
+   "Leave the PCR alone because the error is minor and the wound was treated",
+   "Add a dated, timed addendum that identifies and corrects the error per agency policy",
+   "Call the emergency department and correct the error with the nurse verbally only"
+  ],
+  "ans": 2,
+  "key": "PCR errors are corrected openly with a dated, identified correction, never by erasing the original entry.",
+  "why": "A correction that shows what changed, when, and by whom keeps the record accurate and trustworthy. Electronic systems use an addendum for this, while the original entry stays visible.",
+  "wrong": [
+   "Erasing the original entry hides the change and can look like falsification if the record is reviewed.",
+   "Wrong-side documentation can mislead later caregivers and reviewers; it must be corrected.",
+   "",
+   "A verbal correction does not fix the permanent record that others will rely on."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-015",
+  "d": "OPS",
+  "topic": "Documentation",
+  "concept": "pcr-accuracy",
+  "b": -1,
+  "type": "mc",
+  "stem": "During a short transport of a 35-year-old man with an ankle injury, your partner forgot to take a second set of vital signs. At the hospital he asks you to enter his first set again with a later time so the PCR 'looks complete.' What should you do?",
+  "opts": [
+   "Document only the vital signs actually obtained and note that no repeat set was taken",
+   "Enter the copied values but mark them as approximate",
+   "Enter values you estimate from how the patient looked during transport",
+   "Leave vitals out and write that the patient remained stable throughout"
+  ],
+  "ans": 0,
+  "key": "Record only what was actually observed and done; entering data that was not obtained is falsification.",
+  "why": "A PCR must reflect the care that was actually given. Documenting that a reassessment was not done is honest and correctable through training, while invented or copied values are falsification.",
+  "wrong": [
+   "",
+   "Values that were never measured are still falsified even when labeled approximate.",
+   "Estimated values are not measurements and misrepresent the care that was given.",
+   "Writing 'stable' without reassessment claims an observation the crew did not make."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-016",
+  "d": "OPS",
+  "topic": "Equipment and supplies",
+  "concept": "shift-equipment-check",
+  "b": -0.5,
+  "type": "mc",
+  "stem": "At the start of your shift, the ambulance's AED status indicator shows an error symbol, and the spare electrode pad package is past its expiration date. Your unit is about to be placed in service. What should you do?",
+  "opts": [
+   "Go in service, because the AED will likely work if a cardiac arrest call comes in",
+   "Replace the spare pads and ignore the indicator if the AED powers on",
+   "Keep the AED in service and report the problem at the end of the shift",
+   "Remove it from service, obtain a working AED and in-date pads, and report it per policy"
+  ],
+  "ans": 3,
+  "key": "An AED with a fault indicator or expired pads is replaced before the unit goes in service.",
+  "why": "An AED must be ready on every call, and a status warning means it may not analyze or shock. Swapping in a working unit and in-date pads, and reporting the defect, ensures the crew can defibrillate when needed.",
+  "wrong": [
+   "Assuming the device will work risks a failed shock during a cardiac arrest.",
+   "Powering on does not clear a self-test fault; the indicator shows the unit may fail during use.",
+   "Waiting until the end of the shift leaves the crew without a reliable AED for every call in the meantime.",
+   ""
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-017",
+  "d": "OPS",
+  "topic": "Equipment and supplies",
+  "concept": "shift-equipment-check",
+  "b": 0,
+  "type": "mc",
+  "stem": "During your morning inventory, you find that the unit's intranasal naloxone device expired last month. The station has replacement stock. What is the best action?",
+  "opts": [
+   "Keep it on the unit, since it expired only recently and still has some effect",
+   "Remove it, replace it from stock, and record the change per agency policy",
+   "Use the expired device first on the next overdose call so it is not wasted",
+   "Discard it and run without naloxone until the scheduled resupply day"
+  ],
+  "ans": 1,
+  "key": "Expired medications are removed, replaced with in-date stock, and logged before the unit responds.",
+  "why": "Expired medications may not work as intended, and giving them violates standard practice. Replacing the device from stock and recording the change keeps the unit ready for an opioid emergency.",
+  "wrong": [
+   "Expired medication may be less effective and should not be carried for patient use.",
+   "",
+   "Giving an expired drug to a patient with an opioid overdose risks treatment failure.",
+   "Running without naloxone leaves the crew unable to treat an opioid emergency when stock is available."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-018",
+  "d": "OPS",
+  "topic": "Equipment and supplies",
+  "concept": "oxygen-cylinder-safety",
+  "b": -1,
+  "type": "mc",
+  "stem": "You are replacing an empty portable oxygen cylinder in the ambulance before your next call. Which practice is correct?",
+  "opts": [
+   "Apply petroleum jelly to the valve threads so the regulator seats easily",
+   "Lay the new cylinder loose on the bench seat to have it within reach",
+   "Remove the seal, point the valve away from people, and briefly crack it before attaching the regulator",
+   "Store the spare cylinder next to the compartment heater to keep the gas warm"
+  ],
+  "ans": 2,
+  "key": "Oxygen cylinders are kept away from oil, heat, and impact, and the valve is cracked before the regulator is attached.",
+  "why": "Briefly opening the valve clears dust that could enter the regulator, and pointing it away from people prevents injury. Oxygen supports combustion strongly, so oil and heat near the valve, or an unsecured cylinder, create fire and projectile hazards.",
+  "wrong": [
+   "Petroleum products can ignite in contact with pressurized oxygen and must never be used on regulators or valves.",
+   "An unsecured cylinder can become a projectile in a sudden stop or crash; cylinders must be secured.",
+   "",
+   "Heat raises cylinder pressure and increases the fire risk; cylinders are stored away from heat sources."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-019",
+  "d": "OPS",
+  "topic": "Equipment and supplies",
+  "concept": "oxygen-cylinder-safety",
+  "b": 1.5,
+  "type": "mc",
+  "stem": "You are preparing for a long rural transport of a 68-year-old woman with SpO2 88% on a nonrebreather mask at high flow. The portable cylinder's gauge reads well under half full. How should you plan your oxygen supply?",
+  "opts": [
+   "Estimate the time left from gauge pressure, cylinder size, and flow, and switch to a full cylinder if it may not last",
+   "Plan on the same duration you get on short transports, since duration does not depend on flow rate",
+   "Turn the flow down to a low rate on the nonrebreather to make the cylinder last longer",
+   "Run the cylinder until the gauge reads zero before changing so no oxygen is wasted"
+  ],
+  "ans": 0,
+  "key": "Oxygen duration depends on remaining pressure, cylinder size, and flow rate; higher flow empties a cylinder faster.",
+  "why": "A cylinder's remaining time is calculated from its pressure above a safe residual, its size factor, and the liter flow. At high flow a partly full cylinder may run out mid-transport, so the safe plan is to estimate the time and start with a full or larger supply.",
+  "wrong": [
+   "",
+   "Higher flow uses oxygen faster, so the same cylinder lasts a shorter time on this patient.",
+   "A nonrebreather needs enough flow to keep the reservoir bag inflated; too little flow makes the patient rebreathe exhaled air.",
+   "Cylinders should be changed at a safe residual pressure, not run empty, so the patient's oxygen is not interrupted."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-020",
+  "d": "OPS",
+  "topic": "Equipment and supplies",
+  "concept": "infection-control",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "After you transport a 40-year-old man who vomited blood, the stretcher mattress and side rails have visible blood on them. You are wearing gloves. What is the correct way to prepare the stretcher for the next patient?",
+  "opts": [
+   "Spray disinfectant on the blood and wipe it off immediately so the unit can clear",
+   "Wipe the surfaces with plain water and leave the disinfecting for the end of the shift",
+   "Cover the soiled mattress with a fresh sheet and disinfect it later at the station",
+   "Remove visible blood first, then apply an EPA-registered disinfectant for its labeled wet contact time"
+  ],
+  "ans": 3,
+  "key": "Cleaning removes gross contamination first; disinfecting then requires the product's full labeled contact time.",
+  "why": "Blood and organic matter block disinfectants, so surfaces must be cleaned before they are disinfected. The disinfectant must stay wet for the time on its label to kill pathogens, and contaminated waste goes into the proper biohazard containers.",
+  "wrong": [
+   "Disinfectant applied over blood and wiped at once neither cleans the surface first nor meets the required contact time.",
+   "Water alone does not disinfect, and delaying exposes the next patient and crew to bloodborne pathogens.",
+   "A fresh sheet over contamination exposes the next patient and crew; the surface must be cleaned and disinfected.",
+   ""
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-021",
+  "d": "OPS",
+  "topic": "Responder wellness and safety",
+  "concept": "infection-control",
+  "b": 0.5,
+  "type": "order",
+  "stem": "While you are controlling bleeding from a 28-year-old man's scalp wound, he shakes his head and his blood splashes into your unprotected eye. Your partner takes over his care. Place your next actions in the correct order.",
+  "opts": [
+   "Flush the eye immediately with large amounts of clean water or saline",
+   "Notify your supervisor or designated infection control officer",
+   "Get a prompt medical evaluation for post-exposure testing and treatment",
+   "Complete the follow-up testing and counseling as scheduled"
+  ],
+  "key": "After a blood exposure: wash or flush at once, notify the designated officer, get prompt evaluation, then complete follow-up.",
+  "why": "Immediate flushing reduces the amount of infectious material on the eye. Rapid notification starts source-patient testing and a medical evaluation, where any post-exposure treatment works best when started early. Follow-up testing confirms whether infection occurred.",
+  "src": "STD"
+ },
+ {
+  "id": "OP-022",
+  "d": "OPS",
+  "topic": "Responder wellness and safety",
+  "concept": "infection-control",
+  "b": 1,
+  "type": "mc",
+  "stem": "A 45-year-old man staying at a shelter has had a cough for six weeks, night sweats, weight loss, and blood-streaked sputum. He is alert, with SpO2 95% and RR 20. Which precautions are most appropriate for your crew?",
+  "opts": [
+   "Surgical masks for the crew, with no mask needed for the patient",
+   "Fit-tested N95 respirators for the crew and a surgical mask on the patient if he tolerates it",
+   "An N95 respirator on the patient and gloves for the crew",
+   "Gloves and gowns for the crew, since the disease spreads mainly by touch"
+  ],
+  "ans": 1,
+  "key": "Suspected tuberculosis calls for airborne precautions: fit-tested N95 for the crew and a surgical mask on the patient.",
+  "why": "His symptoms suggest tuberculosis, which spreads through airborne droplet nuclei. A fit-tested N95 protects the crew, a surgical mask on the patient reduces what he releases, and ventilation in the patient compartment helps further.",
+  "wrong": [
+   "Surgical masks do not filter airborne particles well enough to protect the crew from tuberculosis.",
+   "",
+   "N95 respirators protect the wearer and are not intended for the patient; the crew remains unprotected.",
+   "Tuberculosis spreads through the air, not mainly by touch, so contact precautions alone are inadequate."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-023",
+  "d": "OPS",
+  "topic": "Responder wellness and safety",
+  "concept": "body-mechanics",
+  "b": -1.5,
+  "type": "mc",
+  "stem": "You and your partner are about to lift a 210-lb man on a stretcher from the ground. Which technique best protects your back?",
+  "opts": [
+   "Bend at the waist with your legs straight to reach the rails",
+   "Twist your torso to turn toward the ambulance while lifting",
+   "Keep your back straight, feet shoulder-width apart, and lift with your legs",
+   "Hold the stretcher at arm's length to keep it away from your body"
+  ],
+  "ans": 2,
+  "key": "Safe lifting uses a straight back, a stable base, the leg muscles, and the load kept close to the body.",
+  "why": "A locked, straight back and leg-driven lift place the work on the strongest muscles and reduce strain on the spine. A shoulder-width stance gives a stable base, and keeping the load close shortens the lever arm on the back.",
+  "wrong": [
+   "Bending at the waist puts the load on the lower back muscles and discs instead of the legs.",
+   "Twisting under load is a common cause of back injury; turn by moving the feet.",
+   "",
+   "Holding a load away from the body multiplies the force on the back."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-024",
+  "d": "OPS",
+  "topic": "Responder wellness and safety",
+  "concept": "body-mechanics",
+  "b": 1,
+  "type": "mr",
+  "stem": "A 72-year-old woman with shortness of breath is alert and able to sit upright. She lives in a third-floor walk-up apartment with a narrow stairway and no elevator. Select TWO actions that best reduce the risk of injury to the crew while moving her.",
+  "opts": [
+   "Move her down the stairs in a stair chair rather than carrying a stretcher",
+   "Stand with your feet close together to fit the narrow stairway",
+   "Have the strongest crew member carry the device alone to avoid uneven lifting",
+   "Agree on clear commands and lift and move on the same signal",
+   "Pull the device toward you instead of pushing whenever you can"
+  ],
+  "ans": [
+   0,
+   3
+  ],
+  "key": "Choose the right device for the route and coordinate every lift with clear, shared commands.",
+  "why": "A stair chair suits an alert patient who can sit and is easier and safer than carrying a stretcher down narrow stairs. Clear communication keeps partners lifting together, which prevents sudden load shifts that cause injury.",
+  "wrong": [
+   "",
+   "A narrow stance makes you unstable; keep the feet about shoulder-width apart for balance.",
+   "One person carrying a patient risks injury to both; lifting and carrying need coordinated partners.",
+   "",
+   "Pushing is safer than pulling when moving a load; pulling strains the back and shoulders."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-025",
+  "d": "OPS",
+  "topic": "Responder wellness and safety",
+  "concept": "stress-fatigue",
+  "b": 0,
+  "type": "mc",
+  "stem": "Four days after a call in which an infant died despite resuscitation, an EMT tells you she cannot sleep, keeps seeing the scene, and snaps at her family. She is still working her shifts. What is the best advice?",
+  "opts": [
+   "Talk with peer support or the employee assistance program, and see a mental health professional if it persists",
+   "Have a few drinks at bedtime until her sleep returns to normal",
+   "Pick up extra shifts so she stays busy and does not dwell on it",
+   "Ignore the symptoms, since they are normal and need no attention"
+  ],
+  "ans": 0,
+  "key": "Stress reactions after a critical incident are common; use peer support and professional help rather than avoidance.",
+  "why": "Sleep problems, intrusive images, and irritability are common after a traumatic call. Talking with trained peers or the employee assistance program helps, and symptoms that persist or worsen should be evaluated by a mental health professional.",
+  "wrong": [
+   "",
+   "Alcohol worsens sleep quality and can become an unhealthy coping pattern.",
+   "Extra work adds fatigue and avoids the stress rather than addressing it.",
+   "These reactions are common, but ignoring them can allow them to persist; support and monitoring are still needed."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-026",
+  "d": "OPS",
+  "topic": "Responder wellness and safety",
+  "concept": "stress-fatigue",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "At 3:30 a.m., near the end of a 24-hour shift with five overnight calls, you are driving the ambulance back to the station without a patient. You notice you drifted toward the shoulder and cannot remember the last mile. What should you do?",
+  "opts": [
+   "Open the window and turn up the radio to stay alert for the rest of the drive",
+   "Drink an energy drink and continue, since the station is only a few miles away",
+   "Speed up slightly to reach the station before you get more tired",
+   "Pull over safely, let a more alert partner drive, and report fatigue per agency policy"
+  ],
+  "ans": 3,
+  "key": "Drowsy driving is an immediate hazard; stop driving and use agency fatigue procedures rather than relying on alertness tricks.",
+  "why": "Drifting and missing time are signs of microsleep, which can cause a crash at any moment. Stopping safely and handing off the wheel removes the danger, and reporting fatigue lets the agency protect the crew and the public.",
+  "wrong": [
+   "Cold air and noise do not prevent microsleep; they give only brief, unreliable alertness.",
+   "Caffeine takes time to work and does not reliably reverse severe sleep loss.",
+   "Higher speed increases crash risk while the driver remains impaired by fatigue.",
+   ""
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-027",
+  "d": "OPS",
+  "topic": "Responder wellness and safety",
+  "concept": "violent-scene-safety",
+  "b": 0,
+  "type": "mc",
+  "stem": "A 38-year-old man in a living room is pacing, yelling that he does not want help, and clenching his fists. No weapons are visible. Police have not yet arrived. Your partner is near the front door. How should you approach him?",
+  "opts": [
+   "Move close and put a hand on his shoulder to reassure him",
+   "Keep a clear exit, stay at a safe distance, and speak calmly in a low voice",
+   "Raise your voice firmly so he knows you are in charge",
+   "Warn him that he will be restrained if he does not calm down"
+  ],
+  "ans": 1,
+  "key": "De-escalation keeps an exit open, respects personal space, and uses a calm voice; leave and call police if threats grow.",
+  "why": "An agitated person may see closeness or a loud voice as a threat. A safe distance, an open escape route, and a calm, respectful tone lower tension while protecting the crew, who should withdraw if he becomes more threatening.",
+  "wrong": [
+   "Touching an agitated patient without warning can provoke an assault and leaves you within striking range.",
+   "",
+   "A loud, commanding tone tends to escalate an angry person rather than calm him.",
+   "Threats of restraint often increase agitation; restraint decisions follow protocol with law enforcement."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-028",
+  "d": "OPS",
+  "topic": "Vehicle operations",
+  "concept": "due-regard-driving",
+  "b": -1,
+  "type": "mc",
+  "stem": "You are driving with lights and siren to a reported cardiac arrest. Ahead, your traffic light turns red at a busy four-lane intersection. Some cars have stopped, and others have not. What should you do?",
+  "opts": [
+   "Proceed at your current speed, since lights and siren give you the right of way",
+   "Pass the stopped cars on the right shoulder to save time",
+   "Slow down, stop if needed, and proceed only after every lane of traffic has yielded",
+   "Follow closely behind a fire engine that is already crossing the intersection"
+  ],
+  "ans": 2,
+  "key": "At intersections, emergency vehicles must slow or stop and cross only after confirming every lane has yielded.",
+  "why": "Intersections are where most ambulance crashes occur. Lights and siren only request the right of way; the driver must make sure each lane has stopped before crossing.",
+  "wrong": [
+   "Warning devices request the right of way but do not guarantee it; drivers may not see or hear you.",
+   "Passing on the right surprises drivers who pull to the right as expected, and it causes crashes.",
+   "",
+   "Drivers who have just watched one emergency vehicle pass often pull out without expecting a second one."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-029",
+  "d": "OPS",
+  "topic": "Vehicle operations",
+  "concept": "due-regard-driving",
+  "b": 1.5,
+  "type": "mc",
+  "stem": "Responding with lights and siren to a pediatric seizure, you enter an intersection against a red light at a speed above the posted limit without slowing. A car that did not hear your siren pulls out and hits the ambulance. Regarding liability, which statement is most accurate?",
+  "opts": [
+   "You may be found at fault, because emergency exemptions require driving with due regard for others",
+   "The other driver is automatically at fault for failing to yield to an emergency vehicle",
+   "You are protected because the lights and siren were on during a true emergency",
+   "Liability depends only on whether the patient's condition justified an emergency response"
+  ],
+  "ans": 0,
+  "key": "Emergency driving exemptions apply only when the driver uses due regard for the safety of others.",
+  "why": "State laws allow emergency vehicles some exemptions, such as passing red lights, but only when the driver acts with due regard for the safety of all others on the road. Entering a busy intersection at speed without slowing may fail that test.",
+  "wrong": [
+   "",
+   "Other drivers must yield, but the ambulance driver still has a duty to drive with due regard; fault is not automatic.",
+   "Using warning devices does not relieve the driver of the duty to drive safely.",
+   "Even a true emergency does not excuse unsafe driving; how the vehicle was driven matters to liability."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-030",
+  "d": "OPS",
+  "topic": "Vehicle operations",
+  "concept": "roadway-positioning",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "You arrive at a two-car crash in the right lane of a divided highway. A fire engine is already parked at an angle behind the crash, blocking the lane from oncoming traffic. Where should you park the ambulance?",
+  "opts": [
+   "Behind the fire engine, upstream of the crash, so oncoming traffic sees you first",
+   "In the open left lane beside the crash for the shortest carry",
+   "On the far shoulder across the median, then walk the stretcher over",
+   "Past the crash, inside the protected zone, with the loading area away from traffic"
+  ],
+  "ans": 3,
+  "key": "At roadway incidents, the blocking vehicle is upstream and the ambulance parks downstream within the protected work zone.",
+  "why": "The angled engine shields the scene from approaching traffic. Parking beyond the crash keeps the ambulance inside that protected area, and placing the loading doors away from traffic lets the crew load without stepping into moving lanes.",
+  "wrong": [
+   "Parking behind the engine puts the crew outside the protected zone and makes them carry the patient through it.",
+   "An ambulance in an open lane is exposed to moving traffic and puts the crew outside the protected zone.",
+   "Crossing a divided highway on foot with a stretcher exposes the crew to traffic from both directions.",
+   ""
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-031",
+  "d": "OPS",
+  "topic": "Vehicle operations",
+  "concept": "roadway-positioning",
+  "b": 1.5,
+  "type": "mr",
+  "stem": "A helicopter has been requested at night for a critically injured driver on a rural road. You are assigned to set up and secure the landing zone. Select TWO actions that are correct.",
+  "opts": [
+   "Choose a firm, level area clear of wires, poles, and loose debris",
+   "Shine a spotlight at the helicopter as it approaches to help the pilot",
+   "Keep bystanders and vehicles close to the landing area to speed unloading",
+   "Approach the aircraft only when the flight crew signals, within the pilot's view",
+   "Approach from the rear of the aircraft to stay clear of the main rotor"
+  ],
+  "ans": [
+   0,
+   3
+  ],
+  "key": "A safe landing zone is level and free of hazards, and the crew approaches only on signal, in the pilot's view.",
+  "why": "Wires, poles, and loose debris can strike rotors or be blown into people. Approaching only on a flight crew signal and staying in the pilot's view keeps people away from the tail rotor and moving parts.",
+  "wrong": [
+   "",
+   "A bright light aimed at the aircraft can blind the pilot; lights should point at the ground or the landing area.",
+   "People and vehicles near the landing area are at risk from rotor wash and debris; keep them well back.",
+   "",
+   "The tail rotor at the rear is nearly invisible when spinning and is the most dangerous area of many helicopters."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "OP-032",
+  "d": "OPS",
+  "topic": "Vehicle operations",
+  "concept": "violent-scene-safety",
+  "b": -0.5,
+  "type": "mc",
+  "stem": "You are dispatched to a home for a woman with a head injury after a reported domestic fight. Dispatch says police are en route but not yet on scene, and the caller hung up. Where should you position the ambulance?",
+  "opts": [
+   "In the driveway facing the house so you can reach the patient fastest",
+   "Out of sight at a safe distance until police report the scene secure",
+   "At the front door with the lights on so the occupants know help has arrived",
+   "Across the street, then walk to the door to check on the patient"
+  ],
+  "ans": 1,
+  "key": "On scenes with possible violence, stage out of sight at a safe distance until law enforcement secures the scene.",
+  "why": "A domestic fight with a disconnected call may still be dangerous. Staging out of sight and away from the home protects the crew until police confirm the scene is safe, which allows care without new casualties.",
+  "wrong": [
+   "Parking in the driveway places the crew close to a possible threat and may block an escape route.",
+   "",
+   "Announcing your arrival can draw an aggressor's attention to the crew before the scene is secure.",
+   "Walking to the door before police arrive exposes the crew to the same danger that caused the injury."
+  ],
+  "src": "STD"
+ }
 ]
