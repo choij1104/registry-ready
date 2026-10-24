@@ -10,7 +10,7 @@
     "opts": [
       "Park beside the patient, then size up the crowd while your partner begins care",
       "Approach on foot with your partner to assess the patient, and retreat if threatened",
-      "Stage at a safe distance out of sight until law enforcement reports the scene secure",
+      "Stage at a safe distance out of sight until police report the scene secure",
       "Drive slowly past the scene to judge the crowd, then return to the patient"
     ],
     "ans": 2,
@@ -33,7 +33,7 @@
     "type": "mc",
     "stem": "You arrive at a two-car crash in the right lane of a four-lane interstate at dusk. A fire engine is already parked at an angle in the right lane about 50 feet behind the wreckage, shielding it from approaching traffic. One driver is still seated in her car. Where should you position the ambulance?",
     "opts": [
-      "Ahead of the wreckage, downstream of the crash, so the loading area is protected by the engine",
+      "Ahead of the wreckage, so the loading area stays protected by the parked engine",
       "Upstream of the fire engine, so the ambulance absorbs any impact before it reaches the crew",
       "In the open left lane beside the wreckage, so the stretcher path is as short as possible",
       "On the far shoulder across the median, so the crew can walk across to the patient"
@@ -116,7 +116,7 @@
       "Apply a cervical collar while she keeps her foot on the brake",
       "Ask her to step out of the car and walk to your stretcher",
       "Begin a primary assessment through the window before touching anything else",
-      "Ask her to put the car in park and turn off the ignition, then chock a wheel"
+      "Have her put the car in park, turn off the ignition, and chock a wheel"
     ],
     "ans": 3,
     "key": "A running vehicle in gear is a scene hazard; get it in park, ignition off, and stabilized before patient care.",
@@ -163,9 +163,9 @@
     "type": "mc",
     "stem": "A 50-year-old man trimming a tree contacted a power line. He is lying motionless on wet grass about 15 feet from where the line has fallen. As you walk toward him, you feel a tingling sensation in your feet. What should you do?",
     "opts": [
-      "Stop, shuffle back out with small steps and feet close together, and wait for the utility company",
+      "Stop, shuffle back with small steps, feet together, and wait for the utility company",
       "Run quickly to the patient and drag him farther from the fallen line",
-      "Put on a second pair of medical gloves and continue to the patient carefully",
+      "Put on a second pair of medical gloves and continue toward the patient slowly and carefully",
       "Lay a dry blanket over the wet grass and walk to the patient on it"
     ],
     "ans": 0,
@@ -191,7 +191,7 @@
       "Enter through the front door, staying low, and search the first floor",
       "Relay the report to dispatch and arriving fire units, and stage safely to treat victims",
       "Cover your face with a wet towel and make a quick search of the stairway",
-      "Break a ground-floor window so smoke can escape before the engine arrives"
+      "Break a ground-floor window so smoke can vent from the house before the first engine arrives"
     ],
     "ans": 1,
     "key": "EMTs without fire gear and breathing apparatus do not enter a burning building; pass on victim information and stand ready to treat.",
@@ -288,7 +288,7 @@
     "type": "mc",
     "stem": "A box truck has crashed and is leaking an unknown liquid that gives off a faint vapor. The placards are burned and unreadable, and the driver is slumped unconscious in the cab. You stopped 400 feet away. What is your best initial approach?",
     "opts": [
-      "Stay back uphill and upwind, use the ERG guide for unidentified cargo, and request hazmat",
+      "Stay uphill and upwind, use the ERG guide for unidentified cargo, request hazmat",
       "Approach close enough to read the shipping papers in the cab, then select a guide",
       "Treat the liquid as nonhazardous until a hazmat team identifies it otherwise",
       "Approach the driver from downwind so the vapor is carried away from the cab"
@@ -354,8 +354,8 @@
     "opts": [
       "Have him sit on your stretcher and remove his shirt while you assess him",
       "Load him into the ambulance and transport him to the nearest hospital",
-      "Rinse him with your saline supply, then begin your assessment",
-      "Keep your distance and direct him to the decontamination area before you provide care"
+      "Rinse him with your saline supply beside the ambulance, then begin your assessment",
+      "Keep your distance and direct him to decontamination before you provide care"
     ],
     "ans": 3,
     "key": "Contaminated patients must go through decontamination before entering the cold zone or the ambulance, or they contaminate the crew.",
@@ -432,7 +432,7 @@
     "type": "mc",
     "stem": "A 45-year-old man has had a cough for 2 months with night sweats, weight loss, and blood-streaked sputum. He is alert, RR 22, SpO2 95% on room air. You suspect active tuberculosis. What respiratory protection is most appropriate during transport?",
     "opts": [
-      "A fit-tested N95 respirator for the crew and a surgical mask on the patient if tolerated",
+      "A fit-tested N95 for the crew and a surgical mask on the patient if tolerated",
       "A surgical mask for the crew and a nonrebreather mask on the patient at 15 L/min",
       "Gloves and a gown only, since tuberculosis spreads through contact with sputum",
       "An N95 respirator on the patient and surgical masks for the crew"
@@ -567,8 +567,8 @@
     "opts": [
       "Wipe the eye with a clean gauze pad and continue care",
       "Rub the eye gently to clear it, then finish the call before reporting",
-      "Flush the eye with plenty of clean water or saline, then report the exposure promptly",
-      "Apply a sterile eye patch and report the exposure at the end of your shift"
+      "Flush the eye with plenty of water or saline, then report the exposure promptly",
+      "Apply a sterile eye patch, then report the exposure to your supervisor at the end of your shift"
     ],
     "ans": 2,
     "key": "Blood in the eye is an exposure: flush with plenty of water or saline right away, then report promptly.",
@@ -665,16 +665,16 @@
     "type": "mc",
     "stem": "A 29-year-old woman was the restrained front-seat passenger in a rollover crash. The rear-seat passenger died at the scene. She is alert and oriented, GCS 15, BP 124/80, HR 96, RR 18, SpO2 98%, with only minor abrasions. Using the 2021 field triage guideline, what destination is most appropriate?",
     "opts": [
-      "The nearest community hospital, because she meets no physiologic criteria",
+      "The nearest community hospital, because she meets no physiologic or anatomic criteria",
       "An urgent care clinic, because her injuries appear minor",
       "The highest-level trauma center, because a rollover by itself is a red criterion",
-      "A trauma center, because a death in the same passenger compartment is a high-risk mechanism"
+      "A trauma center, because a death in the same compartment is a high-risk mechanism"
     ],
     "ans": 3,
     "key": "A death in the same passenger compartment is a yellow (high-risk crash) criterion; transport to a trauma center.",
     "why": "Under the 2021 guideline, a death in the passenger compartment is a high-risk crash criterion. Patients meeting yellow criteria without red criteria should go to a trauma center, which need not be the highest level.",
     "wrong": [
-      "Normal vital signs do not cancel a high-risk mechanism; yellow criteria still direct her to a trauma center.",
+      "Normal vital signs and no anatomic findings do not cancel a high-risk mechanism; yellow criteria still direct her to a trauma center.",
       "An urgent care clinic cannot evaluate occult injuries after a high-energy crash that killed another occupant.",
       "Rollover alone is not a criterion in the 2021 guideline, and she has no red injury or physiologic findings.",
       ""
@@ -691,7 +691,7 @@
     "stem": "A 74-year-old man was the restrained driver in a moderate-speed rear-end collision. He takes no blood thinners. He is alert, GCS 15, with mild chest wall tenderness from the belt. BP 106/70, HR 88, RR 18, SpO2 96%. Under the 2021 field triage guideline, how should you classify him?",
     "opts": [
       "No criteria are met, because his systolic BP is above 90 mm Hg",
-      "A red criterion is met, because a systolic BP under 110 mm Hg applies at age 65 and older",
+      "A red criterion is met, because SBP under 110 mm Hg applies at age 65 and older",
       "A yellow criterion is met, because age over 65 alone calls for a trauma center",
       "Only an EMS judgment factor applies, because his heart rate is below his systolic BP"
     ],
@@ -748,10 +748,10 @@
     "type": "mc",
     "stem": "You and your partner are the only ambulance at a three-vehicle crash. During your size-up you count six patients: two screaming, one motionless behind a steering wheel, and three walking around. What should you do before beginning patient care?",
     "opts": [
-      "Request additional ambulances and resources and notify dispatch of a multiple-patient incident",
+      "Request more ambulances and notify dispatch of a multiple-patient incident",
       "Begin care on the motionless driver, then call for help once he is stable",
       "Transport the most critical patient now and request more units en route",
-      "Assess every patient first, then decide which resources to request"
+      "Assess every patient first, then decide which resources to request from dispatch"
     ],
     "ans": 0,
     "key": "When patients outnumber your resources, request help during the size-up, before you get absorbed in patient care.",
@@ -776,7 +776,7 @@
       "Have him walk down the stairs while each of you supports one arm",
       "Carry him in a stair chair with just the two of you, taking frequent rests",
       "Leave him at home and return when he feels strong enough to walk",
-      "Request a lift assist or additional crew now, before attempting to move him"
+      "Request a lift assist or more crew now, before attempting to move him"
     ],
     "ans": 3,
     "key": "Recognize a lift you cannot safely do and call for more hands or equipment early, before anyone is hurt.",
@@ -848,9 +848,9 @@
     "type": "mc",
     "stem": "You are caring for a 23-year-old motorcyclist with a femur fracture and signs of shock on a rural highway. Air medical transport has been requested through command, which has assigned a landing zone officer. Your partner suggests he pick a nearby hayfield and wave the helicopter in himself. What is the best response?",
     "opts": [
-      "Leave landing zone selection and control to the landing zone officer and focus on the patient",
+      "Leave landing zone selection to the landing zone officer and stay with the patient",
       "Agree, and have him mark the corners of the field with road flares",
-      "Choose the highway beside the ambulance instead, since it is flatter and closer",
+      "Choose the highway beside the ambulance instead, since it is flatter and closer to the patient",
       "Have him guide the helicopter down by standing in the center of the field"
     ],
     "ans": 0,
@@ -1010,7 +1010,7 @@
       "Give 5 rescue breaths; tag him immediate if he starts breathing, expectant if he does not",
       "Tag him expectant and move on, as you would an adult who stays apneic",
       "Begin CPR and call for another rescuer to take over triage",
-      "Tag him immediate without giving breaths and move on to the next child"
+      "Tag him immediate without giving breaths, since he has a pulse, and move to the next child"
     ],
     "ans": 0,
     "key": "In JumpSTART, an apneic child with a pulse gets 5 rescue breaths; breathing resumes means immediate, still apneic means expectant.",
@@ -1019,7 +1019,7 @@
       "",
       "Tagging him expectant without the rescue-breath trial skips the step JumpSTART adds for children.",
       "He has a pulse, so CPR is not indicated, and stopping triage leaves other children unassessed.",
-      "JumpSTART requires the breath trial; tagging without it skips the step that decides immediate versus expectant."
+      "A pulse does not make him immediate; JumpSTART requires the breath trial, which decides immediate versus expectant."
     ],
     "src": "START"
   },
@@ -1058,7 +1058,7 @@
     "stem": "Thirty minutes into a highway pileup MCI, you are reassessing a 44-year-old man in the treatment area. He was tagged delayed for a closed femur fracture. His RR is now 34, he is pale and anxious, and he still follows commands. The next ambulance is 15 minutes out. What should you do?",
     "opts": [
       "Keep his delayed tag, since categories are fixed at the initial sort",
-      "Re-triage him to immediate and tell the treatment officer about the change",
+      "Re-triage him to immediate and tell the treatment officer",
       "Leave his tag as is and add a note for the receiving hospital",
       "Move him to the expectant area, since his condition is worsening"
     ],
@@ -1108,9 +1108,9 @@
     "stem": "You are triaging 25 patients after a stage collapse at an outdoor concert. Additional EMS crews are 10 minutes away. Which interventions are appropriate to perform during START triage before moving to the next patient? Select TWO.",
     "opts": [
       "Open the airway of a non-breathing patient by repositioning the head",
-      "Splint an angulated forearm fracture before moving on",
-      "Begin CPR on a patient without a pulse",
-      "Apply a tourniquet to a patient with spurting bleeding from the thigh",
+      "Splint an angulated forearm fracture before moving to the next patient",
+      "Begin CPR on a patient who has no pulse and is not breathing",
+      "Apply a tourniquet to spurting bleeding from the thigh",
       "Obtain a full set of vital signs, including blood pressure"
     ],
     "ans": [
@@ -1122,7 +1122,7 @@
     "wrong": [
       "",
       "Splinting takes minutes and is not lifesaving; it belongs in the treatment area.",
-      "CPR ties up the person triaging with one patient who has a poor chance of survival in an MCI.",
+      "CPR ties up the person triaging with one pulseless patient who has a poor chance of survival in an MCI.",
       "",
       "START does not use blood pressure; full vitals slow triage and delay sorting of the remaining patients."
     ],
