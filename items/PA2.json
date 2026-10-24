@@ -33,7 +33,7 @@
     "type": "mc",
     "stem": "A 71-year-old woman slumps over in a church pew. Members lay her on the floor and tell you she is still breathing. You see her chest move only with an occasional deep gasp. While checking her carotid artery for 10 seconds, you are not sure whether you feel a faint pulse. What is the best action?",
     "opts": [
-      "Start chest compressions and have the AED applied as soon as possible",
+      "Start chest compressions and apply the AED",
       "Keep palpating the carotid pulse until you are certain",
       "Move to the radial artery and check for another 10 seconds",
       "Apply high-flow oxygen and reassess her breathing in 2 minutes"
@@ -108,7 +108,7 @@
     "type": "mc",
     "stem": "An 80-year-old woman in cardiac arrest has a medication patch on her right upper chest, exactly where the AED pad should go. Your partner is doing compressions. What should you do before applying that pad?",
     "opts": [
-      "Remove the patch with gloves, wipe the skin, then apply the pad",
+      "Remove the patch, wipe the skin, then apply the pad",
       "Apply the pad on top of the patch to save time",
       "Place both pads on her back to avoid the patch",
       "Leave the patch and skip defibrillation until ALS arrives"
@@ -292,7 +292,7 @@
     "stem": "A 79-year-old man is pulseless and apneic on his bedroom floor. He is warm, with no rigor mortis or dependent lividity. His daughter says he has terminal lung cancer and 'would not want this,' but no DNR order or POLST form can be found. What should you do?",
     "opts": [
       "Withhold CPR because the daughter has stated his wishes",
-      "Begin CPR and apply the AED while your partner contacts medical direction",
+      "Begin CPR with the AED and contact medical direction",
       "Start CPR only if the daughter gives permission",
       "Call the medical examiner and document the time of death"
     ],
@@ -451,7 +451,7 @@
     "opts": [
       "Loosen it for 1 minute every 10 minutes to restore circulation",
       "Remove it and apply a pressure dressing, since the bleeding has stopped",
-      "Leave it in place, reassure her, and make sure the application time is recorded",
+      "Leave it in place, reassure her, and record the application time",
       "Loosen it slightly until she can tolerate the pain"
     ],
     "ans": 2,
@@ -475,7 +475,7 @@
     "stem": "A 19-year-old man was stabbed in the left groin crease. Bright red blood is pouring from a deep 1-inch wound. He is pale and restless, HR 128. There is no room to place a tourniquet above the wound. What is the best method to control this bleeding?",
     "opts": [
       "Apply a tourniquet as high on the thigh as it will go",
-      "Pack the wound tightly with gauze, then hold firm direct pressure",
+      "Pack the wound with gauze and hold firm pressure",
       "Cover the wound with an occlusive dressing taped on three sides",
       "Apply ice packs to the groin and elevate the legs"
     ],
@@ -502,7 +502,7 @@
       "Apply a tourniquet on the upper arm below the wound",
       "Add more dressings on top and continue the same pressure",
       "Apply a cold pack and raise the arm above his head",
-      "Pack gauze firmly into the wound and hold strong direct pressure"
+      "Pack gauze into the wound and hold firm pressure"
     ],
     "ans": 3,
     "key": "Heavy bleeding from a deep armpit wound is controlled by packing the wound and holding firm pressure, not by a limb tourniquet.",
@@ -616,7 +616,7 @@
     "type": "mc",
     "stem": "A 34-year-old man was the driver in a moderate-speed crash. He is anxious and keeps asking what happened. His skin is pale, cool, and moist. HR 118, BP 124/82, RR 22, SpO2 97%. Capillary refill is about 3 seconds. His abdomen is tender and distended. How should you interpret his condition?",
     "opts": [
-      "Compensated shock, likely from internal bleeding; treat as high priority",
+      "Compensated shock, likely internal bleeding; high priority",
       "Normal stress response, since his blood pressure is normal",
       "Decompensated shock, since his heart rate is above 100",
       "Anxiety reaction; reassess vital signs after calming him"
@@ -667,7 +667,7 @@
     "stem": "A 5-year-old boy has had vomiting and diarrhea for 2 days. He is listless and barely looks at you. HR 162, RR 30, BP 98/60, which is normal for his age. His hands and feet are cool and mottled, and capillary refill is 4 seconds. What is the best interpretation?",
     "opts": [
       "He is not in shock because his blood pressure is normal for his age",
-      "He is in compensated shock; low blood pressure would be a late sign in a child",
+      "Compensated shock; low blood pressure is a late sign in children",
       "His fast heart rate is from fever and anxiety, so shock is unlikely",
       "He is in shock only if his blood pressure falls below 70 mm Hg"
     ],
@@ -694,7 +694,7 @@
       "A heart rate of 72 confirms that her blood loss is minor",
       "Pain from the fracture is lowering her heart rate",
       "Femur fractures slow the heart by stimulating the vagus nerve",
-      "Her beta-blocker can prevent the tachycardia that would normally signal shock"
+      "Her beta-blocker can blunt the tachycardia of shock"
     ],
     "ans": 3,
     "key": "Beta-blockers can mask tachycardia; in older adults, judge shock by perfusion and baseline BP, not heart rate alone.",
@@ -912,9 +912,9 @@
     "stem": "A 74-year-old man at a shopping mall has a sudden left-sided facial droop and left arm drift. His airway is clear and breathing is adequate. His adult son was with him all morning. Before you leave the scene, which information from the son is most important to obtain?",
     "opts": [
       "The name of the man's primary care physician",
-      "The exact time the son last saw his father acting normally",
+      "When the son last saw his father acting normally",
       "Whether the man had similar symptoms several years ago",
-      "The man's health insurance information"
+      "The man's health insurance company and policy number"
     ],
     "ans": 1,
     "key": "For suspected stroke, get the last known well time from a witness before leaving the scene.",
@@ -938,7 +938,7 @@
     "opts": [
       "Treat as a likely viral illness and suggest she follow up with her doctor",
       "Treat as low blood sugar and give oral glucose before checking her level",
-      "Treat as possible acute coronary syndrome and arrange prompt transport with ALS per protocol",
+      "Treat as possible acute coronary syndrome; transport promptly, ALS per protocol",
       "Treat as anxiety and coach slow breathing before deciding on transport"
     ],
     "ans": 2,
@@ -964,7 +964,7 @@
       "Give him the antacid and advise him to rest indoors",
       "Have him walk to the ambulance to see whether symptoms worsen with exertion",
       "Wait 15 minutes to see whether the discomfort settles",
-      "Treat as possible acute coronary syndrome, request ALS, and transport promptly"
+      "Treat as possible acute coronary syndrome, request ALS, and transport"
     ],
     "ans": 3,
     "key": "Exertional 'indigestion' with sweating and weakness in an older adult is possible ACS until proven otherwise.",
@@ -1019,8 +1019,8 @@
     "type": "mc",
     "stem": "A 70-year-old man has had painful urination and chills for 3 days. Today he is confused. His skin is hot and flushed. HR 116, BP 90/56, RR 26, SpO2 95%, temperature 102.4°F. What should you do?",
     "opts": [
-      "Recognize likely sepsis, transport promptly, and alert the receiving facility per protocol",
-      "Transport non-emergently, since his oxygen saturation is normal",
+      "Recognize likely sepsis, transport promptly, and alert the hospital",
+      "Transport non-emergently, since his oxygen saturation of 95% is normal",
       "Encourage oral fluids and recommend he see his doctor tomorrow",
       "Delay transport until his family can bring a medication list"
     ],
@@ -1122,7 +1122,7 @@
       "She can safely remain home because she is alert with normal vital signs",
       "Only patients who lose consciousness need transport after a head strike",
       "Transport is needed only if she develops a headache within the next hour",
-      "Her anticoagulant and age raise her brain-bleed risk; transport per triage guidelines"
+      "Her age and anticoagulant raise bleed risk; transport per triage guidelines"
     ],
     "ans": 3,
     "key": "Anticoagulant use and a low-level fall with head impact at age 65+ are 2021 field triage risk factors: transport.",
@@ -1169,11 +1169,11 @@
     "type": "mr",
     "stem": "A 62-year-old man rescued from a cold lake is shivering hard, and his fingers are white and cold. HR 104, RR 18. The pulse oximeter shows a weak waveform reading 82%, yet he is talking in full sentences and his lips are pink. Which factors are most likely making this reading inaccurate? Select TWO.",
     "opts": [
-      "Poor blood flow to his cold, constricted fingers",
-      "Shivering movement of the hand with the probe",
-      "His heart rate of 104",
-      "His age over 60",
-      "The fact that he is lying supine"
+      "Poor blood flow to his cold fingers",
+      "Shivering that moves the probe",
+      "His heart rate of 104 beats per minute",
+      "His age, which is over 60 years",
+      "The fact that he is lying supine on the stretcher"
     ],
     "ans": [
       0,
@@ -1224,7 +1224,7 @@
     "type": "mc",
     "stem": "A 63-year-old man with diabetes developed right-sided weakness and slurred speech 30 minutes ago. He is awake, follows commands, and swallows without difficulty. Glucometer reading is 42 mg/dL. HR 96, BP 152/90. What should you do?",
     "opts": [
-      "Give oral glucose per protocol, reassess his neurologic findings, and transport",
+      "Give oral glucose per protocol, reassess neuro findings, and transport",
       "Ignore the glucose reading because his symptoms clearly indicate a stroke",
       "Withhold glucose because sugar can worsen brain injury in stroke",
       "Give oral glucose and cancel transport if his weakness resolves"
@@ -1249,9 +1249,9 @@
     "type": "mc",
     "stem": "A 35-year-old man struck his head in a fall from a ladder. Over 20 minutes your vital signs are: BP 132/80, then 158/84, then 184/88; HR 88, then 70, then 54. His breathing is becoming irregular, and he is less responsive. What does this trend most likely indicate?",
     "opts": [
-      "Pain causing a rise in blood pressure",
-      "Hypovolemic shock from hidden bleeding",
-      "A vasovagal reaction to the injury",
+      "Pain from his injuries driving up his blood pressure",
+      "Hypovolemic shock from hidden internal bleeding",
+      "A vasovagal reaction to the stress of the injury",
       "Rising pressure inside the skull from brain injury"
     ],
     "ans": 3,
