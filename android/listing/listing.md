@@ -36,7 +36,7 @@ LISTEN MODE
 Study hands-free on the drive or a walk. The app reads each question and its choices, gives you time to think, then reads the answer and why. Skills checklists can talk you through each step too.
 
 MEMORY CARDS
-52 cards for what you must know cold: AVPU, GCS, OPQRST, SAMPLE, START and JumpSTART, CPR numbers, oxygen flow rates, the rule of nines and more, each with a way to remember it.
+51 cards for what you must know cold: AVPU, GCS, OPQRST, SAMPLE, START and JumpSTART, CPR numbers, oxygen flow rates, the rule of nines and more, each with a way to remember it.
 
 SPACED REVIEW
 Missed questions come back in about ten minutes. Questions you get right return after 1, 3, 7, 16 and 35 days, so your study time goes where it is needed.
@@ -58,4 +58,4 @@ Written by Jae H. Choi, PhD, DVSc, an emergency medicine researcher, and publish
 Important: Registry Ready is a study aid. Every question was checked against current national guidance. All questions are original and are not taken from the NREMT exam. The readiness estimate is based on this app's own questions and is not a prediction of your NREMT score. Follow your EMT program's instruction and your local protocols. NREMT is a registered trademark of the National Registry of Emergency Medical Technicians; this app is not affiliated with or endorsed by the National Registry.
 
 ## Release notes (1.0)
-First release: 250 original scenario questions across all five EMT exam domains, a full-length adaptive practice exam, listen mode, 52 memory cards, spaced review, domain analysis and nine skills checklists.
+First release: 250 original scenario questions across all five EMT exam domains, a full-length adaptive practice exam, listen mode, 51 memory cards, spaced review, domain analysis and nine skills checklists.
