@@ -401,10 +401,10 @@
     "type": "mc",
     "stem": "A 35-year-old woman with epilepsy has had one generalized seizure after another for 8 minutes without regaining consciousness. She is still seizing and has cyanosis around her lips. What is the best management?",
     "opts": [
-      "Place a bite block between her teeth and hold her arms still",
-      "Wait for the seizure activity to stop before beginning any care",
+      "Place a bite block between her teeth and hold her arms still to prevent injury",
+      "Wait for the seizure activity to stop on its own before beginning any care",
       "Protect her from injury, suction and give oxygen, request ALS, and transport promptly",
-      "Give oral glucose between her cheek and gum in case her sugar is low"
+      "Give oral glucose between her cheek and gum in case her blood sugar is low"
     ],
     "ans": 2,
     "key": "Continuous or back-to-back seizures without recovery are status epilepticus: protect, support airway, get ALS, transport.",
@@ -451,10 +451,10 @@
     "type": "mc",
     "stem": "A 58-year-old woman with diabetes is found by her daughter in bed. She moans only to painful stimulus, with snoring respirations at 14/min and SpO2 93%. Her glucose reads 31 mg/dL. The daughter hands you a tube of oral glucose. What is the most appropriate action?",
     "opts": [
-      "Squeeze the full tube of oral glucose into her mouth",
-      "Have the daughter give her small sips of orange juice",
+      "Squeeze the full tube of oral glucose between her cheek and gum now",
+      "Have the daughter give her small sips of orange juice while you transport",
       "Open the airway, give oxygen, request ALS, and do not give oral glucose",
-      "Leave her supine and recheck her glucose in 10 minutes"
+      "Leave her supine as found and recheck her glucose level in 10 minutes"
     ],
     "ans": 2,
     "key": "Oral glucose is withheld from a patient who cannot swallow or protect the airway; manage the airway and get ALS.",
@@ -650,10 +650,10 @@
     "type": "mc",
     "stem": "You sealed a gunshot wound to a man's left chest with a non-vented occlusive dressing. Ten minutes later he is anxious, RR 36, SpO2 84%, BP 80/50, with distended neck veins and absent breath sounds on the left. What should you do?",
     "opts": [
-      "Apply a second occlusive dressing over the first to tighten the seal",
-      "Lay him flat and elevate his legs to treat the hypotension",
+      "Apply a second occlusive dressing over the first one to make the seal more airtight",
+      "Lay him flat and elevate his legs about 12 inches to treat the hypotension",
       "Briefly lift a corner of the dressing to release trapped air, then reseal and expedite ALS",
-      "Increase the oxygen flow rate and reassess him in 5 minutes"
+      "Increase the oxygen flow rate, leave the dressing in place, and reassess in 5 minutes"
     ],
     "ans": 2,
     "key": "Signs of tension pneumothorax after sealing a chest wound: briefly unseal (burp) the dressing and expedite ALS.",
@@ -676,9 +676,9 @@
     "stem": "A 40-year-old woman has a knife wound to the abdomen with a loop of intestine protruding. She is alert, BP 112/70, HR 104. What is the correct wound care?",
     "opts": [
       "Gently push the intestine back inside and tape a dressing over the wound",
-      "Cover the organs with dry gauze and place an ice pack on top",
+      "Cover the organs with dry sterile gauze and place an ice pack on top",
       "Apply a firm pressure dressing directly over the exposed intestine",
-      "Cover the organs with a moist sterile dressing, then an occlusive layer, and keep her warm"
+      "Cover with a moist sterile dressing and an occlusive layer, and keep her warm"
     ],
     "ans": 3,
     "key": "An evisceration is covered with a moist sterile dressing and an occlusive layer; organs are never replaced.",
@@ -750,10 +750,10 @@
     "type": "mc",
     "stem": "You are ventilating an adult with a severe head injury with a BVM at 10 breaths/min. During transport his GCS falls from 8 to 5, his right pupil becomes dilated and sluggish, and he develops extensor posturing. SpO2 97%, BP 150/70, HR 58. What is the most appropriate action?",
     "opts": [
-      "Stop assisted ventilation and switch to a nonrebreather mask at 15 L/min",
-      "Elevate his legs to increase blood flow to the brain",
-      "Continue ventilation with oxygen, avoid hypoxia, and expedite transport to a trauma center with early notification",
-      "Divert to the closest clinic so he can be evaluated sooner"
+      "Stop assisted ventilation and switch him to a nonrebreather mask at 15 L/min",
+      "Elevate his legs to increase blood flow to the brain and recheck his pupils",
+      "Keep ventilating with oxygen and expedite transport to a trauma center with notification",
+      "Divert to the closest clinic so that a physician can evaluate him sooner"
     ],
     "ans": 2,
     "key": "Signs of herniation call for continued oxygenation and ventilation, rapid transport to a trauma center, and early notification.",
@@ -868,7 +868,7 @@
     "type": "mc",
     "stem": "A 45-year-old man caught his hand in a table saw, amputating two fingers. Bleeding from the stumps is controlled with direct pressure. A coworker hands you the fingers. How should you care for the amputated parts?",
     "opts": [
-      "Wrap in sterile gauze moistened per protocol, seal in a plastic bag, and keep the bag cool",
+      "Wrap in moist sterile gauze per protocol, seal in a plastic bag, and keep it cool",
       "Place them directly on ice in a cooler so they stay as cold as possible",
       "Submerge them in a container of tap water to keep them from drying out",
       "Leave them with the coworker to bring to the hospital later by car"
@@ -893,10 +893,10 @@
     "type": "mc",
     "stem": "A 38-year-old worker spilled dry powdered lime on both forearms. Powder is still visible on his skin and clothing. The scene is safe and you are wearing appropriate PPE. What should you do first?",
     "opts": [
-      "Brush off the dry powder and remove contaminated clothing, then irrigate with large amounts of water",
-      "Flush the powder off right away with large amounts of water",
-      "Apply a vinegar solution to neutralize the chemical on the skin",
-      "Cover the arms with dry sterile dressings and transport"
+      "Brush off the powder and remove contaminated clothing, then irrigate with lots of water",
+      "Flush the powder off right away with large amounts of water before removing any clothing",
+      "Apply a vinegar solution to neutralize the chemical, then rinse the arms with water",
+      "Cover both arms with dry sterile dressings, keep him warm, and transport promptly"
     ],
     "ans": 0,
     "key": "Dry chemicals are brushed off first, then the skin is irrigated with large amounts of water.",
@@ -919,16 +919,16 @@
     "stem": "A 41-year-old lineman contacted a power line. The utility confirms the line is de-energized. He is alert, has a small charred wound on his right palm and another on his left foot, and says his chest feels 'fluttery.' HR 110 and irregular. What is the priority concern?",
     "opts": [
       "Possible dysrhythmia and hidden deep tissue damage; keep the AED ready and transport",
-      "Small skin wounds mean the overall injury is likely minor",
-      "Cooling the wounds with ice to stop the burning process",
-      "Applying burn ointment to both wounds before dressing them"
+      "Minor injury, because small skin wounds indicate little energy passed through him",
+      "Cooling both wounds with ice packs to stop the burning process in deeper tissue",
+      "Applying burn ointment to both wounds before covering them with sterile dressings"
     ],
     "ans": 0,
     "key": "Electrical injury can cause dysrhythmias and deep tissue damage far beyond the visible entry and exit wounds.",
     "why": "Current passing through the body can disrupt cardiac rhythm and damage muscle and nerves along its path. An irregular pulse and palpitations require cardiac readiness and transport, often to a burn or trauma center per protocol.",
     "wrong": [
       "",
-      "Skin wounds greatly underestimate deep tissue damage along the current path.",
+      "Small skin wounds greatly underestimate deep tissue damage along the current path.",
       "Ice causes further tissue injury and can cause hypothermia.",
       "Ointments are not applied in the field; burns are covered with dry sterile dressings."
     ],
@@ -988,10 +988,10 @@
     "type": "mc",
     "stem": "A 29-year-old in active labor says she feels something between her legs. You see a loop of pulsating umbilical cord protruding from the vagina; the baby's head is not visible. What is the best action?",
     "opts": [
-      "Push the cord gently back into the vagina and cover it with a towel",
-      "Have her push hard with the next contraction to deliver quickly",
-      "Elevate her hips, use gloved fingers to lift the presenting part off the cord, and transport rapidly",
-      "Clamp and cut the cord to relieve tension on it"
+      "Push the cord gently back into the vagina, cover it with a towel, and transport",
+      "Have her push hard with the next contraction so that the baby delivers before transport",
+      "Elevate her hips, lift the presenting part off the cord with gloved fingers, and transport",
+      "Clamp the cord in two places and cut between the clamps to relieve tension"
     ],
     "ans": 2,
     "key": "Prolapsed cord: relieve pressure on the cord by positioning and lifting the presenting part; transport rapidly.",
@@ -1013,10 +1013,10 @@
     "type": "mc",
     "stem": "During a breech delivery, the infant's buttocks, legs, and body deliver, but the head has not delivered after about 3 minutes despite contractions. What should you do?",
     "opts": [
-      "Pull firmly on the infant's legs to deliver the head",
-      "Insert gloved fingers to hold the vaginal wall away from the infant's face, creating an airway, and transport rapidly",
-      "Push the infant's body back into the birth canal and transport",
-      "Keep waiting for the head to deliver without intervening"
+      "Pull firmly on the infant's legs and body to deliver the head with the next push",
+      "Use gloved fingers to hold the vaginal wall off the infant's face and transport rapidly",
+      "Push the infant's body back into the birth canal and transport the mother rapidly",
+      "Keep supporting the body and wait for the head to deliver without intervening"
     ],
     "ans": 1,
     "key": "If a breech head does not deliver, create an airway with gloved fingers and transport rapidly.",
@@ -1038,10 +1038,10 @@
     "type": "mc",
     "stem": "Ten minutes after delivery of the placenta, a 31-year-old woman continues to bleed heavily from the vagina. She is pale, HR 122, BP 92/58. Her lower abdomen feels soft and boggy. Besides treating for shock, what should you do?",
     "opts": [
-      "Pack the vagina tightly with sterile gauze",
+      "Pack the vagina tightly with sterile gauze to apply pressure to the bleeding",
       "Massage the uterine fundus firmly and encourage breastfeeding if the infant is stable",
-      "Sit her upright on the stretcher to slow the bleeding",
-      "Stay on scene until the bleeding slows on its own"
+      "Sit her upright on the stretcher with her legs crossed to slow the bleeding",
+      "Stay on scene and recheck her vital signs until the bleeding slows on its own"
     ],
     "ans": 1,
     "key": "Postpartum hemorrhage with a boggy uterus is treated with fundal massage and breastfeeding, plus shock care and transport.",
@@ -1107,10 +1107,10 @@
     "type": "mc",
     "stem": "A 2-year-old had a 1-minute generalized seizure at home. The child is now drowsy but breathing adequately, cries when touched, and feels hot. The mother says the child has had a fever since yesterday. What is the most appropriate care?",
     "opts": [
-      "Place the child in a cold bath to lower the fever quickly",
+      "Place the child in a cold bath to lower the fever quickly, then transport",
       "Place the child on the side, give oxygen as needed, remove excess clothing, and transport",
-      "Give the child sips of cold water to help lower the temperature",
-      "Reassure the mother that transport is unnecessary for febrile seizures"
+      "Give the child sips of cold water to help lower the temperature before transport",
+      "Reassure the mother that febrile seizures are harmless and transport is unnecessary"
     ],
     "ans": 1,
     "key": "After a pediatric febrile seizure, protect the airway, cool passively, and transport for evaluation.",
@@ -1119,7 +1119,7 @@
       "Cold-water immersion can cause shivering and hypothermia and is not used for febrile seizures.",
       "",
       "A drowsy postictal child should not be given anything by mouth because of aspiration risk.",
-      "A seizure needs medical evaluation to rule out serious causes such as meningitis."
+      "A first seizure with fever needs medical evaluation to rule out serious causes such as meningitis."
     ],
     "src": "STD"
   },
@@ -1132,8 +1132,8 @@
     "type": "mc",
     "stem": "An 82-year-old woman tripped and struck her head on a table. She is alert and oriented, GCS 15, with a small forehead bruise and a mild headache. She takes apixaban for atrial fibrillation. Vital signs are normal. What is the best decision?",
     "opts": [
-      "Let her stay home, since her neurologic exam is normal",
-      "Transport her for evaluation, preferentially to a trauma center per the field triage guideline",
+      "Let her stay home, since her neurologic exam and vital signs are normal",
+      "Transport her, preferentially to a trauma center per the field triage guideline",
       "Advise her to see her own physician tomorrow if the headache continues",
       "Observe her on scene for 30 minutes before deciding on transport"
     ],
@@ -1159,8 +1159,8 @@
     "opts": [
       "Cover the stoma and ventilate by mouth and nose with a BVM",
       "Suction the tracheostomy tube with sterile technique, limiting each pass",
-      "Remove the tracheostomy tube and wait for a replacement",
-      "Apply a nasal cannula and transport the child"
+      "Remove the tracheostomy tube and wait for a replacement tube to arrive",
+      "Apply a nasal cannula at 4 L/min and transport the child with the parent"
     ],
     "ans": 1,
     "key": "Distress with secretions in a tracheostomy tube is treated first by suctioning the tube.",
@@ -1168,7 +1168,7 @@
     "wrong": [
       "Ventilating through the mouth and nose is a later step if the tube cannot be cleared.",
       "",
-      "Removing the tube without a replacement ready can lose the airway.",
+      "Removing the tube without a replacement in hand can lose the airway entirely.",
       "A nasal cannula does not address the obstructed tube, which is how this child breathes."
     ],
     "src": "STD"
@@ -1216,10 +1216,10 @@
     "type": "mc",
     "stem": "A 70-year-old man was found in an unheated home in winter. He is confused, has stopped shivering, and his skin is cold. HR 48, RR 10. What is the most important handling consideration?",
     "opts": [
-      "Have him walk to the ambulance to generate body heat",
-      "Handle him gently, keep him horizontal, remove wet clothing, and rewarm passively",
+      "Have him walk to the ambulance to generate body heat and avoid lifting him",
+      "Handle him gently and horizontally, remove wet clothing, and rewarm passively",
       "Rub his arms and legs vigorously to restore circulation",
-      "Give him hot coffee to drink before moving him"
+      "Give him hot coffee to drink, then move him quickly to the warm ambulance"
     ],
     "ans": 1,
     "key": "Severely hypothermic patients are handled gently and kept horizontal because rough movement can trigger ventricular fibrillation.",
@@ -1266,10 +1266,10 @@
     "type": "mc",
     "stem": "A 36-year-old hiker was bitten on the lower leg by a rattlesnake 15 minutes ago. The area is swollen and painful. He is alert with stable vital signs. What is the appropriate care?",
     "opts": [
-      "Apply a tourniquet tightly above the bite",
-      "Apply ice packs directly over the bite site",
-      "Keep him calm, remove constricting items, immobilize the leg in a neutral position, and transport",
-      "Make a small incision over the bite and suction out the venom"
+      "Apply a tourniquet tightly above the bite to keep the venom from spreading",
+      "Apply ice packs directly over the bite site to slow the spread of venom",
+      "Keep him calm, remove rings and tight items, splint the leg in neutral, and transport",
+      "Make a small incision over the bite and suction out as much venom as possible"
     ],
     "ans": 2,
     "key": "Snakebite care: calm the patient, remove rings and tight items, immobilize the limb, and transport for antivenom.",
@@ -1278,7 +1278,7 @@
       "Tourniquets concentrate venom locally and worsen tissue destruction.",
       "Ice worsens local tissue damage.",
       "",
-      "Incision and suction do not remove venom and cause bleeding and infection."
+      "Incision and suction do not remove meaningful venom and add bleeding, tissue damage, and infection."
     ],
     "src": "STD"
   },
@@ -1291,10 +1291,10 @@
     "type": "mc",
     "stem": "A 70-year-old woman has sudden facial droop, arm drift, and garbled speech, with a positive stroke scale. She was last known well 50 minutes ago. A community hospital is 8 minutes away; a stroke center is 18 minutes away. Your destination protocol directs suspected stroke to stroke centers within that transport time. What should you do?",
     "opts": [
-      "Transport to the closer hospital because it is faster",
+      "Transport to the closer community hospital because it is 10 minutes faster",
       "Transport to the stroke center and pre-notify them with her last-known-well time",
-      "Remain on scene to see whether her symptoms resolve",
-      "Request air medical transport and wait on scene for it"
+      "Remain on scene for several minutes to see whether her symptoms resolve",
+      "Request air medical transport and wait on scene for the helicopter"
     ],
     "ans": 1,
     "key": "Suspected stroke goes to the stroke-capable destination per protocol, with early notification and the last-known-well time.",
@@ -1400,8 +1400,8 @@
     "stem": "You arrive at the emergency department with a patient whose condition changed after your radio report: her BP dropped from 124/80 to 96/60 after nitroglycerin. The triage nurse is busy with another patient. What is the correct handoff action?",
     "opts": [
       "Leave her on a hallway bed with your written report and return to service",
-      "Give a verbal report to the nurse or physician assuming care, including the BP change, before leaving",
-      "Tell the registration clerk about the BP change and return to service",
+      "Give a verbal report, including the BP change, to the nurse or physician who assumes care",
+      "Tell the registration clerk about the BP change and leave your written report",
       "Finish your written report first, then give it to whoever is available"
     ],
     "ans": 1,
