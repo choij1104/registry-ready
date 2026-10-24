@@ -1,0 +1,11 @@
+Copyright (c) 2026 HAKOYA LLC. All rights reserved.
+
+The source code, question bank, explanations and skills checklists in this repository are
+proprietary to HAKOYA LLC. They are published for transparency and may not be copied,
+modified or redistributed without written permission.
+
+Bundled typefaces (Barlow Condensed, Atkinson Hyperlegible, JetBrains Mono) are used under the
+SIL Open Font License 1.1; their licenses ship with the Android build in android/www/fonts.
+
+NREMT is a registered trademark of the National Registry of Emergency Medical Technicians.
+Registry Ready is not affiliated with or endorsed by the National Registry.

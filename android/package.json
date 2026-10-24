@@ -1,0 +1,19 @@
+{
+  "name": "registry-ready-android",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Google Play build of Registry Ready, wrapped with Capacitor. The web bundle (android/www) is built from the repository's index.html by scripts/build-store.py, with the three typefaces bundled so the app runs fully offline.",
+  "scripts": {
+    "build:www": "python3 scripts/build-store.py"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.5.3",
+    "@capacitor/core": "8.5.3"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.5.3",
+    "@fontsource/atkinson-hyperlegible": "5.3.0",
+    "@fontsource/barlow-condensed": "5.3.0",
+    "@fontsource/jetbrains-mono": "5.3.0"
+  }
+}

@@ -1,0 +1,6 @@
+android/node_modules/
+android/www/
+android/android/
+*.jks
+*.keystore
+*.aab

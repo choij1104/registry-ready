@@ -1,0 +1,37 @@
+/* Registry Ready — psychomotor practice checklists.
+   Original practice prompts written for self-rehearsal. They are not the NREMT
+   grading sheets; candidates are evaluated on the official skill sheets their
+   program uses. */
+const SKILLS = [
+ { id: "trauma", name: "Patient Assessment — Trauma",
+   steps: ["Take or verbalize standard precautions (PPE)","Confirm scene safety","Determine mechanism of injury","Determine number of patients","Request additional resources if needed","Consider spinal motion restriction","State general impression","Determine responsiveness (AVPU)","Identify and treat life threats as found",
+     "Open and assess airway; insert adjunct if needed","Assess breathing; give oxygen or ventilate as indicated","Assess and control major bleeding","Assess pulse and skin (color, temperature, condition)","Treat for shock as indicated","Make transport priority decision",
+     "Obtain baseline vital signs","Obtain SAMPLE history","Assess head (DCAP-BTLS)","Assess neck and trachea","Assess chest: inspect, palpate, auscultate","Assess abdomen and pelvis","Assess each extremity, including distal pulse, motor, sensation","Assess posterior (log roll with spinal precautions)","Treat secondary injuries","Reassess and verbalize reassessment interval"],
+   critical: ["No PPE or scene safety","Life-threatening bleeding not controlled when found","Airway, breathing or oxygenation problem left untreated","Shock not recognized or treated","Critical patient not identified for prompt transport","Secondary exam done before life threats are managed","Any order or intervention that would harm the patient"] },
+ { id: "medical", name: "Patient Assessment — Medical",
+   steps: ["Take or verbalize standard precautions (PPE)","Confirm scene safety","Determine nature of illness","Determine number of patients","Request additional resources if needed","State general impression","Determine responsiveness (AVPU)","Identify chief complaint and life threats",
+     "Assess airway and breathing; give oxygen or ventilate as indicated","Assess circulation: pulse, skin, bleeding","Make transport priority decision",
+     "History of present illness (OPQRST)","Past medical history (SAMPLE)","Focused exam of the affected body system","Obtain baseline vital signs","Treat per protocol (including assisted medications when indicated)","Reassess and verbalize reassessment interval"],
+   critical: ["No PPE or scene safety","Airway, breathing or oxygenation problem left untreated","Hypoperfusion not recognized or treated","Critical patient not identified for prompt transport","Medication given without indication or with a contraindication","Any order or intervention that would harm the patient"] },
+ { id: "bvm", name: "BVM Ventilation — Apneic Adult with a Pulse",
+   steps: ["Take or verbalize standard precautions (PPE)","Check responsiveness","Check breathing and carotid pulse together (no more than 10 seconds)","Open the airway (head-tilt chin-lift, or jaw thrust if trauma)","Suction if fluids are present","Measure and insert an oropharyngeal airway","Seal the mask with an E-C grip (two-rescuer seal if available)","Ventilate 1 breath every 6 seconds, each over about 1 second, with visible chest rise","Attach oxygen at 15 L/min with reservoir","Reassess pulse and ventilation effectiveness"],
+   critical: ["No PPE","Ventilation delayed after apnea recognized","Breaths too fast or too forceful","No visible chest rise and no corrective action","Oxygen not connected","Airway adjunct sized or inserted incorrectly"] },
+ { id: "arrest", name: "Cardiac Arrest Management / AED",
+   steps: ["Take or verbalize standard precautions (PPE)","Confirm scene safety","Check responsiveness and call for help and an AED","Check breathing and pulse together (no more than 10 seconds)","Begin compressions: center of chest, 100–120/min, 2–2.4 in, full recoil","Give 2 breaths with BVM after every 30 compressions (1 rescuer)","Turn on AED and apply pads without stopping compressions","Clear everyone while AED analyzes","Clear everyone and deliver shock if advised","Resume compressions immediately after the shock","Switch compressors about every 2 minutes at the rhythm check","Minimize pauses throughout"],
+   critical: ["No PPE or scene safety","Delay in starting compressions","Rate or depth outside range, or incomplete recoil","Long pauses in compressions","Shock delivered without clearing the patient","Compressions not resumed right after a shock"] },
+ { id: "oxygen", name: "Oxygen Administration by Non-rebreather",
+   steps: ["Take or verbalize standard precautions (PPE)","Inspect the cylinder and remove the seal","Crack the valve briefly to clear debris","Attach the regulator and check for leaks","Open the cylinder and read the pressure","Attach the non-rebreather mask","Set flow to 10–15 L/min","Prefill the reservoir bag","Explain to the patient and apply the mask snugly","Adjust flow so the bag stays inflated","Reassess SpO2 and breathing"],
+   critical: ["Leak not detected or corrected","Mask applied before reservoir is filled","Flow too low to keep the reservoir inflated","Unsafe cylinder handling"] },
+ { id: "bleeding", name: "Bleeding Control and Shock",
+   steps: ["Take or verbalize standard precautions (PPE)","Apply firm direct pressure","Pack a wound cavity if junctional and protocol allows","Apply a tourniquet 2–3 in above the wound if pressure fails on a limb","Tighten until bleeding stops; note time","Apply oxygen as indicated","Keep the patient warm and supine","Initiate prompt transport","Reassess bleeding control and vital signs"],
+   critical: ["No PPE","Delay in controlling the bleeding","Tourniquet over a joint or not tight enough","Shock not treated","Delay in transport"] },
+ { id: "smr", name: "Spinal Motion Restriction — Supine",
+   steps: ["Take or verbalize standard precautions (PPE)","Have a partner hold manual in-line stabilization","Maintain manual stabilization until fully secured","Check distal pulse, motor, sensation in all four limbs","Size and apply a cervical collar","Move the patient as a unit to the device (log roll, scoop or vacuum mattress)","Pad voids as needed","Secure the torso first","Secure the head last","Recheck pulse, motor, sensation in all four limbs"],
+   critical: ["Manual stabilization released before the head is secured","Head secured before the torso","Excessive movement of the spine","Pulse, motor, sensation not checked before and after"] },
+ { id: "longbone", name: "Long Bone Immobilization",
+   steps: ["Take or verbalize standard precautions (PPE)","Apply manual stabilization of the injury","Check distal pulse, motor, sensation","Measure the splint","Apply the splint","Immobilize the joint above the injury","Immobilize the joint below the injury","Secure the hand or foot in position of function","Recheck distal pulse, motor, sensation"],
+   critical: ["Joints above and below not immobilized","Gross movement of the injured limb","Distal checks not done before and after","Hand or foot left unsecured"] },
+ { id: "joint", name: "Joint Immobilization",
+   steps: ["Take or verbalize standard precautions (PPE)","Apply manual stabilization of the injured joint","Check distal pulse, motor, sensation","Select the proper splinting material","Immobilize the bone above the joint","Immobilize the bone below the joint","Recheck distal pulse, motor, sensation"],
+   critical: ["Bones above and below not immobilized","Gross movement of the injured joint","Distal checks not done before and after"] }
+];
