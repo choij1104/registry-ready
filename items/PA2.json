@@ -108,7 +108,7 @@
     "type": "mc",
     "stem": "An 80-year-old woman in cardiac arrest has a medication patch on her right upper chest, exactly where the AED pad should go. Your partner is doing compressions. What should you do before applying that pad?",
     "opts": [
-      "Remove the patch with a gloved hand and wipe the skin, then apply the pad",
+      "Remove the patch with gloves, wipe the skin, then apply the pad",
       "Apply the pad on top of the patch to save time",
       "Place both pads on her back to avoid the patch",
       "Leave the patch and skip defibrillation until ALS arrives"
@@ -249,7 +249,7 @@
       "Keep compressing because you are not yet fatigued",
       "Switch only when your compressions visibly become shallow",
       "Switch compressors every 5 minutes to limit interruptions",
-      "Switch compressors during the analysis pause, taking less than 5 seconds"
+      "Switch compressors during the analysis, in under 5 seconds"
     ],
     "ans": 3,
     "key": "Change compressors about every 2 minutes, ideally during rhythm analysis, with the switch done in under 5 seconds.",
@@ -402,7 +402,7 @@
       "Obtain a full set of vital signs to establish a baseline",
       "Apply direct pressure and reassess after 10 minutes",
       "Apply a pressure bandage and elevate the leg",
-      "Apply a tourniquet 2 to 3 inches above the wound, not over a joint"
+      "Apply a tourniquet 2 to 3 inches above the wound"
     ],
     "ans": 3,
     "key": "Spurting or pooling extremity bleeding is life-threatening: apply a tourniquet 2–3 in proximal to the wound immediately.",
@@ -1167,7 +1167,7 @@
     "concept": "pulse-ox-limitations",
     "b": -0.5,
     "type": "mr",
-    "stem": "A 62-year-old man rescued from a cold lake is shivering hard, and his fingers are white and cold. The pulse oximeter shows a weak waveform reading 82%, yet he is talking in full sentences and his lips are pink. Which factors are most likely making this reading inaccurate? Select TWO.",
+    "stem": "A 62-year-old man rescued from a cold lake is shivering hard, and his fingers are white and cold. HR 104, RR 18. The pulse oximeter shows a weak waveform reading 82%, yet he is talking in full sentences and his lips are pink. Which factors are most likely making this reading inaccurate? Select TWO.",
     "opts": [
       "Poor blood flow to his cold, constricted fingers",
       "Shivering movement of the hand with the probe",
