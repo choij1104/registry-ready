@@ -752,7 +752,7 @@
     "opts": [
       "Stop assisted ventilation and switch him to a nonrebreather mask at 15 L/min",
       "Elevate his legs to increase blood flow to the brain and recheck his pupils",
-      "Keep ventilating with oxygen and expedite transport to a trauma center with notification",
+      "Keep ventilating with oxygen and rapidly transport to a trauma center with notification",
       "Divert to the closest clinic so that a physician can evaluate him sooner"
     ],
     "ans": 2,
@@ -1049,7 +1049,7 @@
     "wrong": [
       "Nothing is placed inside the vagina; pads are placed externally.",
       "",
-      "Sitting does not control bleeding and worsens hypotension.",
+      "Sitting upright with crossed legs does not control uterine bleeding and worsens hypotension.",
       "Ongoing hemorrhage with shock requires immediate transport."
     ],
     "src": "STD"
@@ -1063,14 +1063,14 @@
     "type": "order",
     "stem": "A term newborn is limp and not breathing after delivery. Place the steps of care in the correct order.",
     "opts": [
-      "Warm, dry, and stimulate the newborn",
-      "Position the head to open the airway; suction only if secretions obstruct it",
+      "Perform initial steps: warm, dry, stimulate, and position the airway, suctioning only if secretions obstruct it",
       "Assess breathing and heart rate",
       "Begin positive-pressure ventilation if apneic, gasping, or heart rate below 100/min",
-      "Begin compressions at 3:1 if heart rate stays below 60/min after 30 seconds of effective ventilation"
+      "Confirm chest rise and reassess heart rate after 30 seconds of effective ventilation",
+      "Begin compressions at 3:1 if heart rate stays below 60/min despite effective ventilation"
     ],
-    "key": "Newborn care: warm, dry, stimulate, position airway, assess, ventilate if needed, compress only if HR stays below 60.",
-    "why": "Most newborns respond to warming, drying, stimulation, and an open airway. Ventilation is the most important intervention for a newborn who is apneic or bradycardic, and compressions start only if the heart rate stays below 60 despite effective ventilation.",
+    "key": "Newborn: initial steps, assess, ventilate if apneic/gasping or HR <100, reassess, compress 3:1 only if HR stays <60.",
+    "why": "Most newborns respond to warmth, drying, stimulation, and an open airway; routine suctioning is not recommended. Ventilation is the most important intervention for an apneic or bradycardic newborn, and compressions start only if the heart rate stays below 60/min after 30 seconds of ventilation that moves the chest.",
     "src": "NRP"
   },
   {
@@ -1119,7 +1119,7 @@
       "Cold-water immersion can cause shivering and hypothermia and is not used for febrile seizures.",
       "",
       "A drowsy postictal child should not be given anything by mouth because of aspiration risk.",
-      "A first seizure with fever needs medical evaluation to rule out serious causes such as meningitis."
+      "A seizure with fever in a young child needs medical evaluation to rule out serious causes such as meningitis."
     ],
     "src": "STD"
   },
@@ -1133,13 +1133,13 @@
     "stem": "An 82-year-old woman tripped and struck her head on a table. She is alert and oriented, GCS 15, with a small forehead bruise and a mild headache. She takes apixaban for atrial fibrillation. Vital signs are normal. What is the best decision?",
     "opts": [
       "Let her stay home, since her neurologic exam and vital signs are normal",
-      "Transport her, preferentially to a trauma center per the field triage guideline",
+      "Transport her, and consider a trauma center as the field triage guideline advises",
       "Advise her to see her own physician tomorrow if the headache continues",
       "Observe her on scene for 30 minutes before deciding on transport"
     ],
     "ans": 1,
-    "key": "Anticoagulant use and a ground-level fall with head strike in an older adult are 2021 field triage risk factors for transport.",
-    "why": "In the 2021 field triage guideline, anticoagulant use and a low-level fall with significant head impact in an adult 65 or older are yellow (moderate-risk) criteria: preferential transport to a trauma center, which need not be the highest level. Anticoagulated patients can deteriorate hours after a head strike despite a normal first exam.",
+    "key": "Anticoagulant use and a low-level fall with head strike at 65+ are 2021 field triage risk factors: transport, consider a trauma center.",
+    "why": "The 2021 field triage guideline lists anticoagulant use and low-level falls with significant head impact in adults 65 or older under EMS judgment risk factors: if concerned, take the patient to a trauma center. Anticoagulated patients can deteriorate hours after a head strike despite a normal first exam.",
     "wrong": [
       "Anticoagulated older adults can deteriorate hours after a head strike despite a normal first exam.",
       "",
@@ -1242,7 +1242,7 @@
     "stem": "A lifeguard pulls a 7-year-old from a pool. The child is unresponsive, not breathing, and has no pulse. You and your partner have a BVM with oxygen and an AED. What is the best approach?",
     "opts": [
       "Perform abdominal thrusts to drain water from the lungs first",
-      "Begin compression-only CPR and add ventilations after the AED arrives",
+      "Begin compression-only CPR and add breaths once ALS places an advanced airway",
       "Begin CPR at 15:2 with ventilations that produce visible chest rise",
       "Delay CPR until the AED is attached and has analyzed the rhythm"
     ],
@@ -1251,7 +1251,7 @@
     "why": "Cardiac arrest after drowning results from hypoxia, so ventilation is essential. Two-rescuer child CPR uses 15:2 with breaths that make the chest rise, and the AED is attached as soon as it is ready without delaying CPR.",
     "wrong": [
       "Abdominal thrusts do not remove water from the lungs and delay CPR.",
-      "Compression-only CPR does not address the hypoxia that caused the arrest.",
+      "Drowning arrest is hypoxic; trained rescuers with a BVM must include ventilations from the start.",
       "",
       "CPR starts immediately; the AED is applied without delaying compressions."
     ],
