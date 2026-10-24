@@ -1,0 +1,1131 @@
+[
+ {
+  "id": "SC-001",
+  "d": "SCENE",
+  "topic": "Scene safety",
+  "concept": "violent-scene-stage-or-retreat",
+  "b": -1,
+  "type": "mc",
+  "stem": "You are dispatched at 2 a.m. to a reported shooting outside a convenience store. As you turn onto the street, you see a man lying on the sidewalk and a small group of people shouting near him. No police units are visible, and dispatch says officers are 4 minutes away. What should you do?",
+  "opts": [
+   "Park beside the patient, then size up the crowd while your partner begins care",
+   "Approach on foot with your partner to assess the patient, and retreat if threatened",
+   "Stage at a safe distance out of sight until law enforcement reports the scene secure",
+   "Drive slowly past the scene to judge the crowd, then return to the patient"
+  ],
+  "ans": 2,
+  "key": "On a scene of violence, stage out of sight until law enforcement declares it secure; an injured rescuer helps no one.",
+  "why": "A shooting with an agitated crowd and no police is an unsecured violent scene. Staging at a safe distance out of view protects the crew, and care begins as soon as officers declare the scene secure, which here is only minutes away.",
+  "wrong": [
+   "Parking beside the patient puts the crew in the middle of an unsecured shooting scene before any safety control exists.",
+   "Walking into an unsecured scene relies on noticing a threat in time; the shooter may still be present.",
+   "",
+   "Driving through the scene exposes the crew and ambulance to the same unsecured threat and draws attention to you."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-002",
+  "d": "SCENE",
+  "topic": "Scene safety",
+  "concept": "traffic-scene-positioning",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "You arrive at a two-car crash in the right lane of a four-lane interstate at dusk. A fire engine is already parked at an angle in the right lane about 50 feet behind the wreckage, shielding it from approaching traffic. One driver is still seated in her car. Where should you position the ambulance?",
+  "opts": [
+   "Ahead of the wreckage, downstream of the crash, so the loading area is protected by the engine",
+   "Upstream of the fire engine, so the ambulance absorbs any impact before it reaches the crew",
+   "In the open left lane beside the wreckage, so the stretcher path is as short as possible",
+   "On the far shoulder across the median, so the crew can walk across to the patient"
+  ],
+  "ans": 0,
+  "key": "When an apparatus blocks traffic, park the ambulance downstream of the crash so patient loading happens inside the protected zone.",
+  "why": "The angled engine creates a protected work area. Parking the ambulance beyond the wreckage keeps the stretcher path and rear loading doors inside that shielded space, away from moving traffic.",
+  "wrong": [
+   "",
+   "Parking upstream of the blocker puts your crew and loading area outside the protected zone, exposed to approaching traffic.",
+   "The open left lane still carries moving traffic; parking there exposes the crew and the patient during loading.",
+   "Crossing travel lanes on foot with equipment and a patient is one of the most dangerous things you can do on a highway."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-003",
+  "d": "SCENE",
+  "topic": "Scene safety",
+  "concept": "traffic-scene-positioning",
+  "b": 0,
+  "type": "mr",
+  "stem": "At night you are working a single-vehicle crash on a two-lane highway. A sheriff's car blocks the lane behind the scene, but traffic is still passing in the opposite lane. Your patient is the driver, who has a forearm laceration. Which actions reduce your crew's risk from traffic? Select TWO.",
+  "opts": [
+   "Wear a high-visibility reflective vest whenever you are outside the ambulance on the roadway",
+   "Stand in the open lane and wave traffic slowly past while your partner treats the patient",
+   "Keep your work area and stretcher path on the side of the vehicles shielded from moving traffic",
+   "Turn your back to approaching traffic so you can focus fully on the patient",
+   "Park the ambulance in the open lane beside the patient's car to shorten the stretcher path"
+  ],
+  "ans": [
+   0,
+   2
+  ],
+  "key": "On roadways, be visible (high-visibility vest) and keep your work area inside the space shielded from moving traffic.",
+  "why": "Struck-by incidents are a leading cause of responder deaths at roadway scenes. Reflective vests make crews visible at night, and working on the shielded side of the blocking vehicles keeps people out of the path of passing cars.",
+  "wrong": [
+   "",
+   "Traffic control is a law enforcement task; standing in a live lane puts you directly in the path of vehicles.",
+   "",
+   "Turning your back to traffic removes your ability to see and avoid an approaching vehicle.",
+   "Parking in the open lane blocks the only travel lane and puts your crew in moving traffic while loading."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-004",
+  "d": "SCENE",
+  "topic": "Scene safety",
+  "concept": "vehicle-stabilization",
+  "b": -0.5,
+  "type": "mc",
+  "stem": "A pickup truck has rolled onto its passenger side in a ditch. The driver, a 40-year-old man, is hanging in his seat belt, talking, and complaining of neck pain. The truck rocks when a bystander leans on it. Fire rescue is on scene with cribbing. What should happen before you reach in to assess him?",
+  "opts": [
+   "A bystander holds the truck steady while you climb onto its side",
+   "The rescue crew stabilizes the truck with cribbing or struts",
+   "You cut the seat belt so he drops onto the door for easier access",
+   "He unbuckles himself and crawls out to you through the windshield"
+  ],
+  "ans": 1,
+  "key": "A vehicle that moves must be stabilized with cribbing or struts before anyone enters or reaches into it.",
+  "why": "A truck on its side that rocks can roll onto rescuers or worsen the patient's injuries. Rescue crews stabilize it with cribbing or struts first; then you can safely reach the patient and begin spinal motion restriction as indicated.",
+  "wrong": [
+   "A bystander cannot hold a rolled truck steady, and climbing on it adds weight that can make it shift.",
+   "",
+   "Cutting the belt drops a patient with neck pain onto the door, risking further injury, and the truck is still unstable.",
+   "Self-extrication by crawling twists the spine of a patient with neck pain and does not address the unstable vehicle."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-005",
+  "d": "SCENE",
+  "topic": "Scene safety",
+  "concept": "vehicle-stabilization",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "A sedan has struck a utility pole at low speed. The car is upright, the engine is running, and the brake lights are on. The 68-year-old driver is alert, gripping the wheel, and says her chest hurts where the belt crossed it. No wires are down. You are about to open her door. What should you do first?",
+  "opts": [
+   "Apply a cervical collar while she keeps her foot on the brake",
+   "Ask her to step out of the car and walk to your stretcher",
+   "Begin a primary assessment through the window before touching anything else",
+   "Ask her to put the car in park and turn off the ignition, then chock a wheel"
+  ],
+  "ans": 3,
+  "key": "A running vehicle in gear is a scene hazard; get it in park, ignition off, and stabilized before patient care.",
+  "why": "If her foot slips off the brake, the car can lurch and injure her or the crew. Putting it in park, shutting off the engine, and chocking a wheel controls the hazard in seconds, after which care can begin.",
+  "wrong": [
+   "Placing a collar with the engine running and the car in gear leaves the movement hazard in place, and she has no stated SMR indication.",
+   "Having her walk before the car is secured and before she is assessed ignores both the vehicle hazard and her chest injury.",
+   "Assessment can wait seconds; the running car in gear is an immediate hazard to everyone at the door.",
+   ""
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-006",
+  "d": "SCENE",
+  "topic": "Scene safety",
+  "concept": "electrical-hazard",
+  "b": 0,
+  "type": "mc",
+  "stem": "A car has struck a utility pole, and a power line is draped across the hood. There is no smoke or fire. The driver, a 25-year-old man, is alert with a bleeding scalp and is starting to open his door to get out. You are 60 feet away. What should you tell him?",
+  "opts": [
+   "Jump clear with both feet together so you never touch the car and the ground at once",
+   "Climb out the passenger side, away from where the line touches the hood",
+   "Stay inside the car and keep still until the utility company shuts off the line",
+   "Wait while we move the line off the hood with a dry wooden pole"
+  ],
+  "ans": 2,
+  "key": "Treat every downed line as energized; an occupant with no fire should stay in the vehicle until the utility de-energizes it.",
+  "why": "The vehicle body may be energized, and stepping out completes a path to ground. Without fire, staying inside is the safest option until the utility company confirms the line is dead; his scalp wound can be managed with pressure he applies himself.",
+  "wrong": [
+   "Jumping clear is reserved for a forced exit such as fire; with no fire, it adds risk for no benefit.",
+   "Any door contacts the same energized vehicle; leaving by the passenger side still risks electrocution.",
+   "",
+   "EMTs do not move power lines; wood can conduct electricity, especially if damp, and the line must be handled by the utility."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-007",
+  "d": "SCENE",
+  "topic": "Scene safety",
+  "concept": "electrical-hazard",
+  "b": 1,
+  "type": "mc",
+  "stem": "A 50-year-old man trimming a tree contacted a power line. He is lying motionless on wet grass about 15 feet from where the line has fallen. As you walk toward him, you feel a tingling sensation in your feet. What should you do?",
+  "opts": [
+   "Stop, shuffle back out with small steps and feet close together, and wait for the utility company",
+   "Run quickly to the patient and drag him farther from the fallen line",
+   "Put on a second pair of medical gloves and continue to the patient carefully",
+   "Lay a dry blanket over the wet grass and walk to the patient on it"
+  ],
+  "ans": 0,
+  "key": "Tingling in the feet means energized ground; shuffle back out without lifting your feet and wait for the utility.",
+  "why": "Current spreading through the ground creates a voltage difference between your feet. Shuffling out with feet close together limits that difference. No one approaches the patient until the utility confirms the line is de-energized.",
+  "wrong": [
+   "",
+   "Long running strides increase the voltage difference between your feet and can electrocute you before you reach him.",
+   "Medical gloves are not rated electrical protection and do nothing for current entering through your feet.",
+   "A blanket on wet ground does not insulate you from energized soil and quickly becomes wet itself."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-008",
+  "d": "SCENE",
+  "topic": "Scene safety",
+  "concept": "wait-for-hazard-control",
+  "b": -1.5,
+  "type": "mc",
+  "stem": "You arrive at a house fire before the first engine. Heavy smoke is pouring from the second-floor windows. A neighbor tells you a teenager may still be upstairs. You have no turnout gear or breathing apparatus. What should you do?",
+  "opts": [
+   "Enter through the front door, staying low, and search the first floor",
+   "Relay the report to dispatch and arriving fire units, and stage safely to treat victims",
+   "Cover your face with a wet towel and make a quick search of the stairway",
+   "Break a ground-floor window so smoke can escape before the engine arrives"
+  ],
+  "ans": 1,
+  "key": "EMTs without fire gear and breathing apparatus do not enter a burning building; pass on victim information and stand ready to treat.",
+  "why": "Smoke and heat incapacitate within breaths, and an untrained rescuer becomes a second victim. The most useful action is to give arriving firefighters the location of the possible victim and set up to receive and treat anyone they bring out.",
+  "wrong": [
+   "Entering a smoke-filled house without SCBA or turnout gear risks rapid incapacitation and death.",
+   "",
+   "A wet towel does not filter carbon monoxide or other toxic gases and gives no heat protection.",
+   "Opening a window without fire crews in place can feed air to the fire and make it spread faster."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-009",
+  "d": "SCENE",
+  "topic": "Scene safety",
+  "concept": "wait-for-hazard-control",
+  "b": -1,
+  "type": "mc",
+  "stem": "You are called to a home for a 79-year-old woman who fell. Her son opens the door, and a large dog behind him is barking, growling, and lunging toward you. You can hear the patient calling for help from the kitchen. What should you do?",
+  "opts": [
+   "Walk in calmly while avoiding eye contact with the dog",
+   "Hold your jump kit in front of you as a shield and go to the kitchen",
+   "Request animal control and wait outside until they arrive",
+   "Ask the son to secure the dog in a closed room before you go in"
+  ],
+  "ans": 3,
+  "key": "Have the owner secure an aggressive animal in a closed room before you enter; animal control is for when that is not possible.",
+  "why": "A lunging dog is a real threat to the crew. The owner is right there and can control it within a minute, which removes the hazard without a long delay in reaching the patient.",
+  "wrong": [
+   "A growling, lunging dog may attack regardless of your body language; the hazard has not been controlled.",
+   "Using equipment as a shield invites a bite and leaves you defending yourself instead of treating the patient.",
+   "Waiting for animal control delays care unnecessarily when the owner can secure the dog now.",
+   ""
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-010",
+  "d": "SCENE",
+  "topic": "Scene safety",
+  "concept": "violent-scene-stage-or-retreat",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "You are treating a 19-year-old man with a stab wound to the thigh outside a bar. Police have left to chase a suspect. A crowd gathers and grows louder, and someone throws a bottle that shatters near your ambulance. The bleeding is controlled with a pressure dressing. What should you do?",
+  "opts": [
+   "Stay and finish the secondary assessment, then load the patient",
+   "Ask the crowd to step back and continue care on the sidewalk",
+   "Load the patient quickly and leave the area, continuing care en route",
+   "Leave the patient with bystanders and return to the ambulance to call police"
+  ],
+  "ans": 2,
+  "key": "When a scene turns hostile, remove yourself and the patient quickly and continue care from a safe location.",
+  "why": "A thrown bottle means the scene is no longer safe. With bleeding controlled, the patient can be moved immediately; leaving with him protects the crew and still gives him care during transport.",
+  "wrong": [
+   "Staying for a full assessment keeps everyone exposed to an escalating crowd that has already thrown objects.",
+   "An EMT cannot reliably control a hostile crowd, and continuing care on the sidewalk keeps the crew exposed.",
+   "",
+   "Leaving a patient you have started treating with bystanders is abandonment when you can safely take him with you."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-011",
+  "d": "SCENE",
+  "topic": "Hazardous materials",
+  "concept": "erg-lookup",
+  "b": 0,
+  "type": "mc",
+  "stem": "You are first on scene at an overturned tanker truck on a rural highway. You stopped about 500 feet away, uphill and upwind. Through binoculars you see an orange panel with the number 1203 and a red placard. The driver is walking along the shoulder away from the truck. In the Emergency Response Guidebook, where do you look first?",
+  "opts": [
+   "The placard table, to choose a guide based on the red placard alone",
+   "The yellow-bordered pages, to find the guide number listed for ID 1203",
+   "The blue-bordered pages, to find the guide number listed for ID 1203",
+   "The green-bordered pages, to find the isolation distance listed for ID 1203"
+  ],
+  "ans": 1,
+  "key": "With a 4-digit ID number, start in the ERG yellow pages (listed by ID) to get the correct orange guide.",
+  "why": "The yellow-bordered pages list materials by their 4-digit UN/NA ID number and point to the matching orange-bordered guide. The ID number is more specific than the placard, so it is the best starting point when you can read it.",
+  "wrong": [
+   "The placard table is a fallback when no ID number or name is available; a known ID gives a more specific guide.",
+   "",
+   "The blue-bordered pages are organized alphabetically by material name, not by ID number.",
+   "The green pages give isolation and protective-action distances for highlighted materials; you go there after the yellow pages, not first."
+  ],
+  "src": "ERG"
+ },
+ {
+  "id": "SC-012",
+  "d": "SCENE",
+  "topic": "Hazardous materials",
+  "concept": "erg-lookup",
+  "b": 1.5,
+  "type": "mc",
+  "stem": "A box truck has crashed and is leaking an unknown liquid that gives off a faint vapor. The placards are burned and unreadable, and the driver is slumped unconscious in the cab. You stopped 400 feet away. What is your best initial approach?",
+  "opts": [
+   "Stay back uphill and upwind, use the ERG guide for unidentified cargo, and request hazmat",
+   "Approach close enough to read the shipping papers in the cab, then select a guide",
+   "Treat the liquid as nonhazardous until a hazmat team identifies it otherwise",
+   "Approach the driver from downwind so the vapor is carried away from the cab"
+  ],
+  "ans": 0,
+  "key": "When a material cannot be identified, stay uphill and upwind, use ERG Guide 111 (unidentified cargo), and call hazmat.",
+  "why": "An unknown leaking material with an unconscious victim nearby must be assumed dangerous. The ERG directs responders to Guide 111 when the material cannot be identified, and rescue of the driver is left to trained responders in proper protective equipment.",
+  "wrong": [
+   "",
+   "Walking to the cab puts you in an unknown vapor that may have already caused the driver to lose consciousness.",
+   "An unconscious driver near a vaporizing unknown liquid is a warning sign; assuming it is harmless invites exposure.",
+   "Downwind is where the vapor travels; approaching from downwind puts you directly in the plume."
+  ],
+  "src": "ERG"
+ },
+ {
+  "id": "SC-013",
+  "d": "SCENE",
+  "topic": "Hazardous materials",
+  "concept": "hazmat-zones-decon",
+  "b": 0.5,
+  "type": "table",
+  "stem": "A chlorine leak at a water treatment plant has produced several patients. Fire command has set up hot, warm, and cold zones. Classify where each activity belongs.",
+  "cols": [
+   "Hot zone",
+   "Warm zone",
+   "Cold zone"
+  ],
+  "rows": [
+   [
+    "An entry team in specialized protective gear removes a worker from the leak area",
+    0
+   ],
+   [
+    "Responders in protective gear remove patients' contaminated clothing",
+    1
+   ],
+   [
+    "Patients are rinsed in the decontamination corridor",
+    1
+   ],
+   [
+    "EMTs triage and treat patients who have been decontaminated",
+    2
+   ],
+   [
+    "Ambulances wait in staging for transport assignments",
+    2
+   ]
+  ],
+  "key": "Rescue happens in the hot zone, decontamination in the warm zone, and EMS triage, treatment, and staging in the cold zone.",
+  "why": "The hot zone contains the release and is entered only by trained teams in proper protective gear. Decontamination takes place in the warm zone, and EMTs work in the cold zone with patients who have already been decontaminated.",
+  "src": "ERG"
+ },
+ {
+  "id": "SC-014",
+  "d": "SCENE",
+  "topic": "Hazardous materials",
+  "concept": "hazmat-zones-decon",
+  "b": 1.5,
+  "type": "mc",
+  "stem": "At a pesticide spill at a farm supply store, you are posted in the cold zone. A 34-year-old worker walks to your ambulance from the direction of the spill. His shirt is soaked with liquid, he smells strongly of chemicals, and he says he skipped decontamination. He is alert and anxious, RR 18. What should you do?",
+  "opts": [
+   "Have him sit on your stretcher and remove his shirt while you assess him",
+   "Load him into the ambulance and transport him to the nearest hospital",
+   "Rinse him with your saline supply, then begin your assessment",
+   "Keep your distance and direct him to the decontamination area before you provide care"
+  ],
+  "ans": 3,
+  "key": "Contaminated patients must go through decontamination before entering the cold zone or the ambulance, or they contaminate the crew.",
+  "why": "A soaked, chemical-smelling patient carries the hazard with him. Sending him back to decontamination protects him, you, your ambulance, and the receiving hospital; since he is alert and breathing normally, a short delay is safe.",
+  "wrong": [
+   "Handling his soaked clothing without protective gear exposes you, and your stretcher becomes contaminated.",
+   "Transporting him undecontaminated contaminates the ambulance, the crew, and the emergency department.",
+   "A few bottles of saline is not proper decontamination and spreads the chemical across your work area.",
+   ""
+  ],
+  "src": "ERG"
+ },
+ {
+  "id": "SC-015",
+  "d": "SCENE",
+  "topic": "Hazardous materials",
+  "concept": "toxic-atmosphere-no-entry",
+  "b": 0.5,
+  "type": "mr",
+  "stem": "On a cold January morning you respond to a home where a 36-year-old woman and her two children all have headache, nausea, and dizziness. The furnace has run all night. The mother's SpO2 reads 99% on room air. Which actions are most appropriate? Select TWO.",
+  "opts": [
+   "Use the normal SpO2 reading to rule out carbon monoxide exposure",
+   "Move everyone, including your crew, out of the house into fresh air",
+   "Stay inside to treat the family so the children remain calm and warm",
+   "Give high-concentration oxygen by nonrebreather mask despite the normal SpO2",
+   "Turn off the furnace yourself and reassess the family inside after 10 minutes"
+  ],
+  "ans": [
+   1,
+   3
+  ],
+  "key": "Several people with headache and nausea in one building suggests carbon monoxide: get everyone out and give high-flow oxygen.",
+  "why": "Similar symptoms in everyone in a heated home point to carbon monoxide. Standard pulse oximetry cannot tell carboxyhemoglobin from oxyhemoglobin, so a normal reading is false reassurance; removal to fresh air and high-concentration oxygen are the key actions, with fire crews metering the house.",
+  "wrong": [
+   "Standard pulse oximeters read carboxyhemoglobin as oxygenated hemoglobin, so SpO2 can look normal in CO poisoning.",
+   "",
+   "Staying inside keeps the family and crew in the toxic atmosphere.",
+   "",
+   "The house is still full of CO after the furnace is off; fire crews should meter and ventilate it before anyone goes back in."
+  ],
+  "src": "ERG"
+ },
+ {
+  "id": "SC-016",
+  "d": "SCENE",
+  "topic": "Hazardous materials",
+  "concept": "toxic-atmosphere-no-entry",
+  "b": 0,
+  "type": "mc",
+  "stem": "A farmhand called 911 because his coworker climbed down into a manure pit to fix a pump and collapsed at the bottom. When you arrive, a second worker has gone in after him and also collapsed. Both are motionless about 12 feet down. What should you do?",
+  "opts": [
+   "Climb down with a rope tied around your waist while your partner holds it",
+   "Lower an oxygen mask on a rope and climb down once the air seems fresher",
+   "Stay out of the pit, keep others out, and request a technical rescue team",
+   "Hold your breath and climb down quickly to pull the closest worker to the ladder"
+  ],
+  "ans": 2,
+  "key": "Collapse of a would-be rescuer means a toxic or oxygen-poor atmosphere; do not enter a confined space without training and equipment.",
+  "why": "Manure pits can hold hydrogen sulfide and too little oxygen, and a second collapse confirms the atmosphere is lethal. Entering without supplied air adds a third victim; your job is to keep others out and get a trained confined-space rescue team moving.",
+  "wrong": [
+   "A rope does not protect you from the gas that dropped two people; you would likely collapse before being pulled out.",
+   "An oxygen mask does not change the atmosphere in the pit, and how the air seems tells you nothing about gas levels.",
+   "",
+   "Gases like hydrogen sulfide can cause collapse very quickly, and the climb and lift take far longer than a held breath."
+  ],
+  "src": "ERG"
+ },
+ {
+  "id": "SC-017",
+  "d": "SCENE",
+  "topic": "PPE and infection control",
+  "concept": "transmission-based-precautions",
+  "b": -1,
+  "type": "mc",
+  "stem": "A 45-year-old man has had a cough for 2 months with night sweats, weight loss, and blood-streaked sputum. He is alert, RR 22, SpO2 95% on room air. You suspect active tuberculosis. What respiratory protection is most appropriate during transport?",
+  "opts": [
+   "A fit-tested N95 respirator for the crew and a surgical mask on the patient if tolerated",
+   "A surgical mask for the crew and a nonrebreather mask on the patient at 15 L/min",
+   "Gloves and a gown only, since tuberculosis spreads through contact with sputum",
+   "An N95 respirator on the patient and surgical masks for the crew"
+  ],
+  "ans": 0,
+  "key": "Suspected TB needs airborne precautions: N95 respirators for the crew and a surgical mask on the patient.",
+  "why": "Tuberculosis spreads through tiny airborne particles that a surgical mask does not filter. Fit-tested N95 respirators protect the crew, and a surgical mask on the patient reduces the particles he releases.",
+  "wrong": [
+   "",
+   "A surgical mask does not protect against airborne particles, and his SpO2 of 95% does not call for high-flow oxygen.",
+   "TB is spread through the air, so gown and gloves alone leave the crew's airway unprotected.",
+   "The respirator belongs on the crew; a surgical mask on the crew does not protect against airborne particles."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-018",
+  "d": "SCENE",
+  "topic": "PPE and infection control",
+  "concept": "transmission-based-precautions",
+  "b": 0.5,
+  "type": "table",
+  "stem": "During one shift you transport several patients with known or suspected infections. In addition to standard precautions, classify the main transmission-based precaution each patient needs.",
+  "cols": [
+   "Airborne",
+   "Droplet",
+   "Contact"
+  ],
+  "rows": [
+   [
+    "A 3-year-old with measles: fever, cough, and a spreading rash",
+    0
+   ],
+   [
+    "A 70-year-old with confirmed seasonal influenza",
+    1
+   ],
+   [
+    "A 2-month-old with suspected pertussis (whooping cough)",
+    1
+   ],
+   [
+    "A nursing home resident with C. difficile diarrhea",
+    2
+   ],
+   [
+    "A 30-year-old with suspected active pulmonary tuberculosis",
+    0
+   ]
+  ],
+  "key": "Measles and TB are airborne (N95), influenza and pertussis are droplet (surgical mask), and C. difficile is contact (gown, gloves).",
+  "why": "Measles and tuberculosis travel as small airborne particles and need fit-tested respirators. Influenza and pertussis spread by larger droplets within a few feet, and C. difficile spreads through contaminated hands and surfaces.",
+  "src": "STD"
+ },
+ {
+  "id": "SC-019",
+  "d": "SCENE",
+  "topic": "PPE and infection control",
+  "concept": "ppe-doffing-hand-hygiene",
+  "b": 1,
+  "type": "mc",
+  "stem": "You transport an 82-year-old nursing home resident with frequent watery diarrhea and confirmed Clostridioides difficile infection. You wore a gown and gloves throughout. After transferring care at the hospital, you remove your PPE. Which hand hygiene is best?",
+  "opts": [
+   "Alcohol-based hand rub, rubbing for at least 20 seconds",
+   "Soap and running water, since alcohol rub does not reliably kill C. difficile spores",
+   "None, because you wore gloves for the entire call",
+   "The same disinfectant wipe you use on the stretcher"
+  ],
+  "ans": 1,
+  "key": "After caring for a C. difficile patient, wash hands with soap and water; alcohol rub does not reliably remove its spores.",
+  "why": "C. difficile forms spores that resist alcohol. Washing with soap and running water physically removes them, which is why it is preferred after contact with these patients.",
+  "wrong": [
+   "Alcohol-based rub works for most germs but does not reliably kill or remove C. difficile spores.",
+   "",
+   "Gloves can have tiny defects and hands get contaminated during removal, so hand hygiene is always needed.",
+   "Surface disinfectant wipes are made for equipment, not skin, and are not a substitute for handwashing."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-020",
+  "d": "SCENE",
+  "topic": "PPE and infection control",
+  "concept": "ppe-doffing-hand-hygiene",
+  "b": 0.5,
+  "type": "order",
+  "stem": "You wore gloves, a gown, goggles, and a surgical mask while caring for a vomiting patient with suspected norovirus. Using the standard sequence in which the gown and gloves are removed separately, place the PPE removal steps in order.",
+  "opts": [
+   "Remove gloves",
+   "Remove goggles",
+   "Remove gown",
+   "Remove surgical mask",
+   "Perform hand hygiene"
+  ],
+  "key": "Remove PPE from most to least contaminated: gloves, eye protection, gown, mask, then hand hygiene.",
+  "why": "Gloves are the most contaminated item and come off first, so clean hands handle the rest. The mask is removed last by its ties or ear loops, and hand hygiene follows immediately after all PPE is off.",
+  "src": "STD"
+ },
+ {
+  "id": "SC-021",
+  "d": "SCENE",
+  "topic": "PPE and infection control",
+  "concept": "exposure-response",
+  "b": 0,
+  "type": "mc",
+  "stem": "While checking a patient's blood glucose, the used lancet slips and punctures your gloved finger. The patient has a known history of hepatitis C. The patient is now stable and your partner can take over care. What should you do?",
+  "opts": [
+   "Squeeze the puncture firmly to force out blood, then pour bleach on the site",
+   "Cover it with a bandage and report the exposure at the end of your shift",
+   "Watch for symptoms over the next 6 months before filing a report",
+   "Wash the site with soap and water, then report the exposure right away per your exposure plan"
+  ],
+  "ans": 3,
+  "key": "After a needlestick, wash the site with soap and water and report immediately so evaluation and follow-up start promptly.",
+  "why": "Prompt washing and immediate reporting start your agency's exposure process, including source testing and medical evaluation. Some follow-up treatments work best when started within hours, so waiting until the end of the shift loses time.",
+  "wrong": [
+   "Squeezing the wound and using bleach or other caustic agents are not recommended and can damage tissue.",
+   "Delaying the report until the end of the shift can delay evaluation and any time-sensitive treatment.",
+   "Waiting for symptoms misses the window for testing and treatment and breaks reporting requirements.",
+   ""
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-022",
+  "d": "SCENE",
+  "topic": "PPE and infection control",
+  "concept": "exposure-response",
+  "b": -0.5,
+  "type": "mc",
+  "stem": "A combative 30-year-old man with a bleeding scalp laceration shakes his head, and blood sprays across your face. You feel it in your left eye; you were not wearing eye protection. Police now have him restrained, and your partner is with him. What should you do next?",
+  "opts": [
+   "Wipe the eye with a clean gauze pad and continue care",
+   "Rub the eye gently to clear it, then finish the call before reporting",
+   "Flush the eye with plenty of clean water or saline, then report the exposure promptly",
+   "Apply a sterile eye patch and report the exposure at the end of your shift"
+  ],
+  "ans": 2,
+  "key": "Blood in the eye is an exposure: flush with plenty of water or saline right away, then report promptly.",
+  "why": "Mucous membranes such as the eye can absorb bloodborne pathogens. Copious irrigation removes as much blood as possible, and prompt reporting starts evaluation and follow-up.",
+  "wrong": [
+   "Wiping does not remove blood from the surface of the eye; it must be irrigated.",
+   "Rubbing can spread blood across the eye, and delaying the report delays evaluation.",
+   "",
+   "A patch traps blood against the eye, and waiting until the end of the shift delays evaluation."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-023",
+  "d": "SCENE",
+  "topic": "Mechanism of injury",
+  "concept": "moi-anticipate-injury",
+  "b": -0.5,
+  "type": "mc",
+  "stem": "A 34-year-old unrestrained driver struck a tree head-on at about 40 mph. The airbag did not deploy. You see a bent steering wheel and a starred windshield in front of the driver's seat. He is alert and complains only of a painful, deformed wrist. Which injuries should this mechanism make you suspect?",
+  "opts": [
+   "An isolated wrist fracture from bracing on the steering wheel",
+   "Chest and head injuries, even though he reports only wrist pain",
+   "A whiplash neck strain typical of a rear impact",
+   "Facial and forearm burns from airbag deployment"
+  ],
+  "ans": 1,
+  "key": "A bent steering wheel and starred windshield mean the chest and head took the impact; suspect injuries the patient does not report.",
+  "why": "Damage inside the vehicle shows where the occupant struck. A bent wheel points to chest impact and a starred windshield to head impact, and a painful wrist can distract him from those injuries.",
+  "wrong": [
+   "The wrist is the obvious injury, but the vehicle damage shows his chest and head absorbed major forces too.",
+   "",
+   "This was a frontal impact into a tree, not a rear impact.",
+   "The airbag did not deploy, so airbag burns are not expected."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-024",
+  "d": "SCENE",
+  "topic": "Mechanism of injury",
+  "concept": "moi-anticipate-injury",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "A 58-year-old woman was driving when a pickup truck struck her door at an intersection. The driver's door is pushed in about 14 inches. She is alert, pale, and says her left side hurts. BP 118/76, HR 104, RR 22, SpO2 95%. Which injury pattern should you anticipate?",
+  "opts": [
+   "Left chest, pelvic, and spleen injuries from the side impact",
+   "Knee, femur, and hip injuries from striking the dashboard",
+   "A neck hyperextension injury typical of a rear impact",
+   "Isolated left arm fractures from the door striking her arm"
+  ],
+  "ans": 0,
+  "key": "A driver-side impact loads the left chest, pelvis, and spleen; door intrusion means high energy reached the occupant.",
+  "why": "In a lateral impact, the door is driven into the near side of the occupant. For a driver struck on the left, that means left rib, lung, spleen, and pelvic injuries, and her tachycardia and pallor fit internal bleeding.",
+  "wrong": [
+   "",
+   "Knee, femur, and hip injuries are typical of a frontal impact with the knees striking the dashboard.",
+   "Hyperextension of the neck is classic for a rear impact, not a side impact.",
+   "The arm may be hurt, but door intrusion of 14 inches transmits force to the chest, abdomen, and pelvis too."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-025",
+  "d": "SCENE",
+  "topic": "Mechanism of injury",
+  "concept": "moi-anticipate-injury",
+  "b": 0,
+  "type": "mc",
+  "stem": "A 46-year-old roofer fell about 15 feet from a ladder and landed on his feet on concrete. He is sitting up, alert, and says both heels hurt badly. He denies other pain. What should the mechanism lead you to also suspect?",
+  "opts": [
+   "Only soft tissue bruising of both feet",
+   "A shoulder dislocation from gripping the ladder as he fell",
+   "A lumbar spine compression injury transmitted up from the impact",
+   "A skull fracture from his head striking the concrete"
+  ],
+  "ans": 2,
+  "key": "A feet-first landing from height drives force up the legs: suspect heel fractures plus lumbar spine compression injury.",
+  "why": "When someone lands on the feet, energy travels from the heels through the legs and pelvis into the lower spine. Severe heel pain should prompt a careful check of the lumbar spine and other axial injuries.",
+  "wrong": [
+   "Severe bilateral heel pain after a 15-foot fall suggests fractures, not just bruising.",
+   "Nothing in the history suggests he held onto the ladder, and it does not explain the energy path.",
+   "",
+   "He landed on his feet and has no head complaints; the energy path points to the lower spine, not the skull."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-026",
+  "d": "SCENE",
+  "topic": "Mechanism of injury",
+  "concept": "field-triage-2021",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "A 29-year-old woman was the restrained front-seat passenger in a rollover crash. The rear-seat passenger died at the scene. She is alert and oriented, GCS 15, BP 124/80, HR 96, RR 18, SpO2 98%, with only minor abrasions. Using the 2021 field triage guideline, what destination is most appropriate?",
+  "opts": [
+   "The nearest community hospital, because she meets no physiologic criteria",
+   "An urgent care clinic, because her injuries appear minor",
+   "The highest-level trauma center, because a rollover by itself is a red criterion",
+   "A trauma center, because a death in the same passenger compartment is a high-risk mechanism"
+  ],
+  "ans": 3,
+  "key": "A death in the same passenger compartment is a yellow (high-risk crash) criterion; transport to a trauma center.",
+  "why": "Under the 2021 guideline, a death in the passenger compartment is a high-risk crash criterion. Patients meeting yellow criteria without red criteria should go to a trauma center, which need not be the highest level.",
+  "wrong": [
+   "Normal vital signs do not cancel a high-risk mechanism; yellow criteria still direct her to a trauma center.",
+   "An urgent care clinic cannot evaluate occult injuries after a high-energy crash that killed another occupant.",
+   "Rollover alone is not a criterion in the 2021 guideline, and she has no red injury or physiologic findings.",
+   ""
+  ],
+  "src": "FTG"
+ },
+ {
+  "id": "SC-027",
+  "d": "SCENE",
+  "topic": "Mechanism of injury",
+  "concept": "field-triage-2021",
+  "b": 1.5,
+  "type": "mc",
+  "stem": "A 74-year-old man was the restrained driver in a moderate-speed rear-end collision. He takes no blood thinners. He is alert, GCS 15, with mild chest wall tenderness from the belt. BP 106/70, HR 88, RR 18, SpO2 96%. Under the 2021 field triage guideline, how should you classify him?",
+  "opts": [
+   "No criteria are met, because his systolic BP is above 90 mm Hg",
+   "A red criterion is met, because a systolic BP under 110 mm Hg applies at age 65 and older",
+   "A yellow criterion is met, because age over 65 alone calls for a trauma center",
+   "Only an EMS judgment factor applies, because his heart rate is below his systolic BP"
+  ],
+  "ans": 1,
+  "key": "In the 2021 guideline, a systolic BP under 110 mm Hg in a patient 65 or older is a red criterion.",
+  "why": "Older adults can be in shock at blood pressures that look acceptable in younger patients. The 2021 guideline therefore uses an SBP under 110 mm Hg as a red criterion at age 65 and older, directing him to the highest-level trauma center available.",
+  "wrong": [
+   "The cutoff of 90 mm Hg applies to ages 10 to 64; at 74, the threshold is 110 mm Hg.",
+   "",
+   "Age alone is not a triage criterion; his low systolic BP for his age is.",
+   "HR greater than SBP is a separate red criterion; its absence does not cancel the low systolic BP."
+  ],
+  "src": "FTG"
+ },
+ {
+  "id": "SC-028",
+  "d": "SCENE",
+  "topic": "Mechanism of injury",
+  "concept": "field-triage-2021",
+  "b": 1.5,
+  "type": "mr",
+  "stem": "You are evaluating injured workers at a construction site collapse using the 2021 field triage guideline. Which findings are RED criteria for transport to the highest-level trauma center? Select THREE.",
+  "opts": [
+   "A worker with a traumatic amputation of the leg above the ankle",
+   "A worker who fell 14 feet but is alert with normal vital signs",
+   "A worker with an unstable, painful pelvis after a beam struck his hip",
+   "A worker who takes a daily anticoagulant and struck his head",
+   "A 22-year-old worker with HR 104 and BP 126/80 after being struck by debris",
+   "A worker who cannot follow commands after a head injury"
+  ],
+  "ans": [
+   0,
+   2,
+   5
+  ],
+  "key": "Red criteria include amputation proximal to wrist or ankle, suspected pelvic fracture, and inability to follow commands.",
+  "why": "The 2021 guideline lists amputation proximal to the wrist or ankle and suspected pelvic fracture as red injury patterns, and inability to follow commands as a red mental status criterion. These patients go to the highest-level trauma center available.",
+  "wrong": [
+   "",
+   "A fall over 10 feet is a yellow (mechanism) criterion, not a red one.",
+   "",
+   "Anticoagulant use is an EMS judgment factor, not a red criterion.",
+   "HR 104 with SBP 126 meets no red criterion; for ages 10 to 64 the red findings are SBP under 90 or HR greater than SBP.",
+   ""
+  ],
+  "src": "FTG"
+ },
+ {
+  "id": "SC-029",
+  "d": "SCENE",
+  "topic": "Resources and incident command",
+  "concept": "call-resources-early",
+  "b": -1,
+  "type": "mc",
+  "stem": "You and your partner are the only ambulance at a three-vehicle crash. During your size-up you count six patients: two screaming, one motionless behind a steering wheel, and three walking around. What should you do before beginning patient care?",
+  "opts": [
+   "Request additional ambulances and resources and notify dispatch of a multiple-patient incident",
+   "Begin care on the motionless driver, then call for help once he is stable",
+   "Transport the most critical patient now and request more units en route",
+   "Assess every patient first, then decide which resources to request"
+  ],
+  "ans": 0,
+  "key": "When patients outnumber your resources, request help during the size-up, before you get absorbed in patient care.",
+  "why": "Six patients overwhelm one crew. Calling early gets additional units moving while you triage; once you start hands-on care, the call is often delayed.",
+  "wrong": [
+   "",
+   "Once you start treating one patient, you may not be free to call, and the other five go unassessed.",
+   "Leaving takes the only crew away from five patients with no one managing the scene.",
+   "Assessing everyone first delays help that you already know you need from the patient count alone."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-030",
+  "d": "SCENE",
+  "topic": "Resources and incident command",
+  "concept": "call-resources-early",
+  "b": -0.5,
+  "type": "mc",
+  "stem": "You are called to a second-floor apartment for a 52-year-old man, about 450 lb, with fever and leg weakness. He is alert, BP 138/86, HR 104, RR 20, SpO2 95%. The stairway is narrow with a tight turn. Your crew is you and one partner. What is the best plan?",
+  "opts": [
+   "Have him walk down the stairs while each of you supports one arm",
+   "Carry him in a stair chair with just the two of you, taking frequent rests",
+   "Leave him at home and return when he feels strong enough to walk",
+   "Request a lift assist or additional crew now, before attempting to move him"
+  ],
+  "ans": 3,
+  "key": "Recognize a lift you cannot safely do and call for more hands or equipment early, before anyone is hurt.",
+  "why": "A 450-lb patient with leg weakness on narrow stairs is beyond what two people can move safely. He is stable, so waiting a few minutes for a lift assist protects him and the crew from falls and back injuries.",
+  "wrong": [
+   "His legs are weak; if he falls on the stairs, two people cannot hold him, and all three may fall.",
+   "Two people carrying 450 lb on tight stairs risks dropping him and serious crew injury.",
+   "He has a fever, tachycardia, and leg weakness and needs evaluation; leaving him is not appropriate.",
+   ""
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-031",
+  "d": "SCENE",
+  "topic": "Resources and incident command",
+  "concept": "ics-roles-staging",
+  "b": 0,
+  "type": "mc",
+  "stem": "A school bus crash has been declared a mass-casualty incident, and incident command is established. Dispatch sends your ambulance and says staging is in a church parking lot two blocks away. As you approach, you can see patients on the roadway. What should you do?",
+  "opts": [
+   "Drive to the bus, load the first critical patient you see, and transport",
+   "Park at the crash site and report to the nearest officer",
+   "Report to the staging area and wait for an assignment from the staging officer",
+   "Begin triaging the patients you can see from the road on your own"
+  ],
+  "ans": 2,
+  "key": "At an established incident, units report to staging and wait for an assignment; freelancing undermines the incident plan.",
+  "why": "Staging keeps ambulances from crowding the scene and lets command send each unit where it is most needed. Patients will be routed to transport in priority order through the transport officer.",
+  "wrong": [
+   "Self-dispatching to the scene bypasses triage priorities and may send the wrong patient to the wrong hospital.",
+   "Parking at the crash site clogs access routes, and the nearest officer may not be the one assigning units.",
+   "",
+   "Triage is already being run by an assigned officer; freelancing duplicates work and creates confusion."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-032",
+  "d": "SCENE",
+  "topic": "Resources and incident command",
+  "concept": "ics-roles-staging",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "At an apartment fire with 14 patients, the incident commander assigns you as transport officer. Treatment areas are set up, and ambulances are arriving at staging. Which task is your primary responsibility?",
+  "opts": [
+   "Triaging patients as firefighters carry them out of the building",
+   "Coordinating ambulances from staging with hospital destinations and tracking each patient sent",
+   "Providing hands-on care to red-tagged patients in the treatment area",
+   "Directing fire crews to the floors where victims may remain"
+  ],
+  "ans": 1,
+  "key": "The transport officer matches patients to ambulances and hospitals and tracks where every patient goes.",
+  "why": "The transport officer calls ambulances up from staging, confirms hospital capacity, assigns destinations, and keeps a record of each patient sent. This spreads patients across hospitals and keeps everyone accounted for.",
+  "wrong": [
+   "Triage belongs to the triage officer and teams; the transport officer should not be pulled into the sort.",
+   "",
+   "Hands-on care in the treatment area is the treatment officer's and treatment teams' job.",
+   "Directing fire suppression and search crews is a fire operations function, not an EMS transport role."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-033",
+  "d": "SCENE",
+  "topic": "Resources and incident command",
+  "concept": "landing-zone-not-yours",
+  "b": 0,
+  "type": "mc",
+  "stem": "You are caring for a 23-year-old motorcyclist with a femur fracture and signs of shock on a rural highway. Air medical transport has been requested through command, which has assigned a landing zone officer. Your partner suggests he pick a nearby hayfield and wave the helicopter in himself. What is the best response?",
+  "opts": [
+   "Leave landing zone selection and control to the landing zone officer and focus on the patient",
+   "Agree, and have him mark the corners of the field with road flares",
+   "Choose the highway beside the ambulance instead, since it is flatter and closer",
+   "Have him guide the helicopter down by standing in the center of the field"
+  ],
+  "ans": 0,
+  "key": "The landing zone is selected and controlled by the designated LZ officer; the EMT crew stays with the patient.",
+  "why": "Landing zone selection involves wires, slope, debris, and communication with the pilot, and command has already assigned someone to do it. Two landing zone efforts create confusion and danger, while the patient in shock needs both of you.",
+  "wrong": [
+   "",
+   "This sets up a competing landing zone, and loose flares can be blown around or start a fire in dry hay.",
+   "Picking a site yourself, even a flatter one, overrides the assigned landing zone officer and may not be secured.",
+   "Standing in the touchdown area puts him under a landing aircraft and takes a caregiver away from the patient."
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-034",
+  "d": "SCENE",
+  "topic": "Resources and incident command",
+  "concept": "landing-zone-not-yours",
+  "b": -1,
+  "type": "mc",
+  "stem": "A medical helicopter has landed in a secured landing zone, and its rotors are still turning. You and your partner have the packaged patient on the stretcher 100 feet away. No one from the flight crew has looked toward you or signaled. What should you do?",
+  "opts": [
+   "Approach from the rear of the aircraft so you do not distract the pilot",
+   "Move the stretcher toward the aircraft quickly while keeping your heads low",
+   "Approach from the uphill side so you stay farther from the rotor",
+   "Wait with the patient until a flight crew member signals you to approach"
+  ],
+  "ans": 3,
+  "key": "Never approach a helicopter until the flight crew signals you, and then only as they direct, in the pilot's view.",
+  "why": "The flight crew controls the aircraft and the area around it. Waiting for their signal keeps you away from rotors and lets them lead the approach from a safe direction.",
+  "wrong": [
+   "The tail rotor is nearly invisible when spinning, and the rear is the most dangerous place to approach.",
+   "Ducking does not replace permission; approaching unannounced can bring you into a rotor or a moving aircraft.",
+   "On a slope the main rotor is closer to the ground on the uphill side, so approaching from uphill is dangerous.",
+   ""
+  ],
+  "src": "STD"
+ },
+ {
+  "id": "SC-035",
+  "d": "SCENE",
+  "topic": "Triage",
+  "concept": "start-adult-categories",
+  "b": -0.5,
+  "type": "order",
+  "stem": "You are the first EMT at a warehouse explosion with about 20 injured adults. You begin START triage. Place the START steps in the order you apply them.",
+  "opts": [
+   "Direct everyone who can walk to a designated area",
+   "Check for breathing, repositioning the airway if absent",
+   "Assess the respiratory rate",
+   "Assess perfusion with a radial pulse or capillary refill",
+   "Assess whether the patient can follow simple commands"
+  ],
+  "key": "START sorts walkers first, then checks breathing, respiratory rate, perfusion, and mental status, in that order.",
+  "why": "Moving walking patients away first leaves the more injured for evaluation. Each remaining patient is then checked for respirations, rate, perfusion, and ability to follow commands, stopping as soon as an immediate finding is found.",
+  "src": "START"
+ },
+ {
+  "id": "SC-036",
+  "d": "SCENE",
+  "topic": "Triage",
+  "concept": "triage-limited-interventions",
+  "b": 0,
+  "type": "mc",
+  "stem": "During START triage at a train derailment with dozens of patients, you find a 50-year-old man lying on his back. He is not breathing. You open his airway with a head-tilt chin-lift, and he still does not breathe. There is no major bleeding. What should you do?",
+  "opts": [
+   "Tag him immediate and begin CPR before moving on",
+   "Tag him expectant (deceased) and move to the next patient",
+   "Tag him immediate and give two rescue breaths before moving on",
+   "Tag him delayed so he is reassessed after the immediate patients"
+  ],
+  "ans": 1,
+  "key": "In adult START, a patient who stays apneic after airway repositioning is tagged expectant; CPR is not started during triage.",
+  "why": "With many patients and few rescuers, triage aims to save the most lives. An adult who does not breathe after the airway is opened is tagged expectant so the rescuer can reach patients who can still be saved.",
+  "wrong": [
+   "Starting CPR ties up a rescuer for one patient with little chance of survival while others go unassessed.",
+   "",
+   "Rescue breaths for persistent apnea belong to JumpSTART for children, not adult START.",
+   "A delayed tag is for breathing, perfused patients who follow commands; apnea after repositioning is not delayed."
+  ],
+  "src": "START"
+ },
+ {
+  "id": "SC-037",
+  "d": "SCENE",
+  "topic": "Triage",
+  "concept": "start-adult-categories",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "At a bus crash, you triage a 38-year-old woman who cannot walk. She is breathing 24 times per minute, her radial pulse is absent, and her skin is pale and cool. She answers questions and squeezes your hand when asked. Under START, what is her category?",
+  "opts": [
+   "Delayed, because her respiratory rate is under 30 and she follows commands",
+   "Minor, because she is alert and answering questions",
+   "Immediate, because her radial pulse is absent",
+   "Expectant, because shock this severe is unlikely to be survivable"
+  ],
+  "ans": 2,
+  "key": "In START, an absent radial pulse (or capillary refill over 2 seconds) makes the patient immediate, whatever her mental status.",
+  "why": "START checks perfusion before mental status, and a missing radial pulse signals shock. She is tagged immediate as soon as that is found, and any severe bleeding is controlled before you move on.",
+  "wrong": [
+   "Following commands matters only if perfusion is adequate; the absent radial pulse makes her immediate first.",
+   "Patients who cannot walk are not minor, and being alert does not offset signs of shock.",
+   "",
+   "Expectant is for patients who stay apneic after repositioning; she is breathing and talking."
+  ],
+  "src": "START"
+ },
+ {
+  "id": "SC-038",
+  "d": "SCENE",
+  "topic": "Triage",
+  "concept": "start-adult-categories",
+  "b": 1.5,
+  "type": "table",
+  "stem": "After a bleacher collapse at a high school stadium, you are performing START triage on the injured adults. Classify each patient.",
+  "cols": [
+   "Minor (green)",
+   "Delayed (yellow)",
+   "Immediate (red)",
+   "Expectant (black)"
+  ],
+  "rows": [
+   [
+    "Walks to the collection area holding a small bleeding forearm cut",
+    0
+   ],
+   [
+    "Cannot walk; RR 20; radial pulse present; follows commands; open lower-leg fracture",
+    1
+   ],
+   [
+    "Cannot walk; RR 36; radial pulse present",
+    2
+   ],
+   [
+    "Cannot walk; RR 18; radial pulse present; does not follow simple commands",
+    2
+   ],
+   [
+    "Not breathing; still apneic after airway repositioning",
+    3
+   ]
+  ],
+  "key": "START: walkers are minor; RR over 30, poor perfusion, or not following commands is immediate; apnea after repositioning is expectant.",
+  "why": "Walking patients are sorted as minor first. Non-walking patients are immediate if RR is over 30, perfusion is poor, or they cannot follow simple commands; otherwise they are delayed, even with a serious-looking fracture.",
+  "src": "START"
+ },
+ {
+  "id": "SC-039",
+  "d": "SCENE",
+  "topic": "Triage",
+  "concept": "jumpstart-pediatric",
+  "b": 1.5,
+  "type": "mc",
+  "stem": "You are using JumpSTART after a daycare van crash. A 5-year-old boy is lying still and is not breathing. You position his airway, and he still does not breathe, but he has a palpable peripheral pulse. What should you do?",
+  "opts": [
+   "Give 5 rescue breaths; tag him immediate if he starts breathing, expectant if he does not",
+   "Tag him expectant and move on, as you would an adult who stays apneic",
+   "Begin CPR and call for another rescuer to take over triage",
+   "Tag him immediate without giving breaths and move on to the next child"
+  ],
+  "ans": 0,
+  "key": "In JumpSTART, an apneic child with a pulse gets 5 rescue breaths; breathing resumes means immediate, still apneic means expectant.",
+  "why": "Children often stop breathing from a primary breathing problem while the heart is still beating, so a brief trial of ventilation can save them. JumpSTART adds this step for apneic children with a pulse before tagging them expectant.",
+  "wrong": [
+   "",
+   "Tagging him expectant without the rescue-breath trial skips the step JumpSTART adds for children.",
+   "He has a pulse, so CPR is not indicated, and stopping triage leaves other children unassessed.",
+   "JumpSTART requires the breath trial; tagging without it skips the step that decides immediate versus expectant."
+  ],
+  "src": "START"
+ },
+ {
+  "id": "SC-040",
+  "d": "SCENE",
+  "topic": "Triage",
+  "concept": "jumpstart-pediatric",
+  "b": 1,
+  "type": "mc",
+  "stem": "At an elementary school bus crash, you are using JumpSTART. A 4-year-old girl cannot walk. She is drowsy and moaning, breathing shallowly at 12 breaths per minute, with a palpable radial pulse. What is her category?",
+  "opts": [
+   "Delayed, because her respiratory rate is under 30",
+   "Minor, because she is moaning and has a pulse",
+   "Delayed, because she has a palpable peripheral pulse",
+   "Immediate, because a respiratory rate under 15 is a JumpSTART red finding"
+  ],
+  "ans": 3,
+  "key": "In JumpSTART, a child's respiratory rate under 15 or over 45 makes the child immediate.",
+  "why": "JumpSTART uses child-specific respiratory limits of 15 to 45 breaths per minute. A rate of 12 is too slow for a 4-year-old and signals respiratory failure, so she is immediate.",
+  "wrong": [
+   "The cutoff of 30 is the adult START rule; JumpSTART uses under 15 or over 45 for children.",
+   "A child who cannot walk is not minor, and moaning with a slow respiratory rate is a warning sign.",
+   "A palpable pulse does not offset a respiratory rate below the JumpSTART limit.",
+   ""
+  ],
+  "src": "START"
+ },
+ {
+  "id": "SC-041",
+  "d": "SCENE",
+  "topic": "Triage",
+  "concept": "retriage",
+  "b": 0.5,
+  "type": "mc",
+  "stem": "Thirty minutes into a highway pileup MCI, you are reassessing a 44-year-old man in the treatment area. He was tagged delayed for a closed femur fracture. His RR is now 34, he is pale and anxious, and he still follows commands. The next ambulance is 15 minutes out. What should you do?",
+  "opts": [
+   "Keep his delayed tag, since categories are fixed at the initial sort",
+   "Re-triage him to immediate and tell the treatment officer about the change",
+   "Leave his tag as is and add a note for the receiving hospital",
+   "Move him to the expectant area, since his condition is worsening"
+  ],
+  "ans": 1,
+  "key": "Triage is ongoing: re-triage a patient whose condition changes and tell the officer in charge so priorities update.",
+  "why": "A respiratory rate over 30 now meets immediate criteria. Changing his tag and notifying the treatment officer moves him up for care and transport.",
+  "wrong": [
+   "Triage categories are not fixed; patients are reassessed and re-tagged as their condition changes.",
+   "",
+   "A note does not change his priority, so he would still wait behind patients who are now more stable than he is.",
+   "Expectant is for patients unlikely to survive with available resources; he is breathing, perfused, and following commands."
+  ],
+  "src": "START"
+ },
+ {
+  "id": "SC-042",
+  "d": "SCENE",
+  "topic": "Triage",
+  "concept": "retriage",
+  "b": 0,
+  "type": "mc",
+  "stem": "At a restaurant fire with many patients, a 60-year-old man walked to the minor (green) area with soot on his face and clothes. Twenty minutes later he is coughing hard, his voice is hoarse, and he can no longer speak in full sentences. What should you do?",
+  "opts": [
+   "Leave him in the green area, since he was able to walk at initial triage",
+   "Have him breathe slowly into a paper bag until transport is available",
+   "Re-triage him and move him for care based on his current condition",
+   "Have him wait until all red- and yellow-tagged patients have been transported"
+  ],
+  "ans": 2,
+  "key": "A walking patient can deteriorate; reassess minor-area patients and re-triage anyone who worsens.",
+  "why": "Soot on the face plus a hoarse voice and worsening breathing after a fire suggest airway burns or smoke inhalation, which can quickly obstruct the airway. His earlier green tag no longer reflects his condition, so he is re-triaged and moved up.",
+  "wrong": [
+   "Ambulation at the first sort does not guarantee he stays stable; new airway signs require re-triage.",
+   "Paper-bag breathing is not appropriate and can worsen hypoxia in smoke inhalation.",
+   "",
+   "Holding him to the end ignores signs of a possible airway emergency that may now make him a priority."
+  ],
+  "src": "START"
+ },
+ {
+  "id": "SC-043",
+  "d": "SCENE",
+  "topic": "Triage",
+  "concept": "triage-limited-interventions",
+  "b": 0.5,
+  "type": "mr",
+  "stem": "You are the triage officer moving through 25 patients after a stage collapse at an outdoor concert. Additional EMS crews are 10 minutes away. Which interventions are appropriate to perform during START triage before moving to the next patient? Select TWO.",
+  "opts": [
+   "Open the airway of a non-breathing patient by repositioning the head",
+   "Splint an angulated forearm fracture before moving on",
+   "Begin CPR on a patient without a pulse",
+   "Apply a tourniquet to a patient with spurting bleeding from the thigh",
+   "Obtain a full set of vital signs, including blood pressure"
+  ],
+  "ans": [
+   0,
+   3
+  ],
+  "key": "During START, limit care to quick lifesaving steps such as opening the airway and controlling severe bleeding, then move on.",
+  "why": "Triage aims to sort every patient quickly so resources go where they save the most lives. Repositioning an airway and stopping major bleeding take seconds and can be lifesaving; everything else waits for treatment teams.",
+  "wrong": [
+   "",
+   "Splinting takes minutes and is not lifesaving; it belongs in the treatment area.",
+   "CPR ties up the triage officer with one patient who has a poor chance of survival in an MCI.",
+   "",
+   "START does not use blood pressure; full vitals slow triage and delay sorting of the remaining patients."
+  ],
+  "src": "START"
+ }
+]
