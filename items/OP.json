@@ -9,9 +9,9 @@
     "stem": "A neighbor called 911 after finding a 58-year-old man lying on his kitchen floor. He does not respond to voice or pain and has snoring respirations. No family is present, and the neighbor does not know his medical history. On what basis may you begin assessment and treatment?",
     "opts": [
       "Expressed consent given on his behalf by the neighbor who called 911",
-      "Implied consent, because a reasonable person would want emergency care",
+      "Implied consent, since a reasonable person would want emergency care",
       "Involuntary consent, which requires law enforcement to authorize care",
-      "No consent is possible, so care must wait for a family member"
+      "No consent is possible, so care must wait until a family member arrives"
     ],
     "ans": 1,
     "key": "An adult who cannot consent because of unresponsiveness is treated under implied consent when an emergency exists.",
@@ -34,8 +34,8 @@
     "stem": "A 13-year-old girl fell from playground equipment on a school field trip. Her forearm is deformed, and her hand is pale and cool with a weak radial pulse. The teacher says the school has no medical authorization form for her, and repeated calls to both parents go unanswered. What should you do?",
     "opts": [
       "Wait at the scene with the patient until a parent can be reached to give consent",
-      "Accept the patient's own verbal consent as legally sufficient for treatment",
-      "Treat and transport under implied consent while efforts to reach the parents continue",
+      "Accept the patient's own verbal consent as legally sufficient, since she is old enough to understand",
+      "Treat and transport under implied consent while staff keep calling the parents",
       "Have the teacher sign a refusal and leave instructions to take her to a clinic"
     ],
     "ans": 2,
@@ -78,9 +78,9 @@
     "stem": "You arrive at a crowded emergency department with a 70-year-old woman with abdominal pain. Every nurse is busy. Your partner moves her onto a hallway bed, and dispatch asks when you will be available. No hospital staff member has spoken with you yet. What must happen before your crew leaves?",
     "opts": [
       "Give a verbal report to a nurse or physician who accepts responsibility for her care",
-      "Leave a printed copy of the patient care report on her bed and notify dispatch",
+      "Leave a printed copy of the patient care report on her bed and notify dispatch you are clear",
       "Ask a family member sitting nearby to call a nurse if her condition changes",
-      "Recheck her vital signs, document that she is stable, and then clear the call"
+      "Recheck her vital signs, document that she is stable, and then clear the call with dispatch"
     ],
     "ans": 0,
     "key": "Care must be transferred to a provider of equal or higher training who accepts it; leaving before that is abandonment.",
@@ -138,10 +138,10 @@
     "type": "mc",
     "stem": "An 82-year-old woman enrolled in home hospice is found pulseless and apneic in bed. Her daughter calmly hands you a physician-signed POLST form with her mother's name on it, marked 'Do Not Attempt Resuscitation.' What is the most appropriate action?",
     "opts": [
-      "Begin CPR and transport so the hospital can decide whether to honor the form",
+      "Begin CPR and transport so the hospital physician can decide whether to honor the form",
       "Apply the AED and deliver a shock if advised, since defibrillation is not CPR",
-      "Perform two minutes of CPR, then stop if no pulse returns",
-      "Confirm the form is valid for this patient, withhold resuscitation, and support the family"
+      "Perform two minutes of CPR, then stop and support the family if no pulse returns",
+      "Confirm the form is valid for her, withhold resuscitation, and support the family"
     ],
     "ans": 3,
     "key": "A valid DNR or POLST order that applies to the patient is honored by withholding resuscitation.",
@@ -165,8 +165,8 @@
     "opts": [
       "Withhold all treatment and transport, because the DNR covers his lung condition",
       "Give oxygen and other indicated care and transport; the DNR applies if he arrests",
-      "Provide comfort measures only, without oxygen, to respect his written wishes",
-      "Ask him to revoke the DNR in writing before you begin treatment"
+      "Provide comfort measures only, without oxygen, to respect the written wishes in his DNR",
+      "Ask him to revoke the DNR in writing before you begin any oxygen or other treatment"
     ],
     "ans": 1,
     "key": "A DNR order limits resuscitation in arrest; it does not mean withholding other indicated care.",
@@ -220,8 +220,8 @@
     "opts": [
       "Confirming to a reporter only that the driver was alive when you arrived",
       "Telling the driver's employer, who calls the station, which hospital he went to",
-      "Giving the emergency department nurse an update when she calls with a follow-up question",
-      "Posting a scene photo online after cropping out the driver's face"
+      "Answering a follow-up question from the receiving emergency department nurse",
+      "Posting a scene photo online after cropping out the driver's face and the plates"
     ],
     "ans": 2,
     "key": "Patient information may be shared with providers involved in the patient's care, not with the media, employers, or the public.",
@@ -230,7 +230,7 @@
       "Even limited details about a patient's condition are protected and may not be given to the media by the EMT.",
       "An employer is not involved in treatment and has no right to know where the patient was taken.",
       "",
-      "A crash scene photo can identify a patient through the vehicle, location, or plates; posting it violates privacy."
+      "A crash scene photo can still identify a patient through the vehicle or location; posting it violates privacy."
     ],
     "src": "STD"
   },
@@ -243,10 +243,10 @@
     "type": "mc",
     "stem": "Police have secured an apartment where a 30-year-old man has a stab wound to the abdomen. He is responsive and pale with HR 118. A bloody knife lies on the floor beside him, away from his reach. How should you handle the scene while giving care?",
     "opts": [
-      "Leave the knife where it lies, avoid it, and tell police about anything you move",
+      "Leave the knife in place, avoid it, and tell police about anything you move",
       "Pick up the knife with gloved hands and place it in a bag for police",
-      "Delay care until police finish photographing and collecting evidence",
-      "Cut through the hole in his shirt for the fastest access to the wound"
+      "Delay care until police finish photographing the scene and collecting evidence",
+      "Cut through the hole in his shirt to get the fastest access to the wound"
     ],
     "ans": 0,
     "key": "At a crime scene, patient care comes first, but EMTs disturb as little as possible and tell police what was moved.",
@@ -332,7 +332,7 @@
     "stem": "A 45-year-old woman who slipped on ice has a painful but intact wrist. She is alert and oriented, with normal vital signs, and declines transport after you explain the risks. She signs the refusal form. Which documentation best protects the patient and the crew?",
     "opts": [
       "The signed refusal form alone, since her signature proves she understood and refused",
-      "Her capacity, findings, the risks explained, advice to call back or seek care, and her response",
+      "Her capacity, findings, the risks explained, advice given, and her response",
       "A note that the patient refused transport and was left at home in her own care",
       "Your opinion that she refused mainly because she wanted to avoid an ambulance bill"
     ],
@@ -358,7 +358,7 @@
     "opts": [
       "Delete the narrative and rewrite it so the final record appears clean",
       "Leave the PCR alone because the error is minor and the wound was treated",
-      "Add a dated, timed addendum that identifies and corrects the error per agency policy",
+      "Add a dated, timed addendum that corrects the error, per agency policy",
       "Call the emergency department and correct the error with the nurse verbally only"
     ],
     "ans": 2,
@@ -381,7 +381,7 @@
     "type": "mc",
     "stem": "During a short transport of a 35-year-old man with an ankle injury, your partner forgot to take a second set of vital signs. At the hospital he asks you to enter his first set again with a later time so the PCR 'looks complete.' What should you do?",
     "opts": [
-      "Document only the vital signs actually taken and note that no repeat set was obtained",
+      "Record only the vitals actually taken and note that no repeat set was obtained",
       "Enter the copied values in the PCR but mark them clearly as approximate",
       "Enter values you estimate from how the patient appeared during the transport",
       "Leave the vitals out and write that the patient remained stable throughout the trip"
@@ -407,9 +407,9 @@
     "stem": "At the start of your shift, the ambulance's AED status indicator shows an error symbol, and the spare electrode pad package is past its expiration date. Your unit is about to be placed in service. What should you do?",
     "opts": [
       "Go in service, because the AED will likely work if a cardiac arrest call comes in",
-      "Replace the spare pads and ignore the indicator if the AED powers on",
+      "Replace the spare pads and ignore the indicator as long as the AED powers on",
       "Keep the AED in service and report the problem at the end of the shift",
-      "Remove it from service, obtain a working AED and in-date pads, and report it per policy"
+      "Remove it from service, get a working AED and in-date pads, and report it"
     ],
     "ans": 3,
     "key": "An AED with a fault indicator or expired pads is replaced before the unit goes in service.",
@@ -457,8 +457,8 @@
     "stem": "You are replacing an empty portable oxygen cylinder in the ambulance before your next call. Which practice is correct?",
     "opts": [
       "Apply petroleum jelly to the valve threads so the regulator seats more easily",
-      "Lay the new cylinder loose on the bench seat to have it within reach",
-      "Remove the seal, point the valve away from people, and crack it briefly before attaching",
+      "Lay the new cylinder loose on the bench seat so it is within easy reach",
+      "Remove the seal, aim the valve away from people, and crack it briefly first",
       "Store the spare cylinder next to the compartment heater to keep the gas warm"
     ],
     "ans": 2,
@@ -506,10 +506,10 @@
     "type": "mc",
     "stem": "After you transport a 40-year-old man who vomited blood, the stretcher mattress and side rails have visible blood on them. You are wearing gloves. What is the correct way to prepare the stretcher for the next patient?",
     "opts": [
-      "Spray disinfectant on the blood and wipe it off immediately so the unit can clear",
+      "Spray disinfectant on the blood and wipe it off immediately so the unit can clear the call",
       "Wipe the surfaces with plain water and leave the disinfecting for the end of the shift",
-      "Cover the soiled mattress with a fresh sheet and disinfect it later at the station",
-      "Remove visible blood first, then apply an EPA-registered disinfectant for its labeled wet contact time"
+      "Cover the soiled mattress with a fresh sheet and disinfect it later at the station with bleach",
+      "Remove visible blood, then apply an EPA-registered disinfectant for its labeled contact time"
     ],
     "ans": 3,
     "key": "Cleaning removes gross contamination first; disinfecting then requires the product's full labeled contact time.",
@@ -550,7 +550,7 @@
     "stem": "A 45-year-old man staying at a shelter has had a cough for six weeks, night sweats, weight loss, and blood-streaked sputum. He is alert, with SpO2 95% and RR 20. Which precautions are most appropriate for your crew?",
     "opts": [
       "Surgical masks for the crew, with no mask needed for the patient",
-      "Fit-tested N95 respirators for the crew and a surgical mask on the patient",
+      "Fit-tested N95s for the crew and a surgical mask on the patient",
       "An N95 respirator on the patient and gloves for the crew",
       "Gloves and gowns for the crew, since the disease spreads mainly by touch"
     ],
@@ -574,10 +574,10 @@
     "type": "mc",
     "stem": "You and your partner are about to lift a 210-lb man on a stretcher from the ground. Which technique best protects your back?",
     "opts": [
-      "Bend at the waist with your legs straight to reach the rails",
-      "Twist your torso to turn toward the ambulance while lifting",
-      "Keep your back straight, feet shoulder-width apart, and lift with your legs",
-      "Hold the stretcher at arm's length to keep it away from your body"
+      "Bend at the waist with your legs straight so you can reach the rails",
+      "Twist your torso to turn toward the ambulance as you lift the stretcher",
+      "Keep your back straight, feet shoulder-width apart, lift with your legs",
+      "Hold the stretcher at arm's length, away from your body, as you rise"
     ],
     "ans": 2,
     "key": "Safe lifting uses a straight back, a stable base, the leg muscles, and the load kept close to the body.",
@@ -629,10 +629,10 @@
     "type": "mc",
     "stem": "Four days after a call in which an infant died despite resuscitation, an EMT tells you she cannot sleep, keeps seeing the scene, and snaps at her family. She is still working her shifts. What is the best advice?",
     "opts": [
-      "Seek peer support or the employee assistance program, and professional help if symptoms persist",
-      "Have a few drinks at bedtime until her sleep returns to normal",
-      "Pick up extra shifts so she stays busy and does not dwell on it",
-      "Ignore the symptoms, since they are normal and need no attention"
+      "Seek peer support or employee assistance, and professional help if symptoms persist",
+      "Have a few drinks at bedtime to relax until her sleep returns to normal on its own",
+      "Pick up extra shifts so she stays busy and has less time to dwell on the call",
+      "Ignore the symptoms, since these reactions are normal after a call and need no attention"
     ],
     "ans": 0,
     "key": "Stress reactions after a critical incident are common; use peer support and professional help rather than avoidance.",
@@ -657,7 +657,7 @@
       "Open the window and turn up the radio to stay alert for the rest of the drive",
       "Drink an energy drink and continue, since the station is only a few miles away",
       "Speed up slightly to reach the station before you get more tired",
-      "Pull over safely, let a more alert partner drive, and report fatigue per agency policy"
+      "Pull over safely, let a more alert partner drive, and report your fatigue"
     ],
     "ans": 3,
     "key": "Drowsy driving is an immediate hazard; stop driving and use agency fatigue procedures rather than relying on alertness tricks.",
@@ -680,7 +680,7 @@
     "stem": "A 38-year-old man in his living room is pacing, clenching his fists, and yelling that he does not want help. He has not threatened the crew, and no weapons are visible. Police are en route. Your partner is near the front door. How should you approach him?",
     "opts": [
       "Move close and put a hand on his shoulder so he feels reassured",
-      "Keep a clear exit, stay at a safe distance, and speak calmly in a low voice",
+      "Keep a clear exit, stay at a distance, and speak calmly and quietly",
       "Raise your voice firmly so that he knows you are in charge",
       "Warn him that he will be restrained if he does not calm down right away"
     ],
@@ -706,7 +706,7 @@
     "opts": [
       "Proceed at your current speed, since lights and siren give you the right of way",
       "Pass the stopped cars on the right shoulder to save time",
-      "Slow down, stop if needed, and proceed only after every lane of traffic has yielded",
+      "Slow down, stop if needed, and proceed once every lane has yielded",
       "Follow closely behind a fire engine that is already crossing the intersection"
     ],
     "ans": 2,
@@ -757,7 +757,7 @@
       "Behind the fire engine, upstream of the crash, so oncoming traffic sees you first",
       "In the open left lane beside the crash for the shortest carry",
       "On the far shoulder across the median, then walk the stretcher over",
-      "Past the crash, inside the protected zone, with the loading area away from traffic"
+      "Beyond the crash, in the protected zone, with the loading area away from traffic"
     ],
     "ans": 3,
     "key": "At roadway incidents, the blocking vehicle is upstream and the ambulance parks downstream within the protected work zone.",

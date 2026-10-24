@@ -91,7 +91,7 @@
       "Atorvastatin, because statins commonly cause dizziness that leads to falls",
       "Metformin, because it most likely caused low blood sugar and the fall",
       "Omeprazole, because it can mask the early signs of internal bleeding",
-      "Apixaban, because an anticoagulant raises the risk of a delayed brain bleed"
+      "Apixaban, because anticoagulants raise the risk of a delayed brain bleed"
     ],
     "ans": 3,
     "key": "An anticoagulant on the medication list makes a minor head strike high risk, even when the patient looks well.",
@@ -113,8 +113,8 @@
     "type": "mc",
     "stem": "A 69-year-old man has had black, tarry stools for two days and now feels faint when he stands. He is pale, and his skin is cool and moist. BP 96/62 mm Hg, HR 64, RR 20. He takes metoprolol for high blood pressure. How should his medication change your interpretation?",
     "opts": [
-      "The beta blocker can blunt his heart rate response, so a normal rate does not rule out shock",
-      "The beta blocker explains his low blood pressure, so blood loss is an unlikely cause",
+      "The beta blocker may blunt his heart rate rise, so a normal rate does not rule out shock",
+      "The beta blocker explains his low blood pressure, so blood loss is an unlikely cause of his symptoms",
       "His normal heart rate shows compensation is adequate, so routine transport is appropriate",
       "The beta blocker darkens the stool, so the stool color is a medication side effect"
     ],
@@ -174,10 +174,10 @@
     "type": "mc",
     "stem": "A 44-year-old unrestrained driver struck the steering wheel. He is short of breath, and his SpO2 is 90% on room air. While palpating his upper chest and neck, you feel a crackling, crispy sensation spread through the skin. What does this finding most suggest?",
     "opts": [
-      "Fluid in the alveoli from acute heart failure",
-      "Rib ends grinding together at a single fracture site",
-      "Air leaking from an injured lung or airway into the soft tissues",
-      "Bleeding into the chest wall muscles from the impact"
+      "Fluid filling the alveoli from acute heart failure after the crash",
+      "Broken rib ends grinding together at a single fracture site",
+      "Air leaking from an injured lung or airway under the skin",
+      "Bleeding into the chest wall muscles from the steering wheel impact"
     ],
     "ans": 2,
     "key": "Crackling under the skin of the chest or neck (subcutaneous emphysema) means air is leaking from the lung or airway.",
@@ -199,10 +199,10 @@
     "type": "mc",
     "stem": "A 25-year-old man was struck in the face with a bat 3 hours ago. He has bruising around both eyes and clear fluid draining from his nose. He is drowsy but breathing adequately at 14/min with no snoring sounds. Which action is most appropriate based on these findings?",
     "opts": [
-      "Insert a nasal airway to keep his airway open while he is drowsy",
-      "Pack both nostrils firmly with gauze to stop the drainage",
-      "Apply ice packs over both eyes and let him sleep until arrival",
-      "Avoid a nasal airway, have suction ready, and reassess his mental status often"
+      "Insert a lubricated nasal airway to keep his airway open while he is drowsy",
+      "Pack both nostrils firmly with gauze to stop the clear fluid draining from his nose",
+      "Apply ice packs over both eyes and let him sleep quietly until hospital arrival",
+      "Avoid a nasal airway, keep suction ready, and recheck his mental status often"
     ],
     "ans": 3,
     "key": "Raccoon eyes with clear nasal drainage suggest a basilar skull fracture: no nasal airway, and watch mental status closely.",
@@ -224,10 +224,10 @@
     "type": "mc",
     "stem": "A 52-year-old woman fell down a flight of stairs. On your arrival she opened her eyes to voice. Ten minutes later she responds only to pain. Her right pupil is now dilated and sluggish to light; the left pupil is normal. Which interpretation and action are most appropriate?",
     "opts": [
-      "Expanding brain injury pressing on a nerve; support airway and breathing and transport rapidly to a trauma center",
-      "Likely an old eye injury; document the finding and complete the exam on scene",
-      "Probable opioid effect; give naloxone and recheck her pupils in five minutes",
-      "Normal variation in pupil size; recheck her pupils on arrival at the hospital"
+      "Expanding brain injury; support airway and breathing and transport rapidly to a trauma center",
+      "Likely an old eye injury; document the finding, ask about prior eye trauma, and complete the exam on scene",
+      "Probable opioid effect; give naloxone, support ventilation, and recheck her pupils in five minutes",
+      "Normal variation in pupil size; continue routine care and recheck her pupils at the hospital"
     ],
     "ans": 0,
     "key": "A new unequal pupil with falling responsiveness after head trauma signals rising intracranial pressure: a true emergency.",
@@ -279,10 +279,10 @@
     "type": "mc",
     "stem": "A 35-year-old man slipped on a wet floor and landed on an outstretched hand. He is alert and oriented, did not hit his head, and denies neck or back pain. His only complaint is a painful, swollen right wrist. His primary assessment is normal. What is the most appropriate secondary assessment?",
     "opts": [
-      "A focused exam of the wrist and arm, including pulse, motor function, and sensation below the injury",
-      "A rapid full-body trauma assessment from head to toe before splinting",
-      "No exam is needed; splint the wrist because the injury is obvious",
-      "Spinal motion restriction first, followed by a full neurologic exam"
+      "A focused exam of the wrist and arm, including distal pulse, motor function, and sensation",
+      "A rapid full-body trauma assessment from head to toe before splinting, to find any hidden injuries",
+      "No exam is needed; splint the wrist in the position found because the injury is obvious",
+      "Spinal motion restriction first, followed by a full neurologic exam of all four extremities"
     ],
     "ans": 0,
     "key": "An alert patient with an isolated injury from a low-energy mechanism gets a focused exam, including distal pulse, motor, and sensation.",
@@ -304,10 +304,10 @@
     "type": "mc",
     "stem": "A 40-year-old man struck his head in a fall from a roof. Your first vital signs: BP 132/84 mm Hg, HR 90, RR 18 and regular. Twenty minutes later during transport: BP 176/96 mm Hg, HR 54, RR irregular with pauses. He is now harder to arouse. What does this trend most suggest?",
     "opts": [
-      "Pain and anxiety producing a stress response",
-      "Rising pressure inside the skull from an expanding brain injury",
-      "Compensated hemorrhagic shock from a hidden injury",
-      "Spinal cord injury causing neurogenic shock"
+      "Pain and anxiety producing a sympathetic stress response",
+      "Rising intracranial pressure from an expanding brain injury",
+      "Compensated hemorrhagic shock from a hidden abdominal injury",
+      "Spinal cord injury from the fall causing neurogenic shock"
     ],
     "ans": 1,
     "key": "Rising BP, falling heart rate, and irregular breathing (Cushing triad) in a head injury signal rising intracranial pressure.",
@@ -398,10 +398,10 @@
     "type": "mc",
     "stem": "You are transporting a 50-year-old man with an isolated lower leg fracture that you have splinted. He is alert, his vital signs have been normal and unchanged, and the trip will take 35 minutes. How often should you reassess him?",
     "opts": [
-      "About every 15 minutes, and immediately if his condition changes",
-      "About every 5 minutes for the entire transport",
-      "Once more when you arrive at the hospital",
-      "Only if he reports a change in his pain"
+      "Every 15 minutes, and at once if his condition changes",
+      "About every 5 minutes for the entire 35-minute transport",
+      "Once more on arrival, before transferring care to hospital staff",
+      "Only if he reports a change in his pain or numbness"
     ],
     "ans": 0,
     "key": "Reassess a stable patient about every 15 minutes, an unstable patient about every 5, and any patient immediately when something changes.",
