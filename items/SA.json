@@ -64,7 +64,10 @@
       "No previous history of blood clots.",
       "Returned yesterday from a long flight."
     ],
-    "ans": [1, 3],
+    "ans": [
+      1,
+      3
+    ],
     "key": "A pertinent negative is a relevant sign, symptom, or history item the patient does NOT have, documented because it shapes the picture.",
     "why": "Absence of cough and fever makes an infectious cause less likely, and no prior clot history is relevant to her clot risk. Both are expected findings that are absent, which is what makes them pertinent negatives.",
     "wrong": [
@@ -134,12 +137,29 @@
     "b": -0.5,
     "type": "table",
     "stem": "During one shift you examine four trauma patients. Match each physical exam finding with the injury it most suggests.",
-    "cols": ["Basilar skull fracture", "Flail chest", "Pericardial tamponade", "Intra-abdominal injury"],
+    "cols": [
+      "Basilar skull fracture",
+      "Flail chest",
+      "Pericardial tamponade",
+      "Intra-abdominal injury"
+    ],
     "rows": [
-      ["Bruising behind one ear that appeared the day after a fall", 0],
-      ["A section of the right chest wall moves inward as the patient inhales", 1],
-      ["Distended neck veins, muffled heart sounds, and low blood pressure after a stab wound to the chest", 2],
-      ["Rigid, guarded abdomen that is painful to palpation after a bicycle handlebar injury", 3]
+      [
+        "Bruising behind one ear that appeared the day after a fall",
+        0
+      ],
+      [
+        "A section of the right chest wall moves inward as the patient inhales",
+        1
+      ],
+      [
+        "Distended neck veins, muffled heart sounds, and low blood pressure after a stab wound to the chest",
+        2
+      ],
+      [
+        "Rigid, guarded abdomen that is painful to palpation after a bicycle handlebar injury",
+        3
+      ]
     ],
     "key": "Key exam findings point to specific injuries: Battle sign, paradoxical motion, Beck triad, and abdominal rigidity/guarding.",
     "src": "STD",
@@ -235,7 +255,10 @@
       "A 67-year-old pedestrian struck by a car at 30 mph who reports back and hip pain",
       "A 19-year-old who jammed a finger playing basketball and is otherwise uninjured"
     ],
-    "ans": [0, 3],
+    "ans": [
+      0,
+      3
+    ],
     "key": "Significant mechanism or altered mental status calls for a rapid head-to-toe trauma assessment; isolated minor injury gets a focused exam.",
     "why": "Ejection with confusion and a pedestrian struck by a vehicle are significant mechanisms that can hide multiple injuries, and the confused patient cannot reliably report pain. Both need a rapid full-body assessment to find life threats.",
     "wrong": [
@@ -313,7 +336,7 @@
     ],
     "ans": 1,
     "key": "Rising heart and respiratory rates, a narrowing pulse pressure, and restlessness mean shock is progressing even before systolic BP drops.",
-    "why": "Her pulse pressure narrowed from 46 to 22 mm Hg while heart rate and respiratory rate climbed and she became restless with cool, pale skin. These are signs of worsening compensated shock, so expedite transport to a trauma center, keep her warm, and reassess every 5 minutes.",
+    "why": "Her pulse pressure narrowed from 46 to 22 mm Hg while heart rate and respiratory rate climbed and she became restless with cool, pale skin. These are signs of worsening compensated shock: recheck the tourniquet and look for other bleeding, keep her warm, expedite transport to a trauma center, and reassess every 5 minutes.",
     "wrong": [
       "A rising diastolic pressure with a falling systolic reflects vasoconstriction from compensation, not stabilization.",
       "",
@@ -399,14 +422,19 @@
     "b": -0.5,
     "type": "mc",
     "stem": "A 35-year-old man was burned when a gas grill flared. He has partial-thickness burns covering his entire chest and abdomen and his entire right arm. His back and legs are not burned. Using the adult rule of nines, what is the approximate total body surface area burned?",
-    "opts": ["18%", "27%", "36%", "45%"],
+    "opts": [
+      "18%",
+      "27%",
+      "36%",
+      "45%"
+    ],
     "ans": 1,
     "key": "Adult rule of nines: anterior trunk 18%, each arm 9%, so the front of the trunk plus one arm is about 27%.",
     "why": "In an adult, the entire anterior trunk (chest and abdomen) is 18% and each entire arm is 9%. Together that is about 27% of body surface area.",
     "wrong": [
       "18% counts only the anterior trunk and leaves out the burned arm.",
       "",
-      "36% counts the arm as 18% or doubles the trunk; an adult arm is 9%.",
+      "36% would require counting the arm as 18%; an entire adult arm is 9%.",
       "45% adds the posterior trunk, which is not burned."
     ],
     "src": "STD"
