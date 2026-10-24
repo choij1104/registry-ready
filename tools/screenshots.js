@@ -32,7 +32,7 @@ function seed() {
     { name: "1-today", theme: "light", go: async p => {} },
     { name: "2-feedback", theme: "light", go: async p => {
       await click(p, "Study"); await click(p, "Patient Treatment and Transport");
-      await p.evaluate(() => { const o = [...document.querySelectorAll("#view .opt")]; o[0].click(); });
+      await p.evaluate(() => { const v = document.getElementById("view"); const m = v.textContent.match(/Select (two|three)/); const o = [...v.querySelectorAll(".opt")]; o.slice(0, m ? (m[1] === "two" ? 2 : 3) : 1).forEach(x => x.click()); [...v.querySelectorAll(".seg")].forEach(sg => sg.querySelector("button").click()); });
       await click(p, "Submit");
       await p.evaluate(() => document.querySelector("#view .stem").scrollIntoView({ block: "start" })); } },
     { name: "3-exam", theme: "dark", go: async p => {
@@ -42,7 +42,7 @@ function seed() {
         if (isMc && i > 0) break;
         await p.evaluate(() => { const segs = [...document.querySelectorAll("#view .seg")]; segs.forEach(s => s.querySelector("button").click()); const o = document.querySelector("#view .opt"); if (o) o.click(); [...document.querySelectorAll("#view button")].find(x => x.textContent === "Submit").click(); });
       }
-      await p.evaluate(() => { const o = [...document.querySelectorAll("#view .opt")]; if (o[1]) o[1].click(); }); } },
+      await p.evaluate(() => { const o = [...document.querySelectorAll("#view .opt")]; if (o[0]) o[0].click(); }); } },
     { name: "4-cards", theme: "light", go: async p => { await click(p, "Study"); await click(p, "CPR"); await click(p, "Show answer"); } },
     { name: "6-progress", theme: "light", go: async p => { await click(p, "Progress"); } },
     { name: "5-skills", theme: "dark", go: async p => {

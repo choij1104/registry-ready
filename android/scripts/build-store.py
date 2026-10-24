@@ -68,5 +68,5 @@ for what, pat in checks.items():
 
 open(os.path.join(WWW, "index.html"), "w", encoding="utf-8").write(doc)
 shutil.copy(os.path.join(ROOT, "icon-512.png"), os.path.join(WWW, "icon-512.png"))
-items = len(re.findall(r'^[MROT]\("[SPATO]\d\d"', html, flags=re.M))
+items = len(re.findall(r'\{"id":"(?:SC|PA1|PA2|SA|TT|OP)-\d{3}"', html))
 print(f"build-store: www/index.html ({len(doc)} chars), {len(FACES)} font files bundled, {items} items")
