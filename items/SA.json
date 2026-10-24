@@ -1,0 +1,439 @@
+[
+  {
+    "id": "SA-001",
+    "d": "SECONDARY",
+    "topic": "History",
+    "concept": "targeted-history-questions",
+    "b": -1.5,
+    "type": "mc",
+    "stem": "A 57-year-old man called 911 for chest discomfort. He tells you it began about 30 minutes ago while he was watching TV, nothing makes it better or worse, it feels like \"a heavy weight,\" and he rates it 7 out of 10. He is pale and diaphoretic. To complete an OPQRST pain history, which question should you ask next?",
+    "opts": [
+      "Have you taken any medications today, including any for erectile dysfunction?",
+      "Does the discomfort spread to your arm, neck, jaw, or back?",
+      "When did you last have something to eat or drink?",
+      "Has anyone in your family had a heart attack?"
+    ],
+    "ans": 1,
+    "key": "Complete OPQRST by asking the missing element; here onset, provocation, quality, severity, and time are known, so ask about radiation.",
+    "why": "He has already described onset (at rest), provocation (nothing changes it), quality (heavy weight), severity (7/10), and time (30 minutes). Radiation is the only OPQRST element still missing, and spread to the arm, jaw, or back adds weight to a cardiac cause.",
+    "wrong": [
+      "Medication history matters, especially before any nitroglycerin, but it belongs to SAMPLE and does not complete the pain history.",
+      "",
+      "Last oral intake is a SAMPLE element; it does not complete the OPQRST pain history.",
+      "Family history adds little to the immediate prehospital assessment and is not part of OPQRST."
+    ],
+    "src": "STD"
+  },
+  {
+    "id": "SA-002",
+    "d": "SECONDARY",
+    "topic": "History",
+    "concept": "targeted-history-questions",
+    "b": -1,
+    "type": "mc",
+    "stem": "A 61-year-old man with type 1 diabetes is sweaty, confused, and slow to answer, but he follows commands and can swallow. His glucose meter reading is low. His wife is with him. Which question to his wife is most useful right now?",
+    "opts": [
+      "Has he had any recent surgery or hospital stays?",
+      "Is he allergic to any medications or foods?",
+      "When did he last eat, and when did he last take insulin?",
+      "Who is his regular doctor, and which pharmacy does he use?"
+    ],
+    "ans": 2,
+    "key": "Pick the SAMPLE question that explains the current problem: last oral intake and insulin timing explain a diabetic low.",
+    "why": "Last oral intake and the events leading up (insulin taken without eating) explain the hypoglycemia and predict whether it may recur after oral glucose. This answer directly shapes treatment and what you report to the receiving facility.",
+    "wrong": [
+      "Recent surgery is part of past history, but it does not explain his low glucose or change your immediate care.",
+      "Allergy history is part of SAMPLE, but it does not explain the low glucose and does not affect giving oral glucose.",
+      "",
+      "Provider and pharmacy details are administrative and do not guide his immediate assessment or treatment."
+    ],
+    "src": "STD"
+  },
+  {
+    "id": "SA-003",
+    "d": "SECONDARY",
+    "topic": "History",
+    "concept": "targeted-history-questions",
+    "b": 0,
+    "type": "mr",
+    "stem": "A 34-year-old woman reports sudden shortness of breath that began an hour ago. She returned yesterday from a 14-hour flight and takes an oral contraceptive. Her chest pain is sharp and worse with deep breaths. She says she has had no cough or fever and has never had a blood clot. Select TWO statements in your report that are pertinent negatives.",
+    "opts": [
+      "Pain worsens with deep inspiration.",
+      "Denies cough or fever.",
+      "Takes an oral contraceptive daily.",
+      "No previous history of blood clots.",
+      "Returned yesterday from a long flight."
+    ],
+    "ans": [1, 3],
+    "key": "A pertinent negative is a relevant sign, symptom, or history item the patient does NOT have, documented because it shapes the picture.",
+    "why": "Absence of cough and fever makes an infectious cause less likely, and no prior clot history is relevant to her clot risk. Both are expected findings that are absent, which is what makes them pertinent negatives.",
+    "wrong": [
+      "This is a pertinent positive: a relevant symptom she does have.",
+      "",
+      "This is medication history and a positive risk factor she has, not an absent finding.",
+      "",
+      "This is a positive risk factor she has, not an absent finding."
+    ],
+    "src": "STD"
+  },
+  {
+    "id": "SA-004",
+    "d": "SECONDARY",
+    "topic": "History",
+    "concept": "medication-list-changes-picture",
+    "b": 0.5,
+    "type": "mc",
+    "stem": "A 78-year-old woman tripped on a rug and struck her forehead on a table. She is alert and oriented, has a small forehead bruise, and wants to stay home. Her vital signs are normal. Her medication list includes apixaban, metformin, atorvastatin, and omeprazole. Which medication most changes your assessment?",
+    "opts": [
+      "Atorvastatin, because statins commonly cause dizziness that leads to falls",
+      "Metformin, because it most likely caused low blood sugar and the fall",
+      "Omeprazole, because it can mask the early signs of internal bleeding",
+      "Apixaban, because an anticoagulant raises the risk of a delayed brain bleed"
+    ],
+    "ans": 3,
+    "key": "An anticoagulant on the medication list makes a minor head strike high risk, even when the patient looks well.",
+    "why": "Patients taking anticoagulants who strike their head can develop intracranial bleeding hours later despite a normal initial exam. This finding supports strongly encouraging transport for evaluation and must be documented and reported.",
+    "wrong": [
+      "Statins can cause muscle aches, but they do not make a head strike more dangerous; the anticoagulant does.",
+      "Metformin alone rarely causes hypoglycemia; check glucose if indicated, but it does not raise bleeding risk.",
+      "Omeprazole reduces stomach acid; it does not mask bleeding or raise head-injury risk.",
+      ""
+    ],
+    "src": "STD"
+  },
+  {
+    "id": "SA-005",
+    "d": "SECONDARY",
+    "topic": "History",
+    "concept": "medication-list-changes-picture",
+    "b": 1.5,
+    "type": "mc",
+    "stem": "A 69-year-old man has had black, tarry stools for two days and now feels faint when he stands. He is pale, and his skin is cool and moist. BP 96/62 mm Hg, HR 64, RR 20. He takes metoprolol for high blood pressure. How should his medication change your interpretation?",
+    "opts": [
+      "The beta blocker can blunt his heart rate response, so a normal rate does not rule out shock",
+      "The beta blocker explains his low blood pressure, so blood loss is an unlikely cause",
+      "His normal heart rate shows compensation is adequate, so routine transport is appropriate",
+      "The beta blocker darkens the stool, so the stool color is a medication side effect"
+    ],
+    "ans": 0,
+    "key": "Beta blockers can prevent the expected tachycardia of shock; judge perfusion by the whole picture, not heart rate alone.",
+    "why": "Metoprolol limits the heart rate rise that normally signals blood loss. With melena, orthostatic faintness, and cool, pale, moist skin, he should be treated as a patient in shock from GI bleeding despite a heart rate of 64.",
+    "wrong": [
+      "",
+      "Metoprolol may lower blood pressure, but melena with cool, pale, moist skin and faintness points to blood loss.",
+      "A normal rate here may reflect the beta blocker, not adequate compensation; his skin and history indicate shock.",
+      "Metoprolol does not darken stool; tarry stool with these signs suggests upper GI bleeding."
+    ],
+    "src": "STD"
+  },
+  {
+    "id": "SA-006",
+    "d": "SECONDARY",
+    "topic": "Physical exam",
+    "concept": "exam-finding-to-injury",
+    "b": -0.5,
+    "type": "table",
+    "stem": "During one shift you examine four trauma patients. Match each physical exam finding with the injury it most suggests.",
+    "cols": ["Basilar skull fracture", "Flail chest", "Pericardial tamponade", "Intra-abdominal injury"],
+    "rows": [
+      ["Bruising behind one ear that appeared the day after a fall", 0],
+      ["A section of the right chest wall moves inward as the patient inhales", 1],
+      ["Distended neck veins, muffled heart sounds, and low blood pressure after a stab wound to the chest", 2],
+      ["Rigid, guarded abdomen that is painful to palpation after a bicycle handlebar injury", 3]
+    ],
+    "key": "Key exam findings point to specific injuries: Battle sign, paradoxical motion, Beck triad, and abdominal rigidity/guarding.",
+    "src": "STD",
+    "why": "Bruising behind the ear (Battle sign) develops hours after a basilar skull fracture. Paradoxical chest motion marks a flail segment. JVD, muffled heart sounds, and hypotension after penetrating chest trauma suggest tamponade, and a rigid, guarded abdomen suggests bleeding or organ injury in the abdomen."
+  },
+  {
+    "id": "SA-007",
+    "d": "SECONDARY",
+    "topic": "Physical exam",
+    "concept": "exam-finding-to-injury",
+    "b": 0,
+    "type": "mc",
+    "stem": "A 44-year-old unrestrained driver struck the steering wheel. He is short of breath, and his SpO2 is 90% on room air. While palpating his upper chest and neck, you feel a crackling, crispy sensation spread through the skin. What does this finding most suggest?",
+    "opts": [
+      "Fluid in the alveoli from acute heart failure",
+      "Rib ends grinding together at a single fracture site",
+      "Air leaking from an injured lung or airway into the soft tissues",
+      "Bleeding into the chest wall muscles from the impact"
+    ],
+    "ans": 2,
+    "key": "Crackling under the skin of the chest or neck (subcutaneous emphysema) means air is leaking from the lung or airway.",
+    "why": "Subcutaneous emphysema after blunt chest trauma indicates a pneumothorax or airway injury, and his breathing may get worse. Give oxygen, reassess breath sounds and work of breathing often, and transport promptly to a trauma center.",
+    "wrong": [
+      "Alveolar fluid is heard as crackles with a stethoscope; it is not felt under the skin of the neck.",
+      "Bony crepitus is felt at the fracture site itself, not as crackling spread through the soft tissue of the neck.",
+      "",
+      "Chest wall bleeding causes bruising and swelling, not a crackling sensation under the skin."
+    ],
+    "src": "STD"
+  },
+  {
+    "id": "SA-008",
+    "d": "SECONDARY",
+    "topic": "Physical exam",
+    "concept": "head-injury-exam-findings",
+    "b": 0.5,
+    "type": "mc",
+    "stem": "A 25-year-old man was struck in the face with a bat 3 hours ago. He has bruising around both eyes and clear fluid draining from his nose. He is drowsy but breathing adequately at 14/min with no snoring sounds. Which action is most appropriate based on these findings?",
+    "opts": [
+      "Insert a nasal airway to keep his airway open while he is drowsy",
+      "Pack both nostrils firmly with gauze to stop the drainage",
+      "Apply ice packs over both eyes and let him sleep until arrival",
+      "Avoid a nasal airway, have suction ready, and reassess his mental status often"
+    ],
+    "ans": 3,
+    "key": "Raccoon eyes with clear nasal drainage suggest a basilar skull fracture: no nasal airway, and watch mental status closely.",
+    "why": "Bruising around both eyes and clear fluid from the nose suggest a basilar skull fracture with a cerebrospinal fluid leak. A nasal airway is contraindicated, and a drowsy head-injured patient needs a ready airway plan, frequent reassessment, and spinal motion restriction.",
+    "wrong": [
+      "A nasal airway is contraindicated with signs of basilar skull fracture; his airway is currently open.",
+      "Packing blocks the drainage and raises infection risk; cover loosely with sterile gauze instead.",
+      "Letting him sleep hides a decline in mental status; a drowsy head-injured patient needs frequent checks.",
+      ""
+    ],
+    "src": "STD"
+  },
+  {
+    "id": "SA-009",
+    "d": "SECONDARY",
+    "topic": "Physical exam",
+    "concept": "head-injury-exam-findings",
+    "b": 1,
+    "type": "mc",
+    "stem": "A 52-year-old woman fell down a flight of stairs. On your arrival she opened her eyes to voice. Ten minutes later she responds only to pain. Her right pupil is now dilated and sluggish to light; the left pupil is normal. Which interpretation and action are most appropriate?",
+    "opts": [
+      "Expanding brain injury pressing on a nerve; support airway and breathing and transport rapidly to a trauma center",
+      "Likely an old eye injury; document the finding and complete the exam on scene",
+      "Probable opioid effect; give naloxone and recheck her pupils in five minutes",
+      "Normal variation in pupil size; recheck her pupils on arrival at the hospital"
+    ],
+    "ans": 0,
+    "key": "A new unequal pupil with falling responsiveness after head trauma signals rising intracranial pressure: a true emergency.",
+    "why": "A newly dilated, sluggish pupil together with a decreasing level of responsiveness suggests an expanding intracranial bleed compressing the brain. She needs airway support, oxygenation, ventilation if breathing becomes inadequate, spinal motion restriction, and rapid transport with reassessment every 5 minutes.",
+    "wrong": [
+      "",
+      "The pupil change is new and comes with falling responsiveness, so it cannot be dismissed as an old injury.",
+      "Opioids cause small pupils on both sides, not one dilated pupil; her history points to head injury.",
+      "A new unequal pupil with declining mental status is not normal variation and needs immediate action."
+    ],
+    "src": "STD"
+  },
+  {
+    "id": "SA-010",
+    "d": "SECONDARY",
+    "topic": "Physical exam",
+    "concept": "rapid-trauma-vs-focused-exam",
+    "b": -0.5,
+    "type": "mr",
+    "stem": "You respond to several trauma calls during one shift. Select TWO patients who should receive a rapid full-body trauma assessment rather than an exam focused on one injury.",
+    "opts": [
+      "A 30-year-old ejected from a rolled vehicle who is confused and cannot recall the crash",
+      "A 22-year-old who cut her palm on a kitchen knife, is alert, and has controlled bleeding",
+      "A 45-year-old who twisted his ankle stepping off a curb and has no other complaints",
+      "A 67-year-old pedestrian struck by a car at 30 mph who reports back and hip pain",
+      "A 19-year-old who jammed a finger playing basketball and is otherwise uninjured"
+    ],
+    "ans": [0, 3],
+    "key": "Significant mechanism or altered mental status calls for a rapid head-to-toe trauma assessment; isolated minor injury gets a focused exam.",
+    "why": "Ejection with confusion and a pedestrian struck by a vehicle are significant mechanisms that can hide multiple injuries, and the confused patient cannot reliably report pain. Both need a rapid full-body assessment to find life threats.",
+    "wrong": [
+      "",
+      "An alert patient with an isolated hand cut and no significant mechanism needs a focused exam of the injury.",
+      "An isolated ankle injury from a low-energy mechanism in an alert patient calls for a focused exam.",
+      "",
+      "A minor isolated finger injury in an alert patient calls for a focused exam."
+    ],
+    "src": "STD"
+  },
+  {
+    "id": "SA-011",
+    "d": "SECONDARY",
+    "topic": "Physical exam",
+    "concept": "rapid-trauma-vs-focused-exam",
+    "b": -1,
+    "type": "mc",
+    "stem": "A 35-year-old man slipped on a wet floor and landed on an outstretched hand. He is alert and oriented, did not hit his head, and denies neck or back pain. His only complaint is a painful, swollen right wrist. His primary assessment is normal. What is the most appropriate secondary assessment?",
+    "opts": [
+      "A focused exam of the wrist and arm, including pulse, motor function, and sensation below the injury",
+      "A rapid full-body trauma assessment from head to toe before splinting",
+      "No exam is needed; splint the wrist because the injury is obvious",
+      "Spinal motion restriction first, followed by a full neurologic exam"
+    ],
+    "ans": 0,
+    "key": "An alert patient with an isolated injury from a low-energy mechanism gets a focused exam, including distal pulse, motor, and sensation.",
+    "why": "With a minor mechanism, normal mental status, and one complaint, a focused exam of the injured extremity is appropriate. Checking pulse, motor function, and sensation before and after splinting detects nerve or vessel compromise.",
+    "wrong": [
+      "",
+      "A rapid full-body assessment is for significant mechanisms or patients who cannot reliably report injuries.",
+      "Even an obvious injury must be examined, including distal pulse, motor, and sensation, before splinting.",
+      "He has no indication for spinal motion restriction: he is alert, has no spinal pain, and no neurologic deficit."
+    ],
+    "src": "STD"
+  },
+  {
+    "id": "SA-012",
+    "d": "SECONDARY",
+    "topic": "Reassessment",
+    "concept": "trend-not-snapshot",
+    "b": 1,
+    "type": "mc",
+    "stem": "A 40-year-old man struck his head in a fall from a roof. Your first vital signs: BP 132/84 mm Hg, HR 90, RR 18 and regular. Twenty minutes later during transport: BP 176/96 mm Hg, HR 54, RR irregular with pauses. He is now harder to arouse. What does this trend most suggest?",
+    "opts": [
+      "Pain and anxiety producing a stress response",
+      "Rising pressure inside the skull from an expanding brain injury",
+      "Compensated hemorrhagic shock from a hidden injury",
+      "Spinal cord injury causing neurogenic shock"
+    ],
+    "ans": 1,
+    "key": "Rising BP, falling heart rate, and irregular breathing (Cushing triad) in a head injury signal rising intracranial pressure.",
+    "why": "Hypertension, bradycardia, and an irregular respiratory pattern with declining mental status form the Cushing triad, a late sign of increasing intracranial pressure. Support airway and ventilation, notify the receiving trauma center, and reassess every 5 minutes.",
+    "wrong": [
+      "A stress response raises the heart rate; it does not cause bradycardia and irregular breathing.",
+      "",
+      "Hemorrhagic shock causes a rising heart rate and falling blood pressure, the opposite of this trend.",
+      "Neurogenic shock causes low blood pressure with a slow heart rate, not rising blood pressure."
+    ],
+    "src": "STD"
+  },
+  {
+    "id": "SA-013",
+    "d": "SECONDARY",
+    "topic": "Reassessment",
+    "concept": "trend-not-snapshot",
+    "b": 1.5,
+    "type": "mc",
+    "stem": "A 33-year-old woman has an open femur fracture after a motorcycle crash; bleeding is controlled with a tourniquet. Over 15 minutes her vital signs change from BP 122/76 mm Hg, HR 98, RR 20 to BP 112/90 mm Hg, HR 124, RR 28. She is now restless, and her skin is cool and pale. What is the best interpretation?",
+    "opts": [
+      "Her rising diastolic pressure shows she is stabilizing after the tourniquet",
+      "Her compensated shock is worsening; she needs shock care and rapid transport",
+      "Her restlessness reflects tourniquet pain; reassure her and recheck in 15 minutes",
+      "Her vital signs remain in an acceptable range, so continue care on scene"
+    ],
+    "ans": 1,
+    "key": "Rising heart and respiratory rates, a narrowing pulse pressure, and restlessness mean shock is progressing even before systolic BP drops.",
+    "why": "Her pulse pressure narrowed from 46 to 22 mm Hg while heart rate and respiratory rate climbed and she became restless with cool, pale skin. These are signs of worsening compensated shock, so expedite transport to a trauma center, keep her warm, and reassess every 5 minutes.",
+    "wrong": [
+      "A rising diastolic pressure with a falling systolic reflects vasoconstriction from compensation, not stabilization.",
+      "",
+      "Restlessness with tachycardia and cool skin suggests poor perfusion; a stable-patient recheck interval is too long.",
+      "A systolic BP still above 100 does not mean she is stable; the trend shows she is getting worse."
+    ],
+    "src": "STD"
+  },
+  {
+    "id": "SA-014",
+    "d": "SECONDARY",
+    "topic": "Reassessment",
+    "concept": "trend-not-snapshot",
+    "b": 1.5,
+    "type": "mc",
+    "stem": "A 16-year-old with asthma had loud wheezing and could speak only in short phrases. After you assisted with his prescribed inhaler, you reassess: he is drowsy, breath sounds are faint with no wheezing, RR 8, and SpO2 86%. What is the most appropriate action?",
+    "opts": [
+      "Document improvement, since the wheezing resolved after the inhaler",
+      "Assist with a second inhaler dose and recheck him in 15 minutes",
+      "Apply a nonrebreather mask, position him upright, and continue routine transport",
+      "Begin bag-valve-mask ventilation with oxygen and expedite transport"
+    ],
+    "ans": 3,
+    "key": "Loss of wheezing with drowsiness, slow breathing, and falling SpO2 is respiratory failure, not improvement: ventilate.",
+    "why": "Faint breath sounds without wheezing mean little air is moving, and drowsiness with a rate of 8 and SpO2 of 86% shows he is tiring and failing. He needs assisted ventilation with a BVM and oxygen, rapid transport, and continuous reassessment.",
+    "wrong": [
+      "Wheezing that disappears while mental status and SpO2 fall signals worsening air movement, not improvement.",
+      "Another dose may be allowed per protocol, but a patient breathing 8/min with falling SpO2 needs ventilation first.",
+      "A nonrebreather cannot help a patient who is not breathing adequately; he needs ventilations.",
+      ""
+    ],
+    "src": "STD"
+  },
+  {
+    "id": "SA-015",
+    "d": "SECONDARY",
+    "topic": "Reassessment",
+    "concept": "when-and-how-to-reassess",
+    "b": -0.5,
+    "type": "order",
+    "stem": "During transport, a 70-year-old woman being treated for generalized weakness suddenly becomes less responsive but is still moaning. Place your reassessment steps in the correct order.",
+    "opts": [
+      "Check her level of responsiveness using AVPU",
+      "Check that the airway is open and clear",
+      "Assess the rate and quality of her breathing",
+      "Check her pulse, skin, and for any bleeding",
+      "Obtain a full set of vital signs"
+    ],
+    "key": "When a patient changes, repeat the primary assessment first, in order, before obtaining a new set of vital signs.",
+    "why": "Any change in condition means starting over with the primary assessment: mental status, airway, breathing, then circulation, so life threats are found and treated in priority order. A full set of vital signs follows once the primary assessment is complete.",
+    "src": "STD"
+  },
+  {
+    "id": "SA-016",
+    "d": "SECONDARY",
+    "topic": "Reassessment",
+    "concept": "when-and-how-to-reassess",
+    "b": -0.5,
+    "type": "mc",
+    "stem": "You are transporting a 50-year-old man with an isolated lower leg fracture that you have splinted. He is alert, his vital signs have been normal and unchanged, and the trip will take 35 minutes. How often should you reassess him?",
+    "opts": [
+      "About every 15 minutes, and immediately if his condition changes",
+      "About every 5 minutes for the entire transport",
+      "Once more when you arrive at the hospital",
+      "Only if he reports a change in his pain"
+    ],
+    "ans": 0,
+    "key": "Reassess a stable patient about every 15 minutes, an unstable patient about every 5, and any patient immediately when something changes.",
+    "why": "He is stable, so reassessment about every 15 minutes is appropriate, including checks of his splint and distal circulation. Any change in his condition triggers an immediate reassessment.",
+    "wrong": [
+      "",
+      "Every 5 minutes is the interval for unstable patients; he is stable.",
+      "A single check in 35 minutes would miss changes in his condition or distal circulation.",
+      "Waiting for him to report a change misses findings he may not notice, such as loss of distal pulse."
+    ],
+    "src": "STD"
+  },
+  {
+    "id": "SA-017",
+    "d": "SECONDARY",
+    "topic": "Burns",
+    "concept": "burn-extent-and-severity",
+    "b": -0.5,
+    "type": "mc",
+    "stem": "A 35-year-old man was burned when a gas grill flared. He has partial-thickness burns covering his entire chest and abdomen and his entire right arm. His back and legs are not burned. Using the adult rule of nines, what is the approximate total body surface area burned?",
+    "opts": ["18%", "27%", "36%", "45%"],
+    "ans": 1,
+    "key": "Adult rule of nines: anterior trunk 18%, each arm 9%, so the front of the trunk plus one arm is about 27%.",
+    "why": "In an adult, the entire anterior trunk (chest and abdomen) is 18% and each entire arm is 9%. Together that is about 27% of body surface area.",
+    "wrong": [
+      "18% counts only the anterior trunk and leaves out the burned arm.",
+      "",
+      "36% counts the arm as 18% or doubles the trunk; an adult arm is 9%.",
+      "45% adds the posterior trunk, which is not burned."
+    ],
+    "src": "STD"
+  },
+  {
+    "id": "SA-018",
+    "d": "SECONDARY",
+    "topic": "Burns",
+    "concept": "burn-extent-and-severity",
+    "b": 0.5,
+    "type": "mc",
+    "stem": "On separate calls you care for four adults with burns. All are alert with no breathing difficulty. Which patient's injury is most severe and most clearly warrants care at a burn center?",
+    "opts": [
+      "A 30-year-old with red, painful sunburn without blisters over his back and shoulders",
+      "A 28-year-old with a blistered steam burn on one forearm, about 2% of body surface",
+      "A 40-year-old with blistered grease burns that encircle both hands",
+      "A 50-year-old with a blistered scald on the front of one thigh, about 4% of body surface"
+    ],
+    "ans": 2,
+    "key": "Partial-thickness burns of the hands, and circumferential burns, are severe regardless of the percentage burned.",
+    "why": "Burns involving the hands threaten long-term function, and burns that encircle a body part can constrict circulation as swelling develops. Both features make this a critical burn that meets burn center referral criteria despite a small percentage.",
+    "wrong": [
+      "Superficial burns without blisters are painful but are not counted in burn size and rarely need a burn center.",
+      "A small partial-thickness burn on the forearm without special-area or circumferential involvement is a minor burn.",
+      "",
+      "A 4% partial-thickness thigh burn is small and does not involve a critical area or encircle the limb."
+    ],
+    "src": "STD"
+  }
+]

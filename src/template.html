@@ -103,6 +103,15 @@ nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--surf
 nav.tabs .wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;padding-block:6px}
 nav.tabs button{font-family:var(--f-display);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.88rem;background:none;border:0;color:var(--muted);padding:10px 2px;border-top:3px solid transparent;cursor:pointer;min-height:48px}
 nav.tabs button[aria-current="page"]{color:var(--ink);border-top-color:var(--accent)}
+.ot{display:grid;gap:4px;min-width:0}
+.why-not{display:block;font-size:.88rem;color:var(--muted);border-top:1px dashed var(--line);padding-top:4px}
+.keyline{border-left:3px solid var(--accent);padding-left:10px;font-weight:700}
+.feedback .keyline .label{font-weight:700}
+.flash .cardfront{font-family:var(--f-display);font-weight:700;font-size:1.6rem;line-height:1.15;text-wrap:balance}
+.flash .cardans{font-size:1.1rem;font-weight:700}
+.cardback{display:grid;gap:8px;border-top:1px solid var(--line);padding-top:10px}
+.listen-stage{display:grid;gap:10px;min-height:120px}
+.chk.now{background:var(--warn-bg);outline:2px solid var(--warn);outline-offset:-2px}
 .foot{font-size:.82rem;color:var(--muted);display:grid;gap:6px}
 @media (max-width:420px){.big{font-size:1.6rem}h1{font-size:1.6rem}.stat{padding-left:8px}}
 @media (prefers-reduced-motion:no-preference){.opt,.seg button,.chip{transition:border-color .12s,background .12s}}
@@ -117,7 +126,7 @@ nav.tabs button[aria-current="page"]{color:var(--ink);border-top-color:var(--acc
 </header>
 <main><div class="wrap" id="view"></div></main>
 <nav class="tabs" aria-label="Sections"><div class="wrap">
-  <button data-tab="today">Today</button><button data-tab="exam">Exam</button><button data-tab="drill">Drill</button><button data-tab="skills">Skills</button><button data-tab="progress">Progress</button>
+  <button data-tab="today">Today</button><button data-tab="exam">Exam</button><button data-tab="study">Study</button><button data-tab="skills">Skills</button><button data-tab="progress">Progress</button>
 </div></nav>
 
 <script>

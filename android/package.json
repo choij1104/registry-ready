@@ -7,6 +7,7 @@
     "build:www": "python3 scripts/build-store.py"
   },
   "dependencies": {
+    "@capacitor-community/text-to-speech": "8.0.2",
     "@capacitor/android": "8.5.3",
     "@capacitor/core": "8.5.3"
   },

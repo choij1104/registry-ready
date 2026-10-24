@@ -103,6 +103,15 @@ nav.tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--surf
 nav.tabs .wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;padding-block:6px}
 nav.tabs button{font-family:var(--f-display);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.88rem;background:none;border:0;color:var(--muted);padding:10px 2px;border-top:3px solid transparent;cursor:pointer;min-height:48px}
 nav.tabs button[aria-current="page"]{color:var(--ink);border-top-color:var(--accent)}
+.ot{display:grid;gap:4px;min-width:0}
+.why-not{display:block;font-size:.88rem;color:var(--muted);border-top:1px dashed var(--line);padding-top:4px}
+.keyline{border-left:3px solid var(--accent);padding-left:10px;font-weight:700}
+.feedback .keyline .label{font-weight:700}
+.flash .cardfront{font-family:var(--f-display);font-weight:700;font-size:1.6rem;line-height:1.15;text-wrap:balance}
+.flash .cardans{font-size:1.1rem;font-weight:700}
+.cardback{display:grid;gap:8px;border-top:1px solid var(--line);padding-top:10px}
+.listen-stage{display:grid;gap:10px;min-height:120px}
+.chk.now{background:var(--warn-bg);outline:2px solid var(--warn);outline-offset:-2px}
 .foot{font-size:.82rem;color:var(--muted);display:grid;gap:6px}
 @media (max-width:420px){.big{font-size:1.6rem}h1{font-size:1.6rem}.stat{padding-left:8px}}
 @media (prefers-reduced-motion:no-preference){.opt,.seg button,.chip{transition:border-color .12s,background .12s}}
@@ -117,459 +126,29 @@ nav.tabs button[aria-current="page"]{color:var(--ink);border-top-color:var(--acc
 </header>
 <main><div class="wrap" id="view"></div></main>
 <nav class="tabs" aria-label="Sections"><div class="wrap">
-  <button data-tab="today">Today</button><button data-tab="exam">Exam</button><button data-tab="drill">Drill</button><button data-tab="skills">Skills</button><button data-tab="progress">Progress</button>
+  <button data-tab="today">Today</button><button data-tab="exam">Exam</button><button data-tab="study">Study</button><button data-tab="skills">Skills</button><button data-tab="progress">Progress</button>
 </div></nav>
 
 <script>
-/* Registry Ready — original item bank.
-   All items are original. None are taken from the NREMT item pool.
-   Domains and weights follow the NREMT EMT Examination Specifications (2023 BLS
-   Practice Analysis; administered from April 2025). Clinical content follows the
-   2025 AHA Guidelines for CPR and ECC where resuscitation is involved.
-   b = practice difficulty on this app's internal scale (-2 easy ... +2 hard). */
-
+/* Registry Ready — domains (NREMT EMT Examination Specifications, 2023 BLS Practice Analysis; in use since April 2025) and source labels. */
 const DOMAINS = {
-  SCENE:     { name: "Scene Size-up and Safety",       lo: 15, hi: 19 },
-  PRIMARY:   { name: "Primary Assessment",             lo: 39, hi: 43 },
-  SECONDARY: { name: "Secondary Assessment",           lo: 5,  hi: 9  },
+  SCENE:     { name: "Scene Size-up and Safety",        lo: 15, hi: 19 },
+  PRIMARY:   { name: "Primary Assessment",              lo: 39, hi: 43 },
+  SECONDARY: { name: "Secondary Assessment",            lo: 5,  hi: 9  },
   TREAT:     { name: "Patient Treatment and Transport", lo: 20, hi: 24 },
-  OPS:       { name: "Operations",                     lo: 10, hi: 14 }
+  OPS:       { name: "Operations",                      lo: 10, hi: 14 }
 };
-
 const SRC = {
-  NR: "NREMT EMT Examination Specifications (2025)",
-  AHA: "AHA 2025 Guidelines for CPR and ECC",
-  STD: "National EMS Education Standards, EMT level",
+  AHA: "2025 AHA Guidelines for CPR and ECC",
+  NRP: "2025 AHA/AAP Neonatal Resuscitation Guidelines",
+  STD: "National EMS Education Standards and Scope of Practice Model, EMT level",
   START: "START / JumpSTART mass-casualty triage",
-  ERG: "Emergency Response Guidebook (PHMSA)"
+  ERG: "Emergency Response Guidebook (PHMSA)",
+  FTG: "2021 National Guideline for the Field Triage of Injured Patients",
+  SMR: "2018 ACS-COT/ACEP/NAEMSP joint statement on spinal motion restriction"
 };
 
-const BANK = [];
-function M(id, d, topic, b, stem, opts, ans, why, src) { BANK.push({ id, d, topic, b, type: "mc", stem, opts, ans, why, src: src || "STD" }); }
-function R(id, d, topic, b, stem, opts, ans, why, src) { BANK.push({ id, d, topic, b, type: "mr", stem, opts, ans, why, src: src || "STD" }); }
-function O(id, d, topic, b, stem, steps, why, src) { BANK.push({ id, d, topic, b, type: "order", stem, opts: steps, why, src: src || "STD" }); }
-function T(id, d, topic, b, stem, cols, rows, why, src) { BANK.push({ id, d, topic, b, type: "table", stem, cols, rows, why, src: src || "STD" }); }
-
-/* ---------------- SCENE SIZE-UP AND SAFETY ---------------- */
-M("S01","SCENE","Scene safety",-1.0,
- "You are dispatched to a residence for a man with a gunshot wound. Dispatch reports the shooter may still be inside. What do you do?",
- ["Enter quickly with your partner and remove the patient","Stage at a safe distance until law enforcement reports the scene secure","Call the patient's phone and ask him to walk outside","Approach the door and announce yourself as EMS"],1,
- "Your own safety comes first. An unsecured violent scene is entered only after law enforcement makes it safe.");
-M("S02","SCENE","Hazardous materials",-0.5,
- "An overturned tanker truck displays a placard with a four-digit number. Which reference identifies the material and the initial isolation distance?",
- ["The truck driver's logbook","The Emergency Response Guidebook","Poison control by phone after patient contact","The bill of lading inside the cab, retrieved by you"],1,
- "The ERG converts the placard number to the material and gives initial isolation and protective-action distances.","ERG");
-M("S03","SCENE","Hazardous materials",-1.0,
- "Where should you position the ambulance at a suspected hazardous-materials spill?",
- ["Downhill and downwind, close enough to see the placard","Uphill and upwind, at a safe distance","Directly beside the vehicle to shorten patient carry","Downhill and upwind"],1,
- "Gases and liquids travel with wind and gravity. Uphill and upwind keeps the crew out of the plume and runoff.","ERG");
-M("S04","SCENE","Triage",-1.5,
- "Using START triage, a patient who can walk to the designated area on command is tagged:",
- ["Immediate (red)","Delayed (yellow)","Minor (green)","Expectant (black)"],2,
- "Anyone able to walk is sorted to minor (green) first and re-triaged later.","START");
-M("S05","SCENE","Triage",-0.5,
- "In START triage, an adult is not breathing. You reposition the airway and the patient still does not breathe. Category?",
- ["Immediate (red)","Delayed (yellow)","Minor (green)","Expectant/deceased (black)"],3,
- "An adult who stays apneic after one airway repositioning is tagged expectant/deceased in START.","START");
-M("S06","SCENE","Triage",0.0,
- "In START triage, an adult who cannot walk is breathing 36 times per minute. Category?",
- ["Immediate (red)","Delayed (yellow)","Minor (green)","Re-check after all others are tagged"],0,
- "A respiratory rate over 30 is an immediate (red) finding in START.","START");
-M("S07","SCENE","Triage",0.5,
- "In START triage, a non-ambulatory adult breathes 22 times per minute and has a radial pulse but cannot follow simple commands. Category?",
- ["Delayed (yellow)","Immediate (red)","Minor (green)","Expectant (black)"],1,
- "Failure to follow simple commands is an immediate (red) criterion even when breathing and perfusion pass.","START");
-T("S08","SCENE","Triage",0.5,
- "Classify each adult patient using START.",
- ["Minor","Delayed","Immediate","Expectant"],
- [["Walking, holding a deformed forearm",0],["Cannot walk; RR 24, radial pulse present, follows commands",1],["Cannot walk; RR 34",2],["Apneic after airway repositioning",3]],
- "Walk = minor. RR over 30, no radial pulse (or capillary refill over 2 s), or not following commands = immediate. Apneic after repositioning = expectant.","START");
-M("S09","SCENE","Triage",1.0,
- "Using JumpSTART, a 5-year-old is apneic with a palpable peripheral pulse after you reposition the airway. Next step?",
- ["Tag expectant and move on","Give 5 rescue breaths, then reassess breathing","Begin chest compressions","Tag immediate without further action"],1,
- "JumpSTART adds 5 rescue breaths for an apneic child with a pulse. If breathing resumes, tag immediate; if not, expectant.","START");
-R("S10","SCENE","PPE",0.5,
- "A patient has a productive cough, fever, night sweats and weight loss. Tuberculosis is suspected. Select the TWO most appropriate precautions.",
- ["Fit-tested N95 (or higher) respirator for the EMT","Surgical mask on the patient if tolerated","Gown as the only added protection","Surgical mask alone for the EMT","No added precautions unless the patient is coughing blood"],[0,1],
- "TB is airborne. Responders wear an N95 or higher; a surgical mask on the patient reduces droplet spread.");
-M("S11","SCENE","Scene safety",0.0,
- "You arrive at a closed garage where a car engine is running. Two family members report headache and dizziness and say someone is down inside. Best action?",
- ["Hold your breath, enter and drag the patient out","Keep everyone out, request fire department with SCBA, and treat the symptomatic family outside","Open the door and enter after 2 minutes of ventilation","Enter with a surgical mask and gloves"],1,
- "Suspected carbon monoxide is an atmospheric hazard. Rescue from it requires SCBA, which is not EMT equipment.");
-M("S12","SCENE","Mechanism of injury",-0.5,
- "An unrestrained driver struck a pole head-on. The steering wheel is bent. Which injury pattern should you suspect first?",
- ["Isolated ankle fractures","Chest and upper-abdominal injury","Hand burns from the airbag","Lower back strain only"],1,
- "A deformed steering wheel means the chest struck it with force. Suspect rib fractures, pulmonary contusion, cardiac and upper-abdominal injury.");
-M("S13","SCENE","Resources",-0.5,
- "You and your partner arrive at a single-vehicle crash and find three injured occupants. When should you request more units?",
- ["After the first patient is packaged","After completing primary assessments on all three","During scene size-up, before committing to patient care","Only if a patient becomes unstable"],2,
- "Resource needs are identified during size-up. Patients outnumbering crew is the trigger to call early.");
-R("S14","SCENE","Scene safety",0.0,
- "At a vehicle crash, which THREE findings must be addressed or mitigated before you make patient contact?",
- ["Fuel pooling under the engine near a hot exhaust","Power line lying across the hood","Vehicle resting on its side and rocking","Patient screaming that his leg hurts","A bystander recording video","Police already blocking traffic"],[0,1,2],
- "Fire, electrical and vehicle-stability hazards can injure the crew. A screaming patient is breathing and perfused; the other items are not hazards.");
-M("S15","SCENE","Scene safety",-0.5,
- "A power line lies across a car. The driver is awake and asks if he should get out. You should:",
- ["Tell him to step out carefully without touching the ground","Tell him to stay inside, not touch metal, and wait while the utility company is called","Remove the line with a dry wooden backboard","Approach and open the door to assess him"],1,
- "Stepping out can complete a circuit to ground. Lines stay energized until the utility confirms otherwise.");
-M("S16","SCENE","Scene safety",0.0,
- "While treating a patient at a large gathering, the crowd becomes hostile and starts pushing toward you. Best action?",
- ["Continue full assessment on scene","Move the patient into the ambulance and leave the area, completing care en route or at a safe location","Ask the crowd to step back and continue","Leave the patient and retreat"],1,
- "When the scene turns unsafe, remove yourself and, if possible, the patient. Care continues once safe.");
-M("S17","SCENE","PPE",-1.0,
- "Your patient is actively vomiting. In addition to gloves, which protection is indicated?",
- ["None; gloves are sufficient","Eye protection and a mask","Gown only","Shoe covers"],1,
- "Splash or spray risk calls for eye and face protection on top of gloves.");
-
-/* ---------------- PRIMARY ASSESSMENT ---------------- */
-M("P01","PRIMARY","Level of consciousness",-1.5,
- "An adult patient opens his eyes and moans only when you pinch his trapezius. On AVPU he is:",
- ["A","V","P","U"],2,"He responds only to a painful stimulus: P.");
-M("P02","PRIMARY","Level of consciousness",0.5,
- "A patient opens her eyes when spoken to, is confused about the date, and moves your hand away from a painful stimulus. Her GCS is:",
- ["10","11","12","13"],2,"Eyes to voice 3 + confused 4 + localizes pain 5 = 12.");
-M("P03","PRIMARY","Airway",-1.0,
- "An unresponsive medical patient with no suspected trauma has snoring respirations. First action?",
- ["Insert a nasopharyngeal airway","Head-tilt, chin-lift","Apply a non-rebreather","Begin chest compressions"],1,
- "Snoring means the tongue is partially obstructing the airway. Open it manually first.");
-M("P04","PRIMARY","Airway",-1.0,
- "An unresponsive patient fell from a ladder. Which maneuver opens the airway?",
- ["Head-tilt, chin-lift","Jaw thrust","Hyperextend the neck","Recovery position"],1,
- "With possible spinal injury, the jaw thrust opens the airway with minimal neck movement.");
-M("P05","PRIMARY","Airway",-0.5,
- "How do you size an oropharyngeal airway?",
- ["Tip of the nose to the earlobe","Corner of the mouth to the earlobe or angle of the jaw","Center of the lips to the chin","Length of the patient's little finger"],1,
- "OPA: corner of mouth to earlobe or angle of jaw. Tip of nose to earlobe is the NPA measurement.");
-M("P06","PRIMARY","Airway",0.0,
- "Which finding is a reason to avoid a nasopharyngeal airway?",
- ["Intact gag reflex","Clenched teeth","Clear fluid draining from the nose after head trauma","Snoring respirations"],2,
- "Clear nasal drainage after head trauma suggests a basilar skull fracture. An NPA is avoided in that setting.");
-M("P07","PRIMARY","Airway",-1.0,
- "You hear gurgling when your unresponsive patient breathes. Next action?",
- ["Insert an OPA","Suction the airway","Apply high-flow oxygen","Count the respiratory rate"],1,
- "Gurgling means fluid in the upper airway. Clear it before anything else.");
-M("P08","PRIMARY","Airway",-0.5,
- "What is the maximum duration of a single suction attempt in an adult?",
- ["5 seconds","10 seconds","15 seconds","30 seconds"],2,
- "Suction removes oxygen along with secretions. Adults: no more than 15 seconds per attempt.");
-M("P09","PRIMARY","Breathing",0.0,
- "An adult has a strong carotid pulse but is not breathing. How often do you ventilate?",
- ["1 breath every 2 to 3 seconds","1 breath every 6 seconds","2 breaths every 30 seconds","1 breath every 10 seconds"],1,
- "Adult rescue breathing with a pulse: 1 breath every 6 seconds (10 per minute).","AHA");
-M("P10","PRIMARY","Breathing",0.5,
- "A child with a pulse of 110 has respiratory arrest. How often do you ventilate?",
- ["1 breath every 6 seconds","1 breath every 2 to 3 seconds","1 breath every second","2 breaths after every 15 seconds"],1,
- "Infants and children with a pulse: 1 breath every 2 to 3 seconds (20 to 30 per minute).","AHA");
-M("P11","PRIMARY","Breathing",0.0,
- "When ventilating with a BVM, each breath should be:",
- ["Delivered as fast as possible","Given over about 1 second with just enough volume for visible chest rise","Given until the bag is fully empty","Held for 3 seconds"],1,
- "Over-ventilation raises intrathoracic pressure and causes gastric inflation. Give each breath over about 1 second with visible chest rise.","AHA");
-M("P12","PRIMARY","Breathing",0.0,
- "A confused adult breathes 8 times per minute with shallow chest rise and cyanotic lips. Best intervention?",
- ["Non-rebreather at 15 L/min","Nasal cannula at 4 L/min","Assist ventilations with a BVM and supplemental oxygen","Recovery position and observe"],2,
- "A slow, shallow rate with cyanosis is inadequate breathing. A mask cannot move air for the patient; a BVM can.");
-M("P13","PRIMARY","Circulation",-1.0,
- "How long should a pulse check take in an unresponsive adult?",
- ["No more than 10 seconds","15 to 20 seconds","30 seconds","As long as needed to be sure"],0,
- "Long pulse checks delay compressions. Check for no more than 10 seconds.","AHA");
-M("P14","PRIMARY","CPR",-1.5,
- "Adult chest compression rate:",
- ["60 to 80 per minute","80 to 100 per minute","100 to 120 per minute","120 to 140 per minute"],2,"100 to 120 per minute.","AHA");
-M("P15","PRIMARY","CPR",-0.5,
- "Adult chest compression depth:",
- ["About 1 inch","At least 2 inches but not more than 2.4 inches","At least 3 inches","One-half the chest depth"],1,
- "Adults: at least 2 in (5 cm), not more than 2.4 in (6 cm), with full recoil.","AHA");
-M("P16","PRIMARY","CPR",0.0,
- "Two EMTs are performing CPR on an infant. Compression-to-ventilation ratio?",
- ["30:2","15:2","5:1","3:1"],1,"Two-rescuer infant and child CPR uses 15:2.","AHA");
-M("P17","PRIMARY","CPR",0.5,
- "Under the 2025 AHA guidelines, which infant chest compression technique is no longer recommended?",
- ["Two-thumb encircling hands","Heel of one hand","Two-finger technique","All three remain recommended"],2,
- "The two-finger technique often fails to reach adequate depth. Use the heel of one hand or the two-thumb encircling technique.","AHA");
-O("P18","PRIMARY","CPR",0.5,
- "Put the steps for an unresponsive adult in cardiac arrest in order once an AED is brought to you.",
- ["Confirm the scene is safe","Check responsiveness, breathing and pulse (10 seconds or less)","Begin high-quality chest compressions","Apply the AED pads","Clear the patient while the AED analyzes","Deliver a shock if advised","Resume compressions immediately"],
- "Compressions start as soon as arrest is recognized and continue until the pads are on. After a shock, compressions resume without a pulse check.","AHA");
-M("P19","PRIMARY","CPR",0.0,
- "The AED has just delivered a shock. What next?",
- ["Check for a pulse","Re-analyze immediately","Resume chest compressions immediately","Give 2 rescue breaths, then check a pulse"],2,
- "Resume compressions right away; the AED will prompt the next rhythm check after about 2 minutes.","AHA");
-M("P20","PRIMARY","CPR",0.5,
- "A 5-year-old is in cardiac arrest. Your AED has adult pads only. You should:",
- ["Withhold the AED until pediatric pads arrive","Use the adult pads, making sure they do not touch","Use one adult pad only","Cut the adult pads to size"],1,
- "Use pediatric pads or an attenuator when available. If not, adult pads are acceptable; place them so they do not overlap (front and back if needed).","AHA");
-M("P21","PRIMARY","Airway obstruction",0.5,
- "A conscious adult is clutching her throat and cannot speak or cough. Under the 2025 AHA guidelines you should:",
- ["Give abdominal thrusts only until the object is expelled","Give repeated cycles of 5 back blows followed by 5 abdominal thrusts","Perform a blind finger sweep","Encourage her to drink water"],1,
- "The 2025 update starts with back blows and alternates 5 back blows with 5 abdominal thrusts until relief or unresponsiveness.","AHA");
-M("P22","PRIMARY","Airway obstruction",0.0,
- "A conscious infant is choking and cannot cry. Correct sequence?",
- ["Abdominal thrusts","5 back blows, then 5 chest thrusts, repeated","Blind finger sweep, then back blows","Compressions-only CPR"],1,
- "Infants: alternate 5 back blows and 5 chest thrusts. Abdominal thrusts are not used in infants.","AHA");
-M("P23","PRIMARY","Airway obstruction",0.5,
- "Your choking adult patient becomes unresponsive. Next action?",
- ["Continue abdominal thrusts with the patient standing","Lower the patient, begin CPR, and look in the mouth before each set of breaths, removing any visible object","Perform blind finger sweeps until the object is found","Give 5 back blows on the floor"],1,
- "Unresponsive with obstruction: start CPR. Compressions may dislodge the object. Remove it only if you can see it.","AHA");
-M("P24","PRIMARY","Airway obstruction",0.5,
- "A choking woman is visibly pregnant in her third trimester. Instead of abdominal thrusts, use:",
- ["Back blows only","Chest thrusts","Finger sweeps","Nothing; wait for her to cough"],1,
- "For late pregnancy or when you cannot encircle the abdomen, substitute chest thrusts.","AHA");
-M("P25","PRIMARY","Hemorrhage",0.0,
- "During your primary assessment you find bright red blood spurting from a thigh wound. What is your immediate action?",
- ["Finish checking airway and breathing first","Control the bleeding now with direct pressure or a tourniquet","Obtain a blood pressure","Elevate the leg and continue the assessment"],1,
- "Life-threatening hemorrhage is treated the moment it is found.");
-M("P26","PRIMARY","Hemorrhage",0.0,
- "Where should a limb tourniquet be placed?",
- ["Directly over the wound","2 to 3 inches above the wound, not over a joint","Just below the wound","Over the nearest joint for better compression"],1,
- "Place it proximal to the wound on the limb, avoiding joints. If the wound location is unclear, place it as high on the limb as possible.");
-M("P27","PRIMARY","Hemorrhage",1.0,
- "You applied a tourniquet but bright red bleeding continues. Best next step?",
- ["Loosen it to restore distal circulation","Tighten it further; if bleeding still continues, apply a second tourniquet just above the first","Remove it and use a pressure dressing","Elevate the limb and wait"],1,
- "Ongoing bleeding means it is not tight enough. Tighten, then add a second device proximal to the first.");
-M("P28","PRIMARY","Shock",0.0,
- "Which finding is an early sign of shock in an adult?",
- ["Systolic pressure of 80","Restlessness and a rising heart rate","Fixed, dilated pupils","Bradycardia"],1,
- "Compensated shock shows anxiety and tachycardia while blood pressure is maintained. Hypotension is a late sign.");
-M("P29","PRIMARY","Circulation",0.5,
- "Capillary refill is most reliable as a perfusion sign in:",
- ["Elderly adults","Children younger than 6 years","Hypothermic adults","Patients taking beta blockers"],1,
- "Cold, age and medications reduce reliability in adults; it is more useful in young children.");
-M("P30","PRIMARY","General impression",0.0,
- "The Pediatric Assessment Triangle evaluates:",
- ["Pulse, blood pressure, temperature","Appearance, work of breathing, circulation to the skin","Airway, breathing, circulation","Activity, pulse, grimace"],1,
- "PAT is a from-the-doorway impression: appearance, work of breathing, and skin circulation.");
-R("P31","PRIMARY","Priority",-0.5,
- "Which THREE patients are high priority for rapid transport?",
- ["Unresponsive patient with no gag reflex","Chest pain with systolic pressure of 82","Difficulty breathing, speaking in two-word phrases","Isolated wrist deformity with good distal pulse","Small forearm laceration, bleeding controlled","Alert patient with ankle pain after a twist"],[0,1,2],
- "Unresponsiveness, hypoperfusion, and severe respiratory distress are high-priority findings.");
-M("P32","PRIMARY","Vital signs",-1.5,
- "Normal resting respiratory rate for an adult:",
- ["6 to 10","12 to 20","22 to 30","30 to 40"],1,"12 to 20 breaths per minute.");
-M("P33","PRIMARY","Oxygenation",0.0,
- "A patient with suspected acute coronary syndrome is not short of breath. Supplemental oxygen is indicated when SpO2 is below:",
- ["99%","97%","94%","85%"],2,
- "Give oxygen to keep SpO2 at 94% or higher. Routine oxygen in a well-saturated chest-pain patient is not recommended.","AHA");
-M("P34","PRIMARY","Oxygenation",-1.0,
- "Typical oxygen flow rate for a non-rebreather mask:",
- ["1 to 6 L/min","6 to 8 L/min","10 to 15 L/min","25 L/min"],2,"10 to 15 L/min, enough to keep the reservoir bag inflated.");
-M("P35","PRIMARY","Oxygenation",-1.0,
- "Typical oxygen flow rate for a nasal cannula:",
- ["1 to 6 L/min","8 to 10 L/min","10 to 15 L/min","15 to 25 L/min"],0,"1 to 6 L/min.");
-M("P36","PRIMARY","Breathing",0.0,
- "An unresponsive adult has occasional gasping breaths and no pulse you can feel within 10 seconds. You should:",
- ["Treat the gasps as breathing and give oxygen","Start CPR","Place in recovery position","Count the respiratory rate for 30 seconds"],1,
- "Agonal gasps are not effective breathing. Treat the patient as in cardiac arrest.","AHA");
-M("P37","PRIMARY","Airway",1.0,
- "A feverish 4-year-old sits upright leaning forward, drooling, with soft inspiratory stridor. Best approach?",
- ["Inspect the throat with a tongue depressor","Keep the child calm with the caregiver, offer oxygen as tolerated, and transport without agitating","Lay the child flat for assessment","Insert an oropharyngeal airway"],1,
- "This picture suggests upper-airway swelling. Agitation or instrumentation can cause complete obstruction.");
-M("P38","PRIMARY","Breathing",0.5,
- "A patient with a suspected opioid overdose is unresponsive, breathing 4 times per minute, with a pulse. First priority?",
- ["Give naloxone before anything else","Ventilate with a BVM and oxygen, then give naloxone per protocol","Apply a non-rebreather and observe","Start chest compressions"],1,
- "Oxygenation and ventilation come first. Naloxone treats the cause but takes time to work.","AHA");
-M("P39","PRIMARY","Breathing",1.0,
- "You are ventilating an apneic patient with a BVM and see no chest rise. You reposition the head and re-seal the mask. Still no rise. Most likely problem?",
- ["The oxygen is not connected","Airway obstruction","The patient is breathing on his own","The bag is too large"],1,
- "No chest rise despite proper position and seal means an obstructed airway until proven otherwise.");
-M("P40","PRIMARY","Circulation",-1.0,
- "Skin findings most consistent with poor perfusion:",
- ["Pink, warm, dry","Pale, cool, clammy","Flushed, hot, dry","Pink, warm, moist"],1,
- "Vasoconstriction and sympathetic sweating produce pale, cool, clammy skin.");
-T("P41","PRIMARY","Breathing",0.5,
- "Classify each adult's breathing.",
- ["Adequate","Inadequate - assist ventilation"],
- [["RR 16, full chest rise, speaking in full sentences",0],["RR 6, shallow, minimal chest rise",1],["RR 40, shallow, now confused",1],["RR 22, anxious, normal chest rise, SpO2 96%",0]],
- "Judge rate together with depth and mental status. Too slow, or fast and shallow with altered mentation, both fail to ventilate.");
-M("P42","PRIMARY","Stroke",0.0,
- "A patient shows facial droop and arm drift. Which piece of history matters most to the receiving stroke team?",
- ["Last oral intake","Time last known well","Allergies","Family history of stroke"],1,
- "Treatment eligibility depends on time from last known well.");
-
-/* ---------------- SECONDARY ASSESSMENT ---------------- */
-M("A01","SECONDARY","History",-1.5,
- "In OPQRST, the P stands for:",["Pain","Provocation or palliation","Pulse","Past history"],1,"What makes it better or worse.");
-M("A02","SECONDARY","History",-1.5,
- "In SAMPLE, the L stands for:",["Location of pain","Last oral intake","Level of consciousness","Length of illness"],1,"Last oral intake.");
-M("A03","SECONDARY","Physical exam",-1.0,
- "In DCAP-BTLS, the T stands for:",["Temperature","Tenderness","Tracheal deviation","Trauma"],1,"Deformities, Contusions, Abrasions, Punctures/penetrations, Burns, Tenderness, Lacerations, Swelling.");
-M("A04","SECONDARY","Reassessment",-0.5,
- "How often should you reassess an unstable patient?",["Every 2 minutes","Every 5 minutes","Every 15 minutes","Only after interventions"],1,
- "Unstable: about every 5 minutes. Stable: about every 15 minutes, and after every intervention.");
-M("A05","SECONDARY","Reassessment",0.0,
- "You assisted a patient with his prescribed nitroglycerin. What should you reassess first, within a few minutes?",
- ["Blood glucose","Blood pressure and the patient's chest pain","Pupil size","Capillary refill"],1,
- "Nitroglycerin can drop blood pressure. Recheck BP and the effect on pain.");
-M("A06","SECONDARY","Physical exam",0.5,
- "After a head injury, the patient's right pupil is now larger than the left and reacts slowly. This most likely indicates:",
- ["Normal variation","Rising pressure inside the skull","Opioid use","Hypoglycemia"],1,
- "A new unequal, sluggish pupil after head trauma suggests increasing intracranial pressure. Treat as time-critical.");
-M("A07","SECONDARY","History",0.0,
- "A patient with chest pain tells you he is not short of breath and is not nauseated. In your report, these are:",
- ["Chief complaints","Pertinent negatives","Signs","Irrelevant findings"],1,
- "Pertinent negatives are expected findings that are absent and that help narrow the problem.");
-M("A08","SECONDARY","Burns",0.5,
- "Using the adult rule of nines, burns cover the entire right arm and the entire front of the trunk. Total body surface area?",
- ["18%","27%","36%","45%"],1,"Arm 9% + anterior trunk 18% = 27%.");
-
-/* ---------------- PATIENT TREATMENT AND TRANSPORT ---------------- */
-M("T01","TREAT","Medication",0.0,
- "A chest-pain patient with prescribed nitroglycerin took sildenafil 12 hours ago. You should:",
- ["Assist with nitroglycerin; the time has passed","Not assist with nitroglycerin","Assist with half a tablet","Assist only if systolic pressure exceeds 150"],1,
- "Recent phosphodiesterase-5 inhibitor use can cause severe hypotension with nitrates. Withhold.");
-M("T02","TREAT","Medication",-0.5,
- "How should aspirin be given to an adult with suspected acute coronary syndrome and no contraindications?",
- ["Swallowed whole with water","Chewed","Placed under the tongue to dissolve","Mixed in juice"],1,
- "Chewing speeds absorption. Withhold for allergy or active bleeding.","AHA");
-M("T03","TREAT","Medication",-0.5,
- "Where is an epinephrine auto-injector given?",
- ["Deltoid","Anterolateral thigh","Abdomen","Upper buttock"],1,"Anterolateral thigh, through clothing if needed.");
-M("T04","TREAT","Medication",0.0,
- "After a bee sting, a patient has hives, wheezing, and a blood pressure of 84/50. She carries a prescribed auto-injector. Best action?",
- ["Give oral antihistamine and observe","Assist with the epinephrine auto-injector and transport","Apply ice and transport without medication","Wait for hypotension to worsen before treating"],1,
- "Skin signs with respiratory compromise and hypotension indicate anaphylaxis. Epinephrine is the first treatment.");
-M("T05","TREAT","Medication",0.0,
- "Which condition must be met before you give oral glucose?",
- ["Blood glucose above 120 mg/dL","Patient can swallow and protect the airway","Patient is unresponsive","A family member consents"],1,
- "Oral glucose is only for a patient awake enough to swallow and protect the airway.");
-M("T06","TREAT","Medication",-0.5,
- "Before assisting an asthma patient with a metered-dose inhaler, you confirm:",
- ["It is prescribed to this patient and not expired","It belongs to a family member with asthma","The patient has used it fewer than 10 times today","The patient's SpO2 is above 98%"],0,
- "Check right patient, right medication, right dose, right route, right time, and expiration.");
-M("T07","TREAT","Breathing",0.5,
- "Which finding is a contraindication to CPAP?",
- ["Respiratory rate of 28","SpO2 of 89%","Systolic blood pressure of 82","Crackles in both lungs"],2,
- "CPAP raises intrathoracic pressure and can worsen hypotension. Other contraindications include unresponsiveness, vomiting and suspected pneumothorax.");
-M("T08","TREAT","Medical emergencies",-1.0,
- "A patient is having a generalized seizure. You should:",
- ["Place a bite block between the teeth","Protect the patient from injury without restraining","Hold the arms and legs still","Pour water on the face"],1,
- "Move hazards away, protect the head, and never put anything in the mouth.");
-M("T09","TREAT","Trauma",0.0,
- "A stab wound to the chest bubbles with each breath. Immediate care?",
- ["Pack the wound with gauze","Cover with an occlusive dressing (a vented chest seal, or one taped on three sides)","Leave it open to air","Apply a tourniquet-style chest wrap"],1,
- "Seal the open chest wound to stop air entry while letting air escape.");
-M("T10","TREAT","Trauma",1.0,
- "After sealing an open chest wound, the patient becomes more short of breath, breath sounds disappear on that side, and blood pressure falls. Best action?",
- ["Add a second occlusive dressing","Briefly lift (burp) the dressing to release trapped air","Lay the patient flat","Slow down ventilations"],1,
- "These are signs of tension pneumothorax. Releasing the seal lets trapped air escape.");
-M("T11","TREAT","Trauma",-0.5,
- "Abdominal organs protrude from a laceration. Correct care?",
- ["Push the organs back inside","Cover with a moist sterile dressing and an occlusive layer","Cover with dry gauze only","Rinse with tap water and leave uncovered"],1,
- "Keep organs moist and covered. Never replace them.");
-M("T12","TREAT","Trauma",-1.0,
- "A screwdriver is embedded in a patient's thigh. You should:",
- ["Remove it and apply pressure","Stabilize it in place with bulky dressings","Cut it short","Twist it to check depth"],1,
- "Removing an impaled object can cause uncontrolled bleeding. Stabilize it.");
-M("T13","TREAT","Trauma",1.0,
- "An object is impaled through the cheek and is blocking the airway, and blood is pooling in the mouth. You should:",
- ["Stabilize it in place","Remove it, pack the inside of the cheek if needed, and suction","Leave it and give oxygen by mask","Push it further through"],1,
- "An impaled object in the cheek is removed when it interferes with the airway.");
-M("T14","TREAT","Musculoskeletal",-1.0,
- "When splinting a long-bone fracture, immobilize:",
- ["Only the injured bone","The joints above and below the injury","The joint closest to the injury","The entire limb plus the spine"],1,
- "Immobilizing the adjacent joints keeps bone ends from moving.");
-M("T15","TREAT","Musculoskeletal",0.5,
- "A traction splint is appropriate for:",
- ["Fracture near the knee","Isolated mid-shaft femur fracture","Pelvic fracture","Hip dislocation"],1,
- "Traction splints are for isolated mid-shaft femur fractures without pelvic, hip, knee or ankle injury on that side.");
-M("T16","TREAT","Musculoskeletal",-1.0,
- "When must you check distal pulse, motor and sensation in an injured extremity?",
- ["Only before splinting","Only after splinting","Before and after splinting","Only if the patient complains of numbness"],2,
- "Before to establish a baseline, after to confirm the splint did not compromise circulation or nerves.");
-M("T17","TREAT","Special populations",0.0,
- "A woman at 34 weeks' gestation becomes dizzy and hypotensive lying on her back. Best position?",
- ["Supine with legs raised","On her left side","Prone","Sitting upright with legs dangling"],1,
- "The uterus compresses the inferior vena cava when supine. Left lateral positioning relieves it.");
-M("T18","TREAT","Special populations",1.0,
- "During labor, you see the umbilical cord protruding from the vagina before the baby. Which action is correct?",
- ["Push the cord back in","Insert gloved fingers to lift the presenting part off the cord, elevate the hips, and transport rapidly","Clamp and cut the cord","Pull gently on the cord to speed delivery"],1,
- "Keep pressure off the cord to preserve blood flow to the fetus, and transport immediately.");
-M("T19","TREAT","Special populations",0.5,
- "As the head delivers, you feel the cord loosely wrapped around the neck. You should:",
- ["Clamp and cut it immediately","Gently slip it over the baby's head","Push the head back in","Pull the baby out quickly"],1,
- "A loose nuchal cord is slipped over the head. Clamp and cut between clamps only if it cannot be loosened.");
-M("T20","TREAT","Environmental",0.0,
- "A runner is confused with hot skin after a summer race. Most important treatment?",
- ["Oral fluids and rest in the shade","Rapid active cooling and transport","Warm blankets for shivering","Salt tablets"],1,
- "Altered mental status with hyperthermia is heat stroke, a life threat. Cool aggressively.");
-M("T21","TREAT","Environmental",0.5,
- "A patient with severe hypothermia must be moved. How should you handle him?",
- ["Have him walk to the ambulance to generate heat","Handle gently and keep him horizontal","Rub the extremities vigorously","Give hot coffee"],1,
- "Rough handling can trigger ventricular fibrillation in a cold heart.");
-O("T22","TREAT","Hemorrhage",0.0,
- "Put the steps for applying a windlass tourniquet in order.",
- ["Expose the wound","Place the tourniquet 2 to 3 inches above the wound","Tighten the windlass until bleeding stops","Secure the windlass","Record the time of application"],
- "Expose, place proximal, tighten until bleeding stops, lock the windlass, and document the time.");
-T("T23","TREAT","Medication",0.5,
- "A chest-pain patient has his own prescribed nitroglycerin. For each situation, decide.",
- ["May assist","Do not assist"],
- [["Systolic 132, no recent erectile-dysfunction medication",0],["Took tadalafil yesterday",1],["Systolic 84",1],["Already took 3 doses in the last 15 minutes",1]],
- "Withhold for hypotension, recent PDE-5 inhibitor use, or when the maximum doses under your protocol have been given.");
-M("T24","TREAT","Transport",0.0,
- "Your patient has a positive stroke screen and was last known well 45 minutes ago. Best transport decision?",
- ["Nearest clinic for evaluation","Stroke-capable hospital per local protocol, with early notification","Wait on scene for symptoms to resolve","Any hospital; time does not matter"],1,
- "Stroke is time-sensitive. Destination and prenotification follow your system's stroke protocol.");
-M("T25","TREAT","Spinal motion restriction",0.0,
- "Which finding indicates spinal motion restriction after a fall?",
- ["Patient walked at the scene, no complaints, alert","Patient is confused and cannot report pain reliably","Isolated finger laceration","Patient refuses a cervical collar but is otherwise normal"],1,
- "Altered mental status removes a reliable exam. Restrict motion.");
-R("T26","TREAT","Spinal motion restriction",0.5,
- "Select THREE findings that indicate spinal motion restriction in a trauma patient.",
- ["Midline cervical spine tenderness","Intoxication after a fall","New numbness in both hands","Isolated ankle sprain, walking at scene","Abrasion on the knee","Normal mental status and no pain"],[0,1,2],
- "Midline tenderness, impaired reliability (intoxication, altered mentation, distracting injury) and neurologic deficits indicate restriction.");
-M("T27","TREAT","Medical emergencies",0.0,
- "A known diabetic is confused but can swallow. Glucometer reads low. Best treatment within EMT scope?",
- ["Insulin from the patient's supply","Oral glucose","Nothing by mouth; transport only","Aspirin"],1,
- "An awake patient who can swallow and protect the airway receives oral glucose.");
-
-/* ---------------- OPERATIONS ---------------- */
-M("O01","OPS","Legal",0.5,
- "Which element is NOT required to prove negligence?",
- ["Duty to act","Breach of duty","Damages","Intent to harm"],3,
- "Negligence requires duty, breach, damages and proximate cause. Intent is not an element.");
-M("O02","OPS","Legal",-0.5,
- "Abandonment is best described as:",
- ["Refusing to transport a patient who refused care","Ending care without transferring the patient to someone of equal or higher training","Calling for ALS","Leaving the scene after a valid refusal"],1,
- "Once care begins, it continues until handed to an equal or higher provider.");
-M("O03","OPS","Legal",0.0,
- "A competent adult refuses transport after a fall. Which step is required?",
- ["Transport anyway to protect yourself","Explain the risks, encourage care, and document the refusal with a signature","Leave without documentation","Ask a family member to sign consent instead"],1,
- "Make sure the refusal is informed and document it thoroughly.");
-M("O04","OPS","Legal",-1.0,
- "You treat an unresponsive adult who cannot consent. You are operating under:",
- ["Expressed consent","Implied consent","Involuntary consent","Informed refusal"],1,
- "The law presumes an unresponsive person would consent to emergency care.");
-M("O05","OPS","Documentation",-0.5,
- "You find an error in a patient care report you are writing. Correct method?",
- ["Erase it","Draw a single line through it, write the correction, and initial and date it","Black it out completely","Start a new report and discard the old one"],1,
- "The original entry must remain readable.");
-M("O06","OPS","Equipment",0.5,
- "An oxygen cylinder should be replaced when the pressure falls to about:",
- ["1000 psi","500 psi","200 psi (safe residual)","0 psi"],2,"About 200 psi is the safe residual pressure.");
-M("O07","OPS","Wellness",-1.5,
- "Correct lifting technique:",
- ["Bend at the waist and lift with your back","Keep the load close, back straight, and lift with your legs","Twist while lifting to save time","Hold the load at arm's length"],1,"Power lift: legs do the work, load close to the body.");
-M("O08","OPS","Vehicle operations",0.0,
- "When driving with lights and siren, you:",
- ["Have absolute right of way","Must still drive with due regard for the safety of others","May ignore all traffic laws","Do not need to stop at red lights"],1,
- "Emergency vehicle exemptions are conditional on due regard.");
-M("O09","OPS","Legal",-0.5,
- "Under HIPAA, you may share a patient's protected health information with:",
- ["A reporter at the scene","The receiving hospital staff caring for the patient","The patient's employer","Your friends after the shift"],1,"Sharing for treatment with the receiving facility is permitted.");
-M("O10","OPS","Wellness",0.0,
- "You sustain a needlestick from a used needle. First action?",
- ["Finish the call and report at the end of the week","Wash the site with soap and water and report immediately per your exposure control plan","Apply a tourniquet above the site","Ignore it if the patient looks healthy"],1,"Clean the site and report right away so post-exposure care can start.");
-M("O11","OPS","Wellness",0.0,
- "After a pediatric death call, a crewmate has trouble sleeping and avoids talking about it. The most appropriate step is to:",
- ["Tell him to toughen up","Encourage use of peer support or the employee assistance program","Report him for unfitness","Ignore it unless it lasts a year"],1,"Early support reduces long-term stress effects.");
-M("O12","OPS","Equipment",-0.5,
- "When should the AED be checked?",
- ["Only after it is used","At the start of each shift per the manufacturer and agency policy","Once a year","Only when the indicator shows a fault"],1,"Routine checks catch dead batteries and expired pads before a call.");
-M("O13","OPS","Legal",0.0,
- "A 15-year-old with a serious injury needs care and no parent can be reached. You:",
- ["Wait for a parent before treating","Treat under implied consent","Ask the teenager's friend to consent","Transport only if police order it"],1,"Emergency care of a minor without a reachable guardian proceeds under implied consent.");
-M("O14","OPS","Legal",0.5,
- "A family presents a valid, signed out-of-hospital DNR for a patient in cardiac arrest. You should:",
- ["Start CPR anyway","Withhold resuscitation and provide comfort and support per protocol","Call the patient's lawyer","Perform CPR only if family members disagree"],1,"Follow a valid DNR under your local protocol and support the family.");
+const BANK = [{"id":"SA-001","d":"SECONDARY","topic":"History","concept":"targeted-history-questions","b":-1.5,"type":"mc","stem":"A 57-year-old man called 911 for chest discomfort. He tells you it began about 30 minutes ago while he was watching TV, nothing makes it better or worse, it feels like \"a heavy weight,\" and he rates it 7 out of 10. He is pale and diaphoretic. To complete an OPQRST pain history, which question should you ask next?","opts":["Have you taken any medications today, including any for erectile dysfunction?","Does the discomfort spread to your arm, neck, jaw, or back?","When did you last have something to eat or drink?","Has anyone in your family had a heart attack?"],"ans":1,"key":"Complete OPQRST by asking the missing element; here onset, provocation, quality, severity, and time are known, so ask about radiation.","why":"He has already described onset (at rest), provocation (nothing changes it), quality (heavy weight), severity (7/10), and time (30 minutes). Radiation is the only OPQRST element still missing, and spread to the arm, jaw, or back adds weight to a cardiac cause.","wrong":["Medication history matters, especially before any nitroglycerin, but it belongs to SAMPLE and does not complete the pain history.","","Last oral intake is a SAMPLE element; it does not complete the OPQRST pain history.","Family history adds little to the immediate prehospital assessment and is not part of OPQRST."],"src":"STD"},{"id":"SA-002","d":"SECONDARY","topic":"History","concept":"targeted-history-questions","b":-1,"type":"mc","stem":"A 61-year-old man with type 1 diabetes is sweaty, confused, and slow to answer, but he follows commands and can swallow. His glucose meter reading is low. His wife is with him. Which question to his wife is most useful right now?","opts":["Has he had any recent surgery or hospital stays?","Is he allergic to any medications or foods?","When did he last eat, and when did he last take insulin?","Who is his regular doctor, and which pharmacy does he use?"],"ans":2,"key":"Pick the SAMPLE question that explains the current problem: last oral intake and insulin timing explain a diabetic low.","why":"Last oral intake and the events leading up (insulin taken without eating) explain the hypoglycemia and predict whether it may recur after oral glucose. This answer directly shapes treatment and what you report to the receiving facility.","wrong":["Recent surgery is part of past history, but it does not explain his low glucose or change your immediate care.","Allergy history is part of SAMPLE, but it does not explain the low glucose and does not affect giving oral glucose.","","Provider and pharmacy details are administrative and do not guide his immediate assessment or treatment."],"src":"STD"},{"id":"SA-003","d":"SECONDARY","topic":"History","concept":"targeted-history-questions","b":0,"type":"mr","stem":"A 34-year-old woman reports sudden shortness of breath that began an hour ago. She returned yesterday from a 14-hour flight and takes an oral contraceptive. Her chest pain is sharp and worse with deep breaths. She says she has had no cough or fever and has never had a blood clot. Select TWO statements in your report that are pertinent negatives.","opts":["Pain worsens with deep inspiration.","Denies cough or fever.","Takes an oral contraceptive daily.","No previous history of blood clots.","Returned yesterday from a long flight."],"ans":[1,3],"key":"A pertinent negative is a relevant sign, symptom, or history item the patient does NOT have, documented because it shapes the picture.","why":"Absence of cough and fever makes an infectious cause less likely, and no prior clot history is relevant to her clot risk. Both are expected findings that are absent, which is what makes them pertinent negatives.","wrong":["This is a pertinent positive: a relevant symptom she does have.","","This is medication history and a positive risk factor she has, not an absent finding.","","This is a positive risk factor she has, not an absent finding."],"src":"STD"},{"id":"SA-004","d":"SECONDARY","topic":"History","concept":"medication-list-changes-picture","b":0.5,"type":"mc","stem":"A 78-year-old woman tripped on a rug and struck her forehead on a table. She is alert and oriented, has a small forehead bruise, and wants to stay home. Her vital signs are normal. Her medication list includes apixaban, metformin, atorvastatin, and omeprazole. Which medication most changes your assessment?","opts":["Atorvastatin, because statins commonly cause dizziness that leads to falls","Metformin, because it most likely caused low blood sugar and the fall","Omeprazole, because it can mask the early signs of internal bleeding","Apixaban, because an anticoagulant raises the risk of a delayed brain bleed"],"ans":3,"key":"An anticoagulant on the medication list makes a minor head strike high risk, even when the patient looks well.","why":"Patients taking anticoagulants who strike their head can develop intracranial bleeding hours later despite a normal initial exam. This finding supports strongly encouraging transport for evaluation and must be documented and reported.","wrong":["Statins can cause muscle aches, but they do not make a head strike more dangerous; the anticoagulant does.","Metformin alone rarely causes hypoglycemia; check glucose if indicated, but it does not raise bleeding risk.","Omeprazole reduces stomach acid; it does not mask bleeding or raise head-injury risk.",""],"src":"STD"},{"id":"SA-005","d":"SECONDARY","topic":"History","concept":"medication-list-changes-picture","b":1.5,"type":"mc","stem":"A 69-year-old man has had black, tarry stools for two days and now feels faint when he stands. He is pale, and his skin is cool and moist. BP 96/62 mm Hg, HR 64, RR 20. He takes metoprolol for high blood pressure. How should his medication change your interpretation?","opts":["The beta blocker can blunt his heart rate response, so a normal rate does not rule out shock","The beta blocker explains his low blood pressure, so blood loss is an unlikely cause","His normal heart rate shows compensation is adequate, so routine transport is appropriate","The beta blocker darkens the stool, so the stool color is a medication side effect"],"ans":0,"key":"Beta blockers can prevent the expected tachycardia of shock; judge perfusion by the whole picture, not heart rate alone.","why":"Metoprolol limits the heart rate rise that normally signals blood loss. With melena, orthostatic faintness, and cool, pale, moist skin, he should be treated as a patient in shock from GI bleeding despite a heart rate of 64.","wrong":["","Metoprolol may lower blood pressure, but melena with cool, pale, moist skin and faintness points to blood loss.","A normal rate here may reflect the beta blocker, not adequate compensation; his skin and history indicate shock.","Metoprolol does not darken stool; tarry stool with these signs suggests upper GI bleeding."],"src":"STD"},{"id":"SA-006","d":"SECONDARY","topic":"Physical exam","concept":"exam-finding-to-injury","b":-0.5,"type":"table","stem":"During one shift you examine four trauma patients. Match each physical exam finding with the injury it most suggests.","cols":["Basilar skull fracture","Flail chest","Pericardial tamponade","Intra-abdominal injury"],"rows":[["Bruising behind one ear that appeared the day after a fall",0],["A section of the right chest wall moves inward as the patient inhales",1],["Distended neck veins, muffled heart sounds, and low blood pressure after a stab wound to the chest",2],["Rigid, guarded abdomen that is painful to palpation after a bicycle handlebar injury",3]],"key":"Key exam findings point to specific injuries: Battle sign, paradoxical motion, Beck triad, and abdominal rigidity/guarding.","why":"Bruising behind the ear (Battle sign) develops hours after a basilar skull fracture. Paradoxical chest motion marks a flail segment. JVD, muffled heart sounds, and hypotension after penetrating chest trauma suggest tamponade, and a rigid, guarded abdomen suggests bleeding or organ injury in the abdomen.","src":"STD"},{"id":"SA-007","d":"SECONDARY","topic":"Physical exam","concept":"exam-finding-to-injury","b":0,"type":"mc","stem":"A 44-year-old unrestrained driver struck the steering wheel. He is short of breath, and his SpO2 is 90% on room air. While palpating his upper chest and neck, you feel a crackling, crispy sensation spread through the skin. What does this finding most suggest?","opts":["Fluid in the alveoli from acute heart failure","Rib ends grinding together at a single fracture site","Air leaking from an injured lung or airway into the soft tissues","Bleeding into the chest wall muscles from the impact"],"ans":2,"key":"Crackling under the skin of the chest or neck (subcutaneous emphysema) means air is leaking from the lung or airway.","why":"Subcutaneous emphysema after blunt chest trauma indicates a pneumothorax or airway injury, and his breathing may get worse. Give oxygen, reassess breath sounds and work of breathing often, and transport promptly to a trauma center.","wrong":["Alveolar fluid is heard as crackles with a stethoscope; it is not felt under the skin of the neck.","Bony crepitus is felt at the fracture site itself, not as crackling spread through the soft tissue of the neck.","","Chest wall bleeding causes bruising and swelling, not a crackling sensation under the skin."],"src":"STD"},{"id":"SA-008","d":"SECONDARY","topic":"Physical exam","concept":"head-injury-exam-findings","b":0.5,"type":"mc","stem":"A 25-year-old man was struck in the face with a bat 3 hours ago. He has bruising around both eyes and clear fluid draining from his nose. He is drowsy but breathing adequately at 14/min with no snoring sounds. Which action is most appropriate based on these findings?","opts":["Insert a nasal airway to keep his airway open while he is drowsy","Pack both nostrils firmly with gauze to stop the drainage","Apply ice packs over both eyes and let him sleep until arrival","Avoid a nasal airway, have suction ready, and reassess his mental status often"],"ans":3,"key":"Raccoon eyes with clear nasal drainage suggest a basilar skull fracture: no nasal airway, and watch mental status closely.","why":"Bruising around both eyes and clear fluid from the nose suggest a basilar skull fracture with a cerebrospinal fluid leak. A nasal airway is contraindicated, and a drowsy head-injured patient needs a ready airway plan, frequent reassessment, and spinal motion restriction.","wrong":["A nasal airway is contraindicated with signs of basilar skull fracture; his airway is currently open.","Packing blocks the drainage and raises infection risk; cover loosely with sterile gauze instead.","Letting him sleep hides a decline in mental status; a drowsy head-injured patient needs frequent checks.",""],"src":"STD"},{"id":"SA-009","d":"SECONDARY","topic":"Physical exam","concept":"head-injury-exam-findings","b":1,"type":"mc","stem":"A 52-year-old woman fell down a flight of stairs. On your arrival she opened her eyes to voice. Ten minutes later she responds only to pain. Her right pupil is now dilated and sluggish to light; the left pupil is normal. Which interpretation and action are most appropriate?","opts":["Expanding brain injury pressing on a nerve; support airway and breathing and transport rapidly to a trauma center","Likely an old eye injury; document the finding and complete the exam on scene","Probable opioid effect; give naloxone and recheck her pupils in five minutes","Normal variation in pupil size; recheck her pupils on arrival at the hospital"],"ans":0,"key":"A new unequal pupil with falling responsiveness after head trauma signals rising intracranial pressure: a true emergency.","why":"A newly dilated, sluggish pupil together with a decreasing level of responsiveness suggests an expanding intracranial bleed compressing the brain. She needs airway support, oxygenation, ventilation if breathing becomes inadequate, spinal motion restriction, and rapid transport with reassessment every 5 minutes.","wrong":["","The pupil change is new and comes with falling responsiveness, so it cannot be dismissed as an old injury.","Opioids cause small pupils on both sides, not one dilated pupil; her history points to head injury.","A new unequal pupil with declining mental status is not normal variation and needs immediate action."],"src":"STD"},{"id":"SA-010","d":"SECONDARY","topic":"Physical exam","concept":"rapid-trauma-vs-focused-exam","b":-0.5,"type":"mr","stem":"You respond to several trauma calls during one shift. Select TWO patients who should receive a rapid full-body trauma assessment rather than an exam focused on one injury.","opts":["A 30-year-old ejected from a rolled vehicle who is confused and cannot recall the crash","A 22-year-old who cut her palm on a kitchen knife, is alert, and has controlled bleeding","A 45-year-old who twisted his ankle stepping off a curb and has no other complaints","A 67-year-old pedestrian struck by a car at 30 mph who reports back and hip pain","A 19-year-old who jammed a finger playing basketball and is otherwise uninjured"],"ans":[0,3],"key":"Significant mechanism or altered mental status calls for a rapid head-to-toe trauma assessment; isolated minor injury gets a focused exam.","why":"Ejection with confusion and a pedestrian struck by a vehicle are significant mechanisms that can hide multiple injuries, and the confused patient cannot reliably report pain. Both need a rapid full-body assessment to find life threats.","wrong":["","An alert patient with an isolated hand cut and no significant mechanism needs a focused exam of the injury.","An isolated ankle injury from a low-energy mechanism in an alert patient calls for a focused exam.","","A minor isolated finger injury in an alert patient calls for a focused exam."],"src":"STD"},{"id":"SA-011","d":"SECONDARY","topic":"Physical exam","concept":"rapid-trauma-vs-focused-exam","b":-1,"type":"mc","stem":"A 35-year-old man slipped on a wet floor and landed on an outstretched hand. He is alert and oriented, did not hit his head, and denies neck or back pain. His only complaint is a painful, swollen right wrist. His primary assessment is normal. What is the most appropriate secondary assessment?","opts":["A focused exam of the wrist and arm, including pulse, motor function, and sensation below the injury","A rapid full-body trauma assessment from head to toe before splinting","No exam is needed; splint the wrist because the injury is obvious","Spinal motion restriction first, followed by a full neurologic exam"],"ans":0,"key":"An alert patient with an isolated injury from a low-energy mechanism gets a focused exam, including distal pulse, motor, and sensation.","why":"With a minor mechanism, normal mental status, and one complaint, a focused exam of the injured extremity is appropriate. Checking pulse, motor function, and sensation before and after splinting detects nerve or vessel compromise.","wrong":["","A rapid full-body assessment is for significant mechanisms or patients who cannot reliably report injuries.","Even an obvious injury must be examined, including distal pulse, motor, and sensation, before splinting.","He has no indication for spinal motion restriction: he is alert, has no spinal pain, and no neurologic deficit."],"src":"STD"},{"id":"SA-012","d":"SECONDARY","topic":"Reassessment","concept":"trend-not-snapshot","b":1,"type":"mc","stem":"A 40-year-old man struck his head in a fall from a roof. Your first vital signs: BP 132/84 mm Hg, HR 90, RR 18 and regular. Twenty minutes later during transport: BP 176/96 mm Hg, HR 54, RR irregular with pauses. He is now harder to arouse. What does this trend most suggest?","opts":["Pain and anxiety producing a stress response","Rising pressure inside the skull from an expanding brain injury","Compensated hemorrhagic shock from a hidden injury","Spinal cord injury causing neurogenic shock"],"ans":1,"key":"Rising BP, falling heart rate, and irregular breathing (Cushing triad) in a head injury signal rising intracranial pressure.","why":"Hypertension, bradycardia, and an irregular respiratory pattern with declining mental status form the Cushing triad, a late sign of increasing intracranial pressure. Support airway and ventilation, notify the receiving trauma center, and reassess every 5 minutes.","wrong":["A stress response raises the heart rate; it does not cause bradycardia and irregular breathing.","","Hemorrhagic shock causes a rising heart rate and falling blood pressure, the opposite of this trend.","Neurogenic shock causes low blood pressure with a slow heart rate, not rising blood pressure."],"src":"STD"},{"id":"SA-013","d":"SECONDARY","topic":"Reassessment","concept":"trend-not-snapshot","b":1.5,"type":"mc","stem":"A 33-year-old woman has an open femur fracture after a motorcycle crash; bleeding is controlled with a tourniquet. Over 15 minutes her vital signs change from BP 122/76 mm Hg, HR 98, RR 20 to BP 112/90 mm Hg, HR 124, RR 28. She is now restless, and her skin is cool and pale. What is the best interpretation?","opts":["Her rising diastolic pressure shows she is stabilizing after the tourniquet","Her compensated shock is worsening; she needs shock care and rapid transport","Her restlessness reflects tourniquet pain; reassure her and recheck in 15 minutes","Her vital signs remain in an acceptable range, so continue care on scene"],"ans":1,"key":"Rising heart and respiratory rates, a narrowing pulse pressure, and restlessness mean shock is progressing even before systolic BP drops.","why":"Her pulse pressure narrowed from 46 to 22 mm Hg while heart rate and respiratory rate climbed and she became restless with cool, pale skin. These are signs of worsening compensated shock, so expedite transport to a trauma center, keep her warm, and reassess every 5 minutes.","wrong":["A rising diastolic pressure with a falling systolic reflects vasoconstriction from compensation, not stabilization.","","Restlessness with tachycardia and cool skin suggests poor perfusion; a stable-patient recheck interval is too long.","A systolic BP still above 100 does not mean she is stable; the trend shows she is getting worse."],"src":"STD"},{"id":"SA-014","d":"SECONDARY","topic":"Reassessment","concept":"trend-not-snapshot","b":1.5,"type":"mc","stem":"A 16-year-old with asthma had loud wheezing and could speak only in short phrases. After you assisted with his prescribed inhaler, you reassess: he is drowsy, breath sounds are faint with no wheezing, RR 8, and SpO2 86%. What is the most appropriate action?","opts":["Document improvement, since the wheezing resolved after the inhaler","Assist with a second inhaler dose and recheck him in 15 minutes","Apply a nonrebreather mask, position him upright, and continue routine transport","Begin bag-valve-mask ventilation with oxygen and expedite transport"],"ans":3,"key":"Loss of wheezing with drowsiness, slow breathing, and falling SpO2 is respiratory failure, not improvement: ventilate.","why":"Faint breath sounds without wheezing mean little air is moving, and drowsiness with a rate of 8 and SpO2 of 86% shows he is tiring and failing. He needs assisted ventilation with a BVM and oxygen, rapid transport, and continuous reassessment.","wrong":["Wheezing that disappears while mental status and SpO2 fall signals worsening air movement, not improvement.","Another dose may be allowed per protocol, but a patient breathing 8/min with falling SpO2 needs ventilation first.","A nonrebreather cannot help a patient who is not breathing adequately; he needs ventilations.",""],"src":"STD"},{"id":"SA-015","d":"SECONDARY","topic":"Reassessment","concept":"when-and-how-to-reassess","b":-0.5,"type":"order","stem":"During transport, a 70-year-old woman being treated for generalized weakness suddenly becomes less responsive but is still moaning. Place your reassessment steps in the correct order.","opts":["Check her level of responsiveness using AVPU","Check that the airway is open and clear","Assess the rate and quality of her breathing","Check her pulse, skin, and for any bleeding","Obtain a full set of vital signs"],"key":"When a patient changes, repeat the primary assessment first, in order, before obtaining a new set of vital signs.","why":"Any change in condition means starting over with the primary assessment: mental status, airway, breathing, then circulation, so life threats are found and treated in priority order. A full set of vital signs follows once the primary assessment is complete.","src":"STD"},{"id":"SA-016","d":"SECONDARY","topic":"Reassessment","concept":"when-and-how-to-reassess","b":-0.5,"type":"mc","stem":"You are transporting a 50-year-old man with an isolated lower leg fracture that you have splinted. He is alert, his vital signs have been normal and unchanged, and the trip will take 35 minutes. How often should you reassess him?","opts":["About every 15 minutes, and immediately if his condition changes","About every 5 minutes for the entire transport","Once more when you arrive at the hospital","Only if he reports a change in his pain"],"ans":0,"key":"Reassess a stable patient about every 15 minutes, an unstable patient about every 5, and any patient immediately when something changes.","why":"He is stable, so reassessment about every 15 minutes is appropriate, including checks of his splint and distal circulation. Any change in his condition triggers an immediate reassessment.","wrong":["","Every 5 minutes is the interval for unstable patients; he is stable.","A single check in 35 minutes would miss changes in his condition or distal circulation.","Waiting for him to report a change misses findings he may not notice, such as loss of distal pulse."],"src":"STD"},{"id":"SA-017","d":"SECONDARY","topic":"Burns","concept":"burn-extent-and-severity","b":-0.5,"type":"mc","stem":"A 35-year-old man was burned when a gas grill flared. He has partial-thickness burns covering his entire chest and abdomen and his entire right arm. His back and legs are not burned. Using the adult rule of nines, what is the approximate total body surface area burned?","opts":["18%","27%","36%","45%"],"ans":1,"key":"Adult rule of nines: anterior trunk 18%, each arm 9%, so the front of the trunk plus one arm is about 27%.","why":"In an adult, the entire anterior trunk (chest and abdomen) is 18% and each entire arm is 9%. Together that is about 27% of body surface area.","wrong":["18% counts only the anterior trunk and leaves out the burned arm.","","36% counts the arm as 18% or doubles the trunk; an adult arm is 9%.","45% adds the posterior trunk, which is not burned."],"src":"STD"},{"id":"SA-018","d":"SECONDARY","topic":"Burns","concept":"burn-extent-and-severity","b":0.5,"type":"mc","stem":"On separate calls you care for four adults with burns. All are alert with no breathing difficulty. Which patient's injury is most severe and most clearly warrants care at a burn center?","opts":["A 30-year-old with red, painful sunburn without blisters over his back and shoulders","A 28-year-old with a blistered steam burn on one forearm, about 2% of body surface","A 40-year-old with blistered grease burns that encircle both hands","A 50-year-old with a blistered scald on the front of one thigh, about 4% of body surface"],"ans":2,"key":"Partial-thickness burns of the hands, and circumferential burns, are severe regardless of the percentage burned.","why":"Burns involving the hands threaten long-term function, and burns that encircle a body part can constrict circulation as swelling develops. Both features make this a critical burn that meets burn center referral criteria despite a small percentage.","wrong":["Superficial burns without blisters are painful but are not counted in burn size and rarely need a burn center.","A small partial-thickness burn on the forearm without special-area or circumferential involvement is a minor burn.","","A 4% partial-thickness thigh burn is small and does not involve a critical area or encircle the limb."],"src":"STD"}];
 
 /* Registry Ready — engine: grading, ability estimate, adaptive selection, spaced review, weak-domain analysis.
    Pure functions; no DOM. */
@@ -607,7 +186,7 @@ const ENGINE = (() => {
   }
 
   /* ---- adaptive practice exam ---- */
-  const CAT = { min: 30, max: 60, cut: 0, z: 1.96 };
+  const CAT = { min: 70, max: 120, cut: 0, z: 1.96, seconds: 7200 };
   function nextCatItem(session, rand = Math.random) {
     const used = new Set(session.items.map(x => x.id));
     const n = session.items.length;
@@ -711,7 +290,9 @@ const ENGINE = (() => {
     return q;
   }
 
-  return { DKEYS, target, byId, grade, eap, CAT, nextCatItem, catRecord, catShouldStop, catVerdict, srsUpdate, dueItems, domainStats, topicStats, overallAbility, reviewQueue };
+  function related(item) { return BANK.filter(i => i.concept && i.concept === item.concept && i.id !== item.id); }
+
+  return { related, DKEYS, target, byId, grade, eap, CAT, nextCatItem, catRecord, catShouldStop, catVerdict, srsUpdate, dueItems, domainStats, topicStats, overallAbility, reviewQueue };
 })();
 
 /* Registry Ready — psychomotor practice checklists.
@@ -751,11 +332,107 @@ const SKILLS = [
    steps: ["Take or verbalize standard precautions (PPE)","Apply manual stabilization of the injured joint","Check distal pulse, motor, sensation","Select the proper splinting material","Immobilize the bone above the joint","Immobilize the bone below the joint","Recheck distal pulse, motor, sensation"],
    critical: ["Bones above and below not immobilized","Gross movement of the injured joint","Distal checks not done before and after"] }
 ];
+/* Registry Ready — memory cards. Each card: deck, front (prompt), back (answer), tip (how to remember).
+   Facts follow the same sources as the item bank (2025 AHA CPR/ECC, START/JumpSTART, EMT education standards). */
+const CARDS = [
+ // Assessment frameworks
+ { id: "c-avpu", deck: "Assessment", front: "AVPU", back: "Alert · responds to Verbal · responds to Pain · Unresponsive", tip: "Go down the list until the patient responds; report the first letter that fits." },
+ { id: "c-gcs", deck: "Assessment", front: "Glasgow Coma Scale: the three parts and their maximum points", back: "Eyes 4 · Verbal 5 · Motor 6 · total 3–15", tip: "4-5-6 climbing: eyes, voice, movement." },
+ { id: "c-opqrst", deck: "Assessment", front: "OPQRST", back: "Onset · Provocation/Palliation · Quality · Region/Radiation · Severity · Time", tip: "Use it for any complaint you can describe: pain, shortness of breath, dizziness." },
+ { id: "c-sample", deck: "Assessment", front: "SAMPLE", back: "Signs/Symptoms · Allergies · Medications · Pertinent past history · Last oral intake · Events leading up", tip: "Medications often tell you the history the patient forgets." },
+ { id: "c-dcap", deck: "Assessment", front: "DCAP-BTLS", back: "Deformities · Contusions · Abrasions · Punctures/Penetrations · Burns · Tenderness · Lacerations · Swelling", tip: "Four you see, then BTLS: burns you see, tenderness you feel, lacerations, swelling." },
+ { id: "c-pat", deck: "Assessment", front: "Pediatric Assessment Triangle", back: "Appearance · Work of breathing · Circulation to the skin", tip: "Done from the doorway in seconds, before you touch the child. Appearance is the most important side." },
+ { id: "c-reassess", deck: "Assessment", front: "Reassessment interval", back: "Unstable: about every 5 minutes · Stable: about every 15 minutes · and after every intervention", tip: "Five for fragile, fifteen for fine." },
+ { id: "c-pertneg", deck: "Assessment", front: "Pertinent negative", back: "An expected finding that is absent and helps narrow the problem (chest pain, denies shortness of breath).", tip: "Report it as a finding, not as nothing." },
+ { id: "c-cushing", deck: "Assessment", front: "Cushing triad (rising pressure inside the skull)", back: "Rising blood pressure (widening pulse pressure) · Slowing pulse · Irregular breathing", tip: "Up, down, irregular: BP up, pulse down, breathing irregular. A late sign; transport now." },
+ { id: "c-beck", deck: "Assessment", front: "Beck triad (pericardial tamponade)", back: "JVD · Muffled heart sounds · Low blood pressure", tip: "Distended, distant, down." },
+ { id: "c-tension", deck: "Assessment", front: "Tension pneumothorax signs an EMT can find", back: "Worsening respiratory distress · Absent/diminished breath sounds on one side · Falling BP and rising HR · JVD · Tracheal deviation is late", tip: "After a chest seal, these mean: briefly lift the seal." },
+ // Vital signs
+ { id: "c-vit-adult", deck: "Vital signs", front: "Normal adult resting vital signs", back: "HR 60–100 · RR 12–20 · SpO2 94% or higher", tip: "Treat the trend and the patient, not one number." },
+ { id: "c-shock", deck: "Vital signs", front: "Compensated vs decompensated shock", back: "Compensated: anxiety, tachycardia, pale cool skin, normal BP · Decompensated: falling BP, altered mental status", tip: "Low blood pressure is a late sign, especially in children." },
+ { id: "c-caprefill", deck: "Vital signs", front: "Capillary refill", back: "Normal 2 seconds or less · Most reliable in children younger than 6", tip: "Cold, age and medications make it unreliable in adults." },
+ // Airway and breathing
+ { id: "c-opa", deck: "Airway", front: "OPA sizing and use", back: "Corner of the mouth to the earlobe or angle of the jaw · only for patients with no gag reflex", tip: "Gag = take it out." },
+ { id: "c-npa", deck: "Airway", front: "NPA sizing and caution", back: "Tip of the nose to the earlobe · tolerated with a gag reflex · avoid with suspected basilar skull fracture or severe facial trauma", tip: "Nose to ear for the nasal airway." },
+ { id: "c-suction", deck: "Airway", front: "Maximum suction time per attempt", back: "Adult 15 seconds · Child 10 seconds · Infant 5 seconds", tip: "15-10-5 as the patient gets smaller." },
+ { id: "c-vent", deck: "Airway", front: "Rescue breathing with a pulse", back: "Adult: 1 breath every 6 seconds · Infant/child: 1 breath every 2–3 seconds · each breath over about 1 second, visible chest rise", tip: "Six seconds for adults; count it. Faster is harmful." },
+ { id: "c-o2", deck: "Airway", front: "Oxygen device flow rates", back: "Nasal cannula 1–6 L/min · Non-rebreather 10–15 L/min (keep the bag inflated) · BVM with reservoir 15 L/min", tip: "A mask cannot breathe for a patient who is not breathing enough; that needs a BVM." },
+ { id: "c-choke-adult", deck: "Airway", front: "Conscious choking adult or child (2025 AHA)", back: "Repeated cycles of 5 back blows, then 5 abdominal thrusts · chest thrusts if pregnant or you cannot reach around", tip: "Back first, then belly. If they go unresponsive: CPR, look in the mouth before breaths." },
+ { id: "c-choke-infant", deck: "Airway", front: "Conscious choking infant (2025 AHA)", back: "5 back blows, then 5 chest thrusts with the heel of one hand · no abdominal thrusts", tip: "Back, then chest; never the belly in an infant." },
+ { id: "c-cpap", deck: "Airway", front: "CPAP: who should NOT get it", back: "Cannot follow commands or protect the airway · Hypotension · Suspected pneumothorax · Vomiting · Inadequate breathing (needs BVM)", tip: "CPAP helps a breathing patient breathe better; it cannot breathe for them." },
+ // CPR
+ { id: "c-cpr-adult", deck: "CPR", front: "Adult high-quality CPR (2025 AHA)", back: "Rate 100–120/min · Depth 2–2.4 in · Full recoil · 30:2 · Minimize pauses · Switch compressors about every 2 minutes", tip: "Push hard, push fast, let it come back up." },
+ { id: "c-cpr-child", deck: "CPR", front: "Child and infant CPR ratio", back: "30:2 one rescuer · 15:2 two rescuers", tip: "Two rescuers, half the compressions per cycle, because children arrest from breathing problems." },
+ { id: "c-cpr-infant", deck: "CPR", front: "Infant compression technique (2025 AHA)", back: "Heel of one hand, or two-thumb encircling hands · depth about 1.5 in · two-finger technique no longer recommended", tip: "Two fingers are out; thumbs or heel are in." },
+ { id: "c-pulsecheck", deck: "CPR", front: "Pulse and breathing check", back: "Check both together for no more than 10 seconds · agonal gasps are not breathing", tip: "If you are not sure there is a pulse, start compressions." },
+ { id: "c-aed", deck: "CPR", front: "After the AED shocks", back: "Resume compressions immediately · no pulse check · the AED prompts the next analysis in about 2 minutes", tip: "Shock, then push." },
+ { id: "c-aed-peds", deck: "CPR", front: "AED for a child", back: "Pediatric pads or attenuator when available · otherwise adult pads, not touching (front and back if needed)", tip: "Any AED is better than no AED." },
+ { id: "c-nrp", deck: "CPR", front: "Newborn resuscitation steps", back: "Warm, dry, stimulate, position airway · Ventilate if apneic/gasping or HR below 100 · Compressions 3:1 if HR below 60 after 30 s of good ventilation", tip: "Newborns need air first; most respond to ventilation alone." },
+ // Triage
+ { id: "c-start", deck: "Triage", front: "START triage in four questions", back: "Walks → Minor · No breathing after airway opened → Expectant · RR over 30 → Immediate · No radial pulse or cap refill over 2 s → Immediate · Cannot follow commands → Immediate · Else Delayed", tip: "RPM: Respirations 30, Perfusion 2, Mental status can-do." },
+ { id: "c-jumpstart", deck: "Triage", front: "JumpSTART differences for children", back: "Apneic with a pulse: 5 rescue breaths, then reassess · RR under 15 or over 45 → Immediate · Use palpable peripheral pulse · AVPU: inappropriate P or U → Immediate", tip: "Children get five breaths before they are tagged black." },
+ { id: "c-zones", deck: "Triage", front: "Hazardous materials zones", back: "Hot: contamination · Warm: decontamination corridor · Cold: staging, triage and treatment", tip: "EMTs work in the cold zone unless trained and equipped for more." },
+ // Treatment
+ { id: "c-rights", deck: "Treatment", front: "Rights of medication administration", back: "Right patient · medication · dose · route · time · and documentation (check expiration too)", tip: "Say each one out loud before giving anything." },
+ { id: "c-nitro", deck: "Treatment", front: "When NOT to assist with nitroglycerin", back: "Recent erectile-dysfunction drug (PDE-5 inhibitor) · Low blood pressure per protocol · Not the patient's own prescription · Maximum doses reached", tip: "Check the pressure and ask about the little blue pill every time." },
+ { id: "c-asa", deck: "Treatment", front: "Aspirin for suspected acute coronary syndrome", back: "Chewed, per protocol · withhold for allergy or active bleeding", tip: "Chewing speeds absorption." },
+ { id: "c-epi", deck: "Treatment", front: "Epinephrine auto-injector", back: "Anaphylaxis: skin/mucosal signs plus breathing trouble or low BP · anterolateral thigh · reassess and be ready to repeat per protocol", tip: "Epinephrine first; antihistamines do not treat airway swelling or shock." },
+ { id: "c-glucose", deck: "Treatment", front: "Oral glucose", back: "Only if the patient can swallow and protect the airway", tip: "If they cannot hold their own airway, nothing by mouth." },
+ { id: "c-naloxone", deck: "Treatment", front: "Suspected opioid overdose with slow breathing", back: "Open the airway and ventilate with BVM and oxygen first · then naloxone per protocol", tip: "Breaths before the antidote." },
+ { id: "c-tq", deck: "Treatment", front: "Tourniquet", back: "2–3 in above the wound, not over a joint · tighten until bleeding stops · if it continues, add a second above the first · note the time · never loosen", tip: "High enough, tight enough, timed." },
+ { id: "c-chestseal", deck: "Treatment", front: "Open chest wound", back: "Vented chest seal (or occlusive taped on three sides) · watch for tension pneumothorax · lift the seal briefly if signs develop", tip: "Seal it, then watch it." },
+ { id: "c-smr", deck: "Treatment", front: "Spinal motion restriction indications (2018 joint statement)", back: "Altered mental status or intoxication · Midline spinal tenderness · Focal neurologic deficit · Spinal deformity · Distracting injury", tip: "Penetrating trauma alone is not an indication." },
+ { id: "c-nines", deck: "Treatment", front: "Adult rule of nines", back: "Head 9 · Each arm 9 · Front of trunk 18 · Back of trunk 18 · Each leg 18 · Genitals 1", tip: "The patient's palm, fingers included, is about 1% for small or scattered burns." },
+ { id: "c-supine", deck: "Treatment", front: "Supine hypotensive syndrome", back: "Late pregnancy, dizzy and hypotensive lying flat · place on her left side", tip: "The uterus presses the vena cava; tilt left." },
+ { id: "c-cord", deck: "Treatment", front: "Prolapsed umbilical cord", back: "Gloved fingers lift the presenting part off the cord · knee-chest or hips elevated · oxygen · rapid transport", tip: "Keep pressure off the cord; never push it back." },
+ { id: "c-heat", deck: "Treatment", front: "Heat stroke vs heat exhaustion", back: "Heat stroke: altered mental status, very high temperature → rapid active cooling and transport · Heat exhaustion: alert, sweaty, weak → rest, cool, fluids if alert", tip: "Confusion makes it heat stroke." },
+ // Operations
+ { id: "c-negl", deck: "Operations", front: "Four elements of negligence", back: "Duty to act · Breach of duty · Damages · Proximate cause", tip: "Duty, breach, damage, cause: all four must be proven." },
+ { id: "c-consent", deck: "Operations", front: "Types of consent", back: "Expressed: competent adult agrees · Implied: unresponsive or incapacitated in an emergency · Minors: parent/guardian, or implied in an emergency when none can be reached", tip: "When in doubt in a true emergency, treat under implied consent and document." },
+ { id: "c-refusal", deck: "Operations", front: "A valid refusal", back: "Competent adult · informed of risks in words they understand · encouraged to accept care · told they can call back · documented with signature and witness", tip: "Informed, encouraged, documented." },
+ { id: "c-abandon", deck: "Operations", front: "Abandonment", back: "Ending care without handing the patient to someone of equal or higher training", tip: "Once you start, you stay until a proper handoff." },
+ { id: "c-pcr", deck: "Operations", front: "Correcting a patient care report", back: "Single line through the error, correct it, initial and date · never erase or black out", tip: "The original must stay readable." },
+ { id: "c-due", deck: "Operations", front: "Lights and siren", back: "Exemptions apply only with due regard for others · stop at red lights and stop signs until all lanes are clear", tip: "Lights ask for the right of way; they do not grant it." }
+];
+/* Registry Ready — speech. Android app: native text-to-speech through the Capacitor bridge.
+   Browser: Web Speech API. Every call returns a promise that settles when speaking ends or is stopped. */
+const AUDIO = (() => {
+  const cap = () => { const C = window.Capacitor; return !!(C && C.isNativePlatform && C.isNativePlatform() && typeof C.nativePromise === "function" && Array.isArray(C.PluginHeaders) && C.PluginHeaders.some(p => p && p.name === "TextToSpeech")); };
+  const web = () => "speechSynthesis" in window && typeof SpeechSynthesisUtterance === "function";
+  let rate = 1, gen = 0;
+  try { rate = +localStorage.getItem("rr-rate") || 1; } catch (e) {}
+  function pickVoice() {
+    try {
+      const v = speechSynthesis.getVoices().filter(x => /^en[-_]US/i.test(x.lang));
+      return v.find(x => /natural|enhanced|premium|google/i.test(x.name)) || v[0] || null;
+    } catch (e) { return null; }
+  }
+  function available() { return !!(cap() || web()); }
+  function speak(text) {
+    const my = gen;
+    if (cap()) return window.Capacitor.nativePromise("TextToSpeech", "speak", { text, lang: "en-US", rate, pitch: 1, volume: 1 }).catch(() => {}).then(() => my === gen);
+    if (!web()) return Promise.resolve(false);
+    return new Promise(res => {
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = "en-US"; u.rate = rate; const v = pickVoice(); if (v) u.voice = v;
+      u.onend = () => res(my === gen); u.onerror = () => res(false);
+      speechSynthesis.speak(u);
+    });
+  }
+  function stop() {
+    gen++;
+    if (cap()) window.Capacitor.nativePromise("TextToSpeech", "stop", {}).catch(() => {});
+    else if (web()) try { speechSynthesis.cancel(); } catch (e) {}
+  }
+  const wait = ms => { const my = gen; return new Promise(r => setTimeout(() => r(my === gen), ms)); };
+  function setRate(r) { rate = r; try { localStorage.setItem("rr-rate", String(r)); } catch (e) {} }
+  return { available, speak, stop, wait, setRate, get rate() { return rate; }, get gen() { return gen; } };
+})();
 
 /* Registry Ready — UI */
 (() => {
 const E = ENGINE;
-const VERSION = "0.1.0";
+const VERSION = "1.0.0";
 const LS_KEY = "registry-ready-v1";
 const $view = document.getElementById("view");
 const $sync = document.getElementById("sync");
@@ -776,9 +453,11 @@ function h(tag, attrs, ...kids) {
 const pct = x => x == null ? "—" : Math.round(x * 100) + "%";
 const shuffle = a => { const r = a.slice(); for (let i = r.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [r[i], r[j]] = [r[j], r[i]]; } return r; };
 const fmtDate = t => new Date(t).toLocaleDateString(undefined, { month: "short", day: "numeric" });
+const fmtTime = s => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
+const LET = "ABCDEF";
 
 /* ---------- state + persistence ---------- */
-const blank = () => ({ v: 1, srs: {}, hist: [], exams: [], skills: [], updated: 0 });
+const blank = () => ({ v: 1, srs: {}, hist: [], exams: [], skills: [], cards: {}, updated: 0 });
 let S = blank();
 try { const raw = localStorage.getItem(LS_KEY); if (raw) S = Object.assign(blank(), JSON.parse(raw)); } catch (e) {}
 let dbRef = null, saveTimer = null, writing = Promise.resolve();
@@ -824,14 +503,39 @@ function record(item, ok, mode) {
   save();
 }
 
+/* ---------- speech helpers ---------- */
+function itemSpeech(item, letters) {
+  const parts = [item.stem];
+  if (item.type === "mr") parts.push(`Select ${item.ans.length === 2 ? "two" : "three"}.`);
+  (letters || item.opts.map((_, i) => i)).forEach((orig, k) => parts.push(`${LET[k]}. ${item.opts[orig]}.`));
+  return parts.join(" ");
+}
+function answerSpeech(item, letters) {
+  const pos = orig => LET[(letters || item.opts.map((_, i) => i)).indexOf(orig)];
+  const keyed = item.type === "mc" ? [item.ans] : item.ans;
+  const lead = keyed.length === 1 ? `The answer is ${pos(keyed[0])}. ${item.opts[keyed[0]]}.` : `The answers are ${keyed.map(pos).join(" and ")}.`;
+  return `${lead} ${item.key || ""} ${item.why}`;
+}
+function speakButton(label, getText) {
+  if (!AUDIO.available()) return null;
+  let on = false;
+  const b = h("button", { class: "btn small", type: "button", onclick: async () => {
+    if (on) { AUDIO.stop(); return; }
+    AUDIO.stop(); on = true; b.textContent = "Stop";
+    await AUDIO.speak(getText());
+    on = false; b.textContent = label;
+  } }, label);
+  return b;
+}
+
 /* ---------- question player ---------- */
-function player(item, { feedback, onDone, footer }) {
+function player(item, { feedback, onDone, footer, practice }) {
   const box = h("section", { class: "panel", "aria-live": "polite" });
   const dom = DOMAINS[item.d];
   let resp = null, done = false;
   const submit = h("button", { class: "btn primary", disabled: true, onclick: () => finish() }, "Submit");
   const body = h("div", { class: "opts" });
-  let need = 0, perm, order, cells = [];
+  let need = 0, perm = null, order, cells = [];
 
   const typeLabel = { mc: "Choose one", mr: "", order: "Put in order", table: "Classify each row" }[item.type];
   if (item.type === "mc" || item.type === "mr") {
@@ -849,7 +553,7 @@ function player(item, { feedback, onDone, footer }) {
           b.setAttribute("aria-pressed", on ? "false" : "true");
         }
         submit.disabled = item.type === "mc" ? resp == null : resp.length !== need;
-      } }, h("span", { class: "k" }, "ABCDEF"[k]), h("span", null, item.opts[orig]));
+      } }, h("span", { class: "k" }, LET[k]), h("span", { class: "ot" }, item.opts[orig]));
       body.append(b);
     });
   } else if (item.type === "order") {
@@ -877,16 +581,18 @@ function player(item, { feedback, onDone, footer }) {
     });
   }
 
+  const listen = (item.type === "mc" || item.type === "mr") ? speakButton("Listen", () => itemSpeech(item, perm)) : null;
   box.append(
     h("div", { class: "qmeta" }, h("span", { class: "label" }, dom.name), h("span", { class: "label" }, item.topic)),
     h("p", { class: "stem" }, item.stem),
     item.type === "mr" ? h("p", { class: "label", style: "color:var(--accent)" }, `Select ${need === 2 ? "two" : "three"}`) : h("p", { class: "label" }, typeLabel),
-    body, h("div", { class: "row" }, submit, footer || null));
+    body, h("div", { class: "row" }, submit, listen, footer || null));
 
   function finish() {
     if (done) return; done = true;
+    AUDIO.stop();
     const ok = E.grade(item, item.type === "order" ? order.slice() : resp);
-    submit.remove();
+    submit.remove(); if (listen) listen.remove();
     if (!feedback) { onDone(ok, resp); return; }
     if (item.type === "mc" || item.type === "mr") {
       const right = item.type === "mc" ? [item.ans] : item.ans;
@@ -894,6 +600,8 @@ function player(item, { feedback, onDone, footer }) {
         const o = +b.dataset.o;
         if (right.includes(o)) b.classList.add("is-right");
         else if (b.getAttribute("aria-pressed") === "true") b.classList.add("is-wrong");
+        const reason = item.wrong && item.wrong[o];
+        if (reason) b.querySelector(".ot").append(h("span", { class: "why-not" }, reason));
       });
     } else if (item.type === "order") {
       body.querySelectorAll("li").forEach((li, k) => li.classList.add(+li.dataset.o === k ? "is-right" : "is-wrong"));
@@ -901,13 +609,17 @@ function player(item, { feedback, onDone, footer }) {
     } else {
       cells.forEach((seg, r) => seg.querySelectorAll("button").forEach(b => { if (+b.dataset.c === item.rows[r][1]) b.classList.add("is-right"); }));
     }
+    const rel = E.related(item);
     const fb = h("div", { class: "feedback" + (ok ? "" : " wrong") },
       h("strong", null, ok ? "Correct" : "Not quite"),
       item.type === "order" && !ok ? h("ol", { style: "margin:0;padding-left:20px" }, item.opts.map(s => h("li", null, s))) : null,
+      item.key ? h("p", { class: "keyline" }, h("span", { class: "label" }, "Core principle"), h("br"), item.key) : null,
       h("p", null, item.why),
       h("p", { class: "muted", style: "font-size:.85rem" }, "Reference: " + (SRC[item.src] || item.src)));
-    const next = h("button", { class: "btn primary", onclick: () => onDone(ok, resp) }, "Next");
-    box.append(fb, h("div", { class: "row" }, next));
+    const next = h("button", { class: "btn primary", onclick: () => { AUDIO.stop(); onDone(ok, resp); } }, "Next");
+    const more = practice && rel.length ? h("button", { class: "btn", onclick: () => { AUDIO.stop(); practice(rel, ok); } }, `Practice this principle (${rel.length})`) : null;
+    const say = (item.type === "mc" || item.type === "mr") ? speakButton("Listen to explanation", () => answerSpeech(item, perm)) : speakButton("Listen to explanation", () => `${item.key || ""} ${item.why}`);
+    box.append(fb, h("div", { class: "row" }, next, more, say));
     next.focus({ preventScroll: true });
   }
   return box;
@@ -935,6 +647,7 @@ function readiness() {
   if (hi < E.CAT.cut) return { text: "Below practice cut", cls: "bad", est, a };
   return { text: "Near practice cut", cls: "warn", est, a };
 }
+const cardsDue = () => CARDS.filter(c => { const s = S.cards[c.id]; return !s || s.due <= Date.now(); });
 
 function viewToday() {
   const due = E.dueItems(S.srs).length;
@@ -952,17 +665,21 @@ function viewToday() {
     h("div", { class: "stats" },
       h("div", { class: "stat hot" }, h("div", { class: "label" }, "Due now"), h("div", { class: "big" }, due)),
       h("div", { class: "stat" }, h("div", { class: "label" }, "Seen"), h("div", { class: "big" }, `${seen}`), h("div", { class: "muted mono", style: "font-size:.8rem" }, `of ${BANK.length}`)),
-      h("div", { class: "stat" }, h("div", { class: "label" }, "Answered"), h("div", { class: "big" }, S.hist.length))),
+      h("div", { class: "stat" }, h("div", { class: "label" }, "Cards due"), h("div", { class: "big" }, cardsDue().length))),
     h("section", { class: "panel" },
       h("h2", null, "Review set"),
-      h("p", null, due ? `${due} item${due === 1 ? "" : "s"} you missed or are due to see again, then new items from your weakest area.` : "New items from your weakest area. Missed items come back in 10 minutes, right answers at 1, 3, 7, 16 and 35 days."),
-      h("div", { class: "row" }, h("button", { class: "btn primary", onclick: () => startSet("review", E.reviewQueue(S, 15)) }, "Start 15-item review"))),
+      h("p", null, due ? `${due} question${due === 1 ? "" : "s"} you missed or are due to see again, then new ones from your weakest area.` : "New questions from your weakest area. Missed ones come back in 10 minutes, right answers at 1, 3, 7, 16 and 35 days."),
+      h("div", { class: "row" }, h("button", { class: "btn primary", onclick: () => startSet("review", E.reviewQueue(S, 15)) }, "Start 15-question review"))),
+    h("section", { class: "panel" },
+      h("h2", null, "On the go"),
+      h("p", null, "Listen mode reads each question, gives you time to think, then reads the answer and why. Memory cards drill the lists and numbers you must know cold."),
+      h("div", { class: "row" }, h("button", { class: "btn", onclick: () => openListen() }, "Start listening"), h("button", { class: "btn", onclick: () => openCards(null) }, "Memory cards"))),
     h("section", { class: "panel" },
       h("h2", null, "Focus area"),
       h("p", null, h("strong", null, DOMAINS[weakest].name), ` — ${ds[weakest].n >= 3 ? pct(ds[weakest].acc) + " correct recently" : "not enough answers yet"}, ${DOMAINS[weakest].lo}–${DOMAINS[weakest].hi}% of the exam.`),
-      h("div", { class: "row" }, h("button", { class: "btn", onclick: () => startDrill(weakest) }, "Drill 10 items"))),
+      h("div", { class: "row" }, h("button", { class: "btn", onclick: () => startDrill(weakest) }, "Drill 10 questions"))),
     last ? h("section", { class: "panel" }, h("h3", null, "Last practice exam"),
-      h("p", null, `${fmtDate(last.t)} · ${last.n} items · `, h("span", { class: "pill " + verdictCls(last.verdict) }, verdictText(last.verdict)))) : null
+      h("p", null, `${fmtDate(last.t)} · ${last.n} questions · `, h("span", { class: "pill " + verdictCls(last.verdict) }, verdictText(last.verdict)))) : null
   ];
 }
 
@@ -973,29 +690,129 @@ function viewExam() {
   return [
     h("h1", null, "Adaptive practice exam"),
     h("section", { class: "panel" },
-      h("p", null, "Items get harder or easier based on your answers, and domains are drawn in the same proportions as the NREMT EMT test plan. No feedback until the end and no going back, like test day."),
+      h("p", null, "Questions get harder or easier based on your answers, and domains are drawn in the same proportions as the NREMT EMT test plan. No feedback until the end and no going back, like test day."),
       h("div", { class: "list" },
-        h("div", null, h("strong", null, "Length: "), `${E.CAT.min} to ${E.CAT.max} items. It stops early once your result is clear with 95% confidence.`),
-        h("div", null, h("strong", null, "Item types: "), "multiple choice, multiple response, build list, and options table."),
-        h("div", null, h("strong", null, "Real exam: "), "70 to 120 items, 2 hours, 10 of them unscored pilots.")),
+        h("div", null, h("strong", null, "Length: "), `${E.CAT.min} to ${E.CAT.max} questions, 2-hour limit. It ends at ${E.CAT.min} or later once your result is clear with 95% confidence.`),
+        h("div", null, h("strong", null, "Question types: "), "multiple choice, multiple response, build list, and options table."),
+        h("div", null, h("strong", null, "Same as the real exam: "), "70 to 120 questions in 2 hours. The real exam also includes 10 unscored pilot questions.")),
       h("div", { class: "row" }, h("button", { class: "btn primary", onclick: startExam }, "Start practice exam"))),
     S.exams.length ? h("section", { class: "panel" }, h("h3", null, "History"),
       h("div", { class: "list" }, S.exams.slice().reverse().slice(0, 8).map(x => h("div", { class: "row", style: "justify-content:space-between" },
-        h("span", { class: "mono" }, `${fmtDate(x.t)} · ${x.n} items`), h("span", { class: "pill " + verdictCls(x.verdict) }, verdictText(x.verdict)))))) : null
+        h("span", { class: "mono" }, `${fmtDate(x.t)} · ${x.n} q`), h("span", { class: "pill " + verdictCls(x.verdict) }, verdictText(x.verdict)))))) : null
   ];
 }
 
-function viewDrill() {
+function viewStudy() {
   const ds = E.domainStats(S.hist);
+  const decks = [...new Set(CARDS.map(c => c.deck))];
   return [
-    h("h1", null, "Domain drill"),
-    h("p", { class: "muted" }, "Ten items with feedback after each one. Pick a domain."),
-    h("div", { class: "opts" }, E.DKEYS.map(d => h("button", { class: "opt", onclick: () => startDrill(d) },
-      h("span", { style: "flex:1" }, h("strong", null, DOMAINS[d].name), h("br"), h("span", { class: "muted", style: "font-size:.88rem" }, `${ds[d].bank} items · exam weight ${DOMAINS[d].lo}–${DOMAINS[d].hi}%`)),
-      h("span", { class: "mono" }, pct(ds[d].acc)))))
+    h("h1", null, "Study"),
+    h("section", { class: "panel" },
+      h("h2", null, "Listen"),
+      h("p", { class: "muted" }, "Hands-free practice for driving or walking. Each question is read aloud, you get time to think, then the answer and explanation are read."),
+      AUDIO.available() ? h("div", { class: "row" }, h("button", { class: "btn primary", onclick: () => openListen() }, "Start listening")) : h("p", { class: "muted" }, "Speech is not available on this device.")),
+    h("section", { class: "panel" },
+      h("h2", null, "Memory cards"),
+      h("p", { class: "muted" }, `${CARDS.length} cards for the lists, criteria and numbers. ${cardsDue().length} due now.`),
+      h("div", { class: "chips" }, h("button", { class: "chip", onclick: () => openCards(null) }, "All decks"), decks.map(d => h("button", { class: "chip", onclick: () => openCards(d) }, d)))),
+    h("section", { class: "panel" },
+      h("h2", null, "Domain drill"),
+      h("p", { class: "muted" }, "Ten questions with feedback after each one."),
+      h("div", { class: "opts" }, E.DKEYS.map(d => h("button", { class: "opt", onclick: () => startDrill(d) },
+        h("span", { style: "flex:1" }, h("strong", null, DOMAINS[d].name), h("br"), h("span", { class: "muted", style: "font-size:.88rem" }, `${ds[d].bank} questions · exam weight ${DOMAINS[d].lo}–${DOMAINS[d].hi}%`)),
+        h("span", { class: "mono" }, pct(ds[d].acc))))))
   ];
 }
 
+/* ---------- Listen mode ---------- */
+function openListen() {
+  AUDIO.stop();
+  ctx = { mode: "listen" };
+  let think = 8, running = false, idx = 0, queue = [], current = null, marked = false;
+  try { think = +localStorage.getItem("rr-think") || 8; } catch (e) {}
+  const status = h("p", { class: "muted mono", style: "font-size:.85rem" }, "Ready");
+  const stage = h("div", { class: "listen-stage" }, h("p", { class: "muted" }, "Press Play. Questions come from your review set: missed and due questions first, then new ones from your weakest area."));
+  const play = h("button", { class: "btn primary", onclick: () => running ? pause() : start() }, "Play");
+  const skip = h("button", { class: "btn", onclick: () => { AUDIO.stop(); if (running) { running = false; idx++; start(); } } }, "Skip");
+  const got = h("button", { class: "btn small", disabled: true, onclick: () => mark(true) }, "I got it");
+  const miss = h("button", { class: "btn small", disabled: true, onclick: () => mark(false) }, "I missed it");
+  const seg = (vals, cur, fmt, on) => h("div", { class: "seg" }, vals.map(v => h("button", { "aria-pressed": v === cur ? "true" : "false", onclick: e => { e.currentTarget.parentNode.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === e.currentTarget ? "true" : "false")); on(v); } }, fmt(v))));
+  function mark(ok) { if (!current || marked) return; marked = true; record(current, ok, "listen"); got.disabled = miss.disabled = true; status.textContent = ok ? "Marked: got it" : "Marked: missed — it will come back soon"; }
+  function pause() { running = false; AUDIO.stop(); play.textContent = "Play"; status.textContent = "Paused"; releaseLock(); }
+  let lock = null;
+  async function holdLock() { try { lock = await navigator.wakeLock?.request("screen"); } catch (e) { lock = null; } }
+  function releaseLock() { try { lock && lock.release(); } catch (e) {} lock = null; }
+  async function start() {
+    if (!queue.length || idx >= queue.length) { queue = E.reviewQueue(S, 20).filter(i => i.type === "mc" || i.type === "mr"); idx = 0; }
+    if (!queue.length) { status.textContent = "No questions available"; return; }
+    running = true; play.textContent = "Pause"; holdLock();
+    while (running && idx < queue.length) {
+      current = queue[idx]; marked = false; got.disabled = miss.disabled = false;
+      const it = current;
+      stage.replaceChildren(h("p", { class: "label" }, `Question ${idx + 1} of ${queue.length} · ${DOMAINS[it.d].name}`), h("p", { class: "stem" }, it.stem),
+        h("ol", { type: "A", style: "margin:0;padding-left:22px;display:grid;gap:4px" }, it.opts.map(o => h("li", null, o))));
+      status.textContent = "Reading the question";
+      if (!(await AUDIO.speak(`Question ${idx + 1}. ${itemSpeech(it)}`)) || !running) return;
+      status.textContent = `Think: ${think} seconds`;
+      if (!(await AUDIO.wait(think * 1000)) || !running) return;
+      const keyed = it.type === "mc" ? [it.ans] : it.ans;
+      stage.append(h("div", { class: "feedback" }, h("strong", null, "Answer: " + keyed.map(k => LET[k]).join(", ")), it.key ? h("p", { class: "keyline" }, it.key) : null, h("p", null, it.why)));
+      status.textContent = "Reading the answer";
+      if (!(await AUDIO.speak(answerSpeech(it))) || !running) return;
+      status.textContent = "Next in 3 seconds";
+      if (!(await AUDIO.wait(3000)) || !running) return;
+      idx++;
+    }
+    if (running) { running = false; play.textContent = "Play"; status.textContent = "Set finished. Press Play for the next set."; queue = []; releaseLock(); }
+  }
+  $view.replaceChildren(
+    h("div", { class: "row", style: "justify-content:space-between" }, h("button", { class: "btn small", onclick: () => { pause(); go("study"); } }, "← Study"), h("span", { class: "label" }, "Listen mode")),
+    h("h1", null, "Listen"),
+    h("section", { class: "panel" }, h("div", { class: "row" }, play, skip), status, stage, h("div", { class: "row" }, got, miss),
+      h("p", { class: "muted", style: "font-size:.85rem" }, "Optional: tap I got it or I missed it so the question is scheduled for review.")),
+    h("section", { class: "panel" },
+      h("div", { class: "label" }, "Thinking time"), seg([5, 8, 12, 20], think, v => v + " s", v => { think = v; try { localStorage.setItem("rr-think", String(v)); } catch (e) {} }),
+      h("div", { class: "label" }, "Speaking speed"), seg([0.8, 1, 1.2, 1.4], AUDIO.rate, v => v + "×", v => AUDIO.setRate(v))));
+  window.scrollTo(0, 0);
+}
+
+/* ---------- Memory cards ---------- */
+function openCards(deck) {
+  AUDIO.stop();
+  ctx = { mode: "cards" };
+  const now = Date.now();
+  const pool = CARDS.filter(c => !deck || c.deck === deck);
+  const due = pool.filter(c => !S.cards[c.id] || S.cards[c.id].due <= now);
+  const queue = (due.length ? due : pool.slice().sort((a, b) => (S.cards[a.id]?.due || 0) - (S.cards[b.id]?.due || 0))).slice(0, 20);
+  let i = 0, right = 0;
+  const box = h("div", { style: "display:grid;gap:12px" });
+  function show() {
+    AUDIO.stop();
+    if (i >= queue.length) {
+      box.replaceChildren(h("section", { class: "panel" }, h("h2", null, "Deck done"), h("p", null, h("span", { class: "big" }, `${right}/${queue.length}`), " ", h("span", { class: "muted" }, "known")),
+        h("div", { class: "row" }, h("button", { class: "btn primary", onclick: () => openCards(deck) }, "Next round"), h("button", { class: "btn", onclick: () => go("study") }, "Study"))));
+      return;
+    }
+    const c = queue[i];
+    const back = h("div", { class: "cardback", hidden: true }, h("p", { class: "cardans" }, c.back), c.tip ? h("p", { class: "muted" }, h("span", { class: "label" }, "How to remember"), h("br"), c.tip) : null);
+    const reveal = h("button", { class: "btn primary", onclick: () => { back.hidden = false; reveal.hidden = true; grade.hidden = false; } }, "Show answer");
+    const grade = h("div", { class: "row", hidden: true },
+      h("button", { class: "btn", onclick: () => rate(false) }, "Again"),
+      h("button", { class: "btn primary", onclick: () => rate(true) }, "I knew it"));
+    function rate(ok) { if (ok) right++; E.srsUpdate(S.cards, c.id, ok); save(); i++; show(); }
+    const say = speakButton("Listen", () => `${c.front}. ... ${c.back}. ${c.tip || ""}`);
+    box.replaceChildren(h("section", { class: "panel flash" },
+      h("div", { class: "row", style: "justify-content:space-between" }, h("span", { class: "label" }, c.deck), h("span", { class: "mono" }, `${i + 1} / ${queue.length}`)),
+      h("p", { class: "cardfront" }, c.front), back, h("div", { class: "row" }, reveal, grade, say)));
+  }
+  $view.replaceChildren(
+    h("div", { class: "row", style: "justify-content:space-between" }, h("button", { class: "btn small", onclick: () => { AUDIO.stop(); go("study"); } }, "← Study"), h("span", { class: "label" }, deck || "All decks")),
+    h("h1", null, "Memory cards"), box);
+  show();
+  window.scrollTo(0, 0);
+}
+
+/* ---------- Skills ---------- */
 function viewSkills() {
   const recent = S.skills.slice(-6).reverse();
   return [
@@ -1011,9 +828,9 @@ function viewSkills() {
       h("span", null, SKILLS.find(s => s.id === r.id)?.name || r.id), h("span", { class: "mono" }, `${fmtDate(r.t)} · ${r.missed} missed · ${fmtTime(r.sec)}`))))) : null
   ];
 }
-const fmtTime = s => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
 
 function openSkill(s) {
+  AUDIO.stop();
   ctx = { mode: "skill" };
   const checks = s.steps.map(() => false), crits = s.critical.map(() => false);
   let start = null, timerId = null, sec = 0;
@@ -1023,12 +840,13 @@ function openSkill(s) {
     if (timerId) { clearInterval(timerId); timerId = null; tBtn.textContent = "Resume timer"; }
     else { start = Date.now() - sec * 1000; timerId = setInterval(tick, 250); tBtn.textContent = "Pause timer"; }
   } }, "Start timer");
-  const stepList = h("div", null, s.steps.map((st, i) => h("label", { class: "chk", for: `st-${s.id}-${i}` },
-    h("input", { type: "checkbox", id: `st-${s.id}-${i}`, onchange: e => checks[i] = e.target.checked }), h("span", null, h("span", { class: "mono muted" }, `${i + 1}. `), st))));
+  const stepEls = [];
+  const stepList = h("div", null, s.steps.map((st, i) => { const el = h("label", { class: "chk", for: `st-${s.id}-${i}` },
+    h("input", { type: "checkbox", id: `st-${s.id}-${i}`, onchange: e => checks[i] = e.target.checked }), h("span", null, h("span", { class: "mono muted" }, `${i + 1}. `), st)); stepEls.push(el); return el; }));
   const critList = h("div", null, s.critical.map((c, i) => h("label", { class: "chk", for: `cr-${s.id}-${i}` },
     h("input", { type: "checkbox", id: `cr-${s.id}-${i}`, style: "accent-color:var(--bad)", onchange: e => crits[i] = e.target.checked }), h("span", null, c))));
   const finish = () => {
-    if (timerId) clearInterval(timerId);
+    if (timerId) clearInterval(timerId); AUDIO.stop();
     const missed = checks.filter(x => !x).length, crit = crits.filter(x => x).length;
     S.skills.push({ id: s.id, t: Date.now(), missed, crit, sec, missedSteps: checks.map((c, i) => c ? null : i).filter(x => x != null) });
     save();
@@ -1040,10 +858,22 @@ function openSkill(s) {
       h("div", { class: "row" }, h("button", { class: "btn primary", onclick: () => openSkill(s) }, "Run again"), h("button", { class: "btn", onclick: () => go("skills") }, "All skills"))));
     window.scrollTo(0, 0);
   };
+  const walk = AUDIO.available() ? h("button", { class: "btn", onclick: async () => {
+    AUDIO.stop(); await AUDIO.wait(50);
+    if (!(await AUDIO.speak(`${s.name}. Say and do each step.`))) return;
+    for (let i = 0; i < s.steps.length; i++) {
+      stepEls[i].scrollIntoView({ block: "center", behavior: "smooth" }); stepEls[i].classList.add("now");
+      const ok = await AUDIO.speak(`Step ${i + 1}. ${s.steps[i]}`);
+      if (ok) await AUDIO.wait(4000);
+      stepEls[i].classList.remove("now");
+      if (!ok) return;
+    }
+    await AUDIO.speak("Finished. Check off what you did and review the critical failures.");
+  } }, "Talk me through it") : null;
   $view.replaceChildren(
-    h("div", { class: "row", style: "justify-content:space-between" }, h("button", { class: "btn small", onclick: () => { if (timerId) clearInterval(timerId); ctx = null; go("skills"); } }, "← Skills"), h("span", { class: "label" }, "Practice checklist")),
+    h("div", { class: "row", style: "justify-content:space-between" }, h("button", { class: "btn small", onclick: () => { if (timerId) clearInterval(timerId); AUDIO.stop(); ctx = null; go("skills"); } }, "← Skills"), h("span", { class: "label" }, "Practice checklist")),
     h("h1", null, s.name),
-    h("section", { class: "panel" }, h("div", { class: "row", style: "justify-content:space-between" }, tEl, tBtn),
+    h("section", { class: "panel" }, h("div", { class: "row", style: "justify-content:space-between" }, tEl, h("div", { class: "row" }, tBtn, walk)),
       h("p", { class: "muted", style: "font-size:.88rem" }, "Talk through each step as you do it. A partner ticks the box when the step is done or clearly verbalized.")),
     h("section", { class: "panel" }, h("h3", null, "Steps"), stepList),
     h("section", { class: "crit" }, h("h3", { style: "color:var(--bad)" }, "Critical failures"), h("p", { class: "muted", style: "font-size:.88rem" }, "Tick any that happened. One is enough to fail a station."), critList),
@@ -1055,8 +885,9 @@ function viewProgress() {
   const ds = E.domainStats(S.hist);
   const ranked = E.DKEYS.slice().sort((a, b) => ds[b].priority - ds[a].priority);
   const topics = E.topicStats(S.hist).slice(0, 6);
+  const known = Object.values(S.cards).filter(c => c.box >= 3).length;
   const confirmBox = h("div", { class: "confirm", hidden: true },
-    h("p", null, "Erase all answers, review schedule, exam history and skill runs? This cannot be undone."),
+    h("p", null, "Erase all answers, review schedule, cards, exam history and skill runs? This cannot be undone."),
     h("div", { class: "row" },
       h("button", { class: "btn", style: "border-color:var(--bad);color:var(--bad)", onclick: () => { S = blank(); save(); render(); } }, "Erase everything"),
       h("button", { class: "btn", onclick: () => confirmBox.hidden = true }, "Keep my data")));
@@ -1066,14 +897,15 @@ function viewProgress() {
       h("p", { class: "muted", style: "font-size:.85rem" }, "Last 40 answers per domain. The orange tick marks 70%."),
       ...domainBars(ds)),
     h("section", { class: "panel" }, h("h3", null, "Where to spend time"),
-      h("p", { class: "muted", style: "font-size:.85rem" }, "Ranked by exam weight × share of items missed. High-weight domains with modest gaps outrank small domains with big gaps."),
+      h("p", { class: "muted", style: "font-size:.85rem" }, "Ranked by exam weight × share of questions missed. High-weight domains with modest gaps outrank small domains with big gaps."),
       h("ol", { style: "margin:0;padding-left:22px;display:grid;gap:6px" }, ranked.map(d => h("li", null, h("strong", null, DOMAINS[d].name), h("span", { class: "muted" }, ` — ${ds[d].n >= 3 ? pct(ds[d].acc) + " correct" : "needs more answers"}`))))),
     topics.length ? h("section", { class: "panel" }, h("h3", null, "Weakest topics"),
       h("div", { class: "list" }, topics.map(t => h("div", { class: "row", style: "justify-content:space-between" },
         h("span", null, t.topic, h("span", { class: "muted", style: "font-size:.85rem" }, ` · ${DOMAINS[t.d].name}`)), h("span", { class: "mono" }, `${pct(t.acc)} of ${t.n}`))))) : null,
+    h("section", { class: "panel" }, h("h3", null, "Memory cards"), h("p", null, h("span", { class: "big" }, known), " ", h("span", { class: "muted" }, `of ${CARDS.length} cards known well`))),
     h("section", { class: "panel foot" },
       h("h3", { style: "color:var(--ink)" }, "About"),
-      h("p", null, `Registry Ready ${VERSION}. ${BANK.length} original practice items and ${SKILLS.length} skills checklists by Jae H. Choi, PhD, DVSc · HAKOYA LLC.`),
+      h("p", null, `Registry Ready ${VERSION}. ${BANK.length} original practice questions, ${CARDS.length} memory cards and ${SKILLS.length} skills checklists by Jae H. Choi, PhD, DVSc · HAKOYA LLC.`),
       h("p", null, "Domains and weights follow the NREMT EMT Examination Specifications (2023 BLS Practice Analysis, in use since April 2025). Resuscitation content follows the 2025 AHA Guidelines for CPR and ECC. Follow your local protocols and your program's teaching where they differ."),
       h("p", null, "NREMT is a registered trademark of the National Registry of Emergency Medical Technicians. This app is not affiliated with or endorsed by the National Registry, and its questions are not taken from the exam."),
       h("div", { class: "row" }, h("button", { class: "btn small", onclick: () => { confirmBox.hidden = false; } }, "Erase my data")), confirmBox)
@@ -1083,13 +915,12 @@ function viewProgress() {
 /* ---------- sessions ---------- */
 function startSet(mode, items, title) {
   if (!items.length) return;
+  AUDIO.stop();
   ctx = { mode, items, i: 0, right: 0, missed: [], title: title || "Review set" };
   stepSet();
 }
 function startDrill(d) {
-  const ds = E.domainStats(S.hist);
   const pool = BANK.filter(i => i.d === d);
-  // unseen first, then lowest box, then random
   const scored = shuffle(pool).sort((a, b) => ((S.srs[a.id]?.box ?? -1) - (S.srs[b.id]?.box ?? -1)));
   startSet("drill", scored.slice(0, 10), DOMAINS[d].name);
 }
@@ -1100,39 +931,48 @@ function stepSet() {
   const quit = h("button", { class: "btn small", onclick: endSet }, "End set");
   $view.replaceChildren(
     h("div", { class: "row", style: "justify-content:space-between" }, h("span", { class: "label" }, c.title), h("span", { class: "mono" }, `${c.i + 1} / ${c.items.length}`)),
-    player(item, { feedback: true, footer: quit, onDone: ok => { record(item, ok, c.mode); if (ok) c.right++; else c.missed.push(item.id); c.i++; stepSet(); window.scrollTo(0, 0); } }));
+    player(item, { feedback: true, footer: quit,
+      practice: (rel, ok) => { // answer counts, then up to 3 questions on the same principle come next
+        record(item, ok, c.mode); if (ok) c.right++; else c.missed.push(item.id);
+        const ids = new Set(c.items.map(x => x.id));
+        c.items.splice(c.i + 1, 0, ...rel.filter(r => !ids.has(r.id)).slice(0, 3));
+        c.i++; stepSet(); window.scrollTo(0, 0);
+      },
+      onDone: ok => { record(item, ok, c.mode); if (ok) c.right++; else c.missed.push(item.id); c.i++; stepSet(); window.scrollTo(0, 0); } }));
 }
 function endSet() {
-  const c = ctx; ctx = null;
+  const c = ctx; ctx = null; AUDIO.stop();
   const n = c.i;
   $view.replaceChildren(h("h1", null, "Set complete"),
     h("section", { class: "panel" },
       h("p", null, h("span", { class: "big" }, `${c.right}/${n}`), " ", h("span", { class: "muted" }, "correct")),
-      c.missed.length ? h("p", null, `${c.missed.length} missed item${c.missed.length > 1 ? "s" : ""} will come back in about 10 minutes.`) : n ? h("p", null, "Nothing missed. These items move to longer intervals.") : null,
+      c.missed.length ? h("p", null, `${c.missed.length} missed question${c.missed.length > 1 ? "s" : ""} will come back in about 10 minutes.`) : n ? h("p", null, "Nothing missed. These questions move to longer intervals.") : null,
       h("div", { class: "row" }, h("button", { class: "btn primary", onclick: () => startSet("review", E.reviewQueue(S, 15)) }, "Another review set"), h("button", { class: "btn", onclick: () => go("today") }, "Today"))));
 }
 
 function startExam() {
-  ctx = { mode: "exam", s: { items: [] }, t0: Date.now(), confirm: false };
+  AUDIO.stop();
+  ctx = { mode: "exam", s: { items: [] }, t0: Date.now() };
   stepExam();
 }
 function stepExam() {
   const c = ctx;
-  const stop = E.catShouldStop(c.s);
-  if (stop) return endExam();
+  const elapsedS = Math.floor((Date.now() - c.t0) / 1000);
+  if (E.catShouldStop(c.s) || elapsedS >= E.CAT.seconds) return endExam();
   const item = E.nextCatItem(c.s);
-  const elapsed = h("span", { class: "mono" });
-  const updT = () => { elapsed.textContent = fmtTime(Math.floor((Date.now() - c.t0) / 1000)); };
-  updT(); clearInterval(c.tid); c.tid = setInterval(updT, 1000);
+  const remain = h("span", { class: "mono" });
+  const upd = () => { const left = Math.max(0, E.CAT.seconds - Math.floor((Date.now() - c.t0) / 1000)); remain.textContent = fmtTime(left) + " left"; if (left <= 0) endExam(); };
+  upd(); clearInterval(c.tid); c.tid = setInterval(upd, 1000);
   const confirm = h("div", { class: "confirm", hidden: true }, h("p", null, "End the exam now? Answers so far will be scored."),
     h("div", { class: "row" }, h("button", { class: "btn", onclick: endExam }, "End and score"), h("button", { class: "btn", onclick: () => confirm.hidden = true }, "Keep going")));
   $view.replaceChildren(
-    h("div", { class: "row", style: "justify-content:space-between" }, h("span", { class: "label" }, `Practice exam · item ${c.s.items.length + 1}`), elapsed),
+    h("div", { class: "row", style: "justify-content:space-between" }, h("span", { class: "label" }, `Practice exam · question ${c.s.items.length + 1}`), remain),
     player(item, { feedback: false, footer: h("button", { class: "btn small", onclick: () => confirm.hidden = false }, "End exam"), onDone: ok => { E.catRecord(c.s, item, ok); record(item, ok, "exam"); stepExam(); window.scrollTo(0, 0); } }),
     confirm);
 }
 function endExam() {
-  const c = ctx; clearInterval(c.tid); ctx = null;
+  const c = ctx; if (!c || c.mode !== "exam") return;
+  clearInterval(c.tid); ctx = null; AUDIO.stop();
   const s = c.s;
   if (!s.items.length) return go("exam");
   const by = {};
@@ -1145,25 +985,26 @@ function endExam() {
   $view.replaceChildren(h("h1", null, "Practice exam result"),
     h("section", { class: "panel" },
       h("span", { class: "pill " + verdictCls(verdict) }, verdictText(verdict)),
-      h("p", { class: "mono" }, `${s.items.length} items · ${s.items.filter(x => x.ok).length} correct · ${fmtTime(sec)}`),
+      h("p", { class: "mono" }, `${s.items.length} questions · ${s.items.filter(x => x.ok).length} correct · ${fmtTime(sec)}`),
       h("p", { class: "muted", style: "font-size:.85rem" }, "Like the real exam, the verdict depends on the difficulty of what you answered correctly, not only on percent correct.")),
     h("section", { class: "panel" }, h("h3", null, "By domain"),
       h("div", { class: "list" }, E.DKEYS.filter(d => by[d]).map(d => h("div", { class: "row", style: "justify-content:space-between" }, h("span", null, DOMAINS[d].name), h("span", { class: "mono" }, `${by[d].right}/${by[d].n}`))))),
-    missed.length ? h("section", { class: "panel" }, h("h3", null, `Missed items (${missed.length})`),
+    missed.length ? h("section", { class: "panel" }, h("h3", null, `Missed questions (${missed.length})`),
       h("p", { class: "muted", style: "font-size:.88rem" }, "These are now in your review set."),
-      h("div", { class: "list" }, missed.map(it => h("div", null, h("p", null, h("strong", null, it.stem)), h("p", { class: "muted", style: "font-size:.92rem" }, it.why))))) : null,
-    h("div", { class: "row" }, h("button", { class: "btn primary", onclick: () => startSet("review", missed.length ? missed : E.reviewQueue(S, 15), "Exam review") }, missed.length ? "Review missed items" : "Review set"), h("button", { class: "btn", onclick: () => go("today") }, "Today")));
+      h("div", { class: "list" }, missed.map(it => h("div", null, h("p", null, h("strong", null, it.stem)), it.key ? h("p", { class: "keyline" }, it.key) : null)))) : null,
+    h("div", { class: "row" }, h("button", { class: "btn primary", onclick: () => startSet("review", missed.length ? missed : E.reviewQueue(S, 15), "Exam review") }, missed.length ? "Review missed questions" : "Review set"), h("button", { class: "btn", onclick: () => go("today") }, "Today")));
   window.scrollTo(0, 0);
 }
 
 /* ---------- routing ---------- */
-const VIEWS = { today: viewToday, exam: viewExam, drill: viewDrill, skills: viewSkills, progress: viewProgress };
+const VIEWS = { today: viewToday, exam: viewExam, study: viewStudy, skills: viewSkills, progress: viewProgress };
 function render() {
   document.querySelectorAll("nav.tabs button").forEach(b => b.setAttribute("aria-current", b.dataset.tab === tab ? "page" : "false"));
   $view.replaceChildren(...VIEWS[tab]().filter(Boolean));
 }
 function go(t) {
   if (ctx && ctx.mode === "exam") clearInterval(ctx.tid);
+  AUDIO.stop();
   ctx = null; tab = t; render(); window.scrollTo(0, 0);
 }
 document.querySelectorAll("nav.tabs button").forEach(b => b.addEventListener("click", () => go(b.dataset.tab)));

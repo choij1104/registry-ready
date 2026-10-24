@@ -34,7 +34,7 @@ const ENGINE = (() => {
   }
 
   /* ---- adaptive practice exam ---- */
-  const CAT = { min: 30, max: 60, cut: 0, z: 1.96 };
+  const CAT = { min: 70, max: 120, cut: 0, z: 1.96, seconds: 7200 };
   function nextCatItem(session, rand = Math.random) {
     const used = new Set(session.items.map(x => x.id));
     const n = session.items.length;
@@ -138,5 +138,7 @@ const ENGINE = (() => {
     return q;
   }
 
-  return { DKEYS, target, byId, grade, eap, CAT, nextCatItem, catRecord, catShouldStop, catVerdict, srsUpdate, dueItems, domainStats, topicStats, overallAbility, reviewQueue };
+  function related(item) { return BANK.filter(i => i.concept && i.concept === item.concept && i.id !== item.id); }
+
+  return { related, DKEYS, target, byId, grade, eap, CAT, nextCatItem, catRecord, catShouldStop, catVerdict, srsUpdate, dueItems, domainStats, topicStats, overallAbility, reviewQueue };
 })();
