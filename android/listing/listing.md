@@ -13,7 +13,7 @@ Play Console → Grow → Store presence → Main store listing.
 | Tags | Test preparation; Medical education |
 | Contact email | info@hakoyallc.com |
 | Website | https://hakoyallc.com |
-| Privacy policy | https://choij1104.github.io/registry-ready-/privacy.html |
+| Privacy policy | https://choij1104.github.io/registry-ready/privacy.html |
 | Price | Free · no ads · no in-app purchases |
 | Countries | United States |
 
