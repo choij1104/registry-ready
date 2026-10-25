@@ -76,7 +76,7 @@ function seed() {
     .t{position:absolute;left:300px;top:118px;font-family:BC;font-size:96px;letter-spacing:3px;text-transform:uppercase;line-height:.95}
     .s{position:absolute;left:304px;top:236px;font-size:26px;opacity:.9}
     img{position:absolute;left:64px;top:78px;width:200px;height:200px;border-radius:28px}
-  </style></head><body><img src="${icon}"><div class="t">Registry Ready</div><div class="s">EMT exam practice · adaptive · offline</div><div class="chev"></div></body></html>`);
+  </style></head><body><img src="${icon}"><div class="t">EMT Prep 2026</div><div class="s">EMT exam practice · adaptive · offline</div><div class="chev"></div></body></html>`);
   await p.goto("file://" + fgFile, { waitUntil: "load" });
   await p.evaluate(() => document.fonts.ready);
   await p.screenshot({ path: path.join(ROOT, "android/listing/feature-1024x500.png") });

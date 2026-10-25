@@ -4,7 +4,7 @@ Play Console → Grow → Store presence → Main store listing.
 
 | Field | Value |
 |---|---|
-| App name (≤30) | Registry Ready: EMT Exam Prep |
+| App name (≤30) | EMT Prep 2026: Exam & Skills |
 | Short description (≤80) | 250 scenario questions, adaptive EMT exams, listen mode and memory cards. |
 | App icon | `../../icon-512.png` (512×512) |
 | Feature graphic | `feature-1024x500.png` |
@@ -14,14 +14,14 @@ Play Console → Grow → Store presence → Main store listing.
 | Contact email | info@hakoyallc.com |
 | Website | https://hakoyallc.com |
 | Privacy policy | https://choij1104.github.io/registry-ready/privacy.html |
-| Price | Free · no ads · no in-app purchases |
+| Price | USD 0.99 (paid) · no ads · no in-app purchases |
 | Countries | United States |
 
 ## Full description (≤4000)
 
 Study for the NREMT EMT cognitive exam the way it is built.
 
-Registry Ready follows the five content domains of the current NREMT EMT test plan — Scene Size-up and Safety, Primary Assessment, Secondary Assessment, Patient Treatment and Transport, and Operations — in the same proportions the exam uses. Primary Assessment carries the most weight on the exam, so it carries the most weight here.
+EMT Prep 2026 follows the five content domains of the current NREMT EMT test plan — Scene Size-up and Safety, Primary Assessment, Secondary Assessment, Patient Treatment and Transport, and Operations — in the same proportions the exam uses. Primary Assessment carries the most weight on the exam, so it carries the most weight here.
 
 ADAPTIVE PRACTICE EXAM
 Questions get harder or easier based on your answers, the same idea as the computer adaptive test you will take: 70 to 120 questions, 2-hour limit, no feedback until the end and no going back. The exam stops once your result is clear, then shows how you did in each domain and every question you missed.
@@ -55,7 +55,7 @@ No account, no ads, no tracking. Your progress stays on your phone and the app w
 
 Written by Jae H. Choi, PhD, DVSc, an emergency medicine researcher, and published by HAKOYA LLC.
 
-Important: Registry Ready is a study aid. Every question was checked against current national guidance. All questions are original and are not taken from the NREMT exam. The readiness estimate is based on this app's own questions and is not a prediction of your NREMT score. Follow your EMT program's instruction and your local protocols. NREMT is a registered trademark of the National Registry of Emergency Medical Technicians; this app is not affiliated with or endorsed by the National Registry.
+Important: EMT Prep 2026 is a study aid. Every question was checked against current national guidance. All questions are original and are not taken from the NREMT exam. The readiness estimate is based on this app's own questions and is not a prediction of your NREMT score. Follow your EMT program's instruction and your local protocols. NREMT is a registered trademark of the National Registry of Emergency Medical Technicians; this app is not affiliated with or endorsed by the National Registry.
 
 ## Release notes (1.0)
 First release: 250 original scenario questions across all five EMT exam domains, a full-length adaptive practice exam, listen mode, 51 memory cards, spaced review, domain analysis and nine skills checklists.
