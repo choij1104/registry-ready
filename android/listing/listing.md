@@ -1,4 +1,4 @@
-# Registry Ready — Google Play store listing (English, United States)
+# EMT Prep 2026 — Google Play store listing (English, United States)
 
 Play Console → Grow → Store presence → Main store listing.
 

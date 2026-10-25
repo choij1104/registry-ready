@@ -1,12 +1,13 @@
-# Registry Ready — Google Play build
+# EMT Prep 2026 — Google Play build
 
-Free app. Application ID `com.hakoya.registryready`. Publisher: HAKOYA LLC.
+Paid app, USD 0.99. Application ID `com.hakoya.registryready`. Publisher: HAKOYA LLC.
 
 The store build is `scripts/build-store.py` run on the repository's `index.html`: the web app
 unchanged except that its three typefaces are bundled from @fontsource instead of loaded from
 Google Fonts. The build fails if the bundle would make a network request, register a service
-worker, or load an external script or stylesheet. No Capacitor plugins; manifest permission
-INTERNET only (Capacitor's local web server).
+worker, or load an external script or stylesheet. Manifest permission
+INTERNET only (Capacitor's local web server). One plugin: @capacitor-community/text-to-speech
+for Listen mode.
 
 ## Build
 GitHub Actions → "Android build (Google Play)". Runs on a push to `main` that touches the app or
@@ -32,7 +33,7 @@ The signed bundle lands next to the unsigned one on `android-artifacts`
 (`dist/LATEST-SIGNED` names it) and in the workflow artifact.
 
 ## Play Console (first release)
-1. Create app: name "Registry Ready: EMT Exam Prep", English (US), App, Free.
+1. Create app: English (US), App, Paid. Listing name "EMT Prep 2026: Exam & Skills".
 2. App content: answers in `listing/app-content.md`.
 3. Main store listing: `listing/listing.md`, icon, feature graphic, screenshots.
 4. Countries: United States.

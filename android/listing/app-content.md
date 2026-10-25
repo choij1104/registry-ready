@@ -1,4 +1,4 @@
-# Registry Ready — Play Console "App content" answers
+# EMT Prep 2026 — Play Console "App content" answers
 
 ## Privacy policy
 https://choij1104.github.io/registry-ready/privacy.html (GitHub Pages on this repo, main branch, root)
@@ -23,7 +23,7 @@ Category: **Reference, News, or Educational**. Email for the certificate: admin@
 | Gambling | No | |
 | Users interact or share content | No | |
 | Shares location | No | |
-| Digital purchases | No | |
+| Digital purchases | No | Paid app (USD 0.99); no in-app purchases |
 | Unrestricted internet | No | |
 
 ## Target audience
@@ -34,7 +34,7 @@ Category: **Reference, News, or Educational**. Email for the certificate: admin@
 |---|---|
 | Does the app collect or share any required user data types? | **No** |
 
-Basis: the store build makes no network request (build-store.py fails the build if one appears); progress is kept in the WebView's local storage on the device only and is never transmitted; no analytics, ads, crash reporting or third-party SDKs; no Capacitor plugins; manifest permission INTERNET only (Capacitor's local web server). Result on Google Play: "No data collected", "No data shared".
+Basis: the store build makes no network request (build-store.py fails the build if one appears); progress is kept in the WebView's local storage on the device only and is never transmitted; no analytics, ads, crash reporting or third-party SDKs; one Capacitor plugin (on-device text-to-speech, no network); manifest permission INTERNET only (Capacitor's local web server). Result on Google Play: "No data collected", "No data shared".
 
 ## Health apps declaration
 | Feature | Tick |
