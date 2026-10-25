@@ -3,7 +3,7 @@
 # The web bundle is android/scripts/build-store.py run on the repository's index.html: the web app
 # unchanged except that its three typefaces are bundled locally instead of loaded from Google
 # Fonts, so the app makes no network request. Capacitor 8.5.3, targetSdk 36, Java 21, Node 22.
-# No Capacitor plugins.
+# One Capacitor plugin: @capacitor-community/text-to-speech (Listen mode, on-device).
 #
 # Signing: when the repository secrets UPLOAD_KEYSTORE_BASE64, UPLOAD_KEYSTORE_PASSWORD and
 # UPLOAD_KEY_ALIAS are set (entered by the account holder; never stored in the repository), the

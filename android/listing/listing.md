@@ -53,7 +53,7 @@ Resuscitation questions follow the 2025 American Heart Association Guidelines fo
 PRIVATE AND OFFLINE
 No account, no ads, no tracking. Your progress stays on your phone and the app works without a connection.
 
-Written by Jae H. Choi, PhD, DVSc, an emergency medicine researcher, and published by HAKOYA LLC.
+Published by HAKOYA LLC dba Auravyx Systems.
 
 Important: EMT Prep 2026 is a study aid. Every question was checked against current national guidance. All questions are original and are not taken from the NREMT exam. The readiness estimate is based on this app's own questions and is not a prediction of your NREMT score. Follow your EMT program's instruction and your local protocols. NREMT is a registered trademark of the National Registry of Emergency Medical Technicians; this app is not affiliated with or endorsed by the National Registry.
 
